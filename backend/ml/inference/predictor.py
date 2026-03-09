@@ -13,7 +13,7 @@ from ml.inference.model_registry import ModelName
 class FoodPredictor:
     def __init__(self) -> None:
         self.class_names: List[str] = load_class_names(settings.CLASS_NAMES_PATH)
-        self.model_loader = ModelLoader()
+        self.model_loader = ModelLoader(num_classes=len(self.class_names))
 
     def predict(
         self,

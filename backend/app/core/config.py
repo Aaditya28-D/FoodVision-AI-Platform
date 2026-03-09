@@ -18,6 +18,10 @@ class Settings(BaseSettings):
     METADATA_DIR: Path = DATA_DIR / "metadata"
     CLASS_NAMES_PATH: Path = METADATA_DIR / "classes.txt"
 
+    MODEL_DIR: Path = BACKEND_DIR / "models"
+    MOBILENET_WEIGHTS_PATH: Path = MODEL_DIR / "mobilenet_v3_large_food101.pth"
+    GOOGLENET_WEIGHTS_PATH: Path = MODEL_DIR / "googlenet_food101.pth"
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
