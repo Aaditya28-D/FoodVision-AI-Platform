@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import List
+from typing import List, Optional
 
 
 class PredictionItem(BaseModel):
@@ -12,3 +12,4 @@ class PredictionResponse(BaseModel):
     top_k: int = Field(..., example=5)
     predictions: List[PredictionItem]
     inference_time_ms: float = Field(..., example=12.47)
+    device: Optional[str] = Field(default="cpu", example="cpu")

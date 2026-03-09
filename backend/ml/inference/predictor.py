@@ -6,17 +6,25 @@ from PIL import Image
 from app.core.config import settings
 from app.schemas.prediction import PredictionItem, PredictionResponse
 from ml.inference.class_names import load_class_names
+from ml.inference.model_loader import ModelLoader
+from ml.inference.model_registry import ModelName
 
 
 class FoodPredictor:
-    def __init__(self, model_name: str = "mobilenet_v3_large") -> None:
-        self.model_name = model_name
+    def __init__(self) -> None:
         self.class_names: List[str] = load_class_names(settings.CLASS_NAMES_PATH)
+        self.model_loader = ModelLoader()
 
-    def predict(self, image: Image.Image, top_k: int = 5) -> PredictionResponse:
+    def predict(
+        self,
+        image: Image.Image,
+        model_name: ModelName = ModelName.MOBILENET_V3_LARGE,
+        top_k: int = 5,
+    ) -> PredictionResponse:
         _ = image
 
         start_time = perf_counter()
+        loaded_model = self.model_loader.load_model(model_name)
 
         selected_classes = self.class_names[:top_k]
         dummy_confidences = [0.82, 0.09, 0.04, 0.03, 0.02, 0.01, 0.005, 0.004, 0.003, 0.002]
@@ -29,8 +37,9 @@ class FoodPredictor:
         inference_time_ms = (perf_counter() - start_time) * 1000
 
         return PredictionResponse(
-            model_name=self.model_name,
+            model_name=loaded_model.model_name,
             top_k=top_k,
             predictions=predictions,
             inference_time_ms=round(inference_time_ms, 3),
+            device=loaded_model.device,
         )
