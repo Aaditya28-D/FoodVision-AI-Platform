@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -9,6 +11,12 @@ class Settings(BaseSettings):
     )
     VERSION: str = "0.1.0"
     API_V1_PREFIX: str = "/api/v1"
+
+    BACKEND_DIR: Path = Path(__file__).resolve().parents[2]
+    PROJECT_ROOT: Path = BACKEND_DIR.parent
+    DATA_DIR: Path = PROJECT_ROOT / "data"
+    METADATA_DIR: Path = DATA_DIR / "metadata"
+    CLASS_NAMES_PATH: Path = METADATA_DIR / "classes.txt"
 
     model_config = SettingsConfigDict(
         env_file=".env",
