@@ -6,6 +6,7 @@ import torch
 
 from app.core.config import settings
 from ml.inference.model_registry import ModelName
+from ml.models.efficientnet import build_efficientnet_b0
 from ml.models.googlenet import build_googlenet
 from ml.models.mobilenet import build_mobilenet_v3_large
 
@@ -36,6 +37,12 @@ class ModelLoader:
             return (
                 build_mobilenet_v3_large(self.num_classes),
                 settings.MOBILENET_WEIGHTS_PATH,
+            )
+
+        if model_name == ModelName.EFFICIENTNET_B0:
+            return (
+                build_efficientnet_b0(self.num_classes),
+                settings.EFFICIENTNET_B0_WEIGHTS_PATH,
             )
 
         if model_name == ModelName.GOOGLENET:

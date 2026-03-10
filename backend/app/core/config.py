@@ -20,12 +20,13 @@ class Settings(BaseSettings):
 
     MODEL_DIR: Path = BACKEND_DIR / "models"
     MOBILENET_WEIGHTS_PATH: Path = MODEL_DIR / "mobilenet_v3_large_best.pth"
-    GOOGLENET_WEIGHTS_PATH: Path = MODEL_DIR / "googlenet_food101.pth"
+    EFFICIENTNET_B0_WEIGHTS_PATH: Path = MODEL_DIR / "efficientnet_b0_best.pth"
+    GOOGLENET_WEIGHTS_PATH: Path = MODEL_DIR / "googlenet_best.pth"
 
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
-        case_sensitive=True
+        case_sensitive=True,
     )
 
 

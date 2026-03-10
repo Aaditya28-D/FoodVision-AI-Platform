@@ -16,11 +16,11 @@ class TrainingConfig:
     num_workers: int = 2
     num_classes: int = 101
 
-    model_name: str = "mobilenet_v3_large"
+    model_name: str = "efficientnet_b0"
     learning_rate: float = 1e-3
     num_epochs: int = 5
     weight_decay: float = 1e-4
 
     checkpoint_dir: Path = settings.BACKEND_DIR / "models"
-    history_path: Path = settings.BACKEND_DIR / "models" / "mobilenet_v3_large_history.json"
+    history_path: Path = settings.BACKEND_DIR / "models" / "efficientnet_b0_history.json"
     device: str = "auto"
