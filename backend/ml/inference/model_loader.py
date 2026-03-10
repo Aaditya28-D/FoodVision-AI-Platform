@@ -25,6 +25,8 @@ class ModelLoader:
         self._models: dict[str, LoadedModel] = {}
 
     def _get_device(self) -> str:
+        if torch.backends.mps.is_available():
+            return "mps"
         if torch.cuda.is_available():
             return "cuda"
         return "cpu"

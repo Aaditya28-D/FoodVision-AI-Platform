@@ -1,11 +1,23 @@
-from pathlib import Path
-
+import torch
+from torch import nn
+from torch.optim import Adam
 from torch.utils.data import DataLoader
 
 from ml.training.config import TrainingConfig
 from ml.training.dataset import Food101DatasetFromSplit
+from ml.training.model_factory import build_model
+from ml.training.trainer import Trainer
 from ml.training.transforms import get_eval_transforms, get_train_transforms
 
+
+def resolve_device(device_config: str) -> str:
+    if device_config == "auto":
+        if torch.backends.mps.is_available():
+            return "mps"
+        if torch.cuda.is_available():
+            return "cuda"
+        return "cpu"
+    return device_config
 
 def main() -> None:
     config = TrainingConfig()
@@ -38,13 +50,52 @@ def main() -> None:
         num_workers=config.num_workers,
     )
 
-    print("Training pipeline initialized successfully")
+    device = resolve_device(config.device)
+
+    model = build_model(
+        model_name=config.model_name,
+        num_classes=config.num_classes,
+    )
+
+    criterion = nn.CrossEntropyLoss()
+    optimizer = Adam(
+        model.parameters(),
+        lr=config.learning_rate,
+        weight_decay=config.weight_decay,
+    )
+
+    trainer = Trainer(
+        model=model,
+        device=device,
+        criterion=criterion,
+        optimizer=optimizer,
+        checkpoint_dir=config.checkpoint_dir,
+    )
+
+    print("Starting training")
     print(f"Model: {config.model_name}")
+    print(f"Device: {device}")
     print(f"Train samples: {len(train_dataset)}")
     print(f"Validation samples: {len(val_dataset)}")
-    print(f"Train batches: {len(train_loader)}")
-    print(f"Validation batches: {len(val_loader)}")
-    print(f"Checkpoint directory: {config.checkpoint_dir}")
+    print("-" * 60)
+
+    for epoch in range(1, config.num_epochs + 1):
+        train_loss, train_acc = trainer.train_one_epoch(train_loader)
+        val_loss, val_acc = trainer.validate(val_loader)
+
+        trainer.save_checkpoint(
+            model_name=config.model_name,
+            epoch=epoch,
+            val_accuracy=val_acc,
+        )
+
+        print(
+            f"Epoch {epoch}/{config.num_epochs} | "
+            f"train_loss={train_loss:.4f} | "
+            f"train_acc={train_acc:.4f} | "
+            f"val_loss={val_loss:.4f} | "
+            f"val_acc={val_acc:.4f}"
+        )
 
 
 if __name__ == "__main__":

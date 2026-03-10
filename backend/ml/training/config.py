@@ -12,13 +12,13 @@ class TrainingConfig:
     class_names_file: Path = settings.DATA_DIR / "metadata" / "classes.txt"
 
     image_size: int = 224
-    batch_size: int = 32
-    num_workers: int = 4
+    batch_size: int = 16
+    num_workers: int = 2
     num_classes: int = 101
 
     model_name: str = "mobilenet_v3_large"
     learning_rate: float = 1e-3
-    num_epochs: int = 10
+    num_epochs: int = 1
     weight_decay: float = 1e-4
 
     checkpoint_dir: Path = settings.BACKEND_DIR / "models"
