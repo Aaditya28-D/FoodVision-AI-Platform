@@ -1,4 +1,4 @@
-from fastapi import APIRouter, File, UploadFile, Query
+from fastapi import APIRouter, File, HTTPException, Query, UploadFile
 
 from app.schemas.prediction import PredictionResponse
 from app.utils.image import validate_and_read_image
@@ -16,10 +16,15 @@ async def predict_food(
     model_name: ModelName = Query(default=ModelName.MOBILENET_V3_LARGE),
     top_k: int = Query(default=5, ge=1, le=10),
 ):
-    pil_image = await validate_and_read_image(image)
-    response = predictor.predict(
-        image=pil_image,
-        model_name=model_name,
-        top_k=top_k,
-    )
-    return response
+    try:
+        pil_image = await validate_and_read_image(image)
+        response = predictor.predict(
+            image=pil_image,
+            model_name=model_name,
+            top_k=top_k,
+        )
+        return response
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Inference failed: {exc}") from exc

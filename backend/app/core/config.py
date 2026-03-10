@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     CLASS_NAMES_PATH: Path = METADATA_DIR / "classes.txt"
 
     MODEL_DIR: Path = BACKEND_DIR / "models"
-    MOBILENET_WEIGHTS_PATH: Path = MODEL_DIR / "mobilenet_v3_large_food101.pth"
+    MOBILENET_WEIGHTS_PATH: Path = MODEL_DIR / "mobilenet_v3_large_best.pth"
     GOOGLENET_WEIGHTS_PATH: Path = MODEL_DIR / "googlenet_food101.pth"
 
     model_config = SettingsConfigDict(

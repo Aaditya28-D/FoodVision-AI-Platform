@@ -53,9 +53,11 @@ class ModelLoader:
         device = self._get_device()
         model, weights_path = self._build_model_and_path(model_name)
 
-        if weights_path.exists():
-            state_dict = torch.load(weights_path, map_location=device)
-            model.load_state_dict(state_dict)
+        if not weights_path.exists():
+            raise FileNotFoundError(f"Model weights not found: {weights_path}")
+
+        state_dict = torch.load(weights_path, map_location=device)
+        model.load_state_dict(state_dict)
 
         model.to(device)
         model.eval()
@@ -65,7 +67,7 @@ class ModelLoader:
             model=model,
             device=device,
             input_size=224,
-            weights_path=str(weights_path) if weights_path.exists() else None,
+            weights_path=str(weights_path),
         )
 
         self._models[model_name.value] = loaded_model
