@@ -252,3 +252,26 @@ data/embeddings/*.faiss
 # IDE
 .vscode/
 .idea/
+
+# Full local dataset
+data/food-101/
+
+# Keep only lightweight metadata if needed
+!data/metadata/
+!data/metadata/classes.txt
+!data/metadata/labels.txt
+!data/metadata/train.txt
+!data/metadata/test.txt
+!data/sample_images/
+
+# Ignore generated embeddings and processed files
+data/embeddings/
+data/interim/
+data/processed/
+
+# Ignore local trained model weights
+backend/models/*.pth
+backend/models/*.pt
+backend/models/*.ckpt
+backend/models/*.onnx
+backend/models/*.engine
