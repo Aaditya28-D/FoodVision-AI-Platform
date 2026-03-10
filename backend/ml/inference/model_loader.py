@@ -56,7 +56,13 @@ class ModelLoader:
         if not weights_path.exists():
             raise FileNotFoundError(f"Model weights not found: {weights_path}")
 
-        state_dict = torch.load(weights_path, map_location=device)
+        loaded = torch.load(weights_path, map_location=device)
+
+        if isinstance(loaded, dict) and "model_state_dict" in loaded:
+            state_dict = loaded["model_state_dict"]
+        else:
+            state_dict = loaded
+
         model.load_state_dict(state_dict)
 
         model.to(device)

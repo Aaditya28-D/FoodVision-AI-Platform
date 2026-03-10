@@ -85,12 +85,26 @@ class Trainer:
         self,
         model_name: str,
         epoch: int,
+        train_loss: float,
+        train_acc: float,
+        val_loss: float,
         val_accuracy: float,
     ) -> None:
+        checkpoint = {
+            "epoch": epoch,
+            "model_state_dict": self.model.state_dict(),
+            "optimizer_state_dict": self.optimizer.state_dict(),
+            "train_loss": train_loss,
+            "train_accuracy": train_acc,
+            "val_loss": val_loss,
+            "val_accuracy": val_accuracy,
+            "device": self.device,
+        }
+
         checkpoint_path = self.checkpoint_dir / f"{model_name}_epoch_{epoch}.pth"
-        torch.save(self.model.state_dict(), checkpoint_path)
+        torch.save(checkpoint, checkpoint_path)
 
         if val_accuracy > self.best_val_accuracy:
             self.best_val_accuracy = val_accuracy
             best_model_path = self.checkpoint_dir / f"{model_name}_best.pth"
-            torch.save(self.model.state_dict(), best_model_path)
+            torch.save(checkpoint, best_model_path)
