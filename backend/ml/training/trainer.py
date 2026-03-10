@@ -98,6 +98,7 @@ class Trainer:
             "train_accuracy": train_acc,
             "val_loss": val_loss,
             "val_accuracy": val_accuracy,
+            "best_val_accuracy": self.best_val_accuracy,
             "device": self.device,
         }
 
@@ -106,5 +107,19 @@ class Trainer:
 
         if val_accuracy > self.best_val_accuracy:
             self.best_val_accuracy = val_accuracy
+            checkpoint["best_val_accuracy"] = self.best_val_accuracy
             best_model_path = self.checkpoint_dir / f"{model_name}_best.pth"
             torch.save(checkpoint, best_model_path)
+
+    def load_best_checkpoint(self, model_name: str) -> int:
+        best_model_path = self.checkpoint_dir / f"{model_name}_best.pth"
+
+        if not best_model_path.exists():
+            return 0
+
+        checkpoint = torch.load(best_model_path, map_location=self.device)
+        self.model.load_state_dict(checkpoint["model_state_dict"])
+        self.optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
+        self.best_val_accuracy = checkpoint.get("best_val_accuracy", 0.0)
+
+        return int(checkpoint.get("epoch", 0))

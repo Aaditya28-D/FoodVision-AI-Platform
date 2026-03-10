@@ -18,9 +18,13 @@ class TrainingConfig:
 
     model_name: str = "efficientnet_b0"
     learning_rate: float = 1e-3
-    num_epochs: int = 5
+    num_epochs: int = 10
     weight_decay: float = 1e-4
 
     checkpoint_dir: Path = settings.BACKEND_DIR / "models"
     history_path: Path = settings.BACKEND_DIR / "models" / "efficientnet_b0_history.json"
+
     device: str = "auto"
+    early_stopping_patience: int = 2
+    early_stopping_min_delta: float = 0.001
+    resume_from_checkpoint: bool = False

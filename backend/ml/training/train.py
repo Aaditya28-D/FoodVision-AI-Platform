@@ -6,6 +6,7 @@ from torch.utils.data import DataLoader
 
 from ml.training.config import TrainingConfig
 from ml.training.dataset import Food101DatasetFromSplit
+from ml.training.early_stopping import EarlyStopping
 from ml.training.history import save_training_history
 from ml.training.model_factory import build_model
 from ml.training.trainer import Trainer
@@ -82,6 +83,18 @@ def main() -> None:
         checkpoint_dir=config.checkpoint_dir,
     )
 
+    early_stopper = EarlyStopping(
+        patience=config.early_stopping_patience,
+        min_delta=config.early_stopping_min_delta,
+    )
+
+    start_epoch = 1
+    if config.resume_from_checkpoint:
+        resumed_epoch = trainer.load_best_checkpoint(config.model_name)
+        if resumed_epoch > 0:
+            start_epoch = resumed_epoch + 1
+            print(f"Resumed from best checkpoint at epoch {resumed_epoch}")
+
     history = {
         "model_name": config.model_name,
         "device": device,
@@ -95,7 +108,7 @@ def main() -> None:
     print(f"Validation samples: {len(val_dataset)}")
     print("-" * 60)
 
-    for epoch in range(1, config.num_epochs + 1):
+    for epoch in range(start_epoch, config.num_epochs + 1):
         train_loss, train_acc = trainer.train_one_epoch(train_loader)
         val_loss, val_acc = trainer.validate(val_loader)
 
@@ -130,6 +143,11 @@ def main() -> None:
             f"val_acc={val_acc:.4f} | "
             f"lr={current_lr:.6f}"
         )
+
+        if early_stopper.step(val_acc):
+            print("-" * 60)
+            print(f"Early stopping triggered at epoch {epoch}")
+            break
 
     save_training_history(history, config.history_path)
     print("-" * 60)
