@@ -9,6 +9,7 @@ from ml.inference.model_registry import ModelName
 from ml.models.efficientnet import build_efficientnet_b0
 from ml.models.googlenet import build_googlenet
 from ml.models.mobilenet import build_mobilenet_v3_large
+from ml.models.resnet import build_resnet50
 
 
 @dataclass
@@ -43,6 +44,12 @@ class ModelLoader:
             return (
                 build_efficientnet_b0(self.num_classes),
                 settings.EFFICIENTNET_B0_WEIGHTS_PATH,
+            )
+
+        if model_name == ModelName.RESNET50:
+            return (
+                build_resnet50(self.num_classes),
+                settings.RESNET50_WEIGHTS_PATH,
             )
 
         if model_name == ModelName.GOOGLENET:
