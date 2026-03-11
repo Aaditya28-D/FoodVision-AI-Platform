@@ -1,0 +1,62 @@
+{
+  "food_name": "Falafel",
+  "category": "Street Food / Fast Casual",
+  "cuisine": "Middle Eastern",
+  "description": "A casual falafel with bold flavor, quick service appeal, and room for ingredient variation.",
+  "core_ingredients": [
+    "Main base",
+    "Seasoning",
+    "Primary topping or filling"
+  ],
+  "optional_ingredients": [
+    "Sauce",
+    "Cheese",
+    "Vegetables",
+    "Herbs"
+  ],
+  "preparation_steps": [
+    "Prepare the base or filling",
+    "Cook or assemble with seasoning",
+    "Finish with toppings and serve warm"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high",
+    "protein": "Moderate",
+    "carbohydrates": "Moderate",
+    "fat": "Moderate"
+  },
+  "health_advice": {
+    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
+    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
+    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": true,
+    "vegan_possible": true,
+    "gluten_free_possible": true,
+    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+  },
+  "allergens": [
+    "Possible gluten",
+    "Possible dairy"
+  ],
+  "common_variations": [
+    "Classic Falafel",
+    "Loaded Falafel",
+    "Vegetarian-style Falafel"
+  ],
+  "serving_info": {
+    "typical_serving": "1 portion",
+    "best_served_with": [
+      "Dips or sauces",
+      "Salad",
+      "Soft drinks"
+    ]
+  },
+  "popular_regions": [
+    "Levant",
+    "Middle East",
+    "Worldwide"
+  ]
+}

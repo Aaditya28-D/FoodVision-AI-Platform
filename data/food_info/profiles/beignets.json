@@ -1,0 +1,65 @@
+{
+  "food_name": "Beignets",
+  "category": "Dessert",
+  "cuisine": "French / New Orleans",
+  "description": "Deep-fried pieces of dough, often served hot and dusted with powdered sugar.",
+  "core_ingredients": [
+    "Flour",
+    "Yeast or leavening",
+    "Water or milk",
+    "Sugar",
+    "Oil for frying"
+  ],
+  "optional_ingredients": [
+    "Powdered sugar",
+    "Vanilla",
+    "Cinnamon",
+    "Sweet fillings"
+  ],
+  "preparation_steps": [
+    "Prepare the base or mixture",
+    "Bake, chill, or fry depending on style",
+    "Finish with toppings and serve"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high per serving",
+    "protein": "Low to moderate",
+    "carbohydrates": "Moderate to high",
+    "fat": "Moderate to high"
+  },
+  "health_advice": {
+    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
+    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
+    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": false,
+    "vegan_possible": true,
+    "gluten_free_possible": false,
+    "note": "Preparation varies, but traditional versions are usually sweet fried pastries"
+  },
+  "allergens": [
+    "Gluten",
+    "Possible dairy",
+    "Possible egg"
+  ],
+  "common_variations": [
+    "Powdered sugar beignets",
+    "Filled beignets",
+    "Mini beignets"
+  ],
+  "serving_info": {
+    "typical_serving": "Several pieces",
+    "best_served_with": [
+      "Coffee",
+      "Tea",
+      "Hot chocolate"
+    ]
+  },
+  "popular_regions": [
+    "France",
+    "Louisiana",
+    "United States"
+  ]
+}

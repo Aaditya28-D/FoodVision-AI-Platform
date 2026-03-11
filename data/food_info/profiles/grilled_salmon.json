@@ -1,0 +1,62 @@
+{
+  "food_name": "Grilled Salmon",
+  "category": "Seafood Dish",
+  "cuisine": "International",
+  "description": "A seafood-focused grilled salmon prepared to highlight delicate texture, freshness, and seasoning balance.",
+  "core_ingredients": [
+    "Grilled Salmon",
+    "Seasoning",
+    "Oil, butter, or dressing"
+  ],
+  "optional_ingredients": [
+    "Citrus",
+    "Herbs",
+    "Sauce",
+    "Fresh garnish"
+  ],
+  "preparation_steps": [
+    "Prepare the seafood carefully",
+    "Cook or dress it with controlled seasoning",
+    "Plate with garnish and serve promptly"
+  ],
+  "nutrition": {
+    "calories": "Moderate",
+    "protein": "Moderate to high",
+    "carbohydrates": "Low to moderate",
+    "fat": "Low to moderate"
+  },
+  "health_advice": {
+    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
+    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
+    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": false,
+    "non_vegetarian_possible": true,
+    "vegan_possible": false,
+    "gluten_free_possible": true,
+    "note": "Sauces, batters, or sides can alter the gluten and dairy profile"
+  },
+  "allergens": [
+    "Fish or shellfish",
+    "Possible gluten",
+    "Possible dairy"
+  ],
+  "common_variations": [
+    "Classic Grilled Salmon",
+    "Spiced Grilled Salmon",
+    "Citrus-finished Grilled Salmon"
+  ],
+  "serving_info": {
+    "typical_serving": "1 portion",
+    "best_served_with": [
+      "Vegetables",
+      "Potatoes or grains",
+      "Sauce"
+    ]
+  },
+  "popular_regions": [
+    "Coastal cuisines",
+    "Worldwide"
+  ]
+}

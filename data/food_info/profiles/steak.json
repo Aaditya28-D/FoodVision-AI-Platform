@@ -1,0 +1,62 @@
+{
+  "food_name": "Steak",
+  "category": "Main Dish",
+  "cuisine": "International / Steakhouse",
+  "description": "A cut of meat, usually beef, cooked by grilling, pan-searing, or roasting and served as a main dish.",
+  "core_ingredients": [
+    "Beef steak",
+    "Seasoning",
+    "Oil or butter"
+  ],
+  "optional_ingredients": [
+    "Pepper",
+    "Garlic",
+    "Herb butter",
+    "Sauces",
+    "Mushrooms"
+  ],
+  "preparation_steps": [
+    "Season the protein",
+    "Cook to the desired doneness or tenderness",
+    "Rest or plate with sides and serve"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high",
+    "protein": "High",
+    "carbohydrates": "Low to moderate",
+    "fat": "Moderate to high"
+  },
+  "health_advice": {
+    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
+    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
+    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": false,
+    "non_vegetarian_possible": true,
+    "vegan_possible": false,
+    "gluten_free_possible": true,
+    "note": "Sauces and sides can change the final dietary profile"
+  },
+  "allergens": [
+    "Possible dairy",
+    "Possible gluten in sauces"
+  ],
+  "common_variations": [
+    "Grilled steak",
+    "Pan-seared steak",
+    "Steak with sauce",
+    "Filet-style steak"
+  ],
+  "serving_info": {
+    "typical_serving": "1 steak portion",
+    "best_served_with": [
+      "Vegetables",
+      "Potatoes",
+      "Salad"
+    ]
+  },
+  "popular_regions": [
+    "Worldwide"
+  ]
+}

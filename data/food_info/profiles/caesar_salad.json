@@ -1,0 +1,61 @@
+{
+  "food_name": "Caesar Salad",
+  "category": "Salad",
+  "cuisine": "Mediterranean / North American",
+  "description": "A caesar salad built around fresh produce, dressing, and contrasting textures for a light but flavorful plate.",
+  "core_ingredients": [
+    "Fresh vegetables or greens",
+    "Seasoning",
+    "Dressing"
+  ],
+  "optional_ingredients": [
+    "Cheese or seeds",
+    "Herbs",
+    "Extra vegetables"
+  ],
+  "preparation_steps": [
+    "Prepare and season the main produce",
+    "Add garnish or supporting ingredients",
+    "Dress lightly and serve fresh"
+  ],
+  "nutrition": {
+    "calories": "Low to moderate",
+    "protein": "Low to moderate",
+    "carbohydrates": "Low to moderate",
+    "fat": "Low to moderate"
+  },
+  "health_advice": {
+    "benefits": "Can provide freshness, fiber, and a lighter eating option with good flavor contrast.",
+    "risks": "Heavy dressings, cheese, or fried add-ons can raise sodium, fat, and calories quickly.",
+    "healthy_tip": "Lean toward fresh produce, lighter dressings, and balanced add-ons when possible."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": false,
+    "vegan_possible": true,
+    "gluten_free_possible": true,
+    "note": "Dressings, cheese, or protein add-ons can change the final profile"
+  },
+  "allergens": [
+    "Possible dairy",
+    "Possible nuts or seeds"
+  ],
+  "common_variations": [
+    "Classic Caesar Salad",
+    "Herb-forward Caesar Salad",
+    "Seasonal Caesar Salad"
+  ],
+  "serving_info": {
+    "typical_serving": "1 portion",
+    "best_served_with": [
+      "Bread",
+      "Soup",
+      "Light mains"
+    ]
+  },
+  "popular_regions": [
+    "Europe",
+    "North America",
+    "Worldwide"
+  ]
+}

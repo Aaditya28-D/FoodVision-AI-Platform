@@ -1,0 +1,61 @@
+{
+  "food_name": "Gnocchi",
+  "category": "Main Dish",
+  "cuisine": "Italian",
+  "description": "A hearty gnocchi centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "core_ingredients": [
+    "Main starch base",
+    "Sauce or broth",
+    "Seasoning"
+  ],
+  "optional_ingredients": [
+    "Protein",
+    "Vegetables",
+    "Herbs",
+    "Cheese or finishing sauce"
+  ],
+  "preparation_steps": [
+    "Cook the main starch component",
+    "Prepare broth or sauce",
+    "Combine with toppings and serve"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high",
+    "protein": "Moderate",
+    "carbohydrates": "Moderate",
+    "fat": "Moderate"
+  },
+  "health_advice": {
+    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
+    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
+    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": true,
+    "vegan_possible": true,
+    "gluten_free_possible": false,
+    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+  },
+  "allergens": [
+    "Possible gluten",
+    "Possible dairy",
+    "Possible soy"
+  ],
+  "common_variations": [
+    "Classic Gnocchi",
+    "Protein-rich Gnocchi",
+    "Vegetable-forward Gnocchi"
+  ],
+  "serving_info": {
+    "typical_serving": "1 portion",
+    "best_served_with": [
+      "Salad",
+      "Tea",
+      "Light sides"
+    ]
+  },
+  "popular_regions": [
+    "Worldwide"
+  ]
+}

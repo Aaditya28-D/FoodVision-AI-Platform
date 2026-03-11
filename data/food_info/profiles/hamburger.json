@@ -1,0 +1,64 @@
+{
+  "food_name": "Hamburger",
+  "category": "Main Dish",
+  "cuisine": "American",
+  "description": "A sandwich built with a bun and a central patty, often served with sauces, vegetables, and cheese.",
+  "core_ingredients": [
+    "Bun",
+    "Patty",
+    "Sauce"
+  ],
+  "optional_ingredients": [
+    "Cheese",
+    "Lettuce",
+    "Tomato",
+    "Onion",
+    "Pickles",
+    "Bacon"
+  ],
+  "preparation_steps": [
+    "Prepare the bread or base",
+    "Cook or assemble the filling",
+    "Layer, finish, and serve"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high",
+    "protein": "High",
+    "carbohydrates": "Low to moderate",
+    "fat": "Moderate to high"
+  },
+  "health_advice": {
+    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
+    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
+    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": true,
+    "vegan_possible": true,
+    "gluten_free_possible": true,
+    "note": "Dietary profile depends on the patty type, bun, cheese, and sauces"
+  },
+  "allergens": [
+    "Gluten",
+    "Possible dairy",
+    "Possible egg"
+  ],
+  "common_variations": [
+    "Cheeseburger",
+    "Chicken burger",
+    "Veggie burger",
+    "Double burger"
+  ],
+  "serving_info": {
+    "typical_serving": "1 burger",
+    "best_served_with": [
+      "Fries",
+      "Salad",
+      "Soft drinks"
+    ]
+  },
+  "popular_regions": [
+    "Worldwide"
+  ]
+}

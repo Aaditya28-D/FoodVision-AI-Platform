@@ -16,7 +16,7 @@ router = APIRouter(prefix="/analyze", tags=["Analyze"])
 
 predictor = FoodPredictor()
 explainer = GradCAMExplainer()
-food_info_service = FoodInfoService(data_path=Path("..") / "data" / "food_info" / "food_profiles.json")
+food_info_service = FoodInfoService(data_dir=Path("..") / "data" / "food_info" / "profiles")
 
 
 def build_short_summary(

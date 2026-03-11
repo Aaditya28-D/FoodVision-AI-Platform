@@ -1,0 +1,61 @@
+{
+  "food_name": "Cannoli",
+  "category": "Dessert",
+  "cuisine": "Italian / Sicilian",
+  "description": "A cannoli dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "core_ingredients": [
+    "Sweetened base",
+    "Flavoring",
+    "Finishing element"
+  ],
+  "optional_ingredients": [
+    "Fruit",
+    "Chocolate",
+    "Cream",
+    "Spices"
+  ],
+  "preparation_steps": [
+    "Prepare the base or mixture",
+    "Bake, chill, or fry depending on style",
+    "Finish with toppings and serve"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high per serving",
+    "protein": "Low to moderate",
+    "carbohydrates": "Moderate to high",
+    "fat": "Moderate to high"
+  },
+  "health_advice": {
+    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
+    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
+    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": false,
+    "vegan_possible": true,
+    "gluten_free_possible": false,
+    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+  },
+  "allergens": [
+    "Possible gluten",
+    "Possible dairy",
+    "Possible egg"
+  ],
+  "common_variations": [
+    "Classic Cannoli",
+    "Chocolate or fruit-topped Cannoli",
+    "Mini Cannoli"
+  ],
+  "serving_info": {
+    "typical_serving": "1 portion",
+    "best_served_with": [
+      "Coffee",
+      "Tea",
+      "Fruit garnish"
+    ]
+  },
+  "popular_regions": [
+    "Worldwide"
+  ]
+}

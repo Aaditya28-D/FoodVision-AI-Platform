@@ -1,0 +1,68 @@
+{
+  "food_name": "Tacos",
+  "category": "Street Food / Fast Casual",
+  "cuisine": "Mexican",
+  "description": "A folded or open tortilla dish filled with meats, beans, vegetables, sauces, or cheese.",
+  "core_ingredients": [
+    "Tortilla",
+    "Filling",
+    "Sauce or salsa"
+  ],
+  "optional_ingredients": [
+    "Chicken",
+    "Beef",
+    "Beans",
+    "Cheese",
+    "Lettuce",
+    "Onion",
+    "Coriander"
+  ],
+  "preparation_steps": [
+    "Prepare the base or filling",
+    "Cook or assemble with seasoning",
+    "Finish with toppings and serve warm"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high",
+    "protein": "Moderate",
+    "carbohydrates": "Moderate",
+    "fat": "Moderate"
+  },
+  "health_advice": {
+    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
+    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
+    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": true,
+    "vegan_possible": true,
+    "gluten_free_possible": true,
+    "note": "Exact dietary profile depends on tortilla type and fillings"
+  },
+  "allergens": [
+    "Possible gluten",
+    "Possible dairy"
+  ],
+  "common_variations": [
+    "Chicken tacos",
+    "Beef tacos",
+    "Fish tacos",
+    "Bean tacos",
+    "Veggie tacos"
+  ],
+  "serving_info": {
+    "typical_serving": "2 to 3 tacos",
+    "best_served_with": [
+      "Salsa",
+      "Guacamole",
+      "Rice",
+      "Beans"
+    ]
+  },
+  "popular_regions": [
+    "Mexico",
+    "United States",
+    "Worldwide"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "food_name": "Bruschetta",
+  "category": "Main Dish",
+  "cuisine": "Italian",
+  "description": "A recognizable bruschetta dish with its own characteristic ingredients, texture, and serving style.",
+  "core_ingredients": [
+    "Primary ingredient",
+    "Seasoning",
+    "Supporting elements"
+  ],
+  "optional_ingredients": [
+    "Sauce",
+    "Herbs",
+    "Vegetables"
+  ],
+  "preparation_steps": [
+    "Prepare the key ingredients",
+    "Cook or assemble with seasoning",
+    "Plate and serve"
+  ],
+  "nutrition": {
+    "calories": "Moderate",
+    "protein": "Low to moderate",
+    "carbohydrates": "Moderate to high",
+    "fat": "Moderate"
+  },
+  "health_advice": {
+    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
+    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
+    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": true,
+    "vegan_possible": true,
+    "gluten_free_possible": true,
+    "note": "Preparation style determines the final dietary profile"
+  },
+  "allergens": [
+    "Possible gluten",
+    "Possible dairy"
+  ],
+  "common_variations": [
+    "Classic Bruschetta",
+    "House-style Bruschetta",
+    "Modern Bruschetta"
+  ],
+  "serving_info": {
+    "typical_serving": "1 portion",
+    "best_served_with": [
+      "Fresh garnish",
+      "Light sides",
+      "Beverage of choice"
+    ]
+  },
+  "popular_regions": [
+    "Worldwide"
+  ]
+}

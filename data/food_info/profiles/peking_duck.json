@@ -1,0 +1,60 @@
+{
+  "food_name": "Peking Duck",
+  "category": "Main Dish",
+  "cuisine": "Chinese",
+  "description": "A protein-forward peking duck typically served as a satisfying main dish with sides or sauces.",
+  "core_ingredients": [
+    "Primary protein",
+    "Seasoning",
+    "Oil or butter"
+  ],
+  "optional_ingredients": [
+    "Sauce",
+    "Herbs",
+    "Vegetables"
+  ],
+  "preparation_steps": [
+    "Season the protein",
+    "Cook to the desired doneness or tenderness",
+    "Rest or plate with sides and serve"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high",
+    "protein": "High",
+    "carbohydrates": "Low to moderate",
+    "fat": "Moderate to high"
+  },
+  "health_advice": {
+    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
+    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
+    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": false,
+    "non_vegetarian_possible": true,
+    "vegan_possible": false,
+    "gluten_free_possible": true,
+    "note": "Sides, sauces, and breading can change the final dietary profile"
+  },
+  "allergens": [
+    "Possible gluten",
+    "Possible dairy",
+    "Possible egg"
+  ],
+  "common_variations": [
+    "Classic Peking Duck",
+    "Sauced Peking Duck",
+    "Grilled or roasted Peking Duck"
+  ],
+  "serving_info": {
+    "typical_serving": "1 portion",
+    "best_served_with": [
+      "Vegetables",
+      "Potatoes or grains",
+      "Sauce"
+    ]
+  },
+  "popular_regions": [
+    "Worldwide"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "food_name": "Pulled Pork Sandwich",
+  "category": "Main Dish",
+  "cuisine": "American",
+  "description": "A handheld pulled pork sandwich that combines bread or a bun with layered fillings, texture, and sauce.",
+  "core_ingredients": [
+    "Bread, bun, or roll",
+    "Main filling",
+    "Condiments or garnish"
+  ],
+  "optional_ingredients": [
+    "Cheese",
+    "Pickles or vegetables",
+    "Sauce"
+  ],
+  "preparation_steps": [
+    "Prepare the bread or base",
+    "Cook or assemble the filling",
+    "Layer, finish, and serve"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high",
+    "protein": "High",
+    "carbohydrates": "Low to moderate",
+    "fat": "Moderate to high"
+  },
+  "health_advice": {
+    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
+    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
+    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": false,
+    "non_vegetarian_possible": true,
+    "vegan_possible": false,
+    "gluten_free_possible": true,
+    "note": "Sides, sauces, and breading can change the final dietary profile"
+  },
+  "allergens": [
+    "Possible gluten",
+    "Possible dairy",
+    "Possible egg"
+  ],
+  "common_variations": [
+    "Classic Pulled Pork Sandwich",
+    "Loaded Pulled Pork Sandwich",
+    "Vegetarian-style Pulled Pork Sandwich"
+  ],
+  "serving_info": {
+    "typical_serving": "1 portion",
+    "best_served_with": [
+      "Dips or sauces",
+      "Salad",
+      "Soft drinks"
+    ]
+  },
+  "popular_regions": [
+    "Worldwide"
+  ]
+}

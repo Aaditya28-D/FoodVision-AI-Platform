@@ -1,0 +1,60 @@
+{
+  "food_name": "Grilled Cheese Sandwich",
+  "category": "Sandwich / Handheld",
+  "cuisine": "American",
+  "description": "A handheld grilled cheese sandwich that combines bread or a bun with layered fillings, texture, and sauce.",
+  "core_ingredients": [
+    "Bread, bun, or roll",
+    "Main filling",
+    "Condiments or garnish"
+  ],
+  "optional_ingredients": [
+    "Cheese",
+    "Pickles or vegetables",
+    "Sauce"
+  ],
+  "preparation_steps": [
+    "Prepare the bread or base",
+    "Cook or assemble the filling",
+    "Layer, finish, and serve"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high",
+    "protein": "Moderate",
+    "carbohydrates": "Moderate",
+    "fat": "Moderate"
+  },
+  "health_advice": {
+    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
+    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
+    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": true,
+    "vegan_possible": true,
+    "gluten_free_possible": true,
+    "note": "Bread, fillings, and condiments determine the final dietary profile"
+  },
+  "allergens": [
+    "Gluten",
+    "Possible dairy",
+    "Possible egg"
+  ],
+  "common_variations": [
+    "Classic Grilled Cheese Sandwich",
+    "Loaded Grilled Cheese Sandwich",
+    "Vegetarian-style Grilled Cheese Sandwich"
+  ],
+  "serving_info": {
+    "typical_serving": "1 portion",
+    "best_served_with": [
+      "Dips or sauces",
+      "Salad",
+      "Soft drinks"
+    ]
+  },
+  "popular_regions": [
+    "Worldwide"
+  ]
+}

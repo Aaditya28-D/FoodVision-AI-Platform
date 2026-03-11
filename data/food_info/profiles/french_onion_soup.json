@@ -1,0 +1,60 @@
+{
+  "food_name": "French Onion Soup",
+  "category": "Soup / Broth Dish",
+  "cuisine": "French",
+  "description": "A french onion soup served as a broth-based dish, often designed to deliver warmth, aroma, and layered flavor.",
+  "core_ingredients": [
+    "Broth or stock",
+    "Aromatics",
+    "Main ingredients"
+  ],
+  "optional_ingredients": [
+    "Herbs",
+    "Cream or finishing oil",
+    "Protein or garnish"
+  ],
+  "preparation_steps": [
+    "Build flavor with aromatics and liquid",
+    "Cook the main ingredients until balanced",
+    "Adjust seasoning and serve hot"
+  ],
+  "nutrition": {
+    "calories": "Low to moderate",
+    "protein": "Low to moderate",
+    "carbohydrates": "Low to moderate",
+    "fat": "Low to moderate"
+  },
+  "health_advice": {
+    "benefits": "Can be comforting, hydrating, and nutrient-dense depending on broth and ingredients.",
+    "risks": "Some soups can become high in sodium, cream, or refined starch depending on the recipe.",
+    "healthy_tip": "Choose broth-forward versions and pair them with vegetables or lean protein when possible."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": true,
+    "vegan_possible": true,
+    "gluten_free_possible": true,
+    "note": "Broth type and garnishes determine the final dietary profile"
+  },
+  "allergens": [
+    "Possible gluten",
+    "Possible dairy",
+    "Possible soy"
+  ],
+  "common_variations": [
+    "Classic French Onion Soup",
+    "Protein-rich French Onion Soup",
+    "Vegetable-forward French Onion Soup"
+  ],
+  "serving_info": {
+    "typical_serving": "1 portion",
+    "best_served_with": [
+      "Bread",
+      "Crackers",
+      "Light sides"
+    ]
+  },
+  "popular_regions": [
+    "Worldwide"
+  ]
+}

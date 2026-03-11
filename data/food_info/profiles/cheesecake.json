@@ -1,0 +1,64 @@
+{
+  "food_name": "Cheesecake",
+  "category": "Dessert",
+  "cuisine": "European / International",
+  "description": "A rich dessert with a creamy cheese-based filling often set on a crumb or biscuit base.",
+  "core_ingredients": [
+    "Cream cheese or soft cheese",
+    "Sugar",
+    "Eggs or setting agent",
+    "Crust or base"
+  ],
+  "optional_ingredients": [
+    "Fruit topping",
+    "Vanilla",
+    "Chocolate",
+    "Caramel",
+    "Cream"
+  ],
+  "preparation_steps": [
+    "Prepare the base or mixture",
+    "Bake, chill, or fry depending on style",
+    "Finish with toppings and serve"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high per serving",
+    "protein": "Low to moderate",
+    "carbohydrates": "Moderate to high",
+    "fat": "Moderate to high"
+  },
+  "health_advice": {
+    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
+    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
+    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": false,
+    "vegan_possible": true,
+    "gluten_free_possible": true,
+    "note": "Exact dietary profile depends on crust, dairy choices, and preparation method"
+  },
+  "allergens": [
+    "Dairy",
+    "Possible gluten",
+    "Possible egg"
+  ],
+  "common_variations": [
+    "Baked cheesecake",
+    "No-bake cheesecake",
+    "Fruit cheesecake",
+    "Chocolate cheesecake"
+  ],
+  "serving_info": {
+    "typical_serving": "1 slice",
+    "best_served_with": [
+      "Coffee",
+      "Tea",
+      "Fruit garnish"
+    ]
+  },
+  "popular_regions": [
+    "Worldwide"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "food_name": "Pizza",
+  "category": "Street Food / Fast Casual",
+  "cuisine": "Italian",
+  "description": "A baked flatbread dish usually made with dough, sauce, cheese, and a range of toppings.",
+  "core_ingredients": [
+    "Pizza dough",
+    "Tomato sauce",
+    "Cheese"
+  ],
+  "optional_ingredients": [
+    "Pepperoni",
+    "Chicken",
+    "Mushrooms",
+    "Olives",
+    "Onions",
+    "Capsicum",
+    "Herbs"
+  ],
+  "preparation_steps": [
+    "Prepare the base or filling",
+    "Cook or assemble with seasoning",
+    "Finish with toppings and serve warm"
+  ],
+  "nutrition": {
+    "calories": "Moderate to high",
+    "protein": "Moderate",
+    "carbohydrates": "Moderate",
+    "fat": "Moderate"
+  },
+  "health_advice": {
+    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
+    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
+    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": true,
+    "vegan_possible": true,
+    "gluten_free_possible": true,
+    "note": "The exact dietary profile depends heavily on the crust, cheese, and toppings"
+  },
+  "allergens": [
+    "Gluten",
+    "Dairy"
+  ],
+  "common_variations": [
+    "Margherita",
+    "Pepperoni",
+    "Veggie",
+    "Chicken",
+    "Cheese"
+  ],
+  "serving_info": {
+    "typical_serving": "Slices",
+    "best_served_with": [
+      "Salad",
+      "Soft drinks",
+      "Dips"
+    ]
+  },
+  "popular_regions": [
+    "Italy",
+    "United States",
+    "Worldwide"
+  ]
+}

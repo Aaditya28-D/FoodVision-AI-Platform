@@ -1,0 +1,65 @@
+{
+  "food_name": "Ramen",
+  "category": "Soup / Broth Dish",
+  "cuisine": "Japanese",
+  "description": "A noodle soup dish served with broth, noodles, and a range of toppings such as meat, egg, or vegetables.",
+  "core_ingredients": [
+    "Noodles",
+    "Broth",
+    "Seasoning"
+  ],
+  "optional_ingredients": [
+    "Egg",
+    "Pork",
+    "Chicken",
+    "Seaweed",
+    "Spring onions",
+    "Mushrooms"
+  ],
+  "preparation_steps": [
+    "Build flavor with aromatics and liquid",
+    "Cook the main ingredients until balanced",
+    "Adjust seasoning and serve hot"
+  ],
+  "nutrition": {
+    "calories": "Low to moderate",
+    "protein": "Low to moderate",
+    "carbohydrates": "Low to moderate",
+    "fat": "Low to moderate"
+  },
+  "health_advice": {
+    "benefits": "Can be comforting, hydrating, and nutrient-dense depending on broth and ingredients.",
+    "risks": "Some soups can become high in sodium, cream, or refined starch depending on the recipe.",
+    "healthy_tip": "Choose broth-forward versions and pair them with vegetables or lean protein when possible."
+  },
+  "dietary_notes": {
+    "vegetarian_possible": true,
+    "non_vegetarian_possible": true,
+    "vegan_possible": true,
+    "gluten_free_possible": false,
+    "note": "The exact profile depends on broth and toppings"
+  },
+  "allergens": [
+    "Gluten",
+    "Possible egg",
+    "Possible soy"
+  ],
+  "common_variations": [
+    "Shoyu ramen",
+    "Miso ramen",
+    "Tonkotsu-style ramen",
+    "Vegetable ramen"
+  ],
+  "serving_info": {
+    "typical_serving": "1 bowl",
+    "best_served_with": [
+      "Side dishes",
+      "Tea",
+      "Light appetizers"
+    ]
+  },
+  "popular_regions": [
+    "Japan",
+    "Worldwide"
+  ]
+}
