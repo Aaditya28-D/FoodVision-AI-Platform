@@ -10,6 +10,7 @@ from ml.models.efficientnet import build_efficientnet_b0
 from ml.models.googlenet import build_googlenet
 from ml.models.mobilenet import build_mobilenet_v3_large
 from ml.models.resnet import build_resnet50
+from ml.models.vit import build_vit_b_16
 
 
 @dataclass
@@ -50,6 +51,12 @@ class ModelLoader:
             return (
                 build_resnet50(self.num_classes),
                 settings.RESNET50_WEIGHTS_PATH,
+            )
+
+        if model_name == ModelName.VIT_B_16:
+            return (
+                build_vit_b_16(self.num_classes),
+                settings.VIT_B_16_WEIGHTS_PATH,
             )
 
         if model_name == ModelName.GOOGLENET:

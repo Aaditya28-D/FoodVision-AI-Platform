@@ -22,6 +22,7 @@ class Settings(BaseSettings):
     MOBILENET_WEIGHTS_PATH: Path = MODEL_DIR / "mobilenet_v3_large_best.pth"
     EFFICIENTNET_B0_WEIGHTS_PATH: Path = MODEL_DIR / "efficientnet_b0_best.pth"
     RESNET50_WEIGHTS_PATH: Path = MODEL_DIR / "resnet50_best.pth"
+    VIT_B_16_WEIGHTS_PATH: Path = MODEL_DIR / "vit_b_16_best.pth"
     GOOGLENET_WEIGHTS_PATH: Path = MODEL_DIR / "googlenet_best.pth"
 
     model_config = SettingsConfigDict(

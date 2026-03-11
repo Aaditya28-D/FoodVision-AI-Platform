@@ -5,4 +5,5 @@ class ModelName(str, Enum):
     MOBILENET_V3_LARGE = "mobilenet_v3_large"
     EFFICIENTNET_B0 = "efficientnet_b0"
     RESNET50 = "resnet50"
+    VIT_B_16 = "vit_b_16"
     GOOGLENET = "googlenet"

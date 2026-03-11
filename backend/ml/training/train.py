@@ -59,6 +59,7 @@ def main() -> None:
     model = build_model(
         model_name=config.model_name,
         num_classes=config.num_classes,
+        use_pretrained=config.use_pretrained,
     )
 
     criterion = nn.CrossEntropyLoss()
@@ -97,12 +98,14 @@ def main() -> None:
 
     history = {
         "model_name": config.model_name,
+        "use_pretrained": config.use_pretrained,
         "device": device,
         "epochs": [],
     }
 
     print("Starting training")
     print(f"Model: {config.model_name}")
+    print(f"Use pretrained: {config.use_pretrained}")
     print(f"Device: {device}")
     print(f"Train samples: {len(train_dataset)}")
     print(f"Validation samples: {len(val_dataset)}")

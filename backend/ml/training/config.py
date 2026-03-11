@@ -16,13 +16,15 @@ class TrainingConfig:
     num_workers: int = 2
     num_classes: int = 101
 
-    model_name: str = "googlenet"
-    learning_rate: float = 1e-3
+    model_name: str = "mobilenet_v3_large"
+    use_pretrained: bool = True
+
+    learning_rate: float = 3e-4
     num_epochs: int = 10
     weight_decay: float = 1e-4
 
     checkpoint_dir: Path = settings.BACKEND_DIR / "models"
-    history_path: Path = settings.BACKEND_DIR / "models" / "googlenet_history.json"
+    history_path: Path = settings.BACKEND_DIR / "models" / "mobilenet_v3_large_pretrained_history.json"
 
     device: str = "auto"
     early_stopping_patience: int = 2
