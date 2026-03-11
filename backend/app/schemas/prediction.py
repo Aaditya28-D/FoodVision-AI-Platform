@@ -20,8 +20,17 @@ class ComparisonResult(BaseModel):
     predictions: List[PredictionItem]
     inference_time_ms: float
     device: str
+    top_prediction: PredictionItem
+
+
+class BattleSummary(BaseModel):
+    fastest_model: str
+    highest_confidence_model: str
+    all_models_agree: bool
+    majority_label: str
 
 
 class ComparisonResponse(BaseModel):
     top_k: int
     results: List[ComparisonResult]
+    summary: BattleSummary
