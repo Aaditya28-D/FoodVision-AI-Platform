@@ -13,3 +13,15 @@ class PredictionResponse(BaseModel):
     predictions: List[PredictionItem]
     inference_time_ms: float = Field(..., example=12.47)
     device: Optional[str] = Field(default="cpu", example="cpu")
+
+
+class ComparisonResult(BaseModel):
+    model_name: str
+    predictions: List[PredictionItem]
+    inference_time_ms: float
+    device: str
+
+
+class ComparisonResponse(BaseModel):
+    top_k: int
+    results: List[ComparisonResult]

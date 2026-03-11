@@ -5,7 +5,12 @@ import torch
 from PIL import Image
 
 from app.core.config import settings
-from app.schemas.prediction import PredictionItem, PredictionResponse
+from app.schemas.prediction import (
+    ComparisonResponse,
+    ComparisonResult,
+    PredictionItem,
+    PredictionResponse,
+)
 from ml.inference.class_names import load_class_names
 from ml.inference.model_loader import ModelLoader
 from ml.inference.model_registry import ModelName
@@ -18,16 +23,15 @@ class FoodPredictor:
         self.model_loader = ModelLoader(num_classes=len(self.class_names))
         self.transforms = get_inference_transforms(image_size=224)
 
-    def predict(
+    def _run_single_model(
         self,
         image: Image.Image,
-        model_name: ModelName = ModelName.MOBILENET_V3_LARGE,
+        model_name: ModelName,
         top_k: int = 5,
     ) -> PredictionResponse:
         start_time = perf_counter()
 
         loaded_model = self.model_loader.load_model(model_name)
-
         image_tensor = self.transforms(image).unsqueeze(0).to(loaded_model.device)
 
         with torch.no_grad():
@@ -54,4 +58,50 @@ class FoodPredictor:
             predictions=predictions,
             inference_time_ms=round(inference_time_ms, 3),
             device=loaded_model.device,
+        )
+
+    def predict(
+        self,
+        image: Image.Image,
+        model_name: ModelName = ModelName.MOBILENET_V3_LARGE,
+        top_k: int = 5,
+    ) -> PredictionResponse:
+        return self._run_single_model(
+            image=image,
+            model_name=model_name,
+            top_k=top_k,
+        )
+
+    def compare_models(
+        self,
+        image: Image.Image,
+        top_k: int = 5,
+    ) -> ComparisonResponse:
+        comparison_models = [
+            ModelName.EFFICIENTNET_B0,
+            ModelName.RESNET50,
+            ModelName.MOBILENET_V3_LARGE,
+        ]
+
+        results: List[ComparisonResult] = []
+
+        for model_name in comparison_models:
+            response = self._run_single_model(
+                image=image,
+                model_name=model_name,
+                top_k=top_k,
+            )
+
+            results.append(
+                ComparisonResult(
+                    model_name=response.model_name,
+                    predictions=response.predictions,
+                    inference_time_ms=response.inference_time_ms,
+                    device=response.device or "cpu",
+                )
+            )
+
+        return ComparisonResponse(
+            top_k=top_k,
+            results=results,
         )
