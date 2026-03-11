@@ -275,3 +275,6 @@ backend/models/*.pt
 backend/models/*.ckpt
 backend/models/*.onnx
 backend/models/*.engine
+
+backend/artifacts/
+backend/models/
