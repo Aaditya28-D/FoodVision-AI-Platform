@@ -1,5 +1,6 @@
 from pathlib import Path
 from typing import List
+from uuid import uuid4
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -108,7 +109,8 @@ class GradCAMExplainer:
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        output_filename = f"gradcam_{model_name.value}_{pred_index}.png"
+        unique_suffix = uuid4().hex[:8]
+        output_filename = f"gradcam_{model_name.value}_{pred_index}_{unique_suffix}.png"
         output_path = output_dir / output_filename
 
         fig, axes = plt.subplots(1, 2, figsize=(10, 5))
