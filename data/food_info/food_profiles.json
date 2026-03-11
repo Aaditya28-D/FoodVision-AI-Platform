@@ -1,0 +1,671 @@
+{
+  "pizza": {
+    "food_name": "Pizza",
+    "category": "Fast Food",
+    "cuisine": "Italian",
+    "description": "A baked flatbread dish usually made with dough, sauce, cheese, and a range of toppings.",
+    "core_ingredients": [
+      "Pizza dough",
+      "Tomato sauce",
+      "Cheese"
+    ],
+    "optional_ingredients": [
+      "Pepperoni",
+      "Chicken",
+      "Mushrooms",
+      "Olives",
+      "Onions",
+      "Capsicum",
+      "Herbs"
+    ],
+    "preparation_steps": [
+      "Prepare or stretch the dough base",
+      "Spread sauce over the dough",
+      "Add cheese and toppings",
+      "Bake until the crust is cooked and the cheese melts"
+    ],
+    "nutrition": {
+      "calories": "Varies by slice and toppings",
+      "protein": "Moderate",
+      "carbohydrates": "Moderate to high",
+      "fat": "Moderate to high"
+    },
+    "health_advice": {
+      "benefits": "Can provide energy, protein, and calcium",
+      "risks": "May be high in sodium, saturated fat, and refined carbohydrates depending on preparation",
+      "healthy_tip": "Choose more vegetables, lighter cheese, and whole-grain or thinner crust options when possible"
+    },
+    "dietary_notes": {
+      "vegetarian_possible": true,
+      "non_vegetarian_possible": true,
+      "vegan_possible": true,
+      "gluten_free_possible": true,
+      "note": "The exact dietary profile depends heavily on the crust, cheese, and toppings"
+    },
+    "allergens": [
+      "Gluten",
+      "Dairy"
+    ],
+    "common_variations": [
+      "Margherita",
+      "Pepperoni",
+      "Veggie",
+      "Chicken",
+      "Cheese"
+    ],
+    "serving_info": {
+      "typical_serving": "Slices",
+      "best_served_with": [
+        "Salad",
+        "Soft drinks",
+        "Dips"
+      ]
+    },
+    "popular_regions": [
+      "Italy",
+      "United States",
+      "Worldwide"
+    ]
+  },
+  "beignets": {
+    "food_name": "Beignets",
+    "category": "Pastry",
+    "cuisine": "French / New Orleans",
+    "description": "Deep-fried pieces of dough, often served hot and dusted with powdered sugar.",
+    "core_ingredients": [
+      "Flour",
+      "Yeast or leavening",
+      "Water or milk",
+      "Sugar",
+      "Oil for frying"
+    ],
+    "optional_ingredients": [
+      "Powdered sugar",
+      "Vanilla",
+      "Cinnamon",
+      "Sweet fillings"
+    ],
+    "preparation_steps": [
+      "Prepare and rest the dough",
+      "Cut the dough into pieces",
+      "Deep fry until golden",
+      "Dust with powdered sugar and serve warm"
+    ],
+    "nutrition": {
+      "calories": "Moderate to high depending on serving size",
+      "protein": "Low to moderate",
+      "carbohydrates": "High",
+      "fat": "Moderate to high"
+    },
+    "health_advice": {
+      "benefits": "Enjoyable dessert treat and quick energy source",
+      "risks": "Often high in refined flour, sugar, and frying oil",
+      "healthy_tip": "Enjoy in moderation and pair with lighter meals across the day"
+    },
+    "dietary_notes": {
+      "vegetarian_possible": true,
+      "non_vegetarian_possible": false,
+      "vegan_possible": true,
+      "gluten_free_possible": false,
+      "note": "Preparation varies, but traditional versions are usually sweet fried pastries"
+    },
+    "allergens": [
+      "Gluten",
+      "Possible dairy",
+      "Possible egg"
+    ],
+    "common_variations": [
+      "Powdered sugar beignets",
+      "Filled beignets",
+      "Mini beignets"
+    ],
+    "serving_info": {
+      "typical_serving": "Several pieces",
+      "best_served_with": [
+        "Coffee",
+        "Tea",
+        "Hot chocolate"
+      ]
+    },
+    "popular_regions": [
+      "France",
+      "Louisiana",
+      "United States"
+    ]
+  },
+  "donuts": {
+    "food_name": "Donuts",
+    "category": "Sweet Snack",
+    "cuisine": "International",
+    "description": "Fried or baked ring-shaped or filled sweet pastries commonly glazed, sugared, or frosted.",
+    "core_ingredients": [
+      "Flour",
+      "Sugar",
+      "Leavening",
+      "Milk or water",
+      "Oil or butter"
+    ],
+    "optional_ingredients": [
+      "Chocolate glaze",
+      "Cream filling",
+      "Jam filling",
+      "Sprinkles",
+      "Cinnamon sugar"
+    ],
+    "preparation_steps": [
+      "Prepare dough or batter",
+      "Shape rings or filled portions",
+      "Fry or bake until cooked",
+      "Add glaze, sugar, or toppings"
+    ],
+    "nutrition": {
+      "calories": "Moderate to high per piece",
+      "protein": "Low",
+      "carbohydrates": "High",
+      "fat": "Moderate to high"
+    },
+    "health_advice": {
+      "benefits": "Pleasant occasional dessert or snack",
+      "risks": "Often high in sugar, refined carbohydrates, and fat",
+      "healthy_tip": "Treat as an occasional indulgence rather than a routine snack"
+    },
+    "dietary_notes": {
+      "vegetarian_possible": true,
+      "non_vegetarian_possible": false,
+      "vegan_possible": true,
+      "gluten_free_possible": false,
+      "note": "Ingredients vary, but many common versions contain dairy or egg"
+    },
+    "allergens": [
+      "Gluten",
+      "Possible dairy",
+      "Possible egg"
+    ],
+    "common_variations": [
+      "Glazed",
+      "Chocolate",
+      "Filled",
+      "Cake donut",
+      "Yeast donut"
+    ],
+    "serving_info": {
+      "typical_serving": "1 donut",
+      "best_served_with": [
+        "Coffee",
+        "Milk",
+        "Tea"
+      ]
+    },
+    "popular_regions": [
+      "United States",
+      "Europe",
+      "Worldwide"
+    ]
+  },
+  "tuna_tartare": {
+    "food_name": "Tuna Tartare",
+    "category": "Seafood Appetizer",
+    "cuisine": "Modern / Fusion",
+    "description": "A finely chopped or diced raw tuna dish typically seasoned and served as an appetizer.",
+    "core_ingredients": [
+      "Raw tuna",
+      "Seasoning",
+      "Oil or dressing"
+    ],
+    "optional_ingredients": [
+      "Avocado",
+      "Sesame",
+      "Soy-based dressing",
+      "Citrus",
+      "Herbs"
+    ],
+    "preparation_steps": [
+      "Dice fresh tuna carefully",
+      "Season with dressing and aromatics",
+      "Plate neatly in a mold or stack",
+      "Serve chilled"
+    ],
+    "nutrition": {
+      "calories": "Moderate",
+      "protein": "High",
+      "carbohydrates": "Low",
+      "fat": "Moderate"
+    },
+    "health_advice": {
+      "benefits": "Often high in protein and can provide beneficial fats",
+      "risks": "Raw seafood requires careful freshness and food safety handling",
+      "healthy_tip": "Consume only from trusted sources with proper storage and preparation standards"
+    },
+    "dietary_notes": {
+      "vegetarian_possible": false,
+      "non_vegetarian_possible": true,
+      "vegan_possible": false,
+      "gluten_free_possible": true,
+      "note": "Dressings can change the gluten profile if soy-based sauces are used"
+    },
+    "allergens": [
+      "Fish",
+      "Possible sesame",
+      "Possible soy"
+    ],
+    "common_variations": [
+      "Avocado tuna tartare",
+      "Sesame tuna tartare",
+      "Citrus tuna tartare"
+    ],
+    "serving_info": {
+      "typical_serving": "Starter portion",
+      "best_served_with": [
+        "Crisps",
+        "Salad",
+        "Light sides"
+      ]
+    },
+    "popular_regions": [
+      "Japan-inspired cuisine",
+      "Contemporary restaurants",
+      "Global fine dining"
+    ]
+  },
+  "sushi": {
+    "food_name": "Sushi",
+    "category": "Main Dish / Light Meal",
+    "cuisine": "Japanese",
+    "description": "A Japanese dish typically built around vinegared rice and ingredients such as seafood, vegetables, or egg.",
+    "core_ingredients": [
+      "Vinegared rice",
+      "Seaweed or wrappers",
+      "Seafood or vegetables"
+    ],
+    "optional_ingredients": [
+      "Salmon",
+      "Tuna",
+      "Avocado",
+      "Cucumber",
+      "Egg",
+      "Sauces"
+    ],
+    "preparation_steps": [
+      "Prepare seasoned rice",
+      "Arrange fillings or toppings",
+      "Roll, shape, or assemble pieces",
+      "Serve fresh with condiments"
+    ],
+    "nutrition": {
+      "calories": "Varies by roll and ingredients",
+      "protein": "Moderate to high",
+      "carbohydrates": "Moderate",
+      "fat": "Low to moderate"
+    },
+    "health_advice": {
+      "benefits": "Can be relatively balanced with protein and lighter portions",
+      "risks": "Sauces, fried rolls, and raw seafood handling can affect healthfulness and safety",
+      "healthy_tip": "Choose simpler rolls, more fish or vegetables, and lighter sauces when possible"
+    },
+    "dietary_notes": {
+      "vegetarian_possible": true,
+      "non_vegetarian_possible": true,
+      "vegan_possible": true,
+      "gluten_free_possible": true,
+      "note": "The exact profile depends on fillings, sauces, and preparation style"
+    },
+    "allergens": [
+      "Fish",
+      "Possible soy",
+      "Possible sesame",
+      "Possible shellfish"
+    ],
+    "common_variations": [
+      "Nigiri",
+      "Maki",
+      "Uramaki",
+      "Vegetarian sushi"
+    ],
+    "serving_info": {
+      "typical_serving": "Several pieces",
+      "best_served_with": [
+        "Soy sauce",
+        "Pickled ginger",
+        "Wasabi"
+      ]
+    },
+    "popular_regions": [
+      "Japan",
+      "United States",
+      "Worldwide"
+    ]
+  },
+  "hamburger": {
+    "food_name": "Hamburger",
+    "category": "Fast Food",
+    "cuisine": "American",
+    "description": "A sandwich built with a bun and a central patty, often served with sauces, vegetables, and cheese.",
+    "core_ingredients": [
+      "Bun",
+      "Patty",
+      "Sauce"
+    ],
+    "optional_ingredients": [
+      "Cheese",
+      "Lettuce",
+      "Tomato",
+      "Onion",
+      "Pickles",
+      "Bacon"
+    ],
+    "preparation_steps": [
+      "Cook the patty",
+      "Toast or prepare the bun",
+      "Assemble sauces, vegetables, and fillings",
+      "Serve hot"
+    ],
+    "nutrition": {
+      "calories": "Moderate to high",
+      "protein": "Moderate to high",
+      "carbohydrates": "Moderate",
+      "fat": "Moderate to high"
+    },
+    "health_advice": {
+      "benefits": "Can provide protein and satiety",
+      "risks": "May be high in sodium, saturated fat, and calories depending on ingredients",
+      "healthy_tip": "Use leaner patties, more vegetables, and moderate sauces when possible"
+    },
+    "dietary_notes": {
+      "vegetarian_possible": true,
+      "non_vegetarian_possible": true,
+      "vegan_possible": true,
+      "gluten_free_possible": true,
+      "note": "Dietary profile depends on the patty type, bun, cheese, and sauces"
+    },
+    "allergens": [
+      "Gluten",
+      "Possible dairy",
+      "Possible egg"
+    ],
+    "common_variations": [
+      "Cheeseburger",
+      "Chicken burger",
+      "Veggie burger",
+      "Double burger"
+    ],
+    "serving_info": {
+      "typical_serving": "1 burger",
+      "best_served_with": [
+        "Fries",
+        "Salad",
+        "Soft drinks"
+      ]
+    },
+    "popular_regions": [
+      "United States",
+      "Worldwide"
+    ]
+  },
+  "tacos": {
+    "food_name": "Tacos",
+    "category": "Street Food / Main Dish",
+    "cuisine": "Mexican",
+    "description": "A folded or open tortilla dish filled with meats, beans, vegetables, sauces, or cheese.",
+    "core_ingredients": [
+      "Tortilla",
+      "Filling",
+      "Sauce or salsa"
+    ],
+    "optional_ingredients": [
+      "Chicken",
+      "Beef",
+      "Beans",
+      "Cheese",
+      "Lettuce",
+      "Onion",
+      "Coriander"
+    ],
+    "preparation_steps": [
+      "Prepare the filling",
+      "Warm the tortilla",
+      "Assemble fillings and toppings",
+      "Serve fresh"
+    ],
+    "nutrition": {
+      "calories": "Varies by filling and tortilla type",
+      "protein": "Moderate",
+      "carbohydrates": "Moderate",
+      "fat": "Low to moderate"
+    },
+    "health_advice": {
+      "benefits": "Can be balanced with protein, vegetables, and portion control",
+      "risks": "Heavy cheese, fried fillings, and rich sauces can increase calories and sodium",
+      "healthy_tip": "Choose grilled fillings, more vegetables, and lighter toppings where possible"
+    },
+    "dietary_notes": {
+      "vegetarian_possible": true,
+      "non_vegetarian_possible": true,
+      "vegan_possible": true,
+      "gluten_free_possible": true,
+      "note": "Exact dietary profile depends on tortilla type and fillings"
+    },
+    "allergens": [
+      "Possible gluten",
+      "Possible dairy"
+    ],
+    "common_variations": [
+      "Chicken tacos",
+      "Beef tacos",
+      "Fish tacos",
+      "Bean tacos",
+      "Veggie tacos"
+    ],
+    "serving_info": {
+      "typical_serving": "2 to 3 tacos",
+      "best_served_with": [
+        "Salsa",
+        "Guacamole",
+        "Rice",
+        "Beans"
+      ]
+    },
+    "popular_regions": [
+      "Mexico",
+      "United States",
+      "Worldwide"
+    ]
+  },
+  "steak": {
+    "food_name": "Steak",
+    "category": "Main Dish",
+    "cuisine": "International",
+    "description": "A cut of meat, usually beef, cooked by grilling, pan-searing, or roasting and served as a main dish.",
+    "core_ingredients": [
+      "Beef steak",
+      "Seasoning",
+      "Oil or butter"
+    ],
+    "optional_ingredients": [
+      "Pepper",
+      "Garlic",
+      "Herb butter",
+      "Sauces",
+      "Mushrooms"
+    ],
+    "preparation_steps": [
+      "Season the steak",
+      "Cook to desired doneness",
+      "Rest before slicing or serving",
+      "Serve with sides or sauces"
+    ],
+    "nutrition": {
+      "calories": "Moderate to high depending on cut",
+      "protein": "High",
+      "carbohydrates": "Low",
+      "fat": "Moderate to high"
+    },
+    "health_advice": {
+      "benefits": "High in protein and can provide iron and other nutrients",
+      "risks": "Some cuts can be high in saturated fat depending on preparation",
+      "healthy_tip": "Choose leaner cuts and pair with vegetables and balanced portions"
+    },
+    "dietary_notes": {
+      "vegetarian_possible": false,
+      "non_vegetarian_possible": true,
+      "vegan_possible": false,
+      "gluten_free_possible": true,
+      "note": "Sauces and sides can change the final dietary profile"
+    },
+    "allergens": [
+      "Possible dairy",
+      "Possible gluten in sauces"
+    ],
+    "common_variations": [
+      "Grilled steak",
+      "Pan-seared steak",
+      "Steak with sauce",
+      "Filet-style steak"
+    ],
+    "serving_info": {
+      "typical_serving": "1 steak portion",
+      "best_served_with": [
+        "Vegetables",
+        "Potatoes",
+        "Salad"
+      ]
+    },
+    "popular_regions": [
+      "United States",
+      "Europe",
+      "Worldwide"
+    ]
+  },
+  "ramen": {
+    "food_name": "Ramen",
+    "category": "Soup / Noodle Dish",
+    "cuisine": "Japanese",
+    "description": "A noodle soup dish served with broth, noodles, and a range of toppings such as meat, egg, or vegetables.",
+    "core_ingredients": [
+      "Noodles",
+      "Broth",
+      "Seasoning"
+    ],
+    "optional_ingredients": [
+      "Egg",
+      "Pork",
+      "Chicken",
+      "Seaweed",
+      "Spring onions",
+      "Mushrooms"
+    ],
+    "preparation_steps": [
+      "Prepare broth",
+      "Cook noodles",
+      "Add toppings",
+      "Serve hot in a bowl"
+    ],
+    "nutrition": {
+      "calories": "Moderate to high depending on broth and toppings",
+      "protein": "Moderate",
+      "carbohydrates": "Moderate to high",
+      "fat": "Low to moderate"
+    },
+    "health_advice": {
+      "benefits": "Can provide comforting hydration, carbohydrates, and protein",
+      "risks": "Some broths can be high in sodium and rich toppings can increase calories",
+      "healthy_tip": "Choose lighter broth options and add vegetables where possible"
+    },
+    "dietary_notes": {
+      "vegetarian_possible": true,
+      "non_vegetarian_possible": true,
+      "vegan_possible": true,
+      "gluten_free_possible": false,
+      "note": "The exact profile depends on broth and toppings"
+    },
+    "allergens": [
+      "Gluten",
+      "Possible egg",
+      "Possible soy"
+    ],
+    "common_variations": [
+      "Shoyu ramen",
+      "Miso ramen",
+      "Tonkotsu-style ramen",
+      "Vegetable ramen"
+    ],
+    "serving_info": {
+      "typical_serving": "1 bowl",
+      "best_served_with": [
+        "Side dishes",
+        "Tea",
+        "Light appetizers"
+      ]
+    },
+    "popular_regions": [
+      "Japan",
+      "Worldwide"
+    ]
+  },
+  "cheesecake": {
+    "food_name": "Cheesecake",
+    "category": "Dessert",
+    "cuisine": "International",
+    "description": "A rich dessert with a creamy cheese-based filling often set on a crumb or biscuit base.",
+    "core_ingredients": [
+      "Cream cheese or soft cheese",
+      "Sugar",
+      "Eggs or setting agent",
+      "Crust or base"
+    ],
+    "optional_ingredients": [
+      "Fruit topping",
+      "Vanilla",
+      "Chocolate",
+      "Caramel",
+      "Cream"
+    ],
+    "preparation_steps": [
+      "Prepare the crust or base",
+      "Mix the filling",
+      "Bake or chill depending on style",
+      "Cool and serve"
+    ],
+    "nutrition": {
+      "calories": "High",
+      "protein": "Low to moderate",
+      "carbohydrates": "Moderate",
+      "fat": "High"
+    },
+    "health_advice": {
+      "benefits": "Enjoyable dessert and may provide some calcium",
+      "risks": "Often high in sugar and fat",
+      "healthy_tip": "Enjoy smaller portions and balance with lighter meals"
+    },
+    "dietary_notes": {
+      "vegetarian_possible": true,
+      "non_vegetarian_possible": false,
+      "vegan_possible": true,
+      "gluten_free_possible": true,
+      "note": "Exact dietary profile depends on crust, dairy choices, and preparation method"
+    },
+    "allergens": [
+      "Dairy",
+      "Possible gluten",
+      "Possible egg"
+    ],
+    "common_variations": [
+      "Baked cheesecake",
+      "No-bake cheesecake",
+      "Fruit cheesecake",
+      "Chocolate cheesecake"
+    ],
+    "serving_info": {
+      "typical_serving": "1 slice",
+      "best_served_with": [
+        "Coffee",
+        "Tea",
+        "Fruit garnish"
+      ]
+    },
+    "popular_regions": [
+      "Europe",
+      "United States",
+      "Worldwide"
+    ]
+  }
+}
