@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import List
 
 
 class ExplainResponse(BaseModel):
@@ -7,3 +8,7 @@ class ExplainResponse(BaseModel):
     confidence: float
     heatmap_path: str
     heatmap_url: str
+
+
+class CompareExplainResponse(BaseModel):
+    results: List[ExplainResponse]
