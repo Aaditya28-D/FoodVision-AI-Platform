@@ -1,0 +1,10 @@
+{
+  "name": "foodvision-ai-platform",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n BACKEND,FRONTEND -c green,blue \"cd backend && source .venv/bin/activate && python -m uvicorn app.main:app --reload\" \"cd web && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

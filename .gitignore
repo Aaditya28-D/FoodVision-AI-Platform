@@ -297,3 +297,7 @@ data/raw/
 !data/metadata/train.txt
 !data/metadata/test.txt
 !data/sample_images/
+
+backend/.venv/
+web/node_modules/
+node_modules/
