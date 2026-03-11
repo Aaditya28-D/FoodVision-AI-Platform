@@ -6,3 +6,4 @@ class ExplainResponse(BaseModel):
     predicted_class: str
     confidence: float
     heatmap_path: str
+    heatmap_url: str

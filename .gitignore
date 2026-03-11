@@ -278,3 +278,22 @@ backend/models/*.engine
 
 backend/artifacts/
 backend/models/
+
+# Local artifacts and model files
+backend/artifacts/
+backend/models/
+
+# Data
+data/food-101/
+data/embeddings/
+data/interim/
+data/processed/
+data/raw/
+
+# Keep lightweight metadata and samples
+!data/metadata/
+!data/metadata/classes.txt
+!data/metadata/labels.txt
+!data/metadata/train.txt
+!data/metadata/test.txt
+!data/sample_images/

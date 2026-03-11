@@ -20,20 +20,40 @@ class GradCAMExplainer:
         self.model_loader = ModelLoader(num_classes=len(self.class_names))
         self.transforms = get_inference_transforms(image_size=224)
 
+    def _get_target_layer(self, model: torch.nn.Module, model_name: ModelName):
+        if model_name == ModelName.EFFICIENTNET_B0:
+            return model.features[-1]
+
+        if model_name == ModelName.RESNET50:
+            return model.layer4[-1]
+
+        if model_name == ModelName.MOBILENET_V3_LARGE:
+            return model.features[-1]
+
+        raise ValueError(
+            "Grad-CAM currently supports efficientnet_b0, resnet50, and mobilenet_v3_large only."
+        )
+
     def explain(
         self,
         image: Image.Image,
         output_dir: str | Path,
         model_name: ModelName = ModelName.EFFICIENTNET_B0,
     ) -> dict:
-        if model_name != ModelName.EFFICIENTNET_B0:
-            raise ValueError("Grad-CAM currently supports efficientnet_b0 only.")
+        if model_name not in {
+            ModelName.EFFICIENTNET_B0,
+            ModelName.RESNET50,
+            ModelName.MOBILENET_V3_LARGE,
+        }:
+            raise ValueError(
+                "Grad-CAM currently supports efficientnet_b0, resnet50, and mobilenet_v3_large only."
+            )
 
         loaded_model = self.model_loader.load_model(model_name)
         model = loaded_model.model
         device = loaded_model.device
 
-        target_layer = model.features[-1]
+        target_layer = self._get_target_layer(model, model_name)
 
         activations = []
         gradients = []
@@ -62,14 +82,13 @@ class GradCAMExplainer:
         forward_handle.remove()
         backward_handle.remove()
 
-        activation = activations[0]          # shape: [1, C, H, W]
-        gradient = gradients[0]              # shape: [1, C, H, W]
+        activation = activations[0]
+        gradient = gradients[0]
 
         weights = torch.mean(gradient, dim=(2, 3), keepdim=True)
-        cam = torch.sum(weights * activation, dim=1, keepdim=True)  # [1,1,H,W]
+        cam = torch.sum(weights * activation, dim=1, keepdim=True)
         cam = F.relu(cam)
 
-        # Resize CAM to image size
         cam = F.interpolate(
             cam,
             size=(224, 224),
@@ -90,7 +109,8 @@ class GradCAMExplainer:
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        output_path = output_dir / f"gradcam_{model_name.value}_{pred_index}.png"
+        output_filename = f"gradcam_{model_name.value}_{pred_index}.png"
+        output_path = output_dir / output_filename
         plt.imsave(output_path, overlay)
 
         return {
@@ -98,4 +118,5 @@ class GradCAMExplainer:
             "predicted_class": self.class_names[pred_index],
             "confidence": round(confidence, 6),
             "heatmap_path": str(output_path),
+            "heatmap_filename": output_filename,
         }
