@@ -109,18 +109,18 @@ def main() -> None:
     print("-" * 60)
 
     for epoch in range(start_epoch, config.num_epochs + 1):
-        train_loss, train_acc = trainer.train_one_epoch(train_loader)
-        val_loss, val_acc = trainer.validate(val_loader)
+        train_loss, train_top1 = trainer.train_one_epoch(train_loader)
+        val_loss, val_top1, val_top5 = trainer.validate(val_loader)
 
-        scheduler.step(val_acc)
+        scheduler.step(val_top1)
 
         trainer.save_checkpoint(
             model_name=config.model_name,
             epoch=epoch,
             train_loss=train_loss,
-            train_acc=train_acc,
+            train_acc=train_top1,
             val_loss=val_loss,
-            val_accuracy=val_acc,
+            val_accuracy=val_top1,
         )
 
         current_lr = optimizer.param_groups[0]["lr"]
@@ -128,9 +128,10 @@ def main() -> None:
         epoch_record = {
             "epoch": epoch,
             "train_loss": round(train_loss, 6),
-            "train_accuracy": round(train_acc, 6),
+            "train_top1_accuracy": round(train_top1, 6),
             "val_loss": round(val_loss, 6),
-            "val_accuracy": round(val_acc, 6),
+            "val_top1_accuracy": round(val_top1, 6),
+            "val_top5_accuracy": round(val_top5, 6),
             "learning_rate": current_lr,
         }
         history["epochs"].append(epoch_record)
@@ -138,13 +139,14 @@ def main() -> None:
         print(
             f"Epoch {epoch}/{config.num_epochs} | "
             f"train_loss={train_loss:.4f} | "
-            f"train_acc={train_acc:.4f} | "
+            f"train_top1={train_top1:.4f} | "
             f"val_loss={val_loss:.4f} | "
-            f"val_acc={val_acc:.4f} | "
+            f"val_top1={val_top1:.4f} | "
+            f"val_top5={val_top5:.4f} | "
             f"lr={current_lr:.6f}"
         )
 
-        if early_stopper.step(val_acc):
+        if early_stopper.step(val_top1):
             print("-" * 60)
             print(f"Early stopping triggered at epoch {epoch}")
             break

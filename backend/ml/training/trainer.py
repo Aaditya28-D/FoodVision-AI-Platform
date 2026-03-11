@@ -22,14 +22,19 @@ class Trainer:
         self.checkpoint_dir.mkdir(parents=True, exist_ok=True)
 
         self.best_val_accuracy = 0.0
-
         self.model.to(self.device)
+
+    @staticmethod
+    def _top_k_correct(outputs: torch.Tensor, labels: torch.Tensor, k: int) -> int:
+        _, topk_indices = torch.topk(outputs, k=k, dim=1)
+        correct = topk_indices.eq(labels.view(-1, 1)).sum().item()
+        return int(correct)
 
     def train_one_epoch(self, train_loader: DataLoader) -> tuple[float, float]:
         self.model.train()
 
         running_loss = 0.0
-        correct = 0
+        top1_correct = 0
         total = 0
 
         for images, labels in train_loader:
@@ -47,20 +52,21 @@ class Trainer:
             running_loss += loss.item() * images.size(0)
 
             _, preds = torch.max(outputs, dim=1)
-            correct += (preds == labels).sum().item()
+            top1_correct += (preds == labels).sum().item()
             total += labels.size(0)
 
         epoch_loss = running_loss / total
-        epoch_accuracy = correct / total
+        epoch_top1_accuracy = top1_correct / total
 
-        return epoch_loss, epoch_accuracy
+        return epoch_loss, epoch_top1_accuracy
 
     @torch.no_grad()
-    def validate(self, val_loader: DataLoader) -> tuple[float, float]:
+    def validate(self, val_loader: DataLoader) -> tuple[float, float, float]:
         self.model.eval()
 
         running_loss = 0.0
-        correct = 0
+        top1_correct = 0
+        top5_correct = 0
         total = 0
 
         for images, labels in val_loader:
@@ -73,13 +79,15 @@ class Trainer:
             running_loss += loss.item() * images.size(0)
 
             _, preds = torch.max(outputs, dim=1)
-            correct += (preds == labels).sum().item()
+            top1_correct += (preds == labels).sum().item()
+            top5_correct += self._top_k_correct(outputs, labels, k=5)
             total += labels.size(0)
 
         epoch_loss = running_loss / total
-        epoch_accuracy = correct / total
+        epoch_top1_accuracy = top1_correct / total
+        epoch_top5_accuracy = top5_correct / total
 
-        return epoch_loss, epoch_accuracy
+        return epoch_loss, epoch_top1_accuracy, epoch_top5_accuracy
 
     def save_checkpoint(
         self,
