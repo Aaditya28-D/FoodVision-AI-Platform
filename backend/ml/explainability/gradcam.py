@@ -97,7 +97,6 @@ class GradCAMExplainer:
         )
 
         cam = cam.squeeze().detach().cpu().numpy()
-
         cam -= cam.min()
         cam /= (cam.max() + 1e-8)
 
@@ -111,7 +110,23 @@ class GradCAMExplainer:
 
         output_filename = f"gradcam_{model_name.value}_{pred_index}.png"
         output_path = output_dir / output_filename
-        plt.imsave(output_path, overlay)
+
+        fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+
+        axes[0].imshow(original_np)
+        axes[0].set_title("Original Image", fontsize=12)
+        axes[0].axis("off")
+
+        axes[1].imshow(overlay)
+        axes[1].set_title(
+            f"{model_name.value}\n{self.class_names[pred_index]} ({confidence:.4f})",
+            fontsize=12,
+        )
+        axes[1].axis("off")
+
+        fig.tight_layout()
+        fig.savefig(output_path, dpi=180, bbox_inches="tight")
+        plt.close(fig)
 
         return {
             "model_name": model_name.value,
