@@ -12,6 +12,11 @@ function formatConfidence(value) {
   return `${(Number(value) * 100).toFixed(2)}%`;
 }
 
+function formatSimilarity(value) {
+  if (value == null) return "-";
+  return `${(Number(value) * 100).toFixed(1)}%`;
+}
+
 function prettifyLabel(value) {
   if (!value) return "-";
   return value.replaceAll("_", " ");
@@ -411,13 +416,85 @@ function ExplainabilityTab({ battle }) {
   );
 }
 
+function SimilarDishesTab({ retrieval }) {
+  if (!retrieval?.results?.length) {
+    return (
+      <PageCard className="p-4">
+        <SectionHeader
+          eyebrow="Retrieval"
+          title="Similar Dishes"
+          description="No similar dish results are available yet."
+        />
+      </PageCard>
+    );
+  }
+
+  return (
+    <div className="space-y-5">
+      <PageCard className="p-4">
+        <SectionHeader
+          eyebrow="Retrieval"
+          title="Similar Dishes"
+          description="These are the closest visual matches from the indexed Food-101 dataset."
+        />
+
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          {retrieval.results.map((item) => {
+            const imageUrl = `${API_BASE_URL}${item.image_url}`;
+
+            return (
+              <div
+                key={`${item.rank}-${item.image_path}`}
+                className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={imageUrl}
+                    alt={item.class_name}
+                    className="h-52 w-full object-cover"
+                  />
+                </div>
+
+                <div className="space-y-3 p-4">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="rounded-full bg-slate-900 px-2.5 py-1 text-xs font-medium text-white">
+                      #{item.rank}
+                    </span>
+                    <span className="text-sm font-semibold text-cyan-700">
+                      {formatSimilarity(item.similarity)}
+                    </span>
+                  </div>
+
+                  <div>
+                    <p className="text-xs uppercase tracking-wide text-slate-500">Matched class</p>
+                    <p className="mt-1 text-lg font-semibold text-slate-900">
+                      {prettifyLabel(item.class_name)}
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs uppercase tracking-wide text-slate-500">Dataset image</p>
+                    <p className="mt-1 break-all text-sm text-slate-600">
+                      {item.image_path}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </PageCard>
+    </div>
+  );
+}
+
 function LoadingState() {
   return (
     <PageCard className="p-8 text-center">
       <div className="mx-auto h-12 w-12 animate-spin rounded-full border-4 border-cyan-200 border-t-cyan-500" />
       <h2 className="mt-4 text-xl font-semibold text-slate-900">Analyzing image</h2>
       <p className="mt-2 text-sm text-slate-600">
-        Running model comparison, generating food details, and preparing explainability results.
+        Running model comparison, generating food details, preparing explainability, and retrieving similar dishes.
       </p>
     </PageCard>
   );
@@ -429,6 +506,7 @@ export default function App() {
   const [topK, setTopK] = useState(5);
   const [loading, setLoading] = useState(false);
   const [analyzeData, setAnalyzeData] = useState(null);
+  const [retrievalData, setRetrievalData] = useState(null);
   const [error, setError] = useState("");
   const [activeTab, setActiveTab] = useState("overview");
 
@@ -438,6 +516,7 @@ export default function App() {
     const file = event.target.files?.[0] || null;
     setSelectedFile(file);
     setAnalyzeData(null);
+    setRetrievalData(null);
     setError("");
     setActiveTab("overview");
 
@@ -461,22 +540,38 @@ export default function App() {
       setLoading(true);
       setError("");
       setAnalyzeData(null);
+      setRetrievalData(null);
 
-      const formData = new FormData();
-      formData.append("image", selectedFile);
+      const analyzeFormData = new FormData();
+      analyzeFormData.append("image", selectedFile);
 
-      const response = await fetch(`${API_BASE_URL}/analyze?top_k=${topK}`, {
+      const analyzeResponse = await fetch(`${API_BASE_URL}/analyze?top_k=${topK}`, {
         method: "POST",
-        body: formData,
+        body: analyzeFormData,
       });
 
-      const data = await response.json();
+      const analyzeJson = await analyzeResponse.json();
 
-      if (!response.ok) {
-        throw new Error(data.detail || "Analyze request failed.");
+      if (!analyzeResponse.ok) {
+        throw new Error(analyzeJson.detail || "Analyze request failed.");
       }
 
-      setAnalyzeData(data);
+      const retrievalFormData = new FormData();
+      retrievalFormData.append("image", selectedFile);
+
+      const retrievalResponse = await fetch(`${API_BASE_URL}/retrieve/similar?top_k=6`, {
+        method: "POST",
+        body: retrievalFormData,
+      });
+
+      const retrievalJson = await retrievalResponse.json();
+
+      if (!retrievalResponse.ok) {
+        throw new Error(retrievalJson.detail || "Retrieval request failed.");
+      }
+
+      setAnalyzeData(analyzeJson);
+      setRetrievalData(retrievalJson);
       setActiveTab("overview");
     } catch (err) {
       setError(err.message || "Something went wrong.");
@@ -497,7 +592,7 @@ export default function App() {
           </h1>
           <p className="mt-2 max-w-3xl text-sm leading-7 text-slate-200 md:text-base">
             Upload a food image to identify the main food, understand confidence, explore food information,
-            and inspect explainability across multiple models.
+            inspect explainability, and retrieve visually similar dishes.
           </p>
         </header>
 
@@ -575,12 +670,16 @@ export default function App() {
                     <TabButton active={activeTab === "explainability"} onClick={() => setActiveTab("explainability")}>
                       Explainability
                     </TabButton>
+                    <TabButton active={activeTab === "similar"} onClick={() => setActiveTab("similar")}>
+                      Similar Dishes
+                    </TabButton>
                   </div>
                 </PageCard>
 
                 {activeTab === "overview" ? <OverviewTab data={analyzeData} previewUrl={preview} /> : null}
                 {activeTab === "details" ? <FoodDetailsTab profile={analyzeData.food_profile} /> : null}
                 {activeTab === "explainability" ? <ExplainabilityTab battle={analyzeData.battle} /> : null}
+                {activeTab === "similar" ? <SimilarDishesTab retrieval={retrievalData} /> : null}
               </>
             ) : null}
 
@@ -588,7 +687,7 @@ export default function App() {
               <PageCard className="p-8 text-center">
                 <h2 className="text-xl font-semibold text-slate-900 font-serif">Ready to analyze</h2>
                 <p className="mt-2 text-sm text-slate-600">
-                  Upload a food image to generate a prediction, food details, and explainability view.
+                  Upload a food image to generate a prediction, food details, explainability, and similar-dish retrieval.
                 </p>
               </PageCard>
             ) : null}
