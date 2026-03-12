@@ -416,7 +416,36 @@ function ExplainabilityTab({ battle }) {
   );
 }
 
-function SimilarDishesTab({ retrieval }) {
+function SimilarSummaryCard({ retrieval, predictedClass }) {
+  const total = retrieval?.results?.length || 0;
+  const exactMatches = retrieval?.results?.filter(
+    (item) => item.class_name === predictedClass
+  ).length || 0;
+
+  return (
+    <PageCard className="p-4">
+      <SectionHeader
+        eyebrow="Retrieval summary"
+        title="Similarity Overview"
+        description="Quick summary of how the nearest visual matches compare with the predicted class."
+      />
+      <div className="grid gap-3 md:grid-cols-3">
+        <MetricCard label="Retrieved images" value={String(total)} compact />
+        <MetricCard label="Same-class matches" value={String(exactMatches)} tone="text-emerald-700" compact />
+        <MetricCard
+          label="Predicted class"
+          value={prettifyLabel(predictedClass)}
+          tone="text-cyan-700"
+          compact
+        />
+      </div>
+    </PageCard>
+  );
+}
+
+function SimilarDishesTab({ retrieval, predictedClass }) {
+  const [showAll, setShowAll] = useState(false);
+
   if (!retrieval?.results?.length) {
     return (
       <PageCard className="p-4">
@@ -429,8 +458,12 @@ function SimilarDishesTab({ retrieval }) {
     );
   }
 
+  const visibleResults = showAll ? retrieval.results : retrieval.results.slice(0, 3);
+
   return (
     <div className="space-y-5">
+      <SimilarSummaryCard retrieval={retrieval} predictedClass={predictedClass} />
+
       <PageCard className="p-4">
         <SectionHeader
           eyebrow="Retrieval"
@@ -439,21 +472,22 @@ function SimilarDishesTab({ retrieval }) {
         />
 
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {retrieval.results.map((item) => {
+          {visibleResults.map((item) => {
             const imageUrl = `${API_BASE_URL}${item.image_url}`;
+            const isSameClass = item.class_name === predictedClass;
 
             return (
               <div
                 key={`${item.rank}-${item.image_path}`}
                 className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50"
               >
-                <div className="overflow-hidden">
+                <a href={imageUrl} target="_blank" rel="noreferrer" className="block overflow-hidden">
                   <img
                     src={imageUrl}
                     alt={item.class_name}
-                    className="h-52 w-full object-cover"
+                    className="h-52 w-full object-cover transition hover:scale-[1.02]"
                   />
-                </div>
+                </a>
 
                 <div className="space-y-3 p-4">
                   <div className="flex items-center justify-between gap-3">
@@ -464,6 +498,14 @@ function SimilarDishesTab({ retrieval }) {
                       {formatSimilarity(item.similarity)}
                     </span>
                   </div>
+
+                  {isSameClass ? (
+                    <div>
+                      <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700">
+                        Matches predicted class
+                      </span>
+                    </div>
+                  ) : null}
 
                   <div>
                     <p className="text-xs uppercase tracking-wide text-slate-500">Matched class</p>
@@ -483,6 +525,18 @@ function SimilarDishesTab({ retrieval }) {
             );
           })}
         </div>
+
+        {retrieval.results.length > 3 ? (
+          <div className="mt-5 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll((prev) => !prev)}
+              className="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+            >
+              {showAll ? "Show less" : `Show all ${retrieval.results.length}`}
+            </button>
+          </div>
+        ) : null}
       </PageCard>
     </div>
   );
@@ -679,7 +733,12 @@ export default function App() {
                 {activeTab === "overview" ? <OverviewTab data={analyzeData} previewUrl={preview} /> : null}
                 {activeTab === "details" ? <FoodDetailsTab profile={analyzeData.food_profile} /> : null}
                 {activeTab === "explainability" ? <ExplainabilityTab battle={analyzeData.battle} /> : null}
-                {activeTab === "similar" ? <SimilarDishesTab retrieval={retrievalData} /> : null}
+                {activeTab === "similar" ? (
+                  <SimilarDishesTab
+                    retrieval={retrievalData}
+                    predictedClass={analyzeData.predicted_class}
+                  />
+                ) : null}
               </>
             ) : null}
 
