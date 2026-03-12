@@ -36,8 +36,12 @@ async def retrieve_similar_dishes(
     try:
         pil_image = await validate_and_read_image(image)
 
-        prediction = predictor.predict(image=pil_image, top_k=1)
-        predicted_class = prediction.predictions[0].class_name if prediction.predictions else None
+        smart_prediction = predictor.predict_smart(image=pil_image, top_k=1)
+        predicted_class = (
+            smart_prediction.predictions[0].class_name
+            if smart_prediction.predictions
+            else None
+        )
 
         results = retriever.retrieve(
             image=pil_image,

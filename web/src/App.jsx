@@ -22,6 +22,40 @@ function prettifyLabel(value) {
   return value.replaceAll("_", " ");
 }
 
+function prettifyModelName(value) {
+  if (!value) return "-";
+  return value.replaceAll("_", " ");
+}
+
+function getPredictionSourceBadge(modelName) {
+  if (!modelName) {
+    return {
+      text: "Prediction source unavailable",
+      className: "border-slate-200 bg-slate-50 text-slate-700",
+    };
+  }
+
+  if (modelName.startsWith("smart_router->")) {
+    const routedModel = modelName.split("->")[1] || modelName;
+    return {
+      text: `Powered by smart routing (${prettifyModelName(routedModel)})`,
+      className: "border-violet-200 bg-violet-50 text-violet-700",
+    };
+  }
+
+  if (modelName.startsWith("ensemble")) {
+    return {
+      text: "Powered by ensemble",
+      className: "border-indigo-200 bg-indigo-50 text-indigo-700",
+    };
+  }
+
+  return {
+    text: `Powered by ${prettifyModelName(modelName)}`,
+    className: "border-slate-200 bg-slate-50 text-slate-700",
+  };
+}
+
 function ConfidenceBadge({ label }) {
   const styles = {
     "Extremely sure": "border-emerald-200 bg-emerald-50 text-emerald-700",
@@ -140,10 +174,10 @@ function BattleSummaryCard({ summary }) {
     <PageCard className="p-4">
       <SectionHeader eyebrow="Model comparison" title="Battle Summary" />
       <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
-        <MetricCard label="Fastest model" value={summary.fastest_model} tone="text-cyan-700" compact />
+        <MetricCard label="Fastest model" value={prettifyModelName(summary.fastest_model)} tone="text-cyan-700" compact />
         <MetricCard
           label="Highest confidence"
-          value={summary.highest_confidence_model}
+          value={prettifyModelName(summary.highest_confidence_model)}
           tone="text-emerald-700"
           compact
         />
@@ -165,6 +199,8 @@ function BattleSummaryCard({ summary }) {
 }
 
 function OverviewTab({ data, previewUrl }) {
+  const sourceBadge = getPredictionSourceBadge(data.model_name);
+
   return (
     <div className="space-y-5">
       <PageCard className="overflow-hidden p-4">
@@ -189,8 +225,8 @@ function OverviewTab({ data, previewUrl }) {
               <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-sm text-slate-700">
                 Confidence: {formatConfidence(data.confidence)}
               </span>
-              <span className="rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-sm font-medium text-indigo-700">
-                Powered by ensemble
+              <span className={`rounded-full border px-3 py-1 text-sm font-medium ${sourceBadge.className}`}>
+                {sourceBadge.text}
               </span>
             </div>
 
@@ -201,7 +237,7 @@ function OverviewTab({ data, previewUrl }) {
             <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
               <MetricCard
                 label="Prediction source"
-                value={data.model_name || "-"}
+                value={prettifyModelName(data.model_name) || "-"}
                 tone="text-indigo-700"
                 compact
               />
@@ -399,7 +435,7 @@ function ExplainabilityTab({ battle }) {
           <PageCard key={item.comparison.model_name} className="p-4">
             <SectionHeader
               eyebrow="Model reasoning"
-              title={item.comparison.model_name}
+              title={prettifyModelName(item.comparison.model_name)}
               description="Confidence, top predictions, and Grad-CAM attention map."
             />
 

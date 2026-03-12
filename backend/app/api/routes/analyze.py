@@ -47,7 +47,7 @@ async def analyze_food_image(
     try:
         pil_image = await validate_and_read_image(image)
 
-        ensemble_prediction = predictor.predict_ensemble(
+        smart_prediction = predictor.predict_smart(
             image=pil_image,
             top_k=top_k,
         )
@@ -94,7 +94,7 @@ async def analyze_food_image(
             summary=comparison_response.summary,
         )
 
-        top_prediction = ensemble_prediction.predictions[0]
+        top_prediction = smart_prediction.predictions[0]
         predicted_class = top_prediction.class_name
         confidence = top_prediction.confidence
         confidence_text = confidence_label(confidence)
@@ -102,7 +102,7 @@ async def analyze_food_image(
         summary = build_short_summary(predicted_class, confidence_text, food_profile)
 
         return AnalyzeResponse(
-            model_name=ensemble_prediction.model_name,
+            model_name=smart_prediction.model_name,
             predicted_class=predicted_class,
             confidence=confidence,
             confidence_label=confidence_text,
@@ -110,6 +110,7 @@ async def analyze_food_image(
             food_profile=food_profile,
             battle=battle_response,
         )
+
     except FileNotFoundError as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
     except Exception as exc:
