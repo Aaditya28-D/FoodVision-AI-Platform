@@ -416,127 +416,181 @@ function ExplainabilityTab({ battle }) {
   );
 }
 
-function SimilarSummaryCard({ retrieval, predictedClass }) {
-  const total = retrieval?.results?.length || 0;
-  const exactMatches = retrieval?.results?.filter(
-    (item) => item.class_name === predictedClass
-  ).length || 0;
+function RetrievalImageCard({ item, isSameClass = false }) {
+  const imageUrl = `${API_BASE_URL}${item.image_url}`;
+
+  return (
+    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+      <a href={imageUrl} target="_blank" rel="noreferrer" className="block overflow-hidden">
+        <img
+          src={imageUrl}
+          alt={item.class_name}
+          className="h-52 w-full object-cover transition hover:scale-[1.02]"
+        />
+      </a>
+
+      <div className="space-y-3 p-4">
+        <div className="flex items-center justify-between gap-3">
+          <span className="rounded-full bg-slate-900 px-2.5 py-1 text-xs font-medium text-white">
+            #{item.rank}
+          </span>
+          <span className="text-sm font-semibold text-cyan-700">
+            {formatSimilarity(item.similarity)}
+          </span>
+        </div>
+
+        {isSameClass ? (
+          <div>
+            <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700">
+              Matches predicted class
+            </span>
+          </div>
+        ) : null}
+
+        <div>
+          <p className="text-xs uppercase tracking-wide text-slate-500">Matched class</p>
+          <p className="mt-1 text-lg font-semibold text-slate-900">
+            {prettifyLabel(item.class_name)}
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs uppercase tracking-wide text-slate-500">Dataset image</p>
+          <p className="mt-1 break-all text-sm text-slate-600">
+            {item.image_path}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SimilarSummaryCard({ retrieval }) {
+  const sameCount = retrieval?.same_class_results?.length || 0;
+  const otherCount = retrieval?.other_results?.length || 0;
 
   return (
     <PageCard className="p-4">
       <SectionHeader
         eyebrow="Retrieval summary"
         title="Similarity Overview"
-        description="Quick summary of how the nearest visual matches compare with the predicted class."
+        description="Quick summary of exact match status and retrieval grouping."
       />
-      <div className="grid gap-3 md:grid-cols-3">
-        <MetricCard label="Retrieved images" value={String(total)} compact />
-        <MetricCard label="Same-class matches" value={String(exactMatches)} tone="text-emerald-700" compact />
-        <MetricCard
-          label="Predicted class"
-          value={prettifyLabel(predictedClass)}
-          tone="text-cyan-700"
-          compact
-        />
+      <div className="grid gap-3 md:grid-cols-4">
+        <MetricCard label="Predicted class" value={prettifyLabel(retrieval?.predicted_class)} tone="text-cyan-700" compact />
+        <MetricCard label="Exact match" value={retrieval?.exact_match_found ? "Found" : "Not found"} tone={retrieval?.exact_match_found ? "text-emerald-700" : "text-slate-900"} compact />
+        <MetricCard label="Same-class results" value={String(sameCount)} tone="text-emerald-700" compact />
+        <MetricCard label="Other visual matches" value={String(otherCount)} tone="text-amber-700" compact />
       </div>
     </PageCard>
   );
 }
 
-function SimilarDishesTab({ retrieval, predictedClass }) {
-  const [showAll, setShowAll] = useState(false);
+function SimilarDishesTab({ retrieval }) {
+  const [showAllSame, setShowAllSame] = useState(false);
+  const [showAllOther, setShowAllOther] = useState(false);
 
-  if (!retrieval?.results?.length) {
+  if (!retrieval) {
     return (
       <PageCard className="p-4">
-        <SectionHeader
-          eyebrow="Retrieval"
-          title="Similar Dishes"
-          description="No similar dish results are available yet."
-        />
+        <SectionHeader eyebrow="Retrieval" title="Similar Dishes" description="No similar dish results are available yet." />
       </PageCard>
     );
   }
 
-  const visibleResults = showAll ? retrieval.results : retrieval.results.slice(0, 3);
+  const visibleSame = showAllSame
+    ? retrieval.same_class_results || []
+    : (retrieval.same_class_results || []).slice(0, 3);
+
+  const visibleOther = showAllOther
+    ? retrieval.other_results || []
+    : (retrieval.other_results || []).slice(0, 3);
 
   return (
     <div className="space-y-5">
-      <SimilarSummaryCard retrieval={retrieval} predictedClass={predictedClass} />
+      <SimilarSummaryCard retrieval={retrieval} />
+
+      {retrieval.exact_match_found ? (
+        <PageCard className="p-4">
+          <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
+            An exact or near-exact dataset match was found for this uploaded image.
+          </div>
+        </PageCard>
+      ) : null}
 
       <PageCard className="p-4">
         <SectionHeader
-          eyebrow="Retrieval"
-          title="Similar Dishes"
-          description="These are the closest visual matches from the indexed Food-101 dataset."
+          eyebrow="Same predicted food"
+          title="Same-Class Similar Dishes"
+          description="These matches belong to the same predicted class and are the most useful examples of similar dishes."
         />
 
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {visibleResults.map((item) => {
-            const imageUrl = `${API_BASE_URL}${item.image_url}`;
-            const isSameClass = item.class_name === predictedClass;
+        {visibleSame.length > 0 ? (
+          <>
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {visibleSame.map((item) => (
+                <RetrievalImageCard
+                  key={`same-${item.rank}-${item.image_path}`}
+                  item={item}
+                  isSameClass
+                />
+              ))}
+            </div>
 
-            return (
-              <div
-                key={`${item.rank}-${item.image_path}`}
-                className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50"
-              >
-                <a href={imageUrl} target="_blank" rel="noreferrer" className="block overflow-hidden">
-                  <img
-                    src={imageUrl}
-                    alt={item.class_name}
-                    className="h-52 w-full object-cover transition hover:scale-[1.02]"
-                  />
-                </a>
-
-                <div className="space-y-3 p-4">
-                  <div className="flex items-center justify-between gap-3">
-                    <span className="rounded-full bg-slate-900 px-2.5 py-1 text-xs font-medium text-white">
-                      #{item.rank}
-                    </span>
-                    <span className="text-sm font-semibold text-cyan-700">
-                      {formatSimilarity(item.similarity)}
-                    </span>
-                  </div>
-
-                  {isSameClass ? (
-                    <div>
-                      <span className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700">
-                        Matches predicted class
-                      </span>
-                    </div>
-                  ) : null}
-
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-slate-500">Matched class</p>
-                    <p className="mt-1 text-lg font-semibold text-slate-900">
-                      {prettifyLabel(item.class_name)}
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-xs uppercase tracking-wide text-slate-500">Dataset image</p>
-                    <p className="mt-1 break-all text-sm text-slate-600">
-                      {item.image_path}
-                    </p>
-                  </div>
-                </div>
+            {(retrieval.same_class_results || []).length > 3 ? (
+              <div className="mt-5 flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => setShowAllSame((prev) => !prev)}
+                  className="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+                >
+                  {showAllSame
+                    ? "Show fewer same-class matches"
+                    : `Show all ${(retrieval.same_class_results || []).length} same-class matches`}
+                </button>
               </div>
-            );
-          })}
-        </div>
+            ) : null}
+          </>
+        ) : (
+          <p className="text-sm text-slate-600">No same-class retrieval results were found.</p>
+        )}
+      </PageCard>
 
-        {retrieval.results.length > 3 ? (
-          <div className="mt-5 flex justify-center">
-            <button
-              type="button"
-              onClick={() => setShowAll((prev) => !prev)}
-              className="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
-            >
-              {showAll ? "Show less" : `Show all ${retrieval.results.length}`}
-            </button>
-          </div>
-        ) : null}
+      <PageCard className="p-4">
+        <SectionHeader
+          eyebrow="Other visual matches"
+          title="Related Looking Dishes"
+          description="These are dishes from other classes that look visually similar in embedding space."
+        />
+
+        {visibleOther.length > 0 ? (
+          <>
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {visibleOther.map((item) => (
+                <RetrievalImageCard
+                  key={`other-${item.rank}-${item.image_path}`}
+                  item={item}
+                />
+              ))}
+            </div>
+
+            {(retrieval.other_results || []).length > 3 ? (
+              <div className="mt-5 flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => setShowAllOther((prev) => !prev)}
+                  className="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+                >
+                  {showAllOther
+                    ? "Show fewer other matches"
+                    : `Show all ${(retrieval.other_results || []).length} other matches`}
+                </button>
+              </div>
+            ) : null}
+          </>
+        ) : (
+          <p className="text-sm text-slate-600">No other-class visual matches were found.</p>
+        )}
       </PageCard>
     </div>
   );
@@ -733,12 +787,7 @@ export default function App() {
                 {activeTab === "overview" ? <OverviewTab data={analyzeData} previewUrl={preview} /> : null}
                 {activeTab === "details" ? <FoodDetailsTab profile={analyzeData.food_profile} /> : null}
                 {activeTab === "explainability" ? <ExplainabilityTab battle={analyzeData.battle} /> : null}
-                {activeTab === "similar" ? (
-                  <SimilarDishesTab
-                    retrieval={retrievalData}
-                    predictedClass={analyzeData.predicted_class}
-                  />
-                ) : null}
+                {activeTab === "similar" ? <SimilarDishesTab retrieval={retrievalData} /> : null}
               </>
             ) : null}
 
