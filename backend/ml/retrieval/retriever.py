@@ -25,18 +25,25 @@ class SimilarDishRetriever:
         self.image_paths = data["image_paths"]
         self.class_names = data["class_names"]
 
-    def retrieve(self, image: Image.Image, top_k: int = 8, predicted_class: str | None = None) -> dict:
+    def retrieve(
+        self,
+        image: Image.Image,
+        top_k: int = 8,
+        predicted_class: str | None = None,
+        max_other_per_class: int = 2,
+    ) -> dict:
         query = self.embedder.embed_pil(image).numpy()
         similarities = self.embeddings @ query
 
         sorted_indices = np.argsort(-similarities)
 
         exact_match_found = False
-        same_class_results = []
-        other_results = []
+        same_class_results: list[dict] = []
+        other_results: list[dict] = []
 
         same_rank = 1
         other_rank = 1
+        other_class_counts: dict[str, int] = {}
 
         for idx in sorted_indices:
             similarity = float(similarities[idx])
@@ -62,7 +69,9 @@ class SimilarDishRetriever:
                     )
                     same_rank += 1
             else:
-                if len(other_results) < top_k:
+                current_count = other_class_counts.get(class_name, 0)
+
+                if current_count < max_other_per_class and len(other_results) < top_k:
                     other_results.append(
                         {
                             "rank": other_rank,
@@ -70,6 +79,7 @@ class SimilarDishRetriever:
                         }
                     )
                     other_rank += 1
+                    other_class_counts[class_name] = current_count + 1
 
             if len(same_class_results) >= top_k and len(other_results) >= top_k:
                 break
