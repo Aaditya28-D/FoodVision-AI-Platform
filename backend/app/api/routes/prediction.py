@@ -13,17 +13,33 @@ predictor = FoodPredictor()
 @router.post("", response_model=PredictionResponse)
 async def predict_food(
     image: UploadFile = File(...),
-    model_name: ModelName = Query(default=ModelName.MOBILENET_V3_LARGE),
+    model_name: str = Query(default="ensemble"),
     top_k: int = Query(default=5, ge=1, le=10),
 ):
     try:
         pil_image = await validate_and_read_image(image)
-        response = predictor.predict(
-            image=pil_image,
-            model_name=model_name,
-            top_k=top_k,
-        )
+
+        if model_name == "ensemble":
+            response = predictor.predict_ensemble(
+                image=pil_image,
+                top_k=top_k,
+            )
+        else:
+            response = predictor.predict(
+                image=pil_image,
+                model_name=ModelName(model_name),
+                top_k=top_k,
+            )
+
         return response
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=(
+                "Invalid model_name. Use 'ensemble' or one of: "
+                "mobilenet_v3_large, efficientnet_b0, resnet50, vit_b_16, googlenet."
+            ),
+        ) from exc
     except FileNotFoundError as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
     except Exception as exc:
