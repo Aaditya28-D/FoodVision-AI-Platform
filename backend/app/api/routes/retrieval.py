@@ -4,6 +4,7 @@ from fastapi import APIRouter, File, HTTPException, Query, UploadFile
 
 from app.schemas.retrieval import RetrievalItem, RetrievalResponse
 from app.utils.image import validate_and_read_image
+from ml.inference.predictor import FoodPredictor
 from ml.retrieval.retriever import SimilarDishRetriever
 
 router = APIRouter(prefix="/retrieve", tags=["Retrieval"])
@@ -14,6 +15,18 @@ retriever = SimilarDishRetriever(
     device="auto",
 )
 
+predictor = FoodPredictor()
+
+
+def to_item(raw: dict) -> RetrievalItem:
+    return RetrievalItem(
+        rank=raw["rank"],
+        class_name=raw["class_name"],
+        image_path=raw["image_path"],
+        similarity=round(raw["similarity"], 6),
+        image_url=f"/dataset-images/{raw['image_path']}",
+    )
+
 
 @router.post("/similar", response_model=RetrievalResponse)
 async def retrieve_similar_dishes(
@@ -22,21 +35,23 @@ async def retrieve_similar_dishes(
 ):
     try:
         pil_image = await validate_and_read_image(image)
-        results = retriever.retrieve(image=pil_image, top_k=top_k)
 
-        response_items = []
-        for item in results:
-            response_items.append(
-                RetrievalItem(
-                    rank=item["rank"],
-                    class_name=item["class_name"],
-                    image_path=item["image_path"],
-                    similarity=round(item["similarity"], 6),
-                    image_url=f"/dataset-images/{item['image_path']}",
-                )
-            )
+        prediction = predictor.predict(image=pil_image, top_k=1)
+        predicted_class = prediction.predictions[0].class_name if prediction.predictions else None
 
-        return RetrievalResponse(top_k=top_k, results=response_items)
+        results = retriever.retrieve(
+            image=pil_image,
+            top_k=top_k,
+            predicted_class=predicted_class,
+        )
+
+        return RetrievalResponse(
+            top_k=top_k,
+            predicted_class=results["predicted_class"],
+            exact_match_found=results["exact_match_found"],
+            same_class_results=[to_item(item) for item in results["same_class_results"]],
+            other_results=[to_item(item) for item in results["other_results"]],
+        )
 
     except FileNotFoundError as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc

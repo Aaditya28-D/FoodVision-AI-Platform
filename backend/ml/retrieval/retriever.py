@@ -25,22 +25,58 @@ class SimilarDishRetriever:
         self.image_paths = data["image_paths"]
         self.class_names = data["class_names"]
 
-    def retrieve(self, image: Image.Image, top_k: int = 5) -> list[dict]:
+    def retrieve(self, image: Image.Image, top_k: int = 8, predicted_class: str | None = None) -> dict:
         query = self.embedder.embed_pil(image).numpy()
         similarities = self.embeddings @ query
 
-        top_indices = np.argsort(-similarities)[:top_k]
+        sorted_indices = np.argsort(-similarities)
 
-        results = []
-        for rank, idx in enumerate(top_indices, start=1):
+        exact_match_found = False
+        same_class_results = []
+        other_results = []
+
+        same_rank = 1
+        other_rank = 1
+
+        for idx in sorted_indices:
+            similarity = float(similarities[idx])
             rel_path = str(self.image_paths[idx])
-            results.append(
-                {
-                    "rank": rank,
-                    "class_name": str(self.class_names[idx]),
-                    "image_path": rel_path,
-                    "similarity": float(similarities[idx]),
-                }
-            )
+            class_name = str(self.class_names[idx])
 
-        return results
+            if similarity >= 0.9999:
+                exact_match_found = True
+
+            item = {
+                "class_name": class_name,
+                "image_path": rel_path,
+                "similarity": similarity,
+            }
+
+            if predicted_class is not None and class_name == predicted_class:
+                if len(same_class_results) < top_k:
+                    same_class_results.append(
+                        {
+                            "rank": same_rank,
+                            **item,
+                        }
+                    )
+                    same_rank += 1
+            else:
+                if len(other_results) < top_k:
+                    other_results.append(
+                        {
+                            "rank": other_rank,
+                            **item,
+                        }
+                    )
+                    other_rank += 1
+
+            if len(same_class_results) >= top_k and len(other_results) >= top_k:
+                break
+
+        return {
+            "predicted_class": predicted_class,
+            "exact_match_found": exact_match_found,
+            "same_class_results": same_class_results,
+            "other_results": other_results,
+        }
