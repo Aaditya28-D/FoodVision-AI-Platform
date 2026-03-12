@@ -4,7 +4,6 @@ from fastapi import APIRouter, File, HTTPException, Query, UploadFile
 
 from app.schemas.analyze import AnalyzeResponse
 from app.schemas.explain import BattleModeResponse, BattleModeResult, ExplainResponse
-from app.schemas.prediction import ComparisonResult
 from app.services.food_info import FoodInfoService
 from app.utils.confidence import confidence_label
 from app.utils.image import validate_and_read_image
@@ -48,6 +47,11 @@ async def analyze_food_image(
     try:
         pil_image = await validate_and_read_image(image)
 
+        ensemble_prediction = predictor.predict_ensemble(
+            image=pil_image,
+            top_k=top_k,
+        )
+
         comparison_response = predictor.compare_models(
             image=pil_image,
             top_k=top_k,
@@ -90,18 +94,15 @@ async def analyze_food_image(
             summary=comparison_response.summary,
         )
 
-        best_result: ComparisonResult = max(
-            comparison_response.results,
-            key=lambda item: item.top_prediction.confidence,
-        )
-
-        predicted_class = best_result.top_prediction.class_name
-        confidence = best_result.top_prediction.confidence
+        top_prediction = ensemble_prediction.predictions[0]
+        predicted_class = top_prediction.class_name
+        confidence = top_prediction.confidence
         confidence_text = confidence_label(confidence)
         food_profile = food_info_service.get_profile(predicted_class)
         summary = build_short_summary(predicted_class, confidence_text, food_profile)
 
         return AnalyzeResponse(
+            model_name=ensemble_prediction.model_name,
             predicted_class=predicted_class,
             confidence=confidence,
             confidence_label=confidence_text,

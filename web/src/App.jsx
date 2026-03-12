@@ -141,9 +141,24 @@ function BattleSummaryCard({ summary }) {
       <SectionHeader eyebrow="Model comparison" title="Battle Summary" />
       <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
         <MetricCard label="Fastest model" value={summary.fastest_model} tone="text-cyan-700" compact />
-        <MetricCard label="Highest confidence" value={summary.highest_confidence_model} tone="text-emerald-700" compact />
-        <MetricCard label="Agreement" value={summary.all_models_agree ? "All agree" : "Mixed"} tone="text-amber-700" compact />
-        <MetricCard label="Majority label" value={prettifyLabel(summary.majority_label)} tone="text-fuchsia-700" compact />
+        <MetricCard
+          label="Highest confidence"
+          value={summary.highest_confidence_model}
+          tone="text-emerald-700"
+          compact
+        />
+        <MetricCard
+          label="Agreement"
+          value={summary.all_models_agree ? "All agree" : "Mixed"}
+          tone="text-amber-700"
+          compact
+        />
+        <MetricCard
+          label="Majority label"
+          value={prettifyLabel(summary.majority_label)}
+          tone="text-fuchsia-700"
+          compact
+        />
       </div>
     </PageCard>
   );
@@ -174,19 +189,30 @@ function OverviewTab({ data, previewUrl }) {
               <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-sm text-slate-700">
                 Confidence: {formatConfidence(data.confidence)}
               </span>
+              <span className="rounded-full border border-indigo-200 bg-indigo-50 px-3 py-1 text-sm font-medium text-indigo-700">
+                Powered by ensemble
+              </span>
             </div>
 
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
               <p className="text-sm leading-7 text-slate-700">{data.short_summary}</p>
             </div>
 
-            {data.food_profile ? (
-              <div className="grid gap-3 md:grid-cols-3">
-                <MetricCard label="Category" value={data.food_profile.category} compact />
-                <MetricCard label="Cuisine" value={data.food_profile.cuisine} compact />
-                <MetricCard label="Typical serving" value={data.food_profile.serving_info?.typical_serving || "-"} compact />
-              </div>
-            ) : null}
+            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+              <MetricCard
+                label="Prediction source"
+                value={data.model_name || "-"}
+                tone="text-indigo-700"
+                compact
+              />
+              <MetricCard label="Category" value={data.food_profile?.category || "-"} compact />
+              <MetricCard label="Cuisine" value={data.food_profile?.cuisine || "-"} compact />
+              <MetricCard
+                label="Typical serving"
+                value={data.food_profile?.serving_info?.typical_serving || "-"}
+                compact
+              />
+            </div>
           </div>
         </div>
       </PageCard>
@@ -233,7 +259,9 @@ function FoodDetailsTab({ profile }) {
               <ChipList items={profile.core_ingredients} />
             </div>
             <div>
-              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Optional ingredients</p>
+              <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                Optional ingredients
+              </p>
               <ChipList
                 items={profile.optional_ingredients}
                 tone="text-emerald-700"
@@ -312,12 +340,7 @@ function FoodDetailsTab({ profile }) {
 
         <PageCard className="p-4">
           <SectionHeader eyebrow="Safety" title="Allergens" />
-          <ChipList
-            items={profile.allergens}
-            tone="text-red-700"
-            bg="bg-red-50"
-            border="border-red-200"
-          />
+          <ChipList items={profile.allergens} tone="text-red-700" bg="bg-red-50" border="border-red-200" />
         </PageCard>
       </div>
 
@@ -383,8 +406,18 @@ function ExplainabilityTab({ battle }) {
             <div className="grid gap-5 xl:grid-cols-[1fr_420px]">
               <div className="space-y-4 min-w-0">
                 <div className="grid gap-3 md:grid-cols-3">
-                  <MetricCard label="Top prediction" value={prettifyLabel(topPrediction.class_name)} tone="text-emerald-700" compact />
-                  <MetricCard label="Confidence" value={formatConfidence(topPrediction.confidence)} tone="text-cyan-700" compact />
+                  <MetricCard
+                    label="Top prediction"
+                    value={prettifyLabel(topPrediction.class_name)}
+                    tone="text-emerald-700"
+                    compact
+                  />
+                  <MetricCard
+                    label="Confidence"
+                    value={formatConfidence(topPrediction.confidence)}
+                    tone="text-cyan-700"
+                    compact
+                  />
                   <MetricCard label="Speed" value={formatMs(item.comparison.inference_time_ms)} compact />
                 </div>
 
@@ -434,9 +467,7 @@ function RetrievalImageCard({ item, isSameClass = false }) {
           <span className="rounded-full bg-slate-900 px-2.5 py-1 text-xs font-medium text-white">
             #{item.rank}
           </span>
-          <span className="text-sm font-semibold text-cyan-700">
-            {formatSimilarity(item.similarity)}
-          </span>
+          <span className="text-sm font-semibold text-cyan-700">{formatSimilarity(item.similarity)}</span>
         </div>
 
         {isSameClass ? (
@@ -449,16 +480,12 @@ function RetrievalImageCard({ item, isSameClass = false }) {
 
         <div>
           <p className="text-xs uppercase tracking-wide text-slate-500">Matched class</p>
-          <p className="mt-1 text-lg font-semibold text-slate-900">
-            {prettifyLabel(item.class_name)}
-          </p>
+          <p className="mt-1 text-lg font-semibold text-slate-900">{prettifyLabel(item.class_name)}</p>
         </div>
 
         <div>
           <p className="text-xs uppercase tracking-wide text-slate-500">Dataset image</p>
-          <p className="mt-1 break-all text-sm text-slate-600">
-            {item.image_path}
-          </p>
+          <p className="mt-1 break-all text-sm text-slate-600">{item.image_path}</p>
         </div>
       </div>
     </div>
@@ -477,8 +504,18 @@ function SimilarSummaryCard({ retrieval }) {
         description="Quick summary of exact match status and retrieval grouping."
       />
       <div className="grid gap-3 md:grid-cols-4">
-        <MetricCard label="Predicted class" value={prettifyLabel(retrieval?.predicted_class)} tone="text-cyan-700" compact />
-        <MetricCard label="Exact match" value={retrieval?.exact_match_found ? "Found" : "Not found"} tone={retrieval?.exact_match_found ? "text-emerald-700" : "text-slate-900"} compact />
+        <MetricCard
+          label="Predicted class"
+          value={prettifyLabel(retrieval?.predicted_class)}
+          tone="text-cyan-700"
+          compact
+        />
+        <MetricCard
+          label="Exact match"
+          value={retrieval?.exact_match_found ? "Found" : "Not found"}
+          tone={retrieval?.exact_match_found ? "text-emerald-700" : "text-slate-900"}
+          compact
+        />
         <MetricCard label="Same-class results" value={String(sameCount)} tone="text-emerald-700" compact />
         <MetricCard label="Other visual matches" value={String(otherCount)} tone="text-amber-700" compact />
       </div>
@@ -529,11 +566,7 @@ function SimilarDishesTab({ retrieval }) {
           <>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {visibleSame.map((item) => (
-                <RetrievalImageCard
-                  key={`same-${item.rank}-${item.image_path}`}
-                  item={item}
-                  isSameClass
-                />
+                <RetrievalImageCard key={`same-${item.rank}-${item.image_path}`} item={item} isSameClass />
               ))}
             </div>
 
@@ -567,10 +600,7 @@ function SimilarDishesTab({ retrieval }) {
           <>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {visibleOther.map((item) => (
-                <RetrievalImageCard
-                  key={`other-${item.rank}-${item.image_path}`}
-                  item={item}
-                />
+                <RetrievalImageCard key={`other-${item.rank}-${item.image_path}`} item={item} />
               ))}
             </div>
 
