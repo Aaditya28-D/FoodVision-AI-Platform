@@ -1,7 +1,10 @@
 from collections import Counter
+from time import perf_counter
 from typing import Dict, Optional
 
-from app.schemas.prediction import PredictionResponse
+import torch
+
+from app.schemas.prediction import PredictionItem, PredictionResponse
 from ml.inference.model_registry import ModelName
 from ml.inference.specialist_map import SPECIALIST_CLASS_MODEL_MAP
 
@@ -132,3 +135,113 @@ class SmartRouter:
             ),
             device=selected.device,
         )
+
+
+def _build_prediction_response(
+    model_name: str,
+    probs: torch.Tensor,
+    top_k: int,
+    inference_time_ms: float,
+    device: str,
+    class_names: list[str],
+) -> PredictionResponse:
+    top_probs, top_indices = torch.topk(probs, k=top_k, dim=1)
+
+    top_probs = top_probs.squeeze(0).tolist()
+    top_indices = top_indices.squeeze(0).tolist()
+
+    predictions = [
+        PredictionItem(
+            class_name=class_names[idx],
+            confidence=round(float(prob), 6),
+        )
+        for prob, idx in zip(top_probs, top_indices)
+    ]
+
+    return PredictionResponse(
+        model_name=model_name,
+        top_k=top_k,
+        predictions=predictions,
+        inference_time_ms=round(inference_time_ms, 3),
+        device=device,
+    )
+
+
+def _run_single_model_for_router(
+    image,
+    model_name: ModelName,
+    top_k: int,
+    model_loader,
+    transforms,
+    class_names: list[str],
+) -> PredictionResponse:
+    start_time = perf_counter()
+
+    loaded_model = model_loader.load_model(model_name)
+    image_tensor = transforms(image).unsqueeze(0).to(loaded_model.device)
+
+    with torch.no_grad():
+        outputs = loaded_model.model(image_tensor)
+        probabilities = torch.softmax(outputs, dim=1)
+
+    inference_time_ms = (perf_counter() - start_time) * 1000
+
+    return _build_prediction_response(
+        model_name=loaded_model.model_name,
+        probs=probabilities,
+        top_k=top_k,
+        inference_time_ms=inference_time_ms,
+        device=loaded_model.device,
+        class_names=class_names,
+    )
+
+
+def run_smart_router(
+    image,
+    top_k: int,
+    model_loader,
+    transforms,
+    class_names: list[str],
+) -> PredictionResponse:
+    model_outputs: Dict[ModelName, PredictionResponse] = {
+        ModelName.EFFICIENTNET_B0: _run_single_model_for_router(
+            image=image,
+            model_name=ModelName.EFFICIENTNET_B0,
+            top_k=top_k,
+            model_loader=model_loader,
+            transforms=transforms,
+            class_names=class_names,
+        ),
+        ModelName.RESNET50: _run_single_model_for_router(
+            image=image,
+            model_name=ModelName.RESNET50,
+            top_k=top_k,
+            model_loader=model_loader,
+            transforms=transforms,
+            class_names=class_names,
+        ),
+        ModelName.MOBILENET_V3_LARGE: _run_single_model_for_router(
+            image=image,
+            model_name=ModelName.MOBILENET_V3_LARGE,
+            top_k=top_k,
+            model_loader=model_loader,
+            transforms=transforms,
+            class_names=class_names,
+        ),
+    }
+
+    router = SmartRouter()
+
+    majority_result = router.majority_vote(model_outputs)
+    if majority_result is not None:
+        return majority_result
+
+    specialist_result = router.class_specialist_winner(model_outputs)
+    if specialist_result is not None:
+        return specialist_result
+
+    confidence_result = router.confidence_winner(model_outputs)
+    if confidence_result is not None:
+        return confidence_result
+
+    return router.fallback_winner(model_outputs)

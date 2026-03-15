@@ -1,10 +1,7 @@
 from app.schemas.prediction import PredictionResponse
 from ml.inference.model_registry import ModelName
 from ml.inference.predictor import FoodPredictor
-from ml.inference.strategy_registry import (
-    get_default_strategy,
-    is_valid_strategy,
-)
+from ml.inference.strategy_registry import get_default_strategy
 
 
 class PredictionService:
@@ -18,9 +15,6 @@ class PredictionService:
         top_k: int = 5,
     ) -> PredictionResponse:
         selected_strategy = strategy or get_default_strategy()
-
-        if not is_valid_strategy(selected_strategy):
-            raise ValueError(f"Invalid strategy: {selected_strategy}")
 
         if selected_strategy == "smart":
             return self.predictor.predict_smart(image=image, top_k=top_k)

@@ -1,12 +1,28 @@
 from collections import Counter
 
-from app.schemas.prediction import BattleSummary, ComparisonResponse, ComparisonResult
+from app.schemas.prediction import (
+    BattleSummary,
+    ComparisonResponse,
+    ComparisonResult,
+    PredictionResponse,
+)
 
 
 def build_comparison_response(
-    results: list[ComparisonResult],
+    responses: list[PredictionResponse],
     top_k: int,
 ) -> ComparisonResponse:
+    results = [
+        ComparisonResult(
+            model_name=response.model_name,
+            predictions=response.predictions,
+            inference_time_ms=response.inference_time_ms,
+            device=response.device or "cpu",
+            top_prediction=response.predictions[0],
+        )
+        for response in responses
+    ]
+
     fastest_result = min(results, key=lambda item: item.inference_time_ms)
     highest_confidence_result = max(
         results,

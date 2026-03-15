@@ -1,40 +1,23 @@
 from time import perf_counter
-from typing import Dict, List
 
 import torch
-from PIL import Image
 
 from app.core.config import settings
-from app.schemas.prediction import (
-    ComparisonResult,
-    PredictionItem,
-    PredictionResponse,
-)
+from app.schemas.prediction import ComparisonResponse, PredictionItem, PredictionResponse
 from ml.inference.class_names import load_class_names
 from ml.inference.comparison import build_comparison_response
-from ml.inference.ensemble import EnsemblePredictor
+from ml.inference.ensemble import run_effnet_resnet_ensemble
 from ml.inference.model_loader import ModelLoader
 from ml.inference.model_registry import ModelName
-from ml.inference.routers import SmartRouter
+from ml.inference.routers import run_smart_router
 from ml.inference.transforms import get_inference_transforms
 
 
 class FoodPredictor:
     def __init__(self) -> None:
-        self.class_names: List[str] = load_class_names(settings.CLASS_NAMES_PATH)
+        self.class_names = load_class_names(settings.CLASS_NAMES_PATH)
         self.model_loader = ModelLoader(num_classes=len(self.class_names))
         self.transforms = get_inference_transforms(image_size=224)
-
-        self.ensemble_predictor = EnsemblePredictor(
-            model_loader=self.model_loader,
-            class_names=self.class_names,
-        )
-        self.smart_router = SmartRouter(
-            high_conf_threshold=0.75,
-            conf_margin=0.10,
-            specialist_min_confidence=0.55,
-            default_fallback_model=ModelName.EFFICIENTNET_B0,
-        )
 
     def _build_prediction_response(
         self,
@@ -67,7 +50,7 @@ class FoodPredictor:
 
     def _run_single_model(
         self,
-        image: Image.Image,
+        image,
         model_name: ModelName,
         top_k: int = 5,
     ) -> PredictionResponse:
@@ -92,7 +75,7 @@ class FoodPredictor:
 
     def predict(
         self,
-        image: Image.Image,
+        image,
         model_name: ModelName = ModelName.MOBILENET_V3_LARGE,
         top_k: int = 5,
     ) -> PredictionResponse:
@@ -104,84 +87,53 @@ class FoodPredictor:
 
     def predict_ensemble(
         self,
-        image: Image.Image,
+        image,
         top_k: int = 5,
     ) -> PredictionResponse:
-        return self.ensemble_predictor.predict(
+        return run_effnet_resnet_ensemble(
             image=image,
             top_k=top_k,
+            model_loader=self.model_loader,
+            transforms=self.transforms,
+            class_names=self.class_names,
         )
 
     def predict_smart(
         self,
-        image: Image.Image,
+        image,
         top_k: int = 5,
     ) -> PredictionResponse:
-        model_outputs: Dict[ModelName, PredictionResponse] = {
-            ModelName.EFFICIENTNET_B0: self.predict(
-                image=image,
-                model_name=ModelName.EFFICIENTNET_B0,
-                top_k=top_k,
-            ),
-            ModelName.RESNET50: self.predict(
-                image=image,
-                model_name=ModelName.RESNET50,
-                top_k=top_k,
-            ),
-            ModelName.MOBILENET_V3_LARGE: self.predict(
-                image=image,
-                model_name=ModelName.MOBILENET_V3_LARGE,
-                top_k=top_k,
-            ),
-        }
-
-        majority_result = self.smart_router.majority_vote(model_outputs)
-        if majority_result is not None:
-            return majority_result
-
-        specialist_result = self.smart_router.class_specialist_winner(model_outputs)
-        if specialist_result is not None:
-            return specialist_result
-
-        confidence_result = self.smart_router.confidence_winner(model_outputs)
-        if confidence_result is not None:
-            return confidence_result
-
-        return self.smart_router.fallback_winner(model_outputs)
+        return run_smart_router(
+            image=image,
+            top_k=top_k,
+            model_loader=self.model_loader,
+            transforms=self.transforms,
+            class_names=self.class_names,
+        )
 
     def compare_models(
         self,
-        image: Image.Image,
+        image,
         top_k: int = 5,
-    ):
-        comparison_models = [
-            ModelName.EFFICIENTNET_B0,
-            ModelName.RESNET50,
-            ModelName.MOBILENET_V3_LARGE,
-        ]
-
-        results: List[ComparisonResult] = []
-
-        for model_name in comparison_models:
-            response = self._run_single_model(
-                image=image,
-                model_name=model_name,
-                top_k=top_k,
-            )
-
-            top_prediction = response.predictions[0]
-
-            results.append(
-                ComparisonResult(
-                    model_name=response.model_name,
-                    predictions=response.predictions,
-                    inference_time_ms=response.inference_time_ms,
-                    device=response.device or "cpu",
-                    top_prediction=top_prediction,
-                )
-            )
-
-        return build_comparison_response(
-            results=results,
+    ) -> ComparisonResponse:
+        return self.compare_specific_models(
+            image=image,
+            model_names=[
+                ModelName.EFFICIENTNET_B0,
+                ModelName.RESNET50,
+                ModelName.MOBILENET_V3_LARGE,
+            ],
             top_k=top_k,
         )
+
+    def compare_specific_models(
+        self,
+        image,
+        model_names: list[ModelName],
+        top_k: int = 5,
+    ) -> ComparisonResponse:
+        responses = [
+            self.predict(image=image, model_name=model_name, top_k=top_k)
+            for model_name in model_names
+        ]
+        return build_comparison_response(responses=responses, top_k=top_k)
