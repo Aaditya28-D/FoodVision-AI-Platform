@@ -6,7 +6,12 @@ from app.core.config import settings
 from app.schemas.prediction import ComparisonResponse, PredictionItem, PredictionResponse
 from ml.inference.class_names import load_class_names
 from ml.inference.comparison import build_comparison_response
-from ml.inference.ensemble import run_effnet_resnet_ensemble
+from ml.inference.ensemble import (
+    run_effnet_mobilenet_ensemble,
+    run_effnet_mobilenet_weighted_ensemble,
+    run_effnet_resnet_ensemble,
+    run_effnet_resnet_weighted_ensemble,
+)
 from ml.inference.model_loader import ModelLoader
 from ml.inference.model_registry import ModelName
 from ml.inference.routers import run_smart_router
@@ -85,11 +90,7 @@ class FoodPredictor:
             top_k=top_k,
         )
 
-    def predict_ensemble(
-        self,
-        image,
-        top_k: int = 5,
-    ) -> PredictionResponse:
+    def predict_ensemble(self, image, top_k: int = 5) -> PredictionResponse:
         return run_effnet_resnet_ensemble(
             image=image,
             top_k=top_k,
@@ -98,11 +99,38 @@ class FoodPredictor:
             class_names=self.class_names,
         )
 
-    def predict_smart(
-        self,
-        image,
-        top_k: int = 5,
-    ) -> PredictionResponse:
+    def predict_effnet_resnet_weighted_ensemble(self, image, top_k: int = 5) -> PredictionResponse:
+        return run_effnet_resnet_weighted_ensemble(
+            image=image,
+            top_k=top_k,
+            model_loader=self.model_loader,
+            transforms=self.transforms,
+            class_names=self.class_names,
+            eff_weight=0.6,
+            res_weight=0.4,
+        )
+
+    def predict_effnet_mobilenet_ensemble(self, image, top_k: int = 5) -> PredictionResponse:
+        return run_effnet_mobilenet_ensemble(
+            image=image,
+            top_k=top_k,
+            model_loader=self.model_loader,
+            transforms=self.transforms,
+            class_names=self.class_names,
+        )
+
+    def predict_effnet_mobilenet_weighted_ensemble(self, image, top_k: int = 5) -> PredictionResponse:
+        return run_effnet_mobilenet_weighted_ensemble(
+            image=image,
+            top_k=top_k,
+            model_loader=self.model_loader,
+            transforms=self.transforms,
+            class_names=self.class_names,
+            eff_weight=0.6,
+            mob_weight=0.4,
+        )
+
+    def predict_smart(self, image, top_k: int = 5) -> PredictionResponse:
         return run_smart_router(
             image=image,
             top_k=top_k,
@@ -111,11 +139,7 @@ class FoodPredictor:
             class_names=self.class_names,
         )
 
-    def compare_models(
-        self,
-        image,
-        top_k: int = 5,
-    ) -> ComparisonResponse:
+    def compare_models(self, image, top_k: int = 5) -> ComparisonResponse:
         return self.compare_specific_models(
             image=image,
             model_names=[

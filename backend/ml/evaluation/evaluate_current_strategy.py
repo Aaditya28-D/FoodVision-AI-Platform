@@ -5,9 +5,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from app.core.config import settings
-from ml.inference.model_registry import ModelName
-from ml.inference.predictor import FoodPredictor
+from app.services.prediction_service import PredictionService
 
 
 def load_test_items(test_txt_path: Path) -> list[tuple[str, Path]]:
@@ -36,21 +34,24 @@ def main() -> None:
     parser.add_argument(
         "--mode",
         type=str,
-        default="smart",
-        choices=["smart", "ensemble", "mobilenet", "efficientnet", "resnet"],
+        default="ensemble",
+        choices=[
+            "ensemble",
+            "smart",
+            "efficientnet_b0",
+            "resnet50",
+            "mobilenet_v3_large",
+        ],
         help="Prediction strategy to evaluate.",
     )
-    parser.add_argument(
-        "--limit",
-        type=int,
-        default=None,
-        help="Optional limit for quick evaluation.",
-    )
+    parser.add_argument("--limit", type=int, default=None, help="Optional limit for quick evaluation.")
     args = parser.parse_args()
 
-    images_root = settings.FOOD101_IMAGES_DIR
-    test_txt_path = settings.FOOD101_META_DIR / "test.txt"
-    output_path = settings.MODEL_REPORTS_DIR / f"evaluation_{args.mode}.json"
+    project_root = Path(__file__).resolve().parents[3]
+    data_root = project_root / "data" / "food-101"
+    images_root = data_root / "images"
+    test_txt_path = data_root / "meta" / "test.txt"
+    output_path = project_root / "backend" / "models" / "reports" / f"evaluation_{args.mode}.json"
 
     test_items = load_test_items(test_txt_path)
     if args.limit is not None:
@@ -59,22 +60,10 @@ def main() -> None:
     if not test_items:
         raise RuntimeError("No test items found to evaluate.")
 
-    predictor = FoodPredictor()
+    prediction_service = PredictionService()
 
-    stats = {
-        "correct": 0,
-        "total": 0,
-        "mistakes": Counter(),
-    }
-
-    per_class = defaultdict(
-        lambda: {
-            "correct": 0,
-            "total": 0,
-            "mistakes": Counter(),
-        }
-    )
-
+    stats = {"correct": 0, "total": 0, "mistakes": Counter()}
+    per_class = defaultdict(lambda: {"correct": 0, "total": 0, "mistakes": Counter()})
     total_items = len(test_items)
 
     for idx, (true_class, image_rel_path) in enumerate(test_items, start=1):
@@ -85,30 +74,11 @@ def main() -> None:
 
         image = Image.open(image_path).convert("RGB")
 
-        if args.mode == "smart":
-            response = predictor.predict_smart(image=image, top_k=1)
-        elif args.mode == "ensemble":
-            response = predictor.predict_ensemble(image=image, top_k=1)
-        elif args.mode == "mobilenet":
-            response = predictor.predict(
-                image=image,
-                model_name=ModelName.MOBILENET_V3_LARGE,
-                top_k=1,
-            )
-        elif args.mode == "efficientnet":
-            response = predictor.predict(
-                image=image,
-                model_name=ModelName.EFFICIENTNET_B0,
-                top_k=1,
-            )
-        elif args.mode == "resnet":
-            response = predictor.predict(
-                image=image,
-                model_name=ModelName.RESNET50,
-                top_k=1,
-            )
-        else:
-            raise ValueError(f"Unsupported mode: {args.mode}")
+        response = prediction_service.predict(
+            image=image,
+            strategy=args.mode,
+            top_k=1,
+        )
 
         predicted_class = response.predictions[0].class_name
 
@@ -143,10 +113,7 @@ def main() -> None:
         class_accuracy = class_correct / class_total if class_total else 0.0
 
         class_top_mistakes = [
-            {
-                "predicted_class": predicted_class,
-                "count": count,
-            }
+            {"predicted_class": predicted_class, "count": count}
             for predicted_class, count in class_stats["mistakes"].most_common(5)
         ]
 

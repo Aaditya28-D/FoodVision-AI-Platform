@@ -5,16 +5,13 @@ DEFAULT_STRATEGY = "ensemble"
 STRATEGY_CONFIG = {
     "ensemble": {
         "label": "Ensemble (EfficientNet + ResNet)",
-        "description": "Averages EfficientNet-B0 and ResNet50 predictions. Best default overall choice.",
+        "description": "Averages EfficientNet-B0 and ResNet50 predictions. Best simple overall choice.",
         "type": "ensemble",
-        "models": [
-            ModelName.EFFICIENTNET_B0,
-            ModelName.RESNET50,
-        ],
+        "models": [ModelName.EFFICIENTNET_B0, ModelName.RESNET50],
     },
     "smart": {
         "label": "Smart Router",
-        "description": "Uses EfficientNet-B0, ResNet50, and MobileNetV3-Large with routing logic.",
+        "description": "Uses EfficientNet-B0, ResNet50, and MobileNetV3-Large with routing logic. Best accuracy so far.",
         "type": "router",
         "models": [
             ModelName.EFFICIENTNET_B0,
