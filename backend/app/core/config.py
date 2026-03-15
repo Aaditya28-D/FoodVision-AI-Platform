@@ -14,9 +14,19 @@ class Settings(BaseSettings):
 
     BACKEND_DIR: Path = Path(__file__).resolve().parents[2]
     PROJECT_ROOT: Path = BACKEND_DIR.parent
+
     DATA_DIR: Path = PROJECT_ROOT / "data"
     METADATA_DIR: Path = DATA_DIR / "metadata"
     CLASS_NAMES_PATH: Path = METADATA_DIR / "classes.txt"
+
+    FOOD_INFO_DIR: Path = DATA_DIR / "food_info" / "profiles"
+    FOOD101_IMAGES_DIR: Path = DATA_DIR / "food-101" / "images"
+    FOOD101_META_DIR: Path = DATA_DIR / "food-101" / "meta"
+    RETRIEVAL_INDEX_PATH: Path = DATA_DIR / "embeddings" / "food101_resnet50_index.npz"
+
+    ARTIFACTS_DIR: Path = BACKEND_DIR / "artifacts"
+    GRADCAM_DIR: Path = ARTIFACTS_DIR / "gradcam"
+    INSPECTION_ARTIFACTS_DIR: Path = ARTIFACTS_DIR / "inspection"
 
     MODEL_DIR: Path = BACKEND_DIR / "models"
     MOBILENET_WEIGHTS_PATH: Path = MODEL_DIR / "mobilenet_v3_large_best.pth"

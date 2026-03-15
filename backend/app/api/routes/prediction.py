@@ -1,13 +1,12 @@
 from fastapi import APIRouter, File, HTTPException, Query, UploadFile
 
 from app.schemas.prediction import PredictionResponse
+from app.services.prediction_service import PredictionService
 from app.utils.image import validate_and_read_image
-from ml.inference.model_registry import ModelName
-from ml.inference.predictor import FoodPredictor
 
 router = APIRouter(prefix="/predict", tags=["Prediction"])
 
-predictor = FoodPredictor()
+prediction_service = PredictionService()
 
 
 @router.post("", response_model=PredictionResponse)
@@ -18,20 +17,11 @@ async def predict_food(
 ):
     try:
         pil_image = await validate_and_read_image(image)
-
-        if model_name == "smart":
-            return predictor.predict_smart(image=pil_image, top_k=top_k)
-
-        if model_name == "ensemble":
-            return predictor.predict_ensemble(image=pil_image, top_k=top_k)
-
-        response = predictor.predict(
+        return prediction_service.predict(
             image=pil_image,
-            model_name=ModelName(model_name),
+            model_name=model_name,
             top_k=top_k,
         )
-        return response
-
     except ValueError as exc:
         raise HTTPException(
             status_code=422,
