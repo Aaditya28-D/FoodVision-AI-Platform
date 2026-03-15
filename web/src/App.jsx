@@ -1,60 +1,13 @@
-import { useMemo, useState } from "react";
-
-const API_BASE_URL = "http://127.0.0.1:8000";
-
-function formatMs(value) {
-  if (value == null) return "-";
-  return `${Number(value).toFixed(1)} ms`;
-}
-
-function formatConfidence(value) {
-  if (value == null) return "-";
-  return `${(Number(value) * 100).toFixed(2)}%`;
-}
-
-function formatSimilarity(value) {
-  if (value == null) return "-";
-  return `${(Number(value) * 100).toFixed(1)}%`;
-}
-
-function prettifyLabel(value) {
-  if (!value) return "-";
-  return value.replaceAll("_", " ");
-}
-
-function prettifyModelName(value) {
-  if (!value) return "-";
-  return value.replaceAll("_", " ");
-}
-
-function getPredictionSourceBadge(modelName) {
-  if (!modelName) {
-    return {
-      text: "Prediction source unavailable",
-      className: "border-slate-200 bg-slate-50 text-slate-700",
-    };
-  }
-
-  if (modelName.startsWith("smart_router->")) {
-    const routedModel = modelName.split("->")[1] || modelName;
-    return {
-      text: `Powered by smart routing (${prettifyModelName(routedModel)})`,
-      className: "border-violet-200 bg-violet-50 text-violet-700",
-    };
-  }
-
-  if (modelName.startsWith("ensemble")) {
-    return {
-      text: "Powered by ensemble",
-      className: "border-indigo-200 bg-indigo-50 text-indigo-700",
-    };
-  }
-
-  return {
-    text: `Powered by ${prettifyModelName(modelName)}`,
-    className: "border-slate-200 bg-slate-50 text-slate-700",
-  };
-}
+import { useEffect, useMemo, useState } from "react";
+import { API_BASE_URL } from "./config/api";
+import {
+  formatConfidence,
+  formatMs,
+  formatSimilarity,
+  getPredictionSourceBadge,
+  prettifyLabel,
+  prettifyModelName,
+} from "./utils/formatters";
 
 function ConfidenceBadge({ label }) {
   const styles = {
@@ -198,7 +151,7 @@ function BattleSummaryCard({ summary }) {
   );
 }
 
-function OverviewTab({ data, previewUrl }) {
+function OverviewTab({ data, previewUrl, selectedStrategyLabel }) {
   const sourceBadge = getPredictionSourceBadge(data.model_name);
 
   return (
@@ -227,6 +180,9 @@ function OverviewTab({ data, previewUrl }) {
               </span>
               <span className={`rounded-full border px-3 py-1 text-sm font-medium ${sourceBadge.className}`}>
                 {sourceBadge.text}
+              </span>
+              <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-sm text-slate-700">
+                Selected strategy: {selectedStrategyLabel}
               </span>
             </div>
 
@@ -684,7 +640,37 @@ export default function App() {
   const [error, setError] = useState("");
   const [activeTab, setActiveTab] = useState("overview");
 
+  const [strategies, setStrategies] = useState([]);
+  const [selectedStrategy, setSelectedStrategy] = useState("ensemble");
+  const [strategyLoading, setStrategyLoading] = useState(true);
+
   const preview = useMemo(() => previewUrl, [previewUrl]);
+
+  const selectedStrategyLabel =
+    strategies.find((item) => item.key === selectedStrategy)?.label || selectedStrategy;
+
+  useEffect(() => {
+    async function loadStrategies() {
+      try {
+        setStrategyLoading(true);
+        const response = await fetch(`${API_BASE_URL}/models`);
+        const json = await response.json();
+
+        if (!response.ok) {
+          throw new Error(json.detail || "Failed to load strategies.");
+        }
+
+        setStrategies(json.available_strategies || []);
+        setSelectedStrategy(json.default_strategy || "ensemble");
+      } catch (err) {
+        setError(err.message || "Failed to load available strategies.");
+      } finally {
+        setStrategyLoading(false);
+      }
+    }
+
+    loadStrategies();
+  }, []);
 
   function handleFileChange(event) {
     const file = event.target.files?.[0] || null;
@@ -719,10 +705,13 @@ export default function App() {
       const analyzeFormData = new FormData();
       analyzeFormData.append("image", selectedFile);
 
-      const analyzeResponse = await fetch(`${API_BASE_URL}/analyze?top_k=${topK}`, {
-        method: "POST",
-        body: analyzeFormData,
-      });
+      const analyzeResponse = await fetch(
+        `${API_BASE_URL}/analyze?top_k=${topK}&strategy=${encodeURIComponent(selectedStrategy)}`,
+        {
+          method: "POST",
+          body: analyzeFormData,
+        }
+      );
 
       const analyzeJson = await analyzeResponse.json();
 
@@ -733,10 +722,13 @@ export default function App() {
       const retrievalFormData = new FormData();
       retrievalFormData.append("image", selectedFile);
 
-      const retrievalResponse = await fetch(`${API_BASE_URL}/retrieve/similar?top_k=6`, {
-        method: "POST",
-        body: retrievalFormData,
-      });
+      const retrievalResponse = await fetch(
+        `${API_BASE_URL}/retrieve/similar?top_k=6&strategy=${encodeURIComponent(selectedStrategy)}`,
+        {
+          method: "POST",
+          body: retrievalFormData,
+        }
+      );
 
       const retrievalJson = await retrievalResponse.json();
 
@@ -787,6 +779,25 @@ export default function App() {
                 </div>
 
                 <div>
+                  <label className="mb-2 block text-sm font-medium text-slate-700">Prediction strategy</label>
+                  <select
+                    value={selectedStrategy}
+                    onChange={(e) => setSelectedStrategy(e.target.value)}
+                    disabled={strategyLoading}
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 disabled:opacity-60"
+                  >
+                    {strategies.map((strategy) => (
+                      <option key={strategy.key} value={strategy.key}>
+                        {strategy.label}
+                      </option>
+                    ))}
+                  </select>
+                  {strategyLoading ? (
+                    <p className="mt-2 text-xs text-slate-500">Loading strategies...</p>
+                  ) : null}
+                </div>
+
+                <div>
                   <label className="mb-2 block text-sm font-medium text-slate-700">Top-K predictions</label>
                   <input
                     type="number"
@@ -806,6 +817,16 @@ export default function App() {
                   {loading ? "Analyzing..." : "Analyze Food"}
                 </button>
               </form>
+
+              {strategies.length > 0 ? (
+                <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-3">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Strategy details</p>
+                  <p className="mt-2 text-sm leading-6 text-slate-700">
+                    {strategies.find((item) => item.key === selectedStrategy)?.description ||
+                      "No strategy description available."}
+                  </p>
+                </div>
+              ) : null}
 
               {error ? (
                 <div className="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
@@ -850,7 +871,13 @@ export default function App() {
                   </div>
                 </PageCard>
 
-                {activeTab === "overview" ? <OverviewTab data={analyzeData} previewUrl={preview} /> : null}
+                {activeTab === "overview" ? (
+                  <OverviewTab
+                    data={analyzeData}
+                    previewUrl={preview}
+                    selectedStrategyLabel={selectedStrategyLabel}
+                  />
+                ) : null}
                 {activeTab === "details" ? <FoodDetailsTab profile={analyzeData.food_profile} /> : null}
                 {activeTab === "explainability" ? <ExplainabilityTab battle={analyzeData.battle} /> : null}
                 {activeTab === "similar" ? <SimilarDishesTab retrieval={retrievalData} /> : null}

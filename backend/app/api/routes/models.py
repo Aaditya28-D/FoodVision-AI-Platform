@@ -1,15 +1,28 @@
 from fastapi import APIRouter
 
-from app.core.config import settings
-from ml.inference.class_names import load_class_names
-from ml.inference.model_loader import ModelLoader
+from app.schemas.strategy import StrategyItem, StrategyListResponse
+from ml.inference.strategy_registry import (
+    get_default_strategy,
+    get_strategy_definitions,
+)
 
 router = APIRouter(prefix="/models", tags=["Models"])
 
-class_names = load_class_names(settings.CLASS_NAMES_PATH)
-model_loader = ModelLoader(num_classes=len(class_names))
 
-
-@router.get("")
+@router.get("", response_model=StrategyListResponse)
 def list_models():
-    return {"available_models": model_loader.get_available_models()}
+    strategies = [
+        StrategyItem(
+            key=item.key,
+            label=item.label,
+            description=item.description,
+            category=item.category,
+            is_default=item.is_default,
+        )
+        for item in get_strategy_definitions()
+    ]
+
+    return StrategyListResponse(
+        default_strategy=get_default_strategy(),
+        available_strategies=strategies,
+    )

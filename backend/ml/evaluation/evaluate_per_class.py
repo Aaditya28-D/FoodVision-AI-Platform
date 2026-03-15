@@ -34,10 +34,8 @@ def evaluate_single_model(
     model_name: ModelName,
     limit: int | None = None,
 ) -> dict:
-    project_root = Path(__file__).resolve().parents[3]
-    data_root = project_root / "data" / "food-101"
-    images_root = data_root / "images"
-    test_txt_path = data_root / "meta" / "test.txt"
+    images_root = settings.FOOD101_IMAGES_DIR
+    test_txt_path = settings.FOOD101_META_DIR / "test.txt"
 
     predictor = FoodPredictor()
     items = load_test_items(test_txt_path)
@@ -92,10 +90,8 @@ def evaluate_single_model(
 
 
 def evaluate_ensemble(limit: int | None = None) -> dict:
-    project_root = Path(__file__).resolve().parents[3]
-    data_root = project_root / "data" / "food-101"
-    images_root = data_root / "images"
-    test_txt_path = data_root / "meta" / "test.txt"
+    images_root = settings.FOOD101_IMAGES_DIR
+    test_txt_path = settings.FOOD101_META_DIR / "test.txt"
 
     class_names = load_class_names(settings.CLASS_NAMES_PATH)
     loader = ModelLoader(num_classes=len(class_names))
@@ -182,8 +178,7 @@ def main() -> None:
     else:
         report = evaluate_single_model(ModelName(args.mode), limit=args.limit)
 
-    project_root = Path(__file__).resolve().parents[3]
-    output_path = project_root / "backend" / "models" / f"{args.mode}_per_class_report.json"
+    output_path = settings.MODEL_REPORTS_DIR / f"{args.mode}_per_class_report.json"
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as file:

@@ -5,6 +5,7 @@ from pathlib import Path
 
 from PIL import Image
 
+from app.core.config import settings
 from ml.inference.model_registry import ModelName
 from ml.inference.predictor import FoodPredictor
 
@@ -47,11 +48,9 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    project_root = Path(__file__).resolve().parents[3]
-    data_root = project_root / "data" / "food-101"
-    images_root = data_root / "images"
-    test_txt_path = data_root / "meta" / "test.txt"
-    output_path = project_root / "backend" / "models" / f"evaluation_{args.mode}.json"
+    images_root = settings.FOOD101_IMAGES_DIR
+    test_txt_path = settings.FOOD101_META_DIR / "test.txt"
+    output_path = settings.MODEL_REPORTS_DIR / f"evaluation_{args.mode}.json"
 
     test_items = load_test_items(test_txt_path)
     if args.limit is not None:

@@ -29,11 +29,21 @@ class Settings(BaseSettings):
     INSPECTION_ARTIFACTS_DIR: Path = ARTIFACTS_DIR / "inspection"
 
     MODEL_DIR: Path = BACKEND_DIR / "models"
-    MOBILENET_WEIGHTS_PATH: Path = MODEL_DIR / "mobilenet_v3_large_best.pth"
-    EFFICIENTNET_B0_WEIGHTS_PATH: Path = MODEL_DIR / "efficientnet_b0_best.pth"
-    RESNET50_WEIGHTS_PATH: Path = MODEL_DIR / "resnet50_best.pth"
-    VIT_B_16_WEIGHTS_PATH: Path = MODEL_DIR / "vit_b_16_best.pth"
-    GOOGLENET_WEIGHTS_PATH: Path = MODEL_DIR / "googlenet_best.pth"
+    MODEL_WEIGHTS_DIR: Path = MODEL_DIR / "weights"
+    MODEL_CHECKPOINTS_DIR: Path = MODEL_DIR / "checkpoints"
+    MODEL_HISTORIES_DIR: Path = MODEL_DIR / "histories"
+    MODEL_REPORTS_DIR: Path = MODEL_DIR / "reports"
+
+    MOBILENET_WEIGHTS_PATH: Path = MODEL_WEIGHTS_DIR / "mobilenet_v3_large_best.pth"
+    EFFICIENTNET_B0_WEIGHTS_PATH: Path = MODEL_WEIGHTS_DIR / "efficientnet_b0_best.pth"
+    RESNET50_WEIGHTS_PATH: Path = MODEL_WEIGHTS_DIR / "resnet50_best.pth"
+    VIT_B_16_WEIGHTS_PATH: Path = MODEL_WEIGHTS_DIR / "vit_b_16_best.pth"
+    GOOGLENET_WEIGHTS_PATH: Path = MODEL_WEIGHTS_DIR / "googlenet_best.pth"
+
+    EVALUATION_REPORT_PATH: Path = MODEL_REPORTS_DIR / "evaluation_report.json"
+    EVALUATION_SMART_PATH: Path = MODEL_REPORTS_DIR / "evaluation_smart.json"
+    EVALUATION_SMART_V2_PATH: Path = MODEL_REPORTS_DIR / "evaluation_smart_v2.json"
+    EVALUATION_ENSEMBLE_PATH: Path = MODEL_REPORTS_DIR / "evaluation_ensemble.json"
 
     model_config = SettingsConfigDict(
         env_file=".env",

@@ -34,11 +34,9 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=None, help="Optional limit for quick evaluation.")
     args = parser.parse_args()
 
-    project_root = Path(__file__).resolve().parents[3]
-    data_root = project_root / "data" / "food-101"
-    images_root = data_root / "images"
-    test_txt_path = data_root / "meta" / "test.txt"
-    output_path = project_root / "backend" / "models" / "ensemble_evaluation_report.json"
+    images_root = settings.FOOD101_IMAGES_DIR
+    test_txt_path = settings.FOOD101_META_DIR / "test.txt"
+    output_path = settings.MODEL_REPORTS_DIR / "ensemble_evaluation_report.json"
 
     class_names = load_class_names(settings.CLASS_NAMES_PATH)
     loader = ModelLoader(num_classes=len(class_names))

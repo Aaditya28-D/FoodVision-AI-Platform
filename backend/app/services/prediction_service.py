@@ -1,6 +1,10 @@
 from app.schemas.prediction import PredictionResponse
 from ml.inference.model_registry import ModelName
 from ml.inference.predictor import FoodPredictor
+from ml.inference.strategy_registry import (
+    get_default_strategy,
+    is_valid_strategy,
+)
 
 
 class PredictionService:
@@ -10,17 +14,22 @@ class PredictionService:
     def predict(
         self,
         image,
-        model_name: str = "smart",
+        strategy: str | None = None,
         top_k: int = 5,
     ) -> PredictionResponse:
-        if model_name == "smart":
+        selected_strategy = strategy or get_default_strategy()
+
+        if not is_valid_strategy(selected_strategy):
+            raise ValueError(f"Invalid strategy: {selected_strategy}")
+
+        if selected_strategy == "smart":
             return self.predictor.predict_smart(image=image, top_k=top_k)
 
-        if model_name == "ensemble":
+        if selected_strategy == "ensemble":
             return self.predictor.predict_ensemble(image=image, top_k=top_k)
 
         return self.predictor.predict(
             image=image,
-            model_name=ModelName(model_name),
+            model_name=ModelName(selected_strategy),
             top_k=top_k,
         )

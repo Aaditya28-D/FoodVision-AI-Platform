@@ -1,17 +1,18 @@
-from app.core.config import settings
+from pathlib import Path
+
 from app.schemas.retrieval import RetrievalItem, RetrievalResponse
-from ml.inference.predictor import FoodPredictor
+from app.services.prediction_service import PredictionService
 from ml.retrieval.retriever import SimilarDishRetriever
 
 
 class RetrievalService:
     def __init__(self) -> None:
         self.retriever = SimilarDishRetriever(
-            index_path=settings.RETRIEVAL_INDEX_PATH,
-            dataset_root=settings.FOOD101_IMAGES_DIR,
+            index_path=Path("..") / "data" / "embeddings" / "food101_resnet50_index.npz",
+            dataset_root=Path("..") / "data" / "food-101" / "images",
             device="auto",
         )
-        self.predictor = FoodPredictor()
+        self.prediction_service = PredictionService()
 
     def _to_item(self, raw: dict) -> RetrievalItem:
         return RetrievalItem(
@@ -26,11 +27,17 @@ class RetrievalService:
         self,
         image,
         top_k: int = 6,
+        strategy: str | None = None,
     ) -> RetrievalResponse:
-        smart_prediction = self.predictor.predict_smart(image=image, top_k=1)
+        prediction = self.prediction_service.predict(
+            image=image,
+            strategy=strategy,
+            top_k=1,
+        )
+
         predicted_class = (
-            smart_prediction.predictions[0].class_name
-            if smart_prediction.predictions
+            prediction.predictions[0].class_name
+            if prediction.predictions
             else None
         )
 
