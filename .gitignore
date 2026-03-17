@@ -113,3 +113,23 @@ backend/artifacts/
 # Optional generated reports/history under backend/models can stay untracked by default
 backend/models/**/*.json
 backend/models/**/*.csv
+
+cat > .gitignore <<'EOF'
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+web/node_modules/
+
+# Local asset links
+asset_links.env
+
+# Release archives
+release_assets/
+
+# macOS
+.DS_Store
+EOF
