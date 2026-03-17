@@ -1,62 +1,71 @@
 {
   "food_name": "Falafel",
-  "category": "Street Food / Fast Casual",
+  "category": "Main dish / Street food / Appetizer",
   "cuisine": "Middle Eastern",
-  "description": "A casual falafel with bold flavor, quick service appeal, and room for ingredient variation.",
+  "description": "A Middle Eastern fritter made primarily from ground chickpeas or fava beans with herbs and spices, then formed into balls or patties and fried. It is often served in pita, wraps, or platters.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "Chickpeas or fava beans",
+    "Garlic",
+    "Onion",
+    "Herbs such as parsley or cilantro",
+    "Spices"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Cheese",
-    "Vegetables",
-    "Herbs"
+    "Tahini sauce",
+    "Pita bread",
+    "Tomato",
+    "Cucumber",
+    "Pickles",
+    "Lettuce",
+    "Hot sauce"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Soak the dried legumes and grind them with herbs, aromatics, and spices.",
+    "Shape the mixture into balls or patties.",
+    "Fry until crisp outside and cooked through.",
+    "Serve in pita, wraps, or on a plate with sauces and vegetables."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate to high",
     "protein": "Moderate",
     "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "fat": "Moderate; higher when deep-fried"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides plant-based protein, fiber, and herbs, especially when served with vegetables.",
+    "risks": "Deep frying and salty sauces can raise fat and sodium.",
+    "healthy_tip": "Pair with salad and use sauce moderately for a more balanced meal."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "note": "Falafel itself is usually vegan and gluten-free, but pita and some sauces may not be."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Sesame in tahini",
+    "Possible gluten if served in pita or with flour additives"
   ],
   "common_variations": [
-    "Classic Falafel",
-    "Loaded Falafel",
-    "Vegetarian-style Falafel"
+    "Chickpea falafel",
+    "Fava bean falafel",
+    "Falafel wrap",
+    "Falafel platter"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "4 to 6 pieces or 1 wrap",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Tahini",
+      "pita",
+      "salad",
+      "pickles",
+      "or hummus"
     ]
   },
   "popular_regions": [
-    "Levant",
     "Middle East",
+    "North Africa",
     "Worldwide"
   ]
 }

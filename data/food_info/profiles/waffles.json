@@ -1,61 +1,81 @@
 {
   "food_name": "Waffles",
-  "category": "Dessert",
+  "category": "Breakfast / Dessert",
   "cuisine": "Belgian / International",
-  "description": "A waffles dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "description": "A batter-based cooked dish made in a patterned waffle iron until crisp on the outside and tender inside. Waffles are commonly eaten for breakfast or brunch, and sweeter styles are also served as desserts with toppings such as butter, syrup, fruit, or whipped cream.",
   "core_ingredients": [
-    "Sweetened base",
-    "Flavoring",
-    "Finishing element"
+    "Flour",
+    "Eggs",
+    "Milk or buttermilk",
+    "Butter or oil",
+    "Leavening such as baking powder or yeast",
+    "Sugar",
+    "Salt"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Vanilla",
+    "Cinnamon",
+    "Whipped cream",
+    "Maple syrup",
+    "Fresh fruit",
+    "Chocolate chips",
+    "Powdered sugar",
+    "Ice cream"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare the batter by mixing dry ingredients and wet ingredients, then combining them without overmixing.",
+    "Preheat and lightly grease the waffle iron if needed.",
+    "Pour batter into the waffle iron and cook until golden brown and crisp.",
+    "Remove carefully and serve plain or with desired toppings.",
+    "For yeasted styles such as some Belgian waffles, allow the batter to rest or ferment before cooking."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "Usually moderate to high per serving, depending on toppings",
     "protein": "Low to moderate",
     "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Provides quick energy and can be made more balanced when served with fruit, yogurt, or nut butter.",
+    "risks": "Can become high in sugar, refined carbohydrates, and calories when served with heavy syrups, cream, or dessert toppings.",
+    "healthy_tip": "Use moderate toppings and consider whole grain batter, less added sugar, and fruit-based accompaniments."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional waffles usually contain wheat flour, milk, eggs, and butter. Vegan and gluten-free versions are possible with suitable substitutions."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten in traditional wheat-based versions",
+    "Egg",
+    "Milk or dairy",
+    "Possible soy depending on batter mix or toppings"
   ],
   "common_variations": [
-    "Classic Waffles",
-    "Chocolate or fruit-topped Waffles",
-    "Mini Waffles"
+    "Belgian waffles",
+    "American-style waffles",
+    "Liège waffles",
+    "Buttermilk waffles",
+    "Chocolate chip waffles",
+    "Savory waffles"
   ],
   "serving_info": {
-    "typical_serving": "1 waffle or portion",
+    "typical_serving": "1 to 2 waffles, depending on size",
     "best_served_with": [
+      "Maple syrup",
+      "Butter",
+      "Fresh berries",
+      "Whipped cream",
       "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Tea"
     ]
   },
   "popular_regions": [
+    "Belgium",
+    "United States",
+    "Canada",
     "Worldwide"
   ]
 }

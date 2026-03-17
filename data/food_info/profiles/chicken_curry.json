@@ -1,60 +1,75 @@
 {
   "food_name": "Chicken Curry",
-  "category": "Main Dish",
-  "cuisine": "South Asian / Global",
-  "description": "A protein-forward chicken curry typically served as a satisfying main dish with sides or sauces.",
+  "category": "Main dish",
+  "cuisine": "South Asian / Southeast Asian / Global",
+  "description": "A broad category of dishes in which chicken is cooked in a spiced sauce or gravy. Recipes vary greatly by region and may feature tomato, onion, yogurt, coconut milk, or a dry spice blend as the main flavor base.",
   "core_ingredients": [
-    "Primary protein",
-    "Seasoning",
-    "Oil or butter"
+    "Chicken",
+    "Onion",
+    "Garlic",
+    "Ginger",
+    "Spices"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Tomatoes",
+    "Yogurt",
+    "Coconut milk",
+    "Chili",
+    "Fresh coriander",
+    "Potatoes",
+    "Cream"
   ],
   "preparation_steps": [
-    "Season the protein",
-    "Cook to the desired doneness or tenderness",
-    "Rest or plate with sides and serve"
+    "Brown or lightly sear the chicken if the recipe calls for it.",
+    "Cook the onion, garlic, ginger, and spices to build the base.",
+    "Add the sauce ingredients such as tomato, yogurt, or coconut milk.",
+    "Simmer the chicken until fully cooked and the sauce is flavorful."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate to high",
     "protein": "High",
-    "carbohydrates": "Low to moderate",
-    "fat": "Moderate to high"
+    "carbohydrates": "Low to moderate; higher when served with rice or bread",
+    "fat": "Moderate; higher in creamy or coconut-based versions"
   },
   "health_advice": {
-    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
-    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
-    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+    "benefits": "Can be protein-rich and flavorful, and often includes aromatic spices and onions.",
+    "risks": "Salt, oil, and saturated fat can be high in restaurant or creamy versions.",
+    "healthy_tip": "Use lean chicken, moderate oil, and pair it with vegetables instead of relying only on large rice portions."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sides, sauces, and breading can change the final dietary profile"
+    "note": "Chicken curry is not vegetarian or vegan. Many versions are naturally gluten-free, but packaged spice mixes or accompaniments should be checked."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Milk if yogurt or cream is used",
+    "Possible tree nuts in some regional curry pastes or gravies",
+    "Possible gluten in packaged mixes or naan served alongside"
   ],
   "common_variations": [
-    "Classic Chicken Curry",
-    "Sauced Chicken Curry",
-    "Grilled or roasted Chicken Curry"
+    "Butter chicken",
+    "Chicken tikka masala",
+    "Thai chicken curry",
+    "Chicken korma",
+    "Chicken vindaloo"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl or plate",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Rice",
+      "Naan",
+      "Roti",
+      "Pickles"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "India",
+    "Pakistan",
+    "Bangladesh",
+    "Thailand",
+    "Malaysia",
+    "Worldwide curry restaurants"
   ]
 }

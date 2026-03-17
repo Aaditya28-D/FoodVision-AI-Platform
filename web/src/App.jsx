@@ -9,6 +9,19 @@ import {
   prettifyModelName,
 } from "./utils/formatters";
 
+function formatDuration(secondsValue) {
+  if (secondsValue == null || Number.isNaN(Number(secondsValue))) return "-";
+  const totalSeconds = Number(secondsValue);
+
+  if (totalSeconds < 60) {
+    return `${totalSeconds.toFixed(1)} sec`;
+  }
+
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+  return `${minutes} min ${seconds.toFixed(1)} sec`;
+}
+
 function ConfidenceBadge({ label }) {
   const styles = {
     "Extremely sure": "border-emerald-200 bg-emerald-50 text-emerald-700",
@@ -92,6 +105,38 @@ function TabButton({ active, onClick, children }) {
     >
       {children}
     </button>
+  );
+}
+
+function ModeButton({ active, onClick, children }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`rounded-xl px-4 py-2.5 text-sm font-medium transition ${
+        active
+          ? "bg-cyan-500 text-white shadow-sm"
+          : "bg-white text-slate-700 border border-slate-200 hover:bg-slate-50"
+      }`}
+    >
+      {children}
+    </button>
+  );
+}
+
+function InfoBox({ title, children, tone = "blue" }) {
+  const styles = {
+    blue: "border-cyan-200 bg-cyan-50 text-cyan-900",
+    amber: "border-amber-200 bg-amber-50 text-amber-900",
+    red: "border-red-200 bg-red-50 text-red-900",
+    emerald: "border-emerald-200 bg-emerald-50 text-emerald-900",
+  };
+
+  return (
+    <div className={`rounded-2xl border p-4 ${styles[tone] || styles.blue}`}>
+      <p className="text-sm font-semibold">{title}</p>
+      <div className="mt-2 text-sm leading-6">{children}</div>
+    </div>
   );
 }
 
@@ -189,6 +234,11 @@ function OverviewTab({ data, previewUrl, selectedStrategyLabel }) {
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
               <p className="text-sm leading-7 text-slate-700">{data.short_summary}</p>
             </div>
+
+            <InfoBox title="How to read confidence" tone="amber">
+              Higher confidence means the model feels more sure about its guess, but it can still be wrong.
+              Use confidence as a guide, not as final truth.
+            </InfoBox>
 
             <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
               <MetricCard
@@ -383,6 +433,11 @@ function ExplainabilityTab({ battle }) {
     <div className="space-y-5">
       <BattleSummaryCard summary={battle.summary} />
 
+      <InfoBox title="What explainability means" tone="blue">
+        These heatmaps highlight image regions the model paid attention to. They help you understand model focus,
+        but they do not prove the model is reasoning like a human.
+      </InfoBox>
+
       {battle.results.map((item) => {
         const topPrediction = item.comparison.top_prediction;
         const heatmapUrl = `${API_BASE_URL}${item.explanation.heatmap_url}`;
@@ -539,6 +594,11 @@ function SimilarDishesTab({ retrieval }) {
     <div className="space-y-5">
       <SimilarSummaryCard retrieval={retrieval} />
 
+      <InfoBox title="How to use similar dishes" tone="blue">
+        This section shows visually related images from the dataset. It is useful for comparison and exploration,
+        but it should not be treated as a final proof that the prediction is correct.
+      </InfoBox>
+
       {retrieval.exact_match_found ? (
         <PageCard className="p-4">
           <div className="rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800">
@@ -618,6 +678,231 @@ function SimilarDishesTab({ retrieval }) {
   );
 }
 
+function BulkClassificationTab({
+  strategies,
+  selectedStrategy,
+  setSelectedStrategy,
+  strategyLoading,
+}) {
+  const [bulkFiles, setBulkFiles] = useState([]);
+  const [confidenceThreshold, setConfidenceThreshold] = useState(0.6);
+  const [bulkLoading, setBulkLoading] = useState(false);
+  const [bulkError, setBulkError] = useState("");
+  const [bulkResult, setBulkResult] = useState(null);
+
+  async function handleBulkClassify(event) {
+    event.preventDefault();
+
+    if (!bulkFiles.length) {
+      setBulkError("Please choose one or more images first.");
+      return;
+    }
+
+    try {
+      setBulkLoading(true);
+      setBulkError("");
+      setBulkResult(null);
+
+      const startTime = performance.now();
+
+      const formData = new FormData();
+      bulkFiles.forEach((file) => formData.append("files", file));
+      formData.append("strategy", selectedStrategy);
+      formData.append("confidence_threshold", String(confidenceThreshold));
+
+      const response = await fetch(`${API_BASE_URL}/bulk-classify`, {
+        method: "POST",
+        body: formData,
+      });
+
+      const json = await response.json();
+
+      if (!response.ok) {
+        throw new Error(json.detail || "Bulk classification failed.");
+      }
+
+      const endTime = performance.now();
+      const processingSeconds = (endTime - startTime) / 1000;
+
+      setBulkResult({
+        ...json,
+        processing_seconds: processingSeconds,
+      });
+    } catch (err) {
+      setBulkError(err.message || "Bulk classification failed.");
+    } finally {
+      setBulkLoading(false);
+    }
+  }
+
+  const selectedStrategyDescription =
+    strategies.find((item) => item.key === selectedStrategy)?.description ||
+    "No strategy description available.";
+
+  return (
+    <div className="space-y-5">
+      <InfoBox title="How this bulk tool works" tone="blue">
+        Upload many food images at once. The app predicts a class for each image, creates separate folders by class,
+        puts uncertain files into a low-confidence folder, then gives you one zip file to download.
+      </InfoBox>
+
+      <InfoBox title="How to choose confidence threshold" tone="amber">
+        A higher threshold means the app will be stricter and send more uncertain images into
+        <span className="font-semibold"> low_confidence</span>. A lower threshold means more images will be assigned
+        directly into food folders. A practical starting point is <span className="font-semibold">0.60</span>.
+      </InfoBox>
+
+      <div className="grid gap-5 xl:grid-cols-2">
+        <PageCard className="p-4">
+          <SectionHeader
+            eyebrow="Bulk workflow"
+            title="Bulk Image Classification"
+            description="Upload many food images, classify them into folders, and download one zip file."
+          />
+
+          <form onSubmit={handleBulkClassify} className="space-y-4">
+            <div>
+              <label className="mb-2 block text-sm font-medium text-slate-700">Images</label>
+              <input
+                type="file"
+                accept="image/*"
+                multiple
+                onChange={(e) => {
+                  const files = Array.from(e.target.files || []);
+                  setBulkFiles(files);
+                  setBulkError("");
+                  setBulkResult(null);
+                }}
+                className="block w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-700 file:mr-3 file:rounded-lg file:border-0 file:bg-cyan-500 file:px-3 file:py-2 file:text-sm file:font-medium file:text-white hover:file:bg-cyan-400"
+              />
+              <p className="mt-2 text-sm text-slate-500">
+                Selected files: <span className="font-semibold text-slate-700">{bulkFiles.length}</span>
+              </p>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              <div>
+                <label className="mb-2 block text-sm font-medium text-slate-700">Prediction strategy</label>
+                <select
+                  value={selectedStrategy}
+                  onChange={(e) => setSelectedStrategy(e.target.value)}
+                  disabled={strategyLoading}
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 disabled:opacity-60"
+                >
+                  {strategies.map((strategy) => (
+                    <option key={strategy.key} value={strategy.key}>
+                      {strategy.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="mb-2 block text-sm font-medium text-slate-700">Confidence threshold</label>
+                <input
+                  type="number"
+                  min={0}
+                  max={1}
+                  step="0.01"
+                  value={confidenceThreshold}
+                  onChange={(e) => setConfidenceThreshold(Number(e.target.value))}
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400"
+                />
+              </div>
+            </div>
+
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-3">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Strategy details</p>
+              <p className="mt-2 text-sm leading-6 text-slate-700">{selectedStrategyDescription}</p>
+            </div>
+
+            <button
+              type="submit"
+              disabled={bulkLoading}
+              className="w-full rounded-xl bg-cyan-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              {bulkLoading ? "Classifying..." : "Classify and Build Zip"}
+            </button>
+          </form>
+
+          {bulkError ? (
+            <div className="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+              {bulkError}
+            </div>
+          ) : null}
+        </PageCard>
+
+        <PageCard className="p-4">
+          <SectionHeader
+            eyebrow="Bulk result"
+            title="Result Summary"
+            description="Your grouped archive and summary will appear here after classification."
+          />
+
+          {bulkResult ? (
+            <div className="space-y-4">
+              <div className="grid gap-3 md:grid-cols-2">
+                <MetricCard label="Total files" value={String(bulkResult.total_files)} tone="text-slate-900" compact />
+                <MetricCard
+                  label="Classified files"
+                  value={String(bulkResult.classified_files)}
+                  tone="text-emerald-700"
+                  compact
+                />
+                <MetricCard
+                  label="Low confidence files"
+                  value={String(bulkResult.low_confidence_files)}
+                  tone="text-amber-700"
+                  compact
+                />
+                <MetricCard
+                  label="Strategy"
+                  value={prettifyModelName(bulkResult.strategy)}
+                  tone="text-cyan-700"
+                  compact
+                />
+                <MetricCard
+                  label="Threshold"
+                  value={String(bulkResult.confidence_threshold)}
+                  tone="text-indigo-700"
+                  compact
+                />
+                <MetricCard
+                  label="Time taken"
+                  value={formatDuration(bulkResult.processing_seconds)}
+                  tone="text-fuchsia-700"
+                  compact
+                />
+              </div>
+
+              <InfoBox title="What is inside the zip?" tone="emerald">
+                The zip contains class folders, a low-confidence folder if needed, and a CSV summary file listing each
+                image, predicted class, confidence, strategy, and status.
+              </InfoBox>
+
+              <div>
+                <a
+                  href={`${API_BASE_URL}${bulkResult.download_url}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
+                >
+                  Download ZIP
+                </a>
+              </div>
+            </div>
+          ) : (
+            <div className="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-5 text-sm text-slate-600">
+              No bulk result yet. Upload files on the left, choose settings, and click
+              <span className="font-semibold"> Classify and Build Zip</span>.
+            </div>
+          )}
+        </PageCard>
+      </div>
+    </div>
+  );
+}
+
 function LoadingState() {
   return (
     <PageCard className="p-8 text-center">
@@ -631,6 +916,8 @@ function LoadingState() {
 }
 
 export default function App() {
+  const [appMode, setAppMode] = useState("single");
+
   const [selectedFile, setSelectedFile] = useState(null);
   const [previewUrl, setPreviewUrl] = useState("");
   const [topK, setTopK] = useState(5);
@@ -706,7 +993,7 @@ export default function App() {
       analyzeFormData.append("image", selectedFile);
 
       const analyzeResponse = await fetch(
-        `${API_BASE_URL}/analyze?top_k=${topK}&strategy=${encodeURIComponent(selectedStrategy)}`,
+        `${API_BASE_URL}/analyze?top_k=${topK}&strategy=${selectedStrategy}`,
         {
           method: "POST",
           body: analyzeFormData,
@@ -723,7 +1010,7 @@ export default function App() {
       retrievalFormData.append("image", selectedFile);
 
       const retrievalResponse = await fetch(
-        `${API_BASE_URL}/retrieve/similar?top_k=6&strategy=${encodeURIComponent(selectedStrategy)}`,
+        `${API_BASE_URL}/retrieve/similar?top_k=6&strategy=${selectedStrategy}`,
         {
           method: "POST",
           body: retrievalFormData,
@@ -758,142 +1045,176 @@ export default function App() {
           </h1>
           <p className="mt-2 max-w-3xl text-sm leading-7 text-slate-200 md:text-base">
             Upload a food image to identify the main food, understand confidence, explore food information,
-            inspect explainability, and retrieve visually similar dishes.
+            inspect explainability, retrieve visually similar dishes, or classify many images into folders.
           </p>
         </header>
 
-        <div className="grid gap-6 xl:grid-cols-[320px_1fr]">
-          <aside className="xl:sticky xl:top-6 xl:self-start">
-            <PageCard className="p-4">
-              <h2 className="text-lg font-semibold text-slate-900 font-serif">Upload Image</h2>
-
-              <form onSubmit={handleAnalyze} className="mt-4 space-y-4">
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-slate-700">Food image</label>
-                  <input
-                    type="file"
-                    accept="image/*"
-                    onChange={handleFileChange}
-                    className="block w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-700 file:mr-3 file:rounded-lg file:border-0 file:bg-cyan-500 file:px-3 file:py-2 file:text-sm file:font-medium file:text-white hover:file:bg-cyan-400"
-                  />
-                </div>
-
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-slate-700">Prediction strategy</label>
-                  <select
-                    value={selectedStrategy}
-                    onChange={(e) => setSelectedStrategy(e.target.value)}
-                    disabled={strategyLoading}
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 disabled:opacity-60"
-                  >
-                    {strategies.map((strategy) => (
-                      <option key={strategy.key} value={strategy.key}>
-                        {strategy.label}
-                      </option>
-                    ))}
-                  </select>
-                  {strategyLoading ? (
-                    <p className="mt-2 text-xs text-slate-500">Loading strategies...</p>
-                  ) : null}
-                </div>
-
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-slate-700">Top-K predictions</label>
-                  <input
-                    type="number"
-                    min={1}
-                    max={10}
-                    value={topK}
-                    onChange={(e) => setTopK(Number(e.target.value))}
-                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="w-full rounded-xl bg-cyan-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:opacity-60"
-                >
-                  {loading ? "Analyzing..." : "Analyze Food"}
-                </button>
-              </form>
-
-              {strategies.length > 0 ? (
-                <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-3">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Strategy details</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-700">
-                    {strategies.find((item) => item.key === selectedStrategy)?.description ||
-                      "No strategy description available."}
-                  </p>
-                </div>
-              ) : null}
-
-              {error ? (
-                <div className="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
-                  {error}
-                </div>
-              ) : null}
-
-              <div className="mt-5">
-                <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Preview</h3>
-                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
-                  {preview ? (
-                    <img src={preview} alt="Selected upload preview" className="h-64 w-full object-cover" />
-                  ) : (
-                    <div className="flex h-64 items-center justify-center px-6 text-center text-sm text-slate-500">
-                      Choose an image to preview it here.
-                    </div>
-                  )}
-                </div>
-              </div>
-            </PageCard>
-          </aside>
-
-          <main className="space-y-5 min-w-0">
-            {loading ? <LoadingState /> : null}
-
-            {!loading && analyzeData ? (
-              <>
-                <PageCard className="p-3">
-                  <div className="flex flex-wrap gap-2.5">
-                    <TabButton active={activeTab === "overview"} onClick={() => setActiveTab("overview")}>
-                      Overview
-                    </TabButton>
-                    <TabButton active={activeTab === "details"} onClick={() => setActiveTab("details")}>
-                      Food Details
-                    </TabButton>
-                    <TabButton active={activeTab === "explainability"} onClick={() => setActiveTab("explainability")}>
-                      Explainability
-                    </TabButton>
-                    <TabButton active={activeTab === "similar"} onClick={() => setActiveTab("similar")}>
-                      Similar Dishes
-                    </TabButton>
-                  </div>
-                </PageCard>
-
-                {activeTab === "overview" ? (
-                  <OverviewTab
-                    data={analyzeData}
-                    previewUrl={preview}
-                    selectedStrategyLabel={selectedStrategyLabel}
-                  />
-                ) : null}
-                {activeTab === "details" ? <FoodDetailsTab profile={analyzeData.food_profile} /> : null}
-                {activeTab === "explainability" ? <ExplainabilityTab battle={analyzeData.battle} /> : null}
-                {activeTab === "similar" ? <SimilarDishesTab retrieval={retrievalData} /> : null}
-              </>
-            ) : null}
-
-            {!loading && !analyzeData ? (
-              <PageCard className="p-8 text-center">
-                <h2 className="text-xl font-semibold text-slate-900 font-serif">Ready to analyze</h2>
-                <p className="mt-2 text-sm text-slate-600">
-                  Upload a food image to generate a prediction, food details, explainability, and similar-dish retrieval.
-                </p>
-              </PageCard>
-            ) : null}
-          </main>
+        <div className="mb-6">
+          <InfoBox title="Important notice" tone="red">
+            This is a practice AI project for learning and demonstration. Predictions, food details, explainability,
+            and retrieval results are not guaranteed to be fully accurate. Do not use this app as a medical, legal,
+            dietary, or professional source of truth.
+          </InfoBox>
         </div>
+
+        <div className="mb-6">
+          <InfoBox title="Quick guide for new users" tone="blue">
+            In <span className="font-semibold">Single Image Analysis</span>, upload one image to inspect prediction,
+            explanation, and similar dishes. In <span className="font-semibold">Bulk Classification</span>, upload many
+            images and download them grouped into folders by predicted class.
+          </InfoBox>
+        </div>
+
+        <div className="mb-6 flex flex-wrap gap-2.5">
+          <ModeButton active={appMode === "single"} onClick={() => setAppMode("single")}>
+            Single Image Analysis
+          </ModeButton>
+          <ModeButton active={appMode === "bulk"} onClick={() => setAppMode("bulk")}>
+            Bulk Classification
+          </ModeButton>
+        </div>
+
+        {appMode === "bulk" ? (
+          <BulkClassificationTab
+            strategies={strategies}
+            selectedStrategy={selectedStrategy}
+            setSelectedStrategy={setSelectedStrategy}
+            strategyLoading={strategyLoading}
+          />
+        ) : (
+          <div className="grid gap-6 xl:grid-cols-[320px_1fr]">
+            <aside className="xl:sticky xl:top-6 xl:self-start">
+              <PageCard className="p-4">
+                <h2 className="text-lg font-semibold text-slate-900 font-serif">Upload Image</h2>
+
+                <form onSubmit={handleAnalyze} className="mt-4 space-y-4">
+                  <div>
+                    <label className="mb-2 block text-sm font-medium text-slate-700">Food image</label>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={handleFileChange}
+                      className="block w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-700 file:mr-3 file:rounded-lg file:border-0 file:bg-cyan-500 file:px-3 file:py-2 file:text-sm file:font-medium file:text-white hover:file:bg-cyan-400"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="mb-2 block text-sm font-medium text-slate-700">Prediction strategy</label>
+                    <select
+                      value={selectedStrategy}
+                      onChange={(e) => setSelectedStrategy(e.target.value)}
+                      disabled={strategyLoading}
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400 disabled:opacity-60"
+                    >
+                      {strategies.map((strategy) => (
+                        <option key={strategy.key} value={strategy.key}>
+                          {strategy.label}
+                        </option>
+                      ))}
+                    </select>
+                    {strategyLoading ? (
+                      <p className="mt-2 text-xs text-slate-500">Loading strategies...</p>
+                    ) : null}
+                  </div>
+
+                  <div>
+                    <label className="mb-2 block text-sm font-medium text-slate-700">Top-K predictions</label>
+                    <input
+                      type="number"
+                      min={1}
+                      max={10}
+                      value={topK}
+                      onChange={(e) => setTopK(Number(e.target.value))}
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-700 outline-none focus:border-cyan-400"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="w-full rounded-xl bg-cyan-500 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:opacity-60"
+                  >
+                    {loading ? "Analyzing..." : "Analyze Food"}
+                  </button>
+                </form>
+
+                {strategies.length > 0 ? (
+                  <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-3">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Strategy details</p>
+                    <p className="mt-2 text-sm leading-6 text-slate-700">
+                      {strategies.find((item) => item.key === selectedStrategy)?.description ||
+                        "No strategy description available."}
+                    </p>
+                  </div>
+                ) : null}
+
+                {error ? (
+                  <div className="mt-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                    {error}
+                  </div>
+                ) : null}
+
+                <div className="mt-5">
+                  <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Preview</h3>
+                  <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+                    {preview ? (
+                      <img src={preview} alt="Selected upload preview" className="h-64 w-full object-cover" />
+                    ) : (
+                      <div className="flex h-64 items-center justify-center px-6 text-center text-sm text-slate-500">
+                        Choose an image to preview it here.
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </PageCard>
+            </aside>
+
+            <main className="space-y-5 min-w-0">
+              {loading ? <LoadingState /> : null}
+
+              {!loading && analyzeData ? (
+                <>
+                  <PageCard className="p-3">
+                    <div className="flex flex-wrap gap-2.5">
+                      <TabButton active={activeTab === "overview"} onClick={() => setActiveTab("overview")}>
+                        Overview
+                      </TabButton>
+                      <TabButton active={activeTab === "details"} onClick={() => setActiveTab("details")}>
+                        Food Details
+                      </TabButton>
+                      <TabButton active={activeTab === "explainability"} onClick={() => setActiveTab("explainability")}>
+                        Explainability
+                      </TabButton>
+                      <TabButton active={activeTab === "similar"} onClick={() => setActiveTab("similar")}>
+                        Similar Dishes
+                      </TabButton>
+                    </div>
+                  </PageCard>
+
+                  {activeTab === "overview" ? (
+                    <OverviewTab
+                      data={analyzeData}
+                      previewUrl={preview}
+                      selectedStrategyLabel={selectedStrategyLabel}
+                    />
+                  ) : null}
+                  {activeTab === "details" ? <FoodDetailsTab profile={analyzeData.food_profile} /> : null}
+                  {activeTab === "explainability" ? <ExplainabilityTab battle={analyzeData.battle} /> : null}
+                  {activeTab === "similar" ? <SimilarDishesTab retrieval={retrievalData} /> : null}
+                </>
+              ) : null}
+
+              {!loading && !analyzeData ? (
+                <PageCard className="p-8 text-center">
+                  <h2 className="text-xl font-semibold text-slate-900 font-serif">Ready to analyze</h2>
+                  <p className="mt-2 text-sm text-slate-600">
+                    Upload a food image to generate a prediction, food details, explainability, and similar-dish retrieval.
+                  </p>
+                </PageCard>
+              ) : null}
+            </main>
+          </div>
+        )}
       </div>
     </div>
   );

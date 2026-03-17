@@ -1,64 +1,73 @@
 {
   "food_name": "Baklava",
   "category": "Dessert",
-  "cuisine": "Middle Eastern / Eastern Mediterranean",
-  "description": "A baklava dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "cuisine": "Middle Eastern / Eastern Mediterranean / Balkan",
+  "description": "A rich layered pastry made with thin sheets of phyllo, chopped nuts, butter or ghee, and a sweet syrup or honey-based glaze. It is typically cut into diamonds or squares before or after baking.",
   "core_ingredients": [
-    "Sweet base ingredients",
-    "Sugar",
-    "Flavoring"
+    "Phyllo pastry",
+    "Chopped nuts such as pistachios, walnuts, or almonds",
+    "Butter or ghee",
+    "Sugar syrup or honey syrup"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Cinnamon",
+    "Cardamom",
+    "Clove",
+    "Rose water",
+    "Orange blossom water",
+    "Lemon juice"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Layer sheets of phyllo with melted butter or ghee.",
+    "Spread nut filling between or across selected layers.",
+    "Cut the unbaked pastry into portions.",
+    "Bake until crisp and golden.",
+    "Pour cooled or warm syrup over the baked pastry and let it absorb before serving."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "High per piece",
     "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "carbohydrates": "High",
+    "fat": "High"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Nuts contribute some unsaturated fat and minerals.",
+    "risks": "Usually very energy-dense because it combines pastry, butter, nuts, and syrup.",
+    "healthy_tip": "Serve small portions; reducing syrup or using more nuts relative to syrup can make it less sweet."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
     "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "note": "Traditional versions are vegetarian. Vegan versions use dairy-free fat and avoid honey if strict vegan standards are required."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten",
+    "Tree nuts",
+    "Dairy if butter is used"
   ],
   "common_variations": [
-    "Classic Baklava",
-    "Chocolate or fruit-topped Baklava",
-    "Mini Baklava"
+    "Pistachio baklava",
+    "Walnut baklava",
+    "Almond baklava",
+    "Rosewater baklava",
+    "Regional versions using different nuts, spices, or shapes"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 to 2 small pieces",
     "best_served_with": [
-      "Coffee",
+      "Turkish coffee",
       "Tea",
-      "Fruit garnish"
+      "Unsweetened yogurt in some regional pairings"
     ]
   },
   "popular_regions": [
-    "Türkiye",
+    "Turkey",
     "Greece",
+    "Levant",
+    "Balkans",
     "Middle East",
-    "Worldwide"
+    "North Africa"
   ]
 }

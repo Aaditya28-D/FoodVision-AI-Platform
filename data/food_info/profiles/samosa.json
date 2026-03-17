@@ -1,60 +1,71 @@
 {
   "food_name": "Samosa",
-  "category": "Street Food / Fast Casual",
+  "category": "Snack or appetizer",
   "cuisine": "South Asian",
-  "description": "A casual samosa with bold flavor, quick service appeal, and room for ingredient variation.",
+  "description": "A crisp pastry filled with a savory mixture, commonly spiced potatoes and peas, and then deep-fried or baked. It is widely eaten across South Asia and in many regions influenced by South Asian cuisine.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "Pastry dough",
+    "Savory filling",
+    "Spices"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Cheese",
-    "Vegetables",
-    "Herbs"
+    "Potatoes",
+    "Peas",
+    "Onions",
+    "Lentils",
+    "Ground meat",
+    "Chili",
+    "Coriander",
+    "Cumin"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Prepare the dough or wrappers.",
+    "Cook the filling and let it cool.",
+    "Shape the pastry into cones or triangles and fill them.",
+    "Seal the edges well.",
+    "Fry or bake until golden and crisp."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Low to moderate",
+    "carbohydrates": "Moderate to high",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can provide a flavorful snack and may include legumes or vegetables.",
+    "risks": "Deep-fried versions can be high in fat and calories, and sodium can be elevated depending on the filling.",
+    "healthy_tip": "Choose baked versions when available and pair with a fresh chutney or salad rather than heavy sides."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "note": "Potato-and-pea samosas are often vegetarian and vegan. Traditional pastry usually contains wheat, so gluten-free versions require alternative dough or wrappers."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Gluten in traditional pastry",
+    "Possible dairy in dough or accompanying sauces"
   ],
   "common_variations": [
-    "Classic Samosa",
-    "Loaded Samosa",
-    "Vegetarian-style Samosa"
+    "Potato and pea samosa",
+    "Meat samosa",
+    "Lentil samosa",
+    "Baked samosa"
   ],
   "serving_info": {
     "typical_serving": "1 to 2 pieces",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Mint chutney",
+      "Tamarind chutney",
+      "Tea"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "India",
+    "Pakistan",
+    "Bangladesh",
+    "Nepal",
+    "Worldwide South Asian restaurants"
   ]
 }

@@ -1,61 +1,68 @@
 {
   "food_name": "Lasagna",
-  "category": "Main Dish",
+  "category": "Pasta dish",
   "cuisine": "Italian",
-  "description": "A hearty lasagna centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "description": "A baked layered pasta dish made with sheets of pasta, sauce, cheese, and commonly meat or vegetables. It is assembled in layers and baked until hot, set, and lightly browned on top.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Lasagna noodles",
+    "Sauce",
+    "Cheese"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Ground beef",
+    "Sausage",
+    "Ricotta",
+    "Bechamel",
+    "Spinach",
+    "Mushrooms",
+    "Herbs"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Prepare the sauce and any meat or vegetable filling.",
+    "Layer pasta sheets with sauce, cheese, and fillings in a baking dish.",
+    "Repeat layers until the dish is assembled.",
+    "Bake until bubbling and cooked through.",
+    "Rest briefly before slicing and serving."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually high",
+    "protein": "Moderate to high",
+    "carbohydrates": "Moderate to high",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can be filling and substantial, and vegetable-based versions can add more fiber and micronutrients.",
+    "risks": "Large portions can be high in calories, sodium, and saturated fat because of cheese and meat.",
+    "healthy_tip": "Use moderate cheese, add vegetables, and keep portions sensible."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "gluten_free_possible": true,
+    "note": "Traditional lasagna usually contains wheat pasta and cheese. Vegetarian, vegan, and gluten-free versions are common with substitutions."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Gluten from pasta",
+    "Dairy",
+    "Egg in some pasta sheets"
   ],
   "common_variations": [
-    "Classic Lasagna",
-    "Protein-rich Lasagna",
-    "Vegetable-forward Lasagna"
+    "Meat lasagna",
+    "Vegetable lasagna",
+    "Lasagna with bechamel",
+    "Vegan lasagna"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 slice or square",
     "best_served_with": [
       "Salad",
-      "Tea",
-      "Light sides"
+      "Garlic bread",
+      "Roasted vegetables"
     ]
   },
   "popular_regions": [
+    "Italy",
     "Worldwide"
   ]
 }

@@ -1,60 +1,75 @@
 {
   "food_name": "Chicken Wings",
-  "category": "Main Dish",
+  "category": "Main dish",
   "cuisine": "American",
-  "description": "A protein-forward chicken wings typically served as a satisfying main dish with sides or sauces.",
+  "description": "Chicken wings are a popular dish made from split wing sections that are typically deep-fried, baked, air-fried, or grilled, then tossed in a sauce or dry seasoning. They are strongly associated with bar food and game-day eating, especially in the United States.",
   "core_ingredients": [
-    "Primary protein",
-    "Seasoning",
-    "Oil or butter"
+    "Chicken wings",
+    "Salt",
+    "Pepper",
+    "Oil for frying or coating",
+    "Sauce or dry seasoning"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Buffalo sauce",
+    "Barbecue sauce",
+    "Garlic butter",
+    "Hot sauce",
+    "Paprika",
+    "Cornstarch or baking powder for crispness",
+    "Celery sticks",
+    "Blue cheese dip",
+    "Ranch dip"
   ],
   "preparation_steps": [
-    "Season the protein",
-    "Cook to the desired doneness or tenderness",
-    "Rest or plate with sides and serve"
+    "Split and pat dry the wings, then season them.",
+    "Cook by frying, baking, air-frying, or grilling until browned and fully cooked.",
+    "Toss the cooked wings with sauce or coat them with a dry rub.",
+    "Serve hot, often with a cooling dip and crunchy vegetables."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate to high",
     "protein": "High",
-    "carbohydrates": "Low to moderate",
+    "carbohydrates": "Low unless breaded or heavily sauced",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
-    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
-    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+    "benefits": "Good source of protein and satisfying in small portions.",
+    "risks": "Can be high in sodium, saturated fat, and calories, especially when deep-fried and heavily sauced.",
+    "healthy_tip": "Bake or air-fry instead of deep-frying and use sauce in moderation."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sides, sauces, and breading can change the final dietary profile"
+    "note": "Naturally non-vegetarian. Gluten-free versions are possible if the seasoning, coating, and sauce do not contain wheat."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Possible dairy in dips or butter-based sauces",
+    "Possible gluten in breading or some sauces",
+    "Soy in some bottled sauces"
   ],
   "common_variations": [
-    "Classic Chicken Wings",
-    "Sauced Chicken Wings",
-    "Grilled or roasted Chicken Wings"
+    "Buffalo wings",
+    "Barbecue wings",
+    "Lemon pepper wings",
+    "Garlic parmesan wings",
+    "Smoked wings"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "6 to 10 wing pieces",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Celery sticks",
+      "Carrot sticks",
+      "Blue cheese dip",
+      "Ranch dip",
+      "Fries"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "Canada",
+    "Sports bars worldwide"
   ]
 }

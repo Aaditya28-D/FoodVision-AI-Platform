@@ -1,60 +1,69 @@
 {
   "food_name": "Pulled Pork Sandwich",
-  "category": "Main Dish",
+  "category": "Main dish",
   "cuisine": "American",
-  "description": "A handheld pulled pork sandwich that combines bread or a bun with layered fillings, texture, and sauce.",
+  "description": "A sandwich made with slow-cooked pork shoulder that is shredded and served on a bun, often with barbecue sauce and coleslaw. It is especially associated with American barbecue traditions.",
   "core_ingredients": [
-    "Bread, bun, or roll",
-    "Main filling",
-    "Condiments or garnish"
+    "Pulled pork",
+    "Bun or roll",
+    "Barbecue sauce"
   ],
   "optional_ingredients": [
-    "Cheese",
-    "Pickles or vegetables",
-    "Sauce"
+    "Coleslaw",
+    "Pickles",
+    "Onions",
+    "Mustard",
+    "Hot sauce",
+    "Cheese"
   ],
   "preparation_steps": [
-    "Prepare the bread or base",
-    "Cook or assemble the filling",
-    "Layer, finish, and serve"
+    "Season and slow-cook pork shoulder until very tender.",
+    "Shred the meat and mix with some of its cooking juices and, if desired, barbecue sauce.",
+    "Toast or warm the bun.",
+    "Pile the pulled pork onto the bun and add optional toppings such as coleslaw or pickles.",
+    "Serve hot."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate to high",
     "protein": "High",
-    "carbohydrates": "Low to moderate",
+    "carbohydrates": "Moderate",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
-    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
-    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+    "benefits": "Provides substantial protein and can be filling.",
+    "risks": "Calories, sodium, and sugar can be high depending on the cut of pork, sauce, and portion size.",
+    "healthy_tip": "Use a leaner portion of pork, moderate the sauce, and add a crisp vegetable topping such as slaw without excessive dressing."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sides, sauces, and breading can change the final dietary profile"
+    "note": "Usually not vegetarian or vegan. Gluten-free is possible if served without a standard bun or with a certified gluten-free bun and sauce."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Possible gluten from bun",
+    "Possible mustard",
+    "Possible egg in coleslaw",
+    "Possible soy in some sauces"
   ],
   "common_variations": [
-    "Classic Pulled Pork Sandwich",
-    "Loaded Pulled Pork Sandwich",
-    "Vegetarian-style Pulled Pork Sandwich"
+    "Carolina-style pulled pork sandwich",
+    "Texas-style barbecue pulled pork sandwich",
+    "Pulled pork sandwich with coleslaw",
+    "Spicy pulled pork sandwich"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 sandwich",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Coleslaw",
+      "Pickles",
+      "French fries",
+      "Baked beans"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "Especially the American South"
   ]
 }

@@ -1,61 +1,66 @@
 {
   "food_name": "Strawberry Shortcake",
   "category": "Dessert",
-  "cuisine": "American / European",
-  "description": "A strawberry shortcake dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "cuisine": "American and British-influenced",
+  "description": "A dessert made with sweetened strawberries layered with shortcake, biscuit, or sponge and usually whipped cream. The exact form varies by region and household tradition.",
   "core_ingredients": [
-    "Sweet base ingredients",
-    "Sugar",
-    "Flavoring"
+    "Strawberries",
+    "Shortcake or biscuit base",
+    "Whipped cream",
+    "Sugar"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Vanilla",
+    "Sponge cake",
+    "Lemon zest",
+    "Mint"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Sweeten and macerate the strawberries so they release some juice.",
+    "Prepare or slice the shortcake or biscuit base.",
+    "Whip the cream if using fresh cream.",
+    "Assemble the dessert by layering cake, strawberries, and cream."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
-    "protein": "Low to moderate",
+    "calories": "Usually moderate",
+    "protein": "Low",
     "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Includes fruit and can be lighter than denser desserts when portions are modest.",
+    "risks": "Sugar content can be high, especially with sweetened cream and cake.",
+    "healthy_tip": "Use ripe fruit for flavor and reduce added sugar where possible."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional versions are vegetarian. Vegan and gluten-free versions are possible with suitable cream and cake substitutes."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten in standard cake or biscuits",
+    "Milk in whipped cream",
+    "Egg in many cake versions"
   ],
   "common_variations": [
-    "Classic Strawberry Shortcake",
-    "Chocolate or fruit-topped Strawberry Shortcake",
-    "Mini Strawberry Shortcake"
+    "Biscuit-style shortcake",
+    "Sponge-cake version",
+    "Layered trifle-like version",
+    "Vegan strawberry shortcake"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 dessert portion",
     "best_served_with": [
-      "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Extra berries",
+      "Whipped cream",
+      "Tea or coffee"
     ]
   },
   "popular_regions": [
+    "United States",
+    "United Kingdom",
     "Worldwide"
   ]
 }

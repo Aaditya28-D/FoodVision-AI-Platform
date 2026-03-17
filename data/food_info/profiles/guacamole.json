@@ -1,59 +1,66 @@
 {
   "food_name": "Guacamole",
-  "category": "Side / Appetizer",
+  "category": "Dip or condiment",
   "cuisine": "Mexican",
-  "description": "A recognizable guacamole dish with its own characteristic ingredients, texture, and serving style.",
+  "description": "A mashed avocado dish traditionally combined with ingredients such as lime, onion, cilantro, chili, and salt. It is commonly served as a dip, topping, or side.",
   "core_ingredients": [
-    "Primary ingredient",
-    "Seasoning",
-    "Supporting elements"
+    "Avocado",
+    "Lime juice",
+    "Salt"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Onion",
+    "Tomato",
+    "Cilantro",
+    "Jalapeno or serrano chili",
+    "Garlic"
   ],
   "preparation_steps": [
-    "Prepare the key ingredients",
-    "Cook or assemble with seasoning",
-    "Plate and serve"
+    "Mash ripe avocado to the desired texture.",
+    "Mix in lime juice and salt.",
+    "Add optional ingredients such as onion, tomato, cilantro, and chili.",
+    "Taste and adjust seasoning.",
+    "Serve fresh, as avocado browns over time."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate"
+    "calories": "Moderate to high",
+    "protein": "Low",
+    "carbohydrates": "Low to moderate",
+    "fat": "Moderate to high, mostly unsaturated fat"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides fiber and mostly unsaturated fats from avocado.",
+    "risks": "Portion size matters because avocado is energy-dense, and salty chips can increase sodium intake.",
+    "healthy_tip": "Serve with vegetables, moderate portions of chips, or use it as a topping instead of a heavy creamy sauce."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Preparation style determines the final dietary profile"
+    "note": "Typically vegan and gluten-free when served plain; pairings such as flavored chips may change this."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Usually none in the dip itself; packaged seasonings or chips may introduce allergens"
   ],
   "common_variations": [
-    "Classic Guacamole",
-    "House-style Guacamole",
-    "Modern Guacamole"
+    "Chunky guacamole",
+    "Spicy guacamole",
+    "Tomato-based guacamole"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "A few spoonfuls to a small bowl",
     "best_served_with": [
-      "Fresh garnish",
-      "Light sides",
-      "Beverage of choice"
+      "Tortilla chips",
+      "Tacos",
+      "Burritos",
+      "Grilled meats",
+      "Vegetable sticks"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Mexico",
+    "United States",
+    "Worldwide Mexican restaurants"
   ]
 }

@@ -1,63 +1,69 @@
 {
   "food_name": "Tacos",
-  "category": "Street Food / Fast Casual",
+  "category": "Main dish",
   "cuisine": "Mexican",
-  "description": "A folded or open tortilla dish filled with meats, beans, vegetables, sauces, or cheese.",
+  "description": "A Mexican dish consisting of a folded or rolled tortilla filled with meat, beans, seafood, vegetables, or other ingredients and finished with toppings such as salsa, onion, cilantro, or lime.",
   "core_ingredients": [
-    "Tortilla",
+    "Tortillas",
     "Filling",
-    "Sauce or salsa"
+    "Salsa"
   ],
   "optional_ingredients": [
-    "Chicken",
     "Beef",
+    "Chicken",
+    "Pork",
+    "Fish",
     "Beans",
     "Cheese",
-    "Lettuce",
     "Onion",
-    "Coriander"
+    "Cilantro",
+    "Lettuce",
+    "Lime",
+    "Guacamole"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Cook or prepare the chosen filling.",
+    "Warm the tortillas so they are pliable.",
+    "Fill the tortillas and add toppings.",
+    "Serve immediately while warm."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
+    "calories": "Usually moderate per taco",
+    "protein": "Varies with filling",
     "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "fat": "Varies with filling and toppings"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can be balanced with lean protein, beans, and fresh toppings.",
+    "risks": "Calories and sodium rise quickly with fried shells, large portions of cheese, or rich sauces.",
+    "healthy_tip": "Choose corn tortillas, lean fillings, and plenty of fresh salsa and vegetables."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Exact dietary profile depends on tortilla type and fillings"
+    "note": "Corn-tortilla tacos are often gluten-free, but flour tortillas are not. Suitability depends on fillings and toppings."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Gluten in flour tortillas",
+    "Milk if cheese or sour cream is used",
+    "Soy in some marinades"
   ],
   "common_variations": [
-    "Chicken tacos",
-    "Beef tacos",
+    "Carne asada tacos",
+    "Al pastor tacos",
     "Fish tacos",
     "Bean tacos",
-    "Veggie tacos"
+    "Street-style tacos"
   ],
   "serving_info": {
-    "typical_serving": "2 to 3 tacos",
+    "typical_serving": "2 to 4 tacos",
     "best_served_with": [
+      "Lime wedges",
       "Salsa",
-      "Guacamole",
-      "Rice",
-      "Beans"
+      "Beans",
+      "Rice"
     ]
   },
   "popular_regions": [

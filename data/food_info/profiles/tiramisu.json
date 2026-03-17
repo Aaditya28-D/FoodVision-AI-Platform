@@ -2,57 +2,63 @@
   "food_name": "Tiramisu",
   "category": "Dessert",
   "cuisine": "Italian",
-  "description": "A tiramisu dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "description": "A layered Italian dessert made with coffee-soaked ladyfingers and a mascarpone-based cream, usually dusted with cocoa. It is known for its soft texture and strong coffee flavor.",
   "core_ingredients": [
-    "Sweet base ingredients",
+    "Ladyfingers",
+    "Mascarpone",
+    "Coffee or espresso",
+    "Eggs",
     "Sugar",
-    "Flavoring"
+    "Cocoa powder"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Marsala wine",
+    "Coffee liqueur",
+    "Vanilla",
+    "Dark chocolate"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare the mascarpone cream mixture.",
+    "Dip the ladyfingers briefly in coffee.",
+    "Layer the soaked biscuits and cream.",
+    "Chill until set, then dust with cocoa before serving."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "Usually high",
     "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "carbohydrates": "Moderate",
+    "fat": "High"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Provides an enjoyable dessert portion with coffee flavor rather than excessive sweetness alone.",
+    "risks": "Often high in sugar and fat, and versions containing raw egg need careful handling.",
+    "healthy_tip": "Serve smaller portions and keep it as an occasional dessert."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Classic tiramisu is vegetarian but not vegan. Gluten-free and vegan versions are possible with substitute biscuits and cream components."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten in ladyfingers",
+    "Milk from mascarpone",
+    "Egg",
+    "Alcohol in some versions"
   ],
   "common_variations": [
-    "Classic Tiramisu",
-    "Chocolate or fruit-topped Tiramisu",
-    "Mini Tiramisu"
+    "Classic coffee tiramisu",
+    "Alcohol-free tiramisu",
+    "Chocolate tiramisu",
+    "Fruit-flavored versions"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 slice or square",
     "best_served_with": [
       "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Cocoa dusting",
+      "Dark chocolate shavings"
     ]
   },
   "popular_regions": [

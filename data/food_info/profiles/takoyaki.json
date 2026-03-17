@@ -1,61 +1,70 @@
 {
   "food_name": "Takoyaki",
-  "category": "Street Food / Fast Casual",
+  "category": "Snack or street food",
   "cuisine": "Japanese",
-  "description": "A casual takoyaki with bold flavor, quick service appeal, and room for ingredient variation.",
+  "description": "A Japanese street snack of round batter balls cooked in a special molded pan and typically filled with pieces of octopus. They are commonly topped with sauce, mayonnaise, seaweed powder, and bonito flakes.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "Batter",
+    "Octopus",
+    "Takoyaki pan",
+    "Takoyaki sauce"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Cheese",
-    "Vegetables",
-    "Herbs"
+    "Pickled ginger",
+    "Green onion",
+    "Tempura bits",
+    "Mayonnaise",
+    "Bonito flakes",
+    "Seaweed powder"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Prepare the batter and fillings.",
+    "Pour batter into the hot takoyaki pan and add octopus and other fillings.",
+    "Turn the balls repeatedly as they cook so they become round and evenly browned.",
+    "Top with sauce and garnishes before serving hot."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
+    "calories": "Usually moderate",
+    "protein": "Low to moderate",
     "carbohydrates": "Moderate",
     "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can provide some seafood protein in small portions.",
+    "risks": "Toppings may add sodium and fat, and the centers stay very hot after cooking.",
+    "healthy_tip": "Eat in moderation and allow them to cool slightly before biting into them."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
-    "vegan_possible": true,
-    "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "vegan_possible": false,
+    "gluten_free_possible": false,
+    "note": "Traditional takoyaki contains octopus and wheat-based batter. Vegetarian novelty versions exist but are not standard."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Gluten",
+    "Egg in many batters",
+    "Seafood",
+    "Soy in sauce",
+    "Fish from bonito flakes if used"
   ],
   "common_variations": [
-    "Classic Takoyaki",
-    "Loaded Takoyaki",
-    "Vegetarian-style Takoyaki"
+    "Classic octopus takoyaki",
+    "Cheese-filled versions",
+    "Shrimp or mixed seafood versions",
+    "Vegetarian novelty versions"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "6 to 8 pieces",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Takoyaki sauce",
+      "Japanese mayonnaise",
+      "Bonito flakes"
     ]
   },
   "popular_regions": [
+    "Osaka",
     "Japan",
-    "Worldwide"
+    "Worldwide Japanese street-food venues"
   ]
 }

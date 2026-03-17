@@ -1,61 +1,69 @@
 {
   "food_name": "Risotto",
-  "category": "Main Dish",
+  "category": "Main dish",
   "cuisine": "Italian",
-  "description": "A hearty risotto centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "description": "An Italian rice dish made by gradually cooking short-grain rice in stock until creamy. The texture comes from the rice starch rather than from heavy cream, though butter and cheese are often added at the end.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Short-grain rice such as Arborio, Carnaroli, or Vialone Nano",
+    "Stock",
+    "Onion or shallot"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Parmesan",
+    "Butter",
+    "White wine",
+    "Mushrooms",
+    "Seafood",
+    "Saffron",
+    "Peas",
+    "Asparagus"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Sauté onion or shallot in fat.",
+    "Toast the rice briefly.",
+    "Add wine if using and let it absorb.",
+    "Add hot stock gradually, stirring and allowing each addition to absorb before the next.",
+    "Finish with butter, cheese, and any cooked add-ins before serving immediately."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Low to moderate",
+    "carbohydrates": "High",
+    "fat": "Low to moderate, but higher with butter and cheese"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can be satisfying and versatile, with room to include vegetables or seafood.",
+    "risks": "Rich versions can become high in sodium, butter, and cheese.",
+    "healthy_tip": "Add vegetables and use moderate amounts of butter and cheese for a more balanced dish."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "gluten_free_possible": true,
+    "note": "Naturally gluten-free when prepared with gluten-free stock and add-ins. Vegan versions are possible without butter and cheese."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Dairy if butter or cheese is used",
+    "Possible celery in stock",
+    "Possible shellfish in seafood versions"
   ],
   "common_variations": [
-    "Classic Risotto",
-    "Protein-rich Risotto",
-    "Vegetable-forward Risotto"
+    "Mushroom risotto",
+    "Seafood risotto",
+    "Saffron risotto",
+    "Spring vegetable risotto"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 plate or bowl",
     "best_served_with": [
       "Salad",
-      "Tea",
-      "Light sides"
+      "Roasted vegetables",
+      "White wine"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Italy",
+    "Worldwide Italian restaurants"
   ]
 }

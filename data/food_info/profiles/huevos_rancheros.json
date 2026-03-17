@@ -1,61 +1,67 @@
 {
   "food_name": "Huevos Rancheros",
-  "category": "Street Food / Fast Casual",
+  "category": "Breakfast or brunch dish",
   "cuisine": "Mexican",
-  "description": "A casual huevos rancheros with bold flavor, quick service appeal, and room for ingredient variation.",
+  "description": "A traditional Mexican breakfast of fried eggs served on lightly fried or warmed tortillas and topped with a tomato-chili salsa. Beans, avocado, or cheese are common additions.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "Eggs",
+    "Corn tortillas",
+    "Salsa"
   ],
   "optional_ingredients": [
-    "Sauce",
+    "Refried beans",
+    "Avocado",
     "Cheese",
-    "Vegetables",
-    "Herbs"
+    "Cilantro",
+    "Onion",
+    "Hot sauce"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Warm or lightly fry the tortillas.",
+    "Cook the eggs.",
+    "Place the eggs over the tortillas.",
+    "Top with salsa and any optional additions.",
+    "Serve immediately."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate",
     "protein": "Moderate",
     "carbohydrates": "Moderate",
     "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can be a balanced breakfast with protein, tortillas, and vegetables from salsa or sides.",
+    "risks": "Calories and sodium increase with large amounts of cheese, oil, or refried beans prepared with added fat.",
+    "healthy_tip": "Use a fresh salsa and include beans or avocado in moderate portions for a more satisfying meal."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "note": "Classic huevos rancheros is vegetarian but not vegan because of eggs. Vegan versions can use tofu or plant-based egg alternatives. Corn tortillas are often gluten-free."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Egg",
+    "Possible dairy if cheese is added"
   ],
   "common_variations": [
-    "Classic Huevos Rancheros",
-    "Loaded Huevos Rancheros",
-    "Vegetarian-style Huevos Rancheros"
+    "Huevos rancheros with beans",
+    "Huevos rancheros with avocado",
+    "Baked huevos rancheros"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "2 eggs with tortillas",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Beans",
+      "Avocado",
+      "Rice",
+      "Fresh fruit"
     ]
   },
   "popular_regions": [
     "Mexico",
-    "Southwestern United States"
+    "Southwestern United States",
+    "Worldwide Mexican restaurants"
   ]
 }

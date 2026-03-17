@@ -1,60 +1,69 @@
 {
   "food_name": "Clam Chowder",
-  "category": "Soup / Broth Dish",
+  "category": "Soup",
   "cuisine": "American",
-  "description": "A clam chowder served as a broth-based dish, often designed to deliver warmth, aroma, and layered flavor.",
+  "description": "Clam chowder is a hearty soup made with clams and a savory base. The best-known version is New England clam chowder, which is creamy and often includes potatoes, onions, and sometimes salt pork or bacon.",
   "core_ingredients": [
-    "Broth or stock",
-    "Aromatics",
-    "Main ingredients"
+    "Clams",
+    "Potatoes",
+    "Onion",
+    "Broth or clam juice",
+    "Cream or milk in creamy versions"
   ],
   "optional_ingredients": [
+    "Celery",
+    "Butter",
+    "Flour for thickening",
+    "Bacon or salt pork",
     "Herbs",
-    "Cream or finishing oil",
-    "Protein or garnish"
+    "Crackers"
   ],
   "preparation_steps": [
-    "Build flavor with aromatics and liquid",
-    "Cook the main ingredients until balanced",
-    "Adjust seasoning and serve hot"
+    "Cook aromatic ingredients such as onion and celery.",
+    "Add potatoes and liquid, then simmer until tender.",
+    "Add clams near the end so they stay tender.",
+    "Stir in dairy for creamy versions and adjust seasoning.",
+    "Serve hot, often with crackers or bread."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "calories": "Moderate",
+    "protein": "Moderate",
+    "carbohydrates": "Moderate",
+    "fat": "Low to moderate, higher in creamy versions"
   },
   "health_advice": {
-    "benefits": "Can be comforting, hydrating, and nutrient-dense depending on broth and ingredients.",
-    "risks": "Some soups can become high in sodium, cream, or refined starch depending on the recipe.",
-    "healthy_tip": "Choose broth-forward versions and pair them with vegetables or lean protein when possible."
+    "benefits": "Provides protein and minerals from clams and can be filling.",
+    "risks": "May be high in sodium; creamy versions can be rich in saturated fat.",
+    "healthy_tip": "Choose broth-heavy or lighter creamy versions and watch sodium content."
   },
   "dietary_notes": {
-    "vegetarian_possible": true,
+    "vegetarian_possible": false,
     "non_vegetarian_possible": true,
-    "vegan_possible": true,
+    "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Broth type and garnishes determine the final dietary profile"
+    "note": "Traditional clam chowder is seafood-based. Gluten-free versions are possible if wheat-based thickener is avoided."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Shellfish",
+    "Milk in creamy versions",
+    "Possible gluten if thickened with flour or served in a bread bowl"
   ],
   "common_variations": [
-    "Classic Clam Chowder",
-    "Spiced Clam Chowder",
-    "Citrus-finished Clam Chowder"
+    "New England clam chowder",
+    "Manhattan clam chowder",
+    "Rhode Island clam chowder",
+    "Smoky bacon clam chowder"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl",
     "best_served_with": [
-      "Bread",
-      "Crackers",
-      "Light sides"
+      "Oyster crackers",
+      "Crusty bread",
+      "Bread bowl"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "New England",
+    "United States"
   ]
 }

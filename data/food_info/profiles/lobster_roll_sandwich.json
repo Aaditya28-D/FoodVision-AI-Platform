@@ -1,61 +1,68 @@
 {
   "food_name": "Lobster Roll Sandwich",
-  "category": "Seafood Dish",
-  "cuisine": "American / New England",
-  "description": "A seafood-focused lobster roll sandwich prepared to highlight delicate texture, freshness, and seasoning balance.",
+  "category": "Sandwich",
+  "cuisine": "American",
+  "description": "A sandwich made with lobster meat served in a split-top bun, usually dressed either with mayonnaise in the New England style or with warm butter in the Connecticut style.",
   "core_ingredients": [
-    "Lobster Roll Sandwich",
-    "Seasoning",
-    "Oil, butter, or dressing"
+    "Lobster meat",
+    "Split-top bun or hot dog-style roll",
+    "Butter or mayonnaise"
   ],
   "optional_ingredients": [
-    "Citrus",
-    "Herbs",
-    "Sauce",
-    "Fresh garnish"
+    "Lemon juice",
+    "Celery",
+    "Chives",
+    "Lettuce",
+    "Black pepper",
+    "Paprika"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Cook and chill or warm the lobster meat depending on the style.",
+    "Lightly dress the lobster with mayonnaise or melted butter.",
+    "Toast the bun in butter.",
+    "Fill the bun with lobster and optional seasonings or garnish.",
+    "Serve immediately."
   ],
   "nutrition": {
-    "calories": "Moderate",
+    "calories": "Usually moderate",
     "protein": "Moderate to high",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "carbohydrates": "Moderate",
+    "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "Lobster provides lean protein and the dish can be filling without being very large.",
+    "risks": "Calories and fat rise quickly with extra butter, mayonnaise, and oversized buns.",
+    "healthy_tip": "Use a modest amount of dressing and let the lobster remain the main component."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
-    "gluten_free_possible": true,
-    "note": "Sauces, batters, or sides can alter the gluten and dairy profile"
+    "gluten_free_possible": false,
+    "note": "Traditional lobster rolls contain shellfish and are served on a wheat bun. A gluten-free roll can make it gluten-free."
   },
   "allergens": [
-    "Fish or shellfish",
-    "Possible gluten",
-    "Possible dairy"
+    "Shellfish",
+    "Gluten in the bun",
+    "Egg if mayonnaise is used",
+    "Dairy if butter is used"
   ],
   "common_variations": [
-    "Classic Lobster Roll Sandwich",
-    "Spiced Lobster Roll Sandwich",
-    "Citrus-finished Lobster Roll Sandwich"
+    "Maine-style with mayonnaise",
+    "Connecticut-style with warm butter",
+    "Lobster roll with celery and herbs"
   ],
   "serving_info": {
     "typical_serving": "1 roll",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Fries",
+      "Chips",
+      "Coleslaw",
+      "Pickles"
     ]
   },
   "popular_regions": [
+    "Maine",
     "New England",
     "United States"
   ]

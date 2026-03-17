@@ -1,59 +1,67 @@
 {
   "food_name": "Omelette",
-  "category": "Main Dish",
+  "category": "Egg dish",
   "cuisine": "French / International",
-  "description": "A recognizable omelette dish with its own characteristic ingredients, texture, and serving style.",
+  "description": "A dish made by cooking beaten eggs in a pan, either folded plain or filled with ingredients such as cheese, herbs, vegetables, or meat.",
   "core_ingredients": [
-    "Primary ingredient",
-    "Seasoning",
-    "Supporting elements"
+    "Eggs"
   ],
   "optional_ingredients": [
-    "Sauce",
+    "Butter or oil",
+    "Cheese",
     "Herbs",
-    "Vegetables"
+    "Mushrooms",
+    "Spinach",
+    "Onion",
+    "Ham",
+    "Tomato"
   ],
   "preparation_steps": [
-    "Prepare the key ingredients",
-    "Cook or assemble with seasoning",
-    "Plate and serve"
+    "Beat the eggs until combined.",
+    "Heat butter or oil in a pan.",
+    "Cook the eggs gently until they begin to set.",
+    "Add any fillings if using.",
+    "Fold and serve when the omelette reaches the desired texture."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
+    "calories": "Usually moderate",
+    "protein": "Moderate to high",
+    "carbohydrates": "Low",
     "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Eggs provide protein and the dish can be nutrient-dense when vegetables are included.",
+    "risks": "Extra butter, cheese, and processed meat can raise saturated fat and sodium.",
+    "healthy_tip": "Add vegetables and avoid overloading the omelette with heavy fillings."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
-    "vegan_possible": true,
+    "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Preparation style determines the final dietary profile"
+    "note": "A plain or vegetable omelette is vegetarian. It is naturally gluten-free unless fillings or sauces introduce gluten."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Egg",
+    "Possible dairy if butter or cheese is used"
   ],
   "common_variations": [
-    "Classic Omelette",
-    "House-style Omelette",
-    "Modern Omelette"
+    "French omelette",
+    "Cheese omelette",
+    "Mushroom omelette",
+    "Spanish omelette style preparations differ and are usually thicker"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 omelette",
     "best_served_with": [
-      "Fresh garnish",
-      "Light sides",
-      "Beverage of choice"
+      "Toast",
+      "Salad",
+      "Roasted potatoes"
     ]
   },
   "popular_regions": [
+    "France",
+    "Europe",
     "Worldwide"
   ]
 }

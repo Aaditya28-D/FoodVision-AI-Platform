@@ -1,61 +1,70 @@
 {
   "food_name": "Frozen Yogurt",
   "category": "Dessert",
-  "cuisine": "International",
-  "description": "A frozen yogurt dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "cuisine": "Modern dessert / International",
+  "description": "A frozen dairy dessert made with yogurt cultures, giving it a tangier taste than most ice cream. It may be plain or flavored and is often served with toppings.",
   "core_ingredients": [
-    "Sweetened base",
-    "Flavoring",
-    "Finishing element"
+    "Yogurt",
+    "Milk or dairy base",
+    "Sweetener"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Fruit puree",
+    "Vanilla",
+    "Chocolate flavoring",
+    "Nuts",
+    "Granola",
+    "Fresh fruit",
+    "Sauces"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare a sweetened yogurt base.",
+    "Chill thoroughly.",
+    "Freeze while churning or in a frozen-dessert machine until smooth.",
+    "Serve soft or freeze further for a firmer texture, then add toppings if desired."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "Usually low to moderate, but varies widely",
     "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "carbohydrates": "Moderate",
+    "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Often lighter than premium ice cream and may provide some protein and dairy calcium.",
+    "risks": "Many commercial versions contain substantial added sugar, and toppings can greatly increase calories.",
+    "healthy_tip": "Choose simpler flavors and control high-sugar toppings and sauces."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
-    "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "vegan_possible": false,
+    "gluten_free_possible": true,
+    "note": "Usually vegetarian. Vegan versions require non-dairy cultured alternatives. Gluten-free status depends mainly on toppings and mix-ins."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Milk",
+    "Possible nuts from toppings",
+    "Possible gluten from cookies, brownies, or granola"
   ],
   "common_variations": [
-    "Classic Frozen Yogurt",
-    "Chocolate or fruit-topped Frozen Yogurt",
-    "Mini Frozen Yogurt"
+    "Soft-serve frozen yogurt",
+    "Greek yogurt frozen dessert",
+    "Fruit-flavored frozen yogurt",
+    "Non-dairy frozen yogurt alternative"
   ],
   "serving_info": {
-    "typical_serving": "Cup or swirl serving",
+    "typical_serving": "1 cup or small swirl",
     "best_served_with": [
-      "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Fresh fruit",
+      "Nuts",
+      "Granola",
+      "Chocolate chips"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "Europe",
+    "Asia",
+    "Worldwide dessert shops"
   ]
 }

@@ -1,65 +1,72 @@
 {
   "food_name": "Ramen",
-  "category": "Soup / Broth Dish",
+  "category": "Main dish",
   "cuisine": "Japanese",
-  "description": "A noodle soup dish served with broth, noodles, and a range of toppings such as meat, egg, or vegetables.",
+  "description": "A Japanese noodle soup consisting of wheat noodles served in a seasoned broth, commonly topped with items such as sliced pork, egg, scallions, seaweed, and bamboo shoots. Different regions and shops are known for distinct broth styles.",
   "core_ingredients": [
-    "Noodles",
+    "Wheat noodles",
     "Broth",
-    "Seasoning"
+    "Seasoning base such as shoyu, miso, shio, or tonkotsu"
   ],
   "optional_ingredients": [
-    "Egg",
-    "Pork",
-    "Chicken",
-    "Seaweed",
-    "Spring onions",
-    "Mushrooms"
+    "Chashu pork",
+    "Soft-boiled egg",
+    "Scallions",
+    "Nori",
+    "Menma",
+    "Corn",
+    "Bean sprouts",
+    "Butter",
+    "Tofu"
   ],
   "preparation_steps": [
-    "Build flavor with aromatics and liquid",
-    "Cook the main ingredients until balanced",
-    "Adjust seasoning and serve hot"
+    "Prepare the broth and seasoning base.",
+    "Cook the noodles separately until just tender.",
+    "Place the noodles in a bowl and add the hot broth.",
+    "Arrange toppings over the noodles.",
+    "Serve immediately while hot."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Moderate",
+    "carbohydrates": "High",
+    "fat": "Varies from low to high depending on broth and toppings"
   },
   "health_advice": {
-    "benefits": "Can be comforting, hydrating, and nutrient-dense depending on broth and ingredients.",
-    "risks": "Some soups can become high in sodium, cream, or refined starch depending on the recipe.",
-    "healthy_tip": "Choose broth-forward versions and pair them with vegetables or lean protein when possible."
+    "benefits": "Can provide a comforting mix of carbohydrates, fluid, and protein.",
+    "risks": "Sodium is often high, and rich broths can also be high in saturated fat.",
+    "healthy_tip": "Choose more vegetables and leaner toppings, and avoid drinking all of a very salty broth if sodium intake is a concern."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": false,
-    "note": "The exact profile depends on broth and toppings"
+    "note": "Vegetarian and vegan versions are possible with vegetable broth and suitable toppings. Traditional ramen noodles are made from wheat and are not gluten-free."
   },
   "allergens": [
-    "Gluten",
-    "Possible egg",
-    "Possible soy"
+    "Gluten from noodles",
+    "Egg if added",
+    "Soy in many broths and seasonings",
+    "Sesame if used"
   ],
   "common_variations": [
     "Shoyu ramen",
     "Miso ramen",
-    "Tonkotsu-style ramen",
-    "Vegetable ramen"
+    "Shio ramen",
+    "Tonkotsu ramen",
+    "Vegetarian ramen"
   ],
   "serving_info": {
     "typical_serving": "1 bowl",
     "best_served_with": [
-      "Side dishes",
-      "Tea",
-      "Light appetizers"
+      "Gyoza",
+      "Edamame",
+      "Pickles"
     ]
   },
   "popular_regions": [
     "Japan",
-    "Worldwide"
+    "Worldwide Japanese restaurants"
   ]
 }

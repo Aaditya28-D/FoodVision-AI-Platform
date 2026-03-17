@@ -1,61 +1,66 @@
 {
   "food_name": "Poutine",
-  "category": "Street Food / Fast Casual",
+  "category": "Snack or main dish",
   "cuisine": "Canadian",
-  "description": "A casual poutine with bold flavor, quick service appeal, and room for ingredient variation.",
+  "description": "A Canadian dish of hot fries topped with cheese curds and gravy. It is especially associated with Quebec and is often served as a rich comfort food.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "French fries",
+    "Cheese curds",
+    "Gravy"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Cheese",
-    "Vegetables",
-    "Herbs"
+    "Pulled meat",
+    "Green onion",
+    "Pepper",
+    "Extra cheese",
+    "Mushrooms"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Prepare or fry the potatoes until crisp.",
+    "Place hot fries on a serving plate or container.",
+    "Add cheese curds.",
+    "Pour hot gravy over the top and serve immediately."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually high",
+    "protein": "Low to moderate",
+    "carbohydrates": "High",
+    "fat": "High"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Very filling and often shared, which can help portion control if eaten occasionally.",
+    "risks": "Typically high in calories, sodium, and saturated fat.",
+    "healthy_tip": "Treat it as an occasional indulgence and keep portion sizes modest."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "note": "Vegetarian, vegan, and gluten-free versions depend on the gravy, fries, and cheese alternatives used."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Milk",
+    "Possible gluten in gravy",
+    "Possible soy in processed gravy"
   ],
   "common_variations": [
-    "Classic Poutine",
-    "Loaded Poutine",
-    "Vegetarian-style Poutine"
+    "Classic poutine",
+    "Pulled pork poutine",
+    "Vegetarian poutine",
+    "Loaded poutine"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl or tray",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Soft drinks",
+      "Pickles in some settings",
+      "Simple salad if served as a meal"
     ]
   },
   "popular_regions": [
+    "Quebec",
     "Canada",
-    "North America"
+    "International casual dining menus"
   ]
 }

@@ -1,61 +1,66 @@
 {
   "food_name": "Spaghetti Carbonara",
-  "category": "Main Dish",
+  "category": "Main dish",
   "cuisine": "Italian",
-  "description": "A hearty spaghetti carbonara centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "description": "A Roman pasta dish made by coating hot spaghetti with a sauce formed from egg, hard cheese, black pepper, and cured pork. The creamy texture comes from the emulsion rather than cream in the classic version.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Spaghetti",
+    "Eggs",
+    "Pecorino Romano or Parmesan",
+    "Guanciale or pancetta",
+    "Black pepper"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Bucatini or rigatoni instead of spaghetti",
+    "Extra cheese"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Cook the pasta and reserve some cooking water.",
+    "Cook the cured pork until lightly crisp and the fat renders.",
+    "Beat eggs with grated cheese and black pepper.",
+    "Toss the hot pasta with the pork, then off the heat mix in the egg-cheese mixture, loosening with pasta water if needed.",
+    "Serve immediately before the sauce over-thickens."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually high",
+    "protein": "Moderate to high",
+    "carbohydrates": "High",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides substantial energy and protein.",
+    "risks": "Often high in sodium, saturated fat, and calories; raw or lightly cooked egg requires safe handling.",
+    "healthy_tip": "Use a moderate portion and balance the meal with vegetables or salad."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
-    "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "vegan_possible": false,
+    "gluten_free_possible": true,
+    "note": "Classic carbonara contains pork, eggs, and cheese. Vegetarian versions exist, but vegan versions are not traditional. Gluten-free is possible with suitable pasta."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Gluten in standard pasta",
+    "Egg",
+    "Milk from cheese"
   ],
   "common_variations": [
-    "Classic Spaghetti Carbonara",
-    "Protein-rich Spaghetti Carbonara",
-    "Vegetable-forward Spaghetti Carbonara"
+    "Classic Roman carbonara",
+    "Versions using pancetta instead of guanciale",
+    "Vegetarian mushroom carbonara",
+    "Cream-added nontraditional versions"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 pasta plate",
     "best_served_with": [
-      "Salad",
-      "Tea",
-      "Light sides"
+      "Green salad",
+      "Extra black pepper",
+      "Hard cheese"
     ]
   },
   "popular_regions": [
+    "Rome",
+    "Italy",
     "Worldwide"
   ]
 }

@@ -1,62 +1,65 @@
 {
   "food_name": "Scallops",
-  "category": "Seafood Dish",
-  "cuisine": "Coastal / International",
-  "description": "A seafood-focused scallops prepared to highlight delicate texture, freshness, and seasoning balance.",
+  "category": "Main dish or appetizer",
+  "cuisine": "Seafood / international",
+  "description": "A seafood dish centered on scallops, often quickly seared so the exterior browns while the interior remains tender. Scallops have a delicate, slightly sweet flavor and are used in many cuisines.",
   "core_ingredients": [
-    "Scallops",
-    "Seasoning",
-    "Oil, butter, or dressing"
+    "Scallops"
   ],
   "optional_ingredients": [
-    "Citrus",
+    "Butter",
+    "Garlic",
+    "Lemon",
     "Herbs",
-    "Sauce",
-    "Fresh garnish"
+    "Olive oil",
+    "Cream sauce",
+    "Bacon"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Pat the scallops dry and season lightly.",
+    "Heat a pan until very hot.",
+    "Sear the scallops briefly on each side until browned but still tender.",
+    "Finish with butter, lemon, or sauce if desired.",
+    "Serve immediately."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Moderate to high",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "calories": "Usually low to moderate",
+    "protein": "High",
+    "carbohydrates": "Low",
+    "fat": "Low, unless rich sauce is added"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "High in protein and generally lean when simply cooked.",
+    "risks": "Rich sauces can increase saturated fat, and shellfish allergies are a concern for some people.",
+    "healthy_tip": "Use simple preparation with lemon, herbs, and moderate fat to preserve the delicate texture and keep the dish lighter."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sauces, batters, or sides can alter the gluten and dairy profile"
+    "note": "Naturally gluten-free when not breaded and when sauces are gluten-free."
   },
   "allergens": [
-    "Fish or shellfish",
-    "Possible gluten",
-    "Possible dairy"
+    "Shellfish",
+    "Possible dairy if butter or cream sauce is used"
   ],
   "common_variations": [
-    "Classic Scallops",
-    "Spiced Scallops",
-    "Citrus-finished Scallops"
+    "Seared scallops",
+    "Scallops with garlic butter",
+    "Scallops in cream sauce",
+    "Grilled scallops"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "Several scallops as an appetizer or main plate portion",
     "best_served_with": [
+      "Lemon",
       "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Risotto",
+      "Pasta"
     ]
   },
   "popular_regions": [
-    "Coastal cuisines",
-    "Worldwide"
+    "Worldwide coastal cuisines"
   ]
 }

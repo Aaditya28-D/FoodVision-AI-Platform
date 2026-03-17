@@ -6,7 +6,10 @@ from app.services.food_info import FoodInfoService
 from app.services.prediction_service import PredictionService
 from app.utils.confidence import confidence_label
 from ml.explainability.gradcam import GradCAMExplainer
-from ml.inference.strategy_registry import get_strategy_models
+from ml.inference.strategy_registry import (
+    get_default_strategy,
+    get_strategy_models,
+)
 
 
 class AnalysisService:
@@ -50,7 +53,7 @@ class AnalysisService:
             top_k=top_k,
         )
 
-        selected_strategy = strategy or "ensemble"
+        selected_strategy = strategy or get_default_strategy()
         explain_models = get_strategy_models(selected_strategy)
 
         comparison_response = self.prediction_service.predictor.compare_specific_models(

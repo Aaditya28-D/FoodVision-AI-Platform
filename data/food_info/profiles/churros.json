@@ -1,61 +1,73 @@
 {
   "food_name": "Churros",
   "category": "Dessert",
-  "cuisine": "Spanish / Latin American",
-  "description": "A churros dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "cuisine": "Spanish and Latin American",
+  "description": "Churros are ridged fried dough pastries, often coated with sugar and sometimes cinnamon. They are commonly served as a snack or dessert and may be paired with chocolate sauce or dulce de leche.",
   "core_ingredients": [
-    "Sweetened base",
-    "Flavoring",
-    "Finishing element"
+    "Flour",
+    "Water",
+    "Salt",
+    "Oil for frying",
+    "Sugar"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Cinnamon",
+    "Butter",
+    "Eggs in some recipes",
+    "Chocolate sauce",
+    "Dulce de leche",
+    "Caramel"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare a thick dough or choux-style mixture.",
+    "Pipe the dough into hot oil using a star-shaped tip.",
+    "Fry until crisp and golden.",
+    "Drain and coat with sugar, often with cinnamon.",
+    "Serve warm with a dipping sauce if desired."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
+    "calories": "Moderate to high",
+    "protein": "Low",
+    "carbohydrates": "High",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Enjoyable treat that is usually eaten in small servings.",
+    "risks": "Typically fried and often coated in sugar.",
+    "healthy_tip": "Eat as an occasional dessert and avoid very large portions with multiple sweet dips."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Many basic churro recipes are vegetarian and can be vegan, but gluten-free versions require alternative flour and cross-contact control."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten",
+    "Possible eggs",
+    "Possible milk in dipping sauces"
   ],
   "common_variations": [
-    "Classic Churros",
-    "Chocolate or fruit-topped Churros",
-    "Mini Churros"
+    "Cinnamon-sugar churros",
+    "Filled churros",
+    "Chocolate-dipped churros",
+    "Long fair-style churros",
+    "Looped churros"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "3 to 6 pieces depending on size",
     "best_served_with": [
+      "Hot chocolate",
       "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Chocolate sauce",
+      "Dulce de leche"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Spain",
+    "Mexico",
+    "Latin America",
+    "Fairgrounds and cafés worldwide"
   ]
 }

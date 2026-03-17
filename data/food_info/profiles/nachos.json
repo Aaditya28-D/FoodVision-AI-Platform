@@ -1,60 +1,68 @@
 {
   "food_name": "Nachos",
-  "category": "Street Food / Fast Casual",
-  "cuisine": "Mexican-American",
-  "description": "A casual nachos with bold flavor, quick service appeal, and room for ingredient variation.",
+  "category": "Snack / appetizer",
+  "cuisine": "Mexican / Tex-Mex",
+  "description": "A dish of tortilla chips topped with cheese and other ingredients such as beans, jalapenos, salsa, guacamole, sour cream, or meat. They are usually baked or served hot so the cheese melts over the chips.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "Tortilla chips",
+    "Cheese"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Cheese",
-    "Vegetables",
-    "Herbs"
+    "Beans",
+    "Jalapenos",
+    "Salsa",
+    "Guacamole",
+    "Sour cream",
+    "Tomatoes",
+    "Onion",
+    "Ground beef or chicken"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Arrange tortilla chips in a layer.",
+    "Add cheese and chosen toppings.",
+    "Bake or heat until the cheese melts.",
+    "Finish with cold toppings such as salsa, guacamole, or sour cream if using.",
+    "Serve immediately while the chips are still crisp."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually high",
+    "protein": "Low to moderate",
+    "carbohydrates": "Moderate to high",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can include useful additions like beans, avocado, and salsa when prepared thoughtfully.",
+    "risks": "Often high in calories, sodium, and saturated fat, especially in loaded restaurant portions.",
+    "healthy_tip": "Use moderate cheese, add beans or vegetables, and avoid making the portion too large."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "note": "Many nachos can be vegetarian or vegan depending on the toppings. Tortilla chips are often gluten-free, but sauces and cross-contact can matter."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Dairy",
+    "Possible gluten in some sauces or seasonings"
   ],
   "common_variations": [
-    "Classic Nachos",
-    "Loaded Nachos",
-    "Vegetarian-style Nachos"
+    "Loaded nachos",
+    "Nachos with beef",
+    "Bean and cheese nachos",
+    "Barbecue chicken nachos"
   ],
   "serving_info": {
-    "typical_serving": "Share plate or snack bowl",
+    "typical_serving": "1 shared plate or 1 individual portion",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Salsa",
+      "Guacamole",
+      "Pickled jalapenos"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Mexico",
+    "United States",
+    "Tex-Mex restaurants worldwide"
   ]
 }

@@ -1,60 +1,72 @@
 {
   "food_name": "Lobster Bisque",
-  "category": "Soup / Broth Dish",
-  "cuisine": "French / Coastal",
-  "description": "A lobster bisque served as a broth-based dish, often designed to deliver warmth, aroma, and layered flavor.",
+  "category": "Soup",
+  "cuisine": "French",
+  "description": "A rich, smooth soup traditionally made from lobster stock, aromatics, cream, and lobster meat. Bisque is known for its velvety texture and concentrated shellfish flavor rather than being a thin broth.",
   "core_ingredients": [
-    "Broth or stock",
-    "Aromatics",
-    "Main ingredients"
+    "Lobster shells or lobster stock",
+    "Lobster meat",
+    "Butter",
+    "Onion or shallot",
+    "Celery",
+    "Carrot",
+    "Tomato paste",
+    "Cream"
   ],
   "optional_ingredients": [
-    "Herbs",
-    "Cream or finishing oil",
-    "Protein or garnish"
+    "Garlic",
+    "Brandy or sherry",
+    "Thyme",
+    "Bay leaf",
+    "Paprika or cayenne",
+    "Rice for thickening"
   ],
   "preparation_steps": [
-    "Build flavor with aromatics and liquid",
-    "Cook the main ingredients until balanced",
-    "Adjust seasoning and serve hot"
+    "Cook lobster shells with aromatics to build a flavorful stock.",
+    "Saute onion, celery, and carrot in butter, then add tomato paste and optional brandy or sherry.",
+    "Add the stock and simmer to develop flavor.",
+    "Blend and strain if a smoother texture is desired.",
+    "Stir in cream and lobster meat, season, and serve hot."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
-    "protein": "Low to moderate",
+    "calories": "Usually moderate to high",
+    "protein": "Moderate",
     "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be comforting, hydrating, and nutrient-dense depending on broth and ingredients.",
-    "risks": "Some soups can become high in sodium, cream, or refined starch depending on the recipe.",
-    "healthy_tip": "Choose broth-forward versions and pair them with vegetables or lean protein when possible."
+    "benefits": "Provides protein and minerals from shellfish and can be satisfying in a small portion.",
+    "risks": "Often high in saturated fat and sodium because of cream, butter, and stock reduction.",
+    "healthy_tip": "Use more lobster stock and less cream if you want a lighter version while keeping flavor."
   },
   "dietary_notes": {
-    "vegetarian_possible": true,
+    "vegetarian_possible": false,
     "non_vegetarian_possible": true,
-    "vegan_possible": true,
+    "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Broth type and garnishes determine the final dietary profile"
+    "note": "Traditional lobster bisque is shellfish-based and usually contains dairy. Gluten-free suitability depends on whether flour is used as a thickener."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Shellfish",
+    "Dairy",
+    "Possible gluten if flour is used"
   ],
   "common_variations": [
-    "Classic Lobster Bisque",
-    "Spiced Lobster Bisque",
-    "Citrus-finished Lobster Bisque"
+    "Cream-heavy lobster bisque",
+    "Brandy-flavored lobster bisque",
+    "Tomato-forward lobster bisque"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl",
     "best_served_with": [
-      "Bread",
+      "Crusty bread",
       "Crackers",
-      "Light sides"
+      "Light salad"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "France",
+    "United States",
+    "Coastal seafood restaurants"
   ]
 }

@@ -1,62 +1,69 @@
 {
   "food_name": "Mussels",
-  "category": "Seafood Dish",
+  "category": "Seafood dish",
   "cuisine": "European / Coastal",
-  "description": "A seafood-focused mussels prepared to highlight delicate texture, freshness, and seasoning balance.",
+  "description": "A shellfish dish commonly prepared by steaming mussels until they open, often in broth made with wine, garlic, butter, herbs, or tomato.",
   "core_ingredients": [
-    "Mussels",
-    "Seasoning",
-    "Oil, butter, or dressing"
+    "Mussels"
   ],
   "optional_ingredients": [
-    "Citrus",
-    "Herbs",
-    "Sauce",
-    "Fresh garnish"
+    "Garlic",
+    "Butter",
+    "White wine",
+    "Cream",
+    "Tomato",
+    "Parsley",
+    "Onion or shallot"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Clean and debeard the mussels and discard any that are damaged or remain open when tapped.",
+    "Cook aromatics in the pot.",
+    "Add liquid such as wine, stock, or tomato base.",
+    "Add the mussels, cover, and steam until they open.",
+    "Discard unopened mussels and serve immediately with the cooking broth."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Moderate to high",
-    "carbohydrates": "Low to moderate",
+    "calories": "Usually low to moderate",
+    "protein": "High",
+    "carbohydrates": "Low",
     "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "Mussels provide protein, iron, vitamin B12, and other minerals.",
+    "risks": "Food safety matters because mussels are highly perishable and should be cooked properly. Rich sauces can add extra sodium and fat.",
+    "healthy_tip": "Choose freshly sourced mussels and avoid overcooking them so the texture stays tender."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sauces, batters, or sides can alter the gluten and dairy profile"
+    "note": "Mussels are shellfish and naturally gluten-free, but bread or flour-thickened sauces can add gluten."
   },
   "allergens": [
-    "Fish or shellfish",
-    "Possible gluten",
-    "Possible dairy"
+    "Shellfish",
+    "Possible dairy if butter or cream is used",
+    "Possible gluten if served with bread or thickened sauce"
   ],
   "common_variations": [
-    "Classic Mussels",
-    "Spiced Mussels",
-    "Citrus-finished Mussels"
+    "Moules mariniere",
+    "Mussels in tomato sauce",
+    "Mussels in cream sauce",
+    "Spicy mussels"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl or pot",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Crusty bread",
+      "Fries",
+      "White wine"
     ]
   },
   "popular_regions": [
-    "Coastal cuisines",
-    "Worldwide"
+    "Belgium",
+    "France",
+    "Spain",
+    "Italy",
+    "Coastal regions worldwide"
   ]
 }

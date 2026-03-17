@@ -1,63 +1,74 @@
 {
   "food_name": "Paella",
-  "category": "Main Dish",
+  "category": "Main dish",
   "cuisine": "Spanish",
-  "description": "A hearty paella centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "description": "A Spanish rice dish traditionally associated with Valencia, cooked in a wide shallow pan and flavored with stock, saffron, and a range of ingredients such as seafood, chicken, rabbit, or vegetables.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Rice",
+    "Stock",
+    "Olive oil",
+    "Saffron or saffron-infused seasoning",
+    "Aromatics such as onion or garlic"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Chicken",
+    "Rabbit",
+    "Seafood",
+    "Green beans",
+    "Tomatoes",
+    "Peas",
+    "Red capsicum",
+    "Paprika",
+    "Lemon"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Cook aromatics and any meat or seafood as required.",
+    "Add rice and seasonings, then coat briefly in the cooking fat.",
+    "Pour in stock and cook without excessive stirring so the rice cooks evenly.",
+    "Add ingredients in stages depending on cooking time.",
+    "Finish when the rice is tender and the liquid is absorbed; rest briefly before serving."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Moderate to high depending on meat or seafood",
+    "carbohydrates": "High",
+    "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can be a balanced one-pan meal with grains, protein, and vegetables.",
+    "risks": "Sodium can be high if salty stock, processed stock cubes, or cured meats are used.",
+    "healthy_tip": "Use plenty of vegetables, moderate oil, and lean protein choices."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "gluten_free_possible": true,
+    "note": "Rice-based paella is often naturally gluten-free, but packaged stock and seasonings should be checked."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Shellfish if seafood is used",
+    "Fish if fish stock is used",
+    "Possible celery in stock",
+    "Possible sulfites in some seafood or stock products"
   ],
   "common_variations": [
-    "Classic Paella",
-    "Protein-rich Paella",
-    "Vegetable-forward Paella"
+    "Paella Valenciana",
+    "Seafood paella",
+    "Mixed paella",
+    "Vegetable paella"
   ],
   "serving_info": {
-    "typical_serving": "Shared pan portion",
+    "typical_serving": "1 plate",
     "best_served_with": [
+      "Lemon wedges",
       "Salad",
-      "Tea",
-      "Light sides"
+      "Bread in some settings"
     ]
   },
   "popular_regions": [
+    "Valencia",
     "Spain",
-    "Europe",
-    "Worldwide"
+    "Worldwide Spanish restaurants"
   ]
 }

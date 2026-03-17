@@ -2,57 +2,70 @@
   "food_name": "Chocolate Cake",
   "category": "Dessert",
   "cuisine": "International",
-  "description": "A chocolate cake dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "description": "Chocolate cake is a baked dessert made with cocoa powder, melted chocolate, or both. It ranges from simple everyday sponge cakes to layered celebration cakes with frosting or ganache.",
   "core_ingredients": [
-    "Sweet base ingredients",
+    "Flour",
     "Sugar",
-    "Flavoring"
+    "Cocoa powder or chocolate",
+    "Eggs",
+    "Butter or oil",
+    "Leavening",
+    "Milk or another liquid"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
+    "Vanilla",
+    "Coffee to deepen chocolate flavor",
+    "Chocolate chips",
+    "Frosting",
+    "Ganache",
     "Cream",
-    "Spices"
+    "Fruit"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare a batter by combining dry ingredients and wet ingredients.",
+    "Bake the cake layers or single cake until set.",
+    "Cool completely before adding frosting, glaze, or ganache.",
+    "Slice and serve."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "Usually high per serving",
     "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
+    "carbohydrates": "High",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Provides enjoyment and can be suitable as an occasional treat.",
+    "risks": "Often high in sugar and calories, especially when frosted.",
+    "healthy_tip": "Keep portions moderate and consider less-sweet frosting or smaller slices."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional versions are usually vegetarian. Vegan and gluten-free versions are widely possible with recipe changes."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten",
+    "Eggs",
+    "Milk",
+    "Possible soy in chocolate products",
+    "Possible nuts depending on recipe"
   ],
   "common_variations": [
-    "Classic Chocolate Cake",
-    "Chocolate or fruit-topped Chocolate Cake",
-    "Mini Chocolate Cake"
+    "Layered chocolate cake",
+    "Devil’s food cake",
+    "Flourless chocolate cake",
+    "Chocolate fudge cake",
+    "Chocolate lava cake style versions"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 slice",
     "best_served_with": [
       "Coffee",
       "Tea",
-      "Fruit garnish"
+      "Ice cream",
+      "Whipped cream"
     ]
   },
   "popular_regions": [

@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from app.api.routes.analyze import router as analyze_router
 from app.api.routes.battle import router as battle_router
+from app.api.routes.bulk_classification import router as bulk_classification_router
 from app.api.routes.comparison import router as comparison_router
 from app.api.routes.explain import router as explain_router
 from app.api.routes.health import router as health_router
@@ -17,3 +18,4 @@ api_router.include_router(explain_router)
 api_router.include_router(battle_router)
 api_router.include_router(analyze_router)
 api_router.include_router(retrieval_router)
+api_router.include_router(bulk_classification_router)

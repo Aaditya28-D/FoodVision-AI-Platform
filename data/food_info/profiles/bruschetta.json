@@ -1,59 +1,66 @@
 {
   "food_name": "Bruschetta",
-  "category": "Main Dish",
+  "category": "Appetizer",
   "cuisine": "Italian",
-  "description": "A recognizable bruschetta dish with its own characteristic ingredients, texture, and serving style.",
+  "description": "An Italian antipasto of grilled or toasted bread rubbed with garlic and topped with olive oil and various ingredients. The common tomato version usually includes chopped tomatoes, basil, and sometimes mozzarella or balsamic glaze.",
   "core_ingredients": [
-    "Primary ingredient",
-    "Seasoning",
-    "Supporting elements"
+    "Rustic bread",
+    "Olive oil",
+    "Garlic"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Tomatoes",
+    "Basil",
+    "Mozzarella",
+    "Balsamic glaze",
+    "Prosciutto",
+    "Beans",
+    "Mushrooms"
   ],
   "preparation_steps": [
-    "Prepare the key ingredients",
-    "Cook or assemble with seasoning",
-    "Plate and serve"
+    "Slice the bread and toast or grill it until crisp on the outside.",
+    "Rub the warm bread lightly with garlic and drizzle with olive oil.",
+    "Prepare the topping, such as chopped tomatoes with basil and seasoning.",
+    "Spoon the topping over the bread shortly before serving."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate"
+    "calories": "Usually low to moderate per piece",
+    "protein": "Low; higher if cheese or cured meat is added",
+    "carbohydrates": "Moderate",
+    "fat": "Low to moderate, mainly from olive oil"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can be a relatively light appetizer and may include heart-healthy olive oil and fresh vegetables.",
+    "risks": "Portion size can increase quickly, and sodium may rise if cheese, cured meat, or salted toppings are used.",
+    "healthy_tip": "Use quality bread, moderate olive oil, and plenty of fresh tomato or vegetable topping."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Preparation style determines the final dietary profile"
+    "note": "Traditional bread-based bruschetta is not gluten-free unless made with gluten-free bread. Vegan versions are easy when cheese is omitted."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Gluten from bread unless gluten-free bread is used",
+    "Milk if cheese is added"
   ],
   "common_variations": [
-    "Classic Bruschetta",
-    "House-style Bruschetta",
-    "Modern Bruschetta"
+    "Tomato and basil bruschetta",
+    "Mushroom bruschetta",
+    "White bean bruschetta",
+    "Prosciutto bruschetta"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "2 to 4 pieces",
     "best_served_with": [
-      "Fresh garnish",
-      "Light sides",
-      "Beverage of choice"
+      "Wine",
+      "Salad",
+      "Other antipasti"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Italy",
+    "Worldwide Italian restaurants"
   ]
 }

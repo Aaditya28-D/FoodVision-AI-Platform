@@ -1,61 +1,71 @@
 {
   "food_name": "Chocolate Mousse",
   "category": "Dessert",
-  "cuisine": "French / International",
-  "description": "A chocolate mousse dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "cuisine": "French",
+  "description": "Chocolate mousse is a light, airy dessert made by combining chocolate with whipped cream, beaten egg whites, or both. It is known for a smooth texture and rich chocolate flavor.",
   "core_ingredients": [
-    "Sweetened base",
-    "Flavoring",
-    "Finishing element"
+    "Chocolate",
+    "Cream or egg whites",
+    "Sugar if needed"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Egg yolks",
+    "Vanilla",
+    "Coffee",
+    "Liqueur",
+    "Sea salt",
+    "Berries",
+    "Whipped cream topping"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Melt the chocolate and let it cool slightly.",
+    "Fold in whipped cream, beaten egg whites, or another aerating component.",
+    "Portion into serving dishes and chill until set.",
+    "Serve cold, often with cream or fruit."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "calories": "Moderate to high",
+    "protein": "Low",
+    "carbohydrates": "Moderate",
+    "fat": "High"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Rich flavor means a small serving can feel satisfying.",
+    "risks": "Often high in fat and sugar; some traditional recipes use raw or lightly cooked eggs.",
+    "healthy_tip": "Use small portions and refrigerate properly if eggs are used."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional versions are usually vegetarian and often naturally gluten-free. Vegan versions can be made with dairy-free chocolate and plant-based cream or aquafaba."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Milk in many recipes",
+    "Eggs in many traditional recipes",
+    "Possible soy in chocolate products",
+    "Possible nuts depending on garnish"
   ],
   "common_variations": [
-    "Classic Chocolate Mousse",
-    "Chocolate or fruit-topped Chocolate Mousse",
-    "Mini Chocolate Mousse"
+    "Dark chocolate mousse",
+    "Milk chocolate mousse",
+    "White chocolate mousse",
+    "Egg-free mousse",
+    "Vegan chocolate mousse"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 small cup or ramekin",
     "best_served_with": [
-      "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Berries",
+      "Whipped cream",
+      "Shaved chocolate",
+      "Cookies"
     ]
   },
   "popular_regions": [
+    "France",
+    "Europe",
     "Worldwide"
   ]
 }

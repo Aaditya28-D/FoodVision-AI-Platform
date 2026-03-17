@@ -31,6 +31,7 @@ class SimilarDishRetriever:
         top_k: int = 8,
         predicted_class: str | None = None,
         max_other_per_class: int = 2,
+        exact_match_threshold: float = 0.9999,
     ) -> dict:
         query = self.embedder.embed_pil(image).numpy()
         similarities = self.embeddings @ query
@@ -38,6 +39,7 @@ class SimilarDishRetriever:
         sorted_indices = np.argsort(-similarities)
 
         exact_match_found = False
+        exact_match_item: dict | None = None
         same_class_results: list[dict] = []
         other_results: list[dict] = []
 
@@ -50,14 +52,17 @@ class SimilarDishRetriever:
             rel_path = str(self.image_paths[idx])
             class_name = str(self.class_names[idx])
 
-            if similarity >= 0.9999:
-                exact_match_found = True
-
             item = {
                 "class_name": class_name,
                 "image_path": rel_path,
                 "similarity": similarity,
             }
+
+            if similarity >= exact_match_threshold:
+                exact_match_found = True
+                if exact_match_item is None:
+                    exact_match_item = item
+                continue
 
             if predicted_class is not None and class_name == predicted_class:
                 if len(same_class_results) < top_k:
@@ -87,6 +92,7 @@ class SimilarDishRetriever:
         return {
             "predicted_class": predicted_class,
             "exact_match_found": exact_match_found,
+            "exact_match_item": exact_match_item,
             "same_class_results": same_class_results,
             "other_results": other_results,
         }

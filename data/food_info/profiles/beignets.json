@@ -1,65 +1,71 @@
 {
   "food_name": "Beignets",
-  "category": "Dessert",
-  "cuisine": "French / New Orleans",
-  "description": "Deep-fried pieces of dough, often served hot and dusted with powdered sugar.",
+  "category": "Dessert / Pastry",
+  "cuisine": "French / New Orleans Creole",
+  "description": "Deep-fried pieces of dough, usually light and airy, most famously served hot with a heavy dusting of powdered sugar. New Orleans-style beignets are typically square and yeast-leavened.",
   "core_ingredients": [
     "Flour",
-    "Yeast or leavening",
-    "Water or milk",
+    "Yeast or choux-style dough base depending on style",
+    "Milk or water",
     "Sugar",
+    "Salt",
     "Oil for frying"
   ],
   "optional_ingredients": [
-    "Powdered sugar",
+    "Eggs",
+    "Butter",
     "Vanilla",
-    "Cinnamon",
-    "Sweet fillings"
+    "Powdered sugar",
+    "Fruit fillings in some versions"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare the dough and let it rise if making a yeast-based version.",
+    "Roll and cut into pieces, often squares for New Orleans style.",
+    "Fry until puffed and golden.",
+    "Drain briefly and dust generously with powdered sugar.",
+    "Serve warm."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
+    "calories": "Moderate to high per piece",
+    "protein": "Low",
+    "carbohydrates": "High",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Mainly a pleasure food rather than a nutrient-dense food.",
+    "risks": "Deep frying and added sugar make it energy-dense.",
+    "healthy_tip": "Best enjoyed occasionally and soon after cooking, in small portions."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
     "gluten_free_possible": false,
-    "note": "Preparation varies, but traditional versions are usually sweet fried pastries"
+    "note": "Traditional versions are vegetarian. Vegan versions omit dairy and eggs. Standard versions are not gluten-free."
   },
   "allergens": [
     "Gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Dairy if milk or butter is used",
+    "Egg if egg-enriched dough is used"
   ],
   "common_variations": [
-    "Powdered sugar beignets",
+    "New Orleans-style beignets",
+    "French choux-style beignets",
     "Filled beignets",
-    "Mini beignets"
+    "Fruit beignets"
   ],
   "serving_info": {
-    "typical_serving": "Several pieces",
+    "typical_serving": "2 to 3 pieces",
     "best_served_with": [
       "Coffee",
-      "Tea",
+      "Chicory coffee",
       "Hot chocolate"
     ]
   },
   "popular_regions": [
     "France",
     "Louisiana",
-    "United States"
+    "United States",
+    "French-influenced cuisines"
   ]
 }

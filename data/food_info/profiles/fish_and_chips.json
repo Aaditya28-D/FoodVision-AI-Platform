@@ -1,62 +1,68 @@
 {
   "food_name": "Fish and Chips",
-  "category": "Seafood Dish",
+  "category": "Main dish / Fast food",
   "cuisine": "British",
-  "description": "A seafood-focused fish and chips prepared to highlight delicate texture, freshness, and seasoning balance.",
+  "description": "A traditional British dish of battered and fried fish served with thick-cut fries. It is commonly accompanied by tartar sauce, lemon, mushy peas, or malt vinegar.",
   "core_ingredients": [
-    "Fish and Chips",
-    "Seasoning",
-    "Oil, butter, or dressing"
+    "White fish such as cod or haddock",
+    "Potatoes",
+    "Batter",
+    "Oil for frying"
   ],
   "optional_ingredients": [
-    "Citrus",
-    "Herbs",
-    "Sauce",
-    "Fresh garnish"
+    "Tartar sauce",
+    "Lemon",
+    "Malt vinegar",
+    "Mushy peas",
+    "Salt"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Prepare and batter the fish.",
+    "Fry the potatoes until cooked and crisp.",
+    "Fry the fish until golden and flaky inside.",
+    "Serve hot with chips and common accompaniments."
   ],
   "nutrition": {
-    "calories": "Moderate",
+    "calories": "Usually high",
     "protein": "Moderate to high",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "carbohydrates": "Moderate to high",
+    "fat": "High"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "Provides protein from the fish and can be filling as a meal.",
+    "risks": "Deep frying increases fat and calories, and salted sides can add significant sodium.",
+    "healthy_tip": "For a lighter meal, share the portion or pair the fish with salad and less fried potato."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
-    "gluten_free_possible": true,
-    "note": "Sauces, batters, or sides can alter the gluten and dairy profile"
+    "gluten_free_possible": false,
+    "note": "Gluten-free versions are possible only if the batter is made without wheat."
   },
   "allergens": [
-    "Fish or shellfish",
-    "Possible gluten",
-    "Possible dairy"
+    "Fish",
+    "Wheat / gluten in standard batter",
+    "Possible egg in some batters"
   ],
   "common_variations": [
-    "Classic Fish and Chips",
-    "Spiced Fish and Chips",
-    "Citrus-finished Fish and Chips"
+    "Cod and chips",
+    "Haddock and chips",
+    "Beer-battered fish and chips"
   ],
   "serving_info": {
-    "typical_serving": "1 fillet with chips",
+    "typical_serving": "1 plate",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Tartar sauce",
+      "lemon",
+      "mushy peas",
+      "or vinegar"
     ]
   },
   "popular_regions": [
-    "Coastal cuisines",
-    "Worldwide"
+    "United Kingdom",
+    "Ireland",
+    "Australia",
+    "New Zealand"
   ]
 }

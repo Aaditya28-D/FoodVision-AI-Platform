@@ -1,60 +1,74 @@
 {
   "food_name": "French Fries",
-  "category": "Street Food / Fast Casual",
+  "category": "Side dish / Snack",
   "cuisine": "Belgian / French-style",
-  "description": "A casual french fries with bold flavor, quick service appeal, and room for ingredient variation.",
+  "description": "Batons of potato that are fried until crisp outside and tender inside. They are commonly salted and served as a side dish or snack, with many regional cuts and sauces.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "Potatoes",
+    "Oil for frying",
+    "Salt"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Cheese",
-    "Vegetables",
-    "Herbs"
+    "Black pepper",
+    "Paprika",
+    "Garlic seasoning",
+    "Parmesan",
+    "Vinegar",
+    "Mayonnaise",
+    "Ketchup",
+    "Aioli"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Cut potatoes into even sticks or wedges.",
+    "Rinse and dry well to remove excess surface starch.",
+    "Fry once at a lower temperature to cook the interior, or bake/air-fry until tender if using an alternative method.",
+    "Fry again at a higher temperature until golden and crisp if deep-frying.",
+    "Drain and season immediately, then serve hot."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Low",
+    "carbohydrates": "High",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides carbohydrates for energy and can be satisfying in small portions.",
+    "risks": "Deep-fried versions can be high in calories, fat, and sodium, especially with heavy sauces or cheese toppings.",
+    "healthy_tip": "Use moderate portions and choose baked or air-fried versions when possible."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
-    "non_vegetarian_possible": true,
+    "non_vegetarian_possible": false,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "note": "Usually vegetarian and vegan. Gluten-free suitability depends on fryer cross-contact and added seasonings or coatings."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Possible gluten from shared fryers or coatings",
+    "Milk if topped with cheese or creamy sauces"
   ],
   "common_variations": [
-    "Classic French Fries",
-    "Loaded French Fries",
-    "Vegetarian-style French Fries"
+    "Shoestring fries",
+    "Steak fries",
+    "Waffle fries",
+    "Curly fries",
+    "Loaded fries"
   ],
   "serving_info": {
-    "typical_serving": "Side basket or portion",
+    "typical_serving": "Small to medium side portion",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Burgers",
+      "Sandwiches",
+      "Fried foods",
+      "Ketchup",
+      "Mayonnaise",
+      "Aioli"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Belgium",
+    "France",
+    "United States",
+    "Worldwide fast-food and casual dining"
   ]
 }

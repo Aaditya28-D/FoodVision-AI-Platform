@@ -1,61 +1,75 @@
 {
   "food_name": "Pad Thai",
-  "category": "Main Dish",
+  "category": "Main dish",
   "cuisine": "Thai",
-  "description": "A hearty pad thai centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "description": "A well-known Thai stir-fried noodle dish typically made with rice noodles, a tamarind-based sauce, egg, bean sprouts, and peanuts, often with shrimp, chicken, or tofu.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Rice noodles",
+    "Tamarind-based sauce",
+    "Egg",
+    "Bean sprouts",
+    "Garlic",
+    "Fish sauce or soy-based seasoning",
+    "Peanuts"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Shrimp",
+    "Chicken",
+    "Tofu",
+    "Chives",
+    "Dried shrimp",
+    "Radish",
+    "Lime",
+    "Chili flakes"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Soak or prepare the rice noodles until pliable.",
+    "Make or combine the sauce, usually balancing sour, salty, sweet, and savory elements.",
+    "Stir-fry aromatics and protein if using.",
+    "Add noodles, sauce, and egg, then toss quickly over high heat.",
+    "Finish with bean sprouts, peanuts, chives, and serve with lime."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Moderate; higher with shrimp, chicken, or tofu",
+    "carbohydrates": "High",
+    "fat": "Low to moderate, but can be higher depending on oil and peanuts"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can provide a mix of carbohydrates, protein, and some vegetables in one dish.",
+    "risks": "Can be high in sodium and added sugar depending on the sauce; portions can also be large.",
+    "healthy_tip": "Use more vegetables, moderate the sauce, and avoid excessive oil or sugar."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "gluten_free_possible": true,
+    "note": "Vegetarian and vegan versions are possible if fish sauce and egg are omitted or replaced. Gluten-free suitability depends on the sauces used."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Peanuts",
+    "Egg",
+    "Shellfish if shrimp is used",
+    "Soy if soy sauce is used",
+    "Possible gluten in some sauces"
   ],
   "common_variations": [
-    "Classic Pad Thai",
-    "Protein-rich Pad Thai",
-    "Vegetable-forward Pad Thai"
+    "Shrimp pad Thai",
+    "Chicken pad Thai",
+    "Tofu pad Thai",
+    "Vegetarian pad Thai"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 plate",
     "best_served_with": [
-      "Salad",
-      "Tea",
-      "Light sides"
+      "Lime wedges",
+      "Crushed peanuts",
+      "Chili flakes"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Thailand",
+    "Worldwide Thai restaurants"
   ]
 }

@@ -2,60 +2,77 @@
   "food_name": "Apple Pie",
   "category": "Dessert",
   "cuisine": "American / European",
-  "description": "A apple pie dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "description": "A baked fruit pie made with apples, sugar, and spices inside a pastry crust. It is best known for its sweet-tart filling and flaky top or double crust.",
   "core_ingredients": [
-    "Sweet base ingredients",
+    "Apples",
+    "Pie pastry or shortcrust",
     "Sugar",
-    "Flavoring"
+    "Butter",
+    "Cinnamon",
+    "Lemon juice or another acid",
+    "Flour, cornstarch, or another thickener"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Nutmeg",
+    "Allspice",
+    "Brown sugar",
+    "Vanilla",
+    "Caramel sauce",
+    "Raisins",
+    "Cheddar cheese or ice cream for serving"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare or chill the pie dough.",
+    "Peel and slice the apples, then toss them with sugar, spices, acid, and thickener.",
+    "Line a pie dish with pastry and fill it with the apple mixture.",
+    "Add a top crust or lattice, seal the edges, and vent the top.",
+    "Bake until the crust is browned and the filling is bubbling, then cool before slicing."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "calories": "Typically moderate to high per slice",
+    "protein": "Usually low",
+    "carbohydrates": "Usually high",
+    "fat": "Usually moderate to high"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Provides some fiber and micronutrients from apples, especially when part of a balanced diet.",
+    "risks": "Often high in sugar and refined flour, and can be energy-dense when made with a buttery crust.",
+    "healthy_tip": "Use more fruit, less added sugar, and moderate portions; serving it without heavy toppings keeps it lighter."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional versions are vegetarian. Vegan versions need dairy-free fat, and gluten-free versions need a gluten-free crust."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten in standard pastry",
+    "Dairy if butter is used",
+    "Egg if egg wash or egg-based pastry is used"
   ],
   "common_variations": [
-    "Classic Apple Pie",
-    "Chocolate or fruit-topped Apple Pie",
-    "Mini Apple Pie"
+    "Double-crust apple pie",
+    "Lattice-top apple pie",
+    "Dutch apple pie with crumb topping",
+    "French apple tart",
+    "Mini hand pies"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 slice",
     "best_served_with": [
+      "Vanilla ice cream",
+      "Whipped cream",
+      "Custard",
       "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Tea"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "United Kingdom",
+    "Canada",
+    "Australia",
+    "Europe"
   ]
 }

@@ -1,58 +1,63 @@
 {
   "food_name": "Shrimp and Grits",
-  "category": "Seafood Dish",
+  "category": "Main dish",
   "cuisine": "Southern American",
-  "description": "A seafood-focused shrimp and grits prepared to highlight delicate texture, freshness, and seasoning balance.",
+  "description": "A Southern American dish of shrimp served over grits, often with a savory sauce that may include butter, bacon, stock, cheese, garlic, or peppers. Styles range from simple coastal preparations to richer restaurant versions.",
   "core_ingredients": [
-    "Shrimp and Grits",
-    "Seasoning",
-    "Oil, butter, or dressing"
+    "Shrimp",
+    "Grits"
   ],
   "optional_ingredients": [
-    "Citrus",
-    "Herbs",
-    "Sauce",
-    "Fresh garnish"
+    "Butter",
+    "Cheese",
+    "Bacon",
+    "Garlic",
+    "Scallions",
+    "Peppers",
+    "Stock",
+    "Lemon"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Cook the grits until soft and creamy.",
+    "Season and cook the shrimp quickly until just done.",
+    "Prepare any sauce or sautéed aromatics such as garlic, bacon, or peppers.",
+    "Spoon the grits onto a plate or into a bowl.",
+    "Top with shrimp and sauce and serve hot."
   ],
   "nutrition": {
-    "calories": "Moderate",
+    "calories": "Usually moderate to high",
     "protein": "Moderate to high",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "carbohydrates": "Moderate",
+    "fat": "Varies from low to high depending on butter, bacon, and cheese"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "Provides protein from shrimp and can be satisfying as a one-plate meal.",
+    "risks": "Restaurant versions may be high in sodium, butter, cheese, or processed pork.",
+    "healthy_tip": "Use moderate butter and cheese, and add vegetables for a more balanced plate."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sauces, batters, or sides can alter the gluten and dairy profile"
+    "note": "Usually non-vegetarian. Often gluten-free if the sauce and seasonings do not contain gluten."
   },
   "allergens": [
-    "Fish or shellfish",
-    "Possible gluten",
-    "Possible dairy"
+    "Shellfish",
+    "Dairy if butter or cheese is used"
   ],
   "common_variations": [
-    "Classic Shrimp and Grits",
-    "Spiced Shrimp and Grits",
-    "Citrus-finished Shrimp and Grits"
+    "Classic shrimp and grits",
+    "Cheesy shrimp and grits",
+    "Shrimp and grits with bacon",
+    "Spicy shrimp and grits"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl or plate",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Greens",
+      "Cornbread",
+      "Hot sauce"
     ]
   },
   "popular_regions": [

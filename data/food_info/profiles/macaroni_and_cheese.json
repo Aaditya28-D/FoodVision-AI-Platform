@@ -1,61 +1,69 @@
 {
   "food_name": "Macaroni and Cheese",
-  "category": "Main Dish",
-  "cuisine": "American / British-inspired",
-  "description": "A hearty macaroni and cheese centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "category": "Pasta dish",
+  "cuisine": "American",
+  "description": "A comfort dish made from macaroni combined with a cheese sauce or layered with cheese and baked. It may be creamy on the stovetop or baked with a browned topping.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Macaroni pasta",
+    "Cheese",
+    "Milk",
+    "Butter"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Flour",
+    "Breadcrumbs",
+    "Mustard",
+    "Black pepper",
+    "Parmesan",
+    "Bacon"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Cook the macaroni until just tender.",
+    "Prepare a cheese sauce, often starting with butter, flour, and milk.",
+    "Stir in cheese until melted and smooth.",
+    "Combine the pasta with the sauce.",
+    "Serve as is or bake with extra cheese or breadcrumbs on top."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually high",
     "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "carbohydrates": "High",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides energy and can supply calcium and protein from cheese and milk.",
+    "risks": "Often high in calories, saturated fat, and sodium, especially in rich baked versions.",
+    "healthy_tip": "Balance the portion size and pair it with vegetables or a salad."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "gluten_free_possible": true,
+    "note": "Traditional versions are vegetarian but not vegan. Vegan and gluten-free versions are common when the pasta and sauce are adjusted."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Dairy",
+    "Gluten unless gluten-free pasta is used",
+    "Possible egg in some pasta"
   ],
   "common_variations": [
-    "Classic Macaroni and Cheese",
-    "Protein-rich Macaroni and Cheese",
-    "Vegetable-forward Macaroni and Cheese"
+    "Baked macaroni and cheese",
+    "Stovetop macaroni and cheese",
+    "Mac and cheese with bacon",
+    "Three-cheese macaroni and cheese"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl or side portion",
     "best_served_with": [
       "Salad",
-      "Tea",
-      "Light sides"
+      "Roasted vegetables",
+      "Barbecue dishes"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "Canada",
+    "United Kingdom"
   ]
 }

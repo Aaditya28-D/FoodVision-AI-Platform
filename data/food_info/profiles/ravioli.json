@@ -1,61 +1,70 @@
 {
   "food_name": "Ravioli",
-  "category": "Main Dish",
+  "category": "Main dish",
   "cuisine": "Italian",
-  "description": "A hearty ravioli centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "description": "An Italian pasta made of small filled pockets of dough, commonly stuffed with cheese, meat, seafood, or vegetables and served with a sauce such as tomato, butter and sage, or cream sauce.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Pasta dough",
+    "Filling",
+    "Sauce"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Ricotta",
+    "Spinach",
+    "Meat filling",
+    "Mushroom filling",
+    "Parmesan",
+    "Butter",
+    "Herbs"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Prepare or roll out pasta dough.",
+    "Place small portions of filling on the dough and seal with another sheet or fold over.",
+    "Cut into individual ravioli and seal the edges well.",
+    "Boil until the pasta is tender and the filling is heated through.",
+    "Serve with the chosen sauce."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate to high",
     "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "carbohydrates": "High",
+    "fat": "Low to moderate, but higher with rich fillings or sauces"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can provide energy and, depending on the filling, a useful amount of protein or vegetables.",
+    "risks": "Portion size, refined flour pasta, cheese-rich fillings, and creamy sauces can increase calories and saturated fat.",
+    "healthy_tip": "Use a vegetable-based sauce or lighter butter sauce and pair with salad or vegetables."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "gluten_free_possible": true,
+    "note": "Traditional ravioli usually contains wheat and often egg. Vegan and gluten-free versions are possible with alternative dough and suitable filling."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Gluten",
+    "Egg in many pasta doughs",
+    "Dairy in cheese fillings",
+    "Possible nuts in some fillings or sauces"
   ],
   "common_variations": [
-    "Classic Ravioli",
-    "Protein-rich Ravioli",
-    "Vegetable-forward Ravioli"
+    "Ricotta and spinach ravioli",
+    "Meat ravioli",
+    "Pumpkin ravioli",
+    "Mushroom ravioli"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 plate or bowl",
     "best_served_with": [
-      "Salad",
-      "Tea",
-      "Light sides"
+      "Tomato sauce",
+      "Brown butter and sage",
+      "Parmesan",
+      "Salad"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Italy",
+    "Worldwide Italian restaurants"
   ]
 }

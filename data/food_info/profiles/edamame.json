@@ -1,59 +1,62 @@
 {
   "food_name": "Edamame",
-  "category": "Side / Appetizer",
+  "category": "Snack / Appetizer / Side dish",
   "cuisine": "Japanese",
-  "description": "A recognizable edamame dish with its own characteristic ingredients, texture, and serving style.",
+  "description": "Young soybeans harvested before full ripening, usually boiled or steamed and served in the pod with salt. They are a simple snack or side dish common in Japanese cuisine.",
   "core_ingredients": [
-    "Primary ingredient",
-    "Seasoning",
-    "Supporting elements"
+    "Edamame soybeans",
+    "Salt"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Sea salt",
+    "Chili flakes",
+    "Garlic",
+    "Sesame oil",
+    "Lemon juice"
   ],
   "preparation_steps": [
-    "Prepare the key ingredients",
-    "Cook or assemble with seasoning",
-    "Plate and serve"
+    "Boil or steam the edamame until tender.",
+    "Drain and season lightly, often with salt.",
+    "Serve warm or at room temperature, usually in the pod.",
+    "Squeeze the beans from the pod before eating."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate"
+    "calories": "Usually moderate",
+    "protein": "Moderate to high",
+    "carbohydrates": "Low to moderate",
+    "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "A good plant-based source of protein and fiber and can be a filling snack.",
+    "risks": "May not suit people with soy allergy; salted versions can also be high in sodium.",
+    "healthy_tip": "Choose lightly salted edamame to keep sodium more moderate."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Preparation style determines the final dietary profile"
+    "note": "Naturally vegan and gluten-free when served simply."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Soy"
   ],
   "common_variations": [
-    "Classic Edamame",
-    "House-style Edamame",
-    "Modern Edamame"
+    "Salted edamame",
+    "Spicy edamame",
+    "Garlic edamame"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 small bowl",
     "best_served_with": [
-      "Fresh garnish",
-      "Light sides",
-      "Beverage of choice"
+      "Rice dishes",
+      "noodles",
+      "or other small Japanese sides"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Japan",
+    "East Asia",
+    "Worldwide Japanese restaurants"
   ]
 }

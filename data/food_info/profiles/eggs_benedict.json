@@ -1,59 +1,67 @@
 {
   "food_name": "Eggs Benedict",
-  "category": "Main Dish",
-  "cuisine": "American / Brunch",
-  "description": "A recognizable eggs benedict dish with its own characteristic ingredients, texture, and serving style.",
+  "category": "Breakfast / Brunch",
+  "cuisine": "American",
+  "description": "A classic brunch dish of toasted English muffins topped with Canadian bacon or ham, poached eggs, and hollandaise sauce. It is rich, savory, and usually served warm.",
   "core_ingredients": [
-    "Primary ingredient",
-    "Seasoning",
-    "Supporting elements"
+    "English muffins",
+    "Poached eggs",
+    "Ham or Canadian bacon",
+    "Hollandaise sauce"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Spinach",
+    "Smoked salmon",
+    "Avocado",
+    "Chives",
+    "Black pepper"
   ],
   "preparation_steps": [
-    "Prepare the key ingredients",
-    "Cook or assemble with seasoning",
-    "Plate and serve"
+    "Toast the English muffins and warm the meat if using.",
+    "Poach the eggs.",
+    "Prepare or warm the hollandaise sauce.",
+    "Assemble muffins, meat, eggs, and sauce.",
+    "Serve immediately while warm."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Moderate",
+    "carbohydrates": "Moderate",
+    "fat": "High"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides protein from eggs and meat and can be satisfying as a brunch meal.",
+    "risks": "Often high in saturated fat and calories because of hollandaise sauce and butter.",
+    "healthy_tip": "For a lighter version, reduce the sauce portion and add vegetables such as spinach."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
-    "vegan_possible": true,
-    "gluten_free_possible": true,
-    "note": "Preparation style determines the final dietary profile"
+    "vegan_possible": false,
+    "gluten_free_possible": false,
+    "note": "Vegetarian versions exist, but the classic version includes ham or Canadian bacon."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Eggs",
+    "Milk or butter in hollandaise",
+    "Wheat / gluten in muffins"
   ],
   "common_variations": [
-    "Classic Eggs Benedict",
-    "House-style Eggs Benedict",
-    "Modern Eggs Benedict"
+    "Eggs Florentine with spinach",
+    "Eggs Royale with smoked salmon",
+    "Vegetarian Benedict"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 plate, usually 2 halves",
     "best_served_with": [
-      "Fresh garnish",
-      "Light sides",
-      "Beverage of choice"
+      "Breakfast potatoes",
+      "salad",
+      "or fruit"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "Canada",
+    "Brunch restaurants worldwide"
   ]
 }

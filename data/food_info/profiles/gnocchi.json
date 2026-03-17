@@ -1,61 +1,71 @@
 {
   "food_name": "Gnocchi",
-  "category": "Main Dish",
+  "category": "Pasta-like main dish / Side dish",
   "cuisine": "Italian",
-  "description": "A hearty gnocchi centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "description": "Small dumplings most commonly made from potato, flour, and sometimes egg. They are boiled and then often finished in sauce or lightly pan-seared.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Potato",
+    "Flour"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Egg",
+    "Ricotta",
+    "Semolina",
+    "Butter",
+    "Sage",
+    "Tomato sauce",
+    "Pesto",
+    "Gorgonzola"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Cook and mash potatoes or prepare another dough base.",
+    "Mix with flour and other ingredients just until a soft dough forms.",
+    "Shape into small dumplings and score if desired.",
+    "Boil until the gnocchi float.",
+    "Serve with sauce or sauté briefly after boiling for extra texture."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Low to moderate",
+    "carbohydrates": "High",
+    "fat": "Low to moderate, depending on sauce"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can be part of a balanced meal when paired with vegetable-based sauces and moderate portions.",
+    "risks": "Heavy cream or cheese sauces can greatly increase calories and saturated fat.",
+    "healthy_tip": "Pair with tomato sauce, vegetables, or a lighter olive-oil-based sauce."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
-    "non_vegetarian_possible": true,
+    "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "gluten_free_possible": true,
+    "note": "Many traditional versions are vegetarian. Vegan versions are possible if egg is omitted. Gluten-free versions need gluten-free flour."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Gluten",
+    "Egg if included",
+    "Milk if served with dairy-based sauce"
   ],
   "common_variations": [
-    "Classic Gnocchi",
-    "Protein-rich Gnocchi",
-    "Vegetable-forward Gnocchi"
+    "Potato gnocchi",
+    "Ricotta gnocchi",
+    "Spinach gnocchi",
+    "Gnocchi alla sorrentina"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl or plate",
     "best_served_with": [
-      "Salad",
-      "Tea",
-      "Light sides"
+      "Tomato sauce",
+      "Pesto",
+      "Brown butter and sage",
+      "Roasted vegetables"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Italy",
+    "Europe",
+    "North America",
+    "Worldwide Italian restaurants"
   ]
 }

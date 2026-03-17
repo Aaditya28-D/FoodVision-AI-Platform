@@ -1,62 +1,72 @@
 {
   "food_name": "Gyoza",
-  "category": "Street Food / Fast Casual",
+  "category": "Dumpling",
   "cuisine": "Japanese",
-  "description": "A casual gyoza with bold flavor, quick service appeal, and room for ingredient variation.",
+  "description": "Japanese pan-fried dumplings with thin wrappers and a savory filling, often pork with cabbage, garlic, ginger, and chives. They are usually browned on one side and finished by steaming in the pan.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "Gyoza wrappers",
+    "Ground meat or vegetable filling",
+    "Cabbage",
+    "Garlic",
+    "Ginger"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Cheese",
-    "Vegetables",
-    "Herbs"
+    "Chives",
+    "Soy sauce",
+    "Sesame oil",
+    "Shrimp",
+    "Mushrooms",
+    "Tofu"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Prepare the filling and place a small amount in each wrapper.",
+    "Fold and seal the dumplings.",
+    "Pan-fry until the bottoms are lightly browned.",
+    "Add a small amount of water, cover, and steam until cooked through.",
+    "Serve with dipping sauce."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate",
     "protein": "Moderate",
     "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "fat": "Low to moderate, higher if heavily fried"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can provide a satisfying portion-controlled snack or meal, especially with a vegetable-rich filling.",
+    "risks": "Sodium can be high because of soy-based dipping sauces, and pan-frying increases oil content compared with boiling or steaming.",
+    "healthy_tip": "Use more vegetables in the filling and go easy on the dipping sauce."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "gluten_free_possible": false,
+    "note": "Standard wrappers usually contain wheat. Vegan versions are possible when the filling excludes meat and egg."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Gluten from wrappers",
+    "Soy",
+    "Sesame in some sauces",
+    "Egg in some wrapper formulations",
+    "Shellfish if shrimp filling is used"
   ],
   "common_variations": [
-    "Classic Gyoza",
-    "Loaded Gyoza",
-    "Vegetarian-style Gyoza"
+    "Pork gyoza",
+    "Chicken gyoza",
+    "Vegetable gyoza",
+    "Boiled gyoza"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "5 to 8 dumplings",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Soy-vinegar dipping sauce",
+      "Chili oil",
+      "Rice",
+      "Soup"
     ]
   },
   "popular_regions": [
     "Japan",
-    "East Asia",
-    "Worldwide"
+    "Worldwide Japanese restaurants"
   ]
 }

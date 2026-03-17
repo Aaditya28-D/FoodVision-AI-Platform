@@ -1,61 +1,65 @@
 {
   "food_name": "Seaweed Salad",
-  "category": "Salad",
-  "cuisine": "Japanese / East Asian",
-  "description": "A seaweed salad built around fresh produce, dressing, and contrasting textures for a light but flavorful plate.",
+  "category": "Salad or side dish",
+  "cuisine": "East Asian-inspired",
+  "description": "A salad made from edible seaweed, often dressed with ingredients such as sesame oil, soy sauce, rice vinegar, and a little sweetness. It is commonly served as a chilled side dish in Japanese restaurants, though many restaurant versions are prepared products rather than traditional home-style salads.",
   "core_ingredients": [
-    "Fresh vegetables or greens",
-    "Seasoning",
+    "Edible seaweed",
     "Dressing"
   ],
   "optional_ingredients": [
-    "Cheese or seeds",
-    "Herbs",
-    "Extra vegetables"
+    "Sesame seeds",
+    "Soy sauce",
+    "Rice vinegar",
+    "Sesame oil",
+    "Cucumber",
+    "Chili flakes"
   ],
   "preparation_steps": [
-    "Prepare and season the main produce",
-    "Add garnish or supporting ingredients",
-    "Dress lightly and serve fresh"
+    "Rehydrate dried seaweed if needed, then drain well.",
+    "Prepare the dressing.",
+    "Toss the seaweed with the dressing and any additional vegetables.",
+    "Chill briefly if desired.",
+    "Serve cold or cool."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
-    "protein": "Low to moderate",
+    "calories": "Usually low",
+    "protein": "Low",
     "carbohydrates": "Low to moderate",
     "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Can provide freshness, fiber, and a lighter eating option with good flavor contrast.",
-    "risks": "Heavy dressings, cheese, or fried add-ons can raise sodium, fat, and calories quickly.",
-    "healthy_tip": "Lean toward fresh produce, lighter dressings, and balanced add-ons when possible."
+    "benefits": "Can provide minerals and is usually light in calories.",
+    "risks": "Some versions can be high in sodium, and seaweed can contain high iodine levels if eaten in large amounts frequently.",
+    "healthy_tip": "Treat it as a side dish, and keep an eye on sodium and portion size if you eat seaweed often."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Dressings, cheese, or protein add-ons can change the final profile"
+    "note": "Often vegan and gluten-free, but gluten-free status depends on soy sauce or other seasonings in the dressing."
   },
   "allergens": [
-    "Possible dairy",
-    "Possible nuts or seeds"
+    "Sesame",
+    "Soy if soy sauce is used"
   ],
   "common_variations": [
-    "Classic Seaweed Salad",
-    "Herb-forward Seaweed Salad",
-    "Seasonal Seaweed Salad"
+    "Wakame salad",
+    "Seaweed and cucumber salad",
+    "Spicy seaweed salad"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "Small side bowl",
     "best_served_with": [
-      "Bread",
-      "Soup",
-      "Light mains"
+      "Sushi",
+      "Rice dishes",
+      "Grilled fish"
     ]
   },
   "popular_regions": [
-    "Europe",
-    "North America",
-    "Worldwide"
+    "Japan",
+    "Korea",
+    "Worldwide Japanese restaurants"
   ]
 }

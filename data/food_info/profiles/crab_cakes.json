@@ -1,62 +1,71 @@
 {
   "food_name": "Crab Cakes",
-  "category": "Seafood Dish",
-  "cuisine": "American / Coastal",
-  "description": "A seafood-focused crab cakes prepared to highlight delicate texture, freshness, and seasoning balance.",
+  "category": "Seafood dish",
+  "cuisine": "American",
+  "description": "Crab cakes are patties made primarily from crab meat held together with a small amount of binder and seasonings, then pan-fried, baked, or broiled. They are especially associated with the Mid-Atlantic region of the United States.",
   "core_ingredients": [
-    "Crab Cakes",
-    "Seasoning",
-    "Oil, butter, or dressing"
+    "Crab meat",
+    "Binder such as breadcrumbs or cracker crumbs",
+    "Egg or mayonnaise",
+    "Seasonings"
   ],
   "optional_ingredients": [
-    "Citrus",
+    "Mustard",
     "Herbs",
-    "Sauce",
-    "Fresh garnish"
+    "Onion or scallion",
+    "Bell pepper",
+    "Lemon",
+    "Hot sauce"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Mix crab meat gently with binder and seasonings without breaking it up too much.",
+    "Form into cakes or patties.",
+    "Chill if needed to help them hold shape.",
+    "Cook until golden and heated through.",
+    "Serve with lemon or sauce."
   ],
   "nutrition": {
     "calories": "Moderate",
     "protein": "Moderate to high",
     "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "Good source of seafood protein and can be relatively light when not heavily fried.",
+    "risks": "May be high in sodium; lower-quality versions can contain more filler than crab.",
+    "healthy_tip": "Choose versions with a high proportion of crab meat and lighter cooking methods."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sauces, batters, or sides can alter the gluten and dairy profile"
+    "note": "Traditional crab cakes are seafood-based. Gluten-free versions are possible with gluten-free crumbs or other binders."
   },
   "allergens": [
-    "Fish or shellfish",
-    "Possible gluten",
-    "Possible dairy"
+    "Shellfish",
+    "Eggs in many recipes",
+    "Gluten in breadcrumbs or crackers",
+    "Possible mustard"
   ],
   "common_variations": [
-    "Classic Crab Cakes",
-    "Spiced Crab Cakes",
-    "Citrus-finished Crab Cakes"
+    "Maryland crab cakes",
+    "Spicy crab cakes",
+    "Baked crab cakes",
+    "Panko-crusted crab cakes"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "2 to 3 small cakes or 1 large cake",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Lemon wedges",
+      "Tartar sauce",
+      "Salad",
+      "Coleslaw"
     ]
   },
   "popular_regions": [
-    "Coastal cuisines",
-    "Worldwide"
+    "Maryland",
+    "Mid-Atlantic United States",
+    "Seafood restaurants worldwide"
   ]
 }

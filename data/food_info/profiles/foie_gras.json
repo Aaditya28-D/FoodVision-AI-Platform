@@ -1,60 +1,64 @@
 {
   "food_name": "Foie Gras",
-  "category": "Main Dish",
+  "category": "Appetizer / Luxury dish",
   "cuisine": "French",
-  "description": "A protein-forward foie gras typically served as a satisfying main dish with sides or sauces.",
+  "description": "A rich specialty made from the liver of specially fattened duck or goose. It may be served as a seared slice, terrine, mousse, or pâté and is known for its dense, buttery texture.",
   "core_ingredients": [
-    "Primary protein",
-    "Seasoning",
-    "Oil or butter"
+    "Foie gras duck or goose liver",
+    "Salt",
+    "Pepper"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Toast",
+    "Fruit compote",
+    "Brioche",
+    "Wine reduction",
+    "Figs"
   ],
   "preparation_steps": [
-    "Season the protein",
-    "Cook to the desired doneness or tenderness",
-    "Rest or plate with sides and serve"
+    "Prepare the foie gras according to the style, such as searing or making a terrine.",
+    "Season lightly because the liver is naturally rich.",
+    "Serve in small portions with bread, fruit, or sauce."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "High",
-    "carbohydrates": "Low to moderate",
-    "fat": "Moderate to high"
+    "calories": "Usually high",
+    "protein": "Moderate",
+    "carbohydrates": "Low",
+    "fat": "High"
   },
   "health_advice": {
-    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
-    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
-    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+    "benefits": "Served in very small portions and valued mainly for texture and flavor rather than balance.",
+    "risks": "Very rich in fat and generally considered an indulgent food best eaten sparingly.",
+    "healthy_tip": "Treat as an occasional luxury food rather than a regular protein source."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sides, sauces, and breading can change the final dietary profile"
+    "note": "Naturally gluten-free, though it is often served with bread or brioche that contains gluten."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Usually none in plain foie gras",
+    "Possible gluten if served with bread"
   ],
   "common_variations": [
-    "Classic Foie Gras",
-    "Sauced Foie Gras",
-    "Grilled or roasted Foie Gras"
+    "Seared foie gras",
+    "Foie gras terrine",
+    "Foie gras pâté",
+    "Foie gras mousse"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "Small appetizer portion",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Toast",
+      "brioche",
+      "fruit preserves",
+      "or dessert wine"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "France",
+    "Fine-dining restaurants worldwide"
   ]
 }

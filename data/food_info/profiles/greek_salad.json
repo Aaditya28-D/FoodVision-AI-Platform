@@ -1,61 +1,66 @@
 {
   "food_name": "Greek Salad",
-  "category": "Salad",
+  "category": "Salad / Side dish",
   "cuisine": "Greek",
-  "description": "A greek salad built around fresh produce, dressing, and contrasting textures for a light but flavorful plate.",
+  "description": "A salad built from fresh vegetables such as tomato, cucumber, onion, and bell pepper, usually finished with olives, feta, olive oil, and oregano. It is refreshing and savory rather than leafy-heavy.",
   "core_ingredients": [
-    "Fresh vegetables or greens",
-    "Seasoning",
-    "Dressing"
+    "Tomatoes",
+    "Cucumber",
+    "Red onion",
+    "Olives",
+    "Feta cheese",
+    "Olive oil"
   ],
   "optional_ingredients": [
-    "Cheese or seeds",
-    "Herbs",
-    "Extra vegetables"
+    "Green bell pepper",
+    "Oregano",
+    "Capers",
+    "Red wine vinegar",
+    "Lettuce in non-traditional versions"
   ],
   "preparation_steps": [
-    "Prepare and season the main produce",
-    "Add garnish or supporting ingredients",
-    "Dress lightly and serve fresh"
+    "Cut the vegetables into bite-sized pieces.",
+    "Combine with olives and feta.",
+    "Dress with olive oil and optional vinegar.",
+    "Season with oregano, salt, and pepper, then serve fresh."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
+    "calories": "Usually low to moderate",
     "protein": "Low to moderate",
     "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "fat": "Moderate, mainly from olive oil and feta"
   },
   "health_advice": {
-    "benefits": "Can provide freshness, fiber, and a lighter eating option with good flavor contrast.",
-    "risks": "Heavy dressings, cheese, or fried add-ons can raise sodium, fat, and calories quickly.",
-    "healthy_tip": "Lean toward fresh produce, lighter dressings, and balanced add-ons when possible."
+    "benefits": "Rich in vegetables and includes unsaturated fat from olive oil.",
+    "risks": "Feta and olives can make the sodium content fairly high.",
+    "healthy_tip": "Use plenty of vegetables and a moderate amount of cheese and salt."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
-    "vegan_possible": true,
+    "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Dressings, cheese, or protein add-ons can change the final profile"
+    "note": "Usually vegetarian and gluten-free. Vegan versions replace or omit feta."
   },
   "allergens": [
-    "Possible dairy",
-    "Possible nuts or seeds"
+    "Milk"
   ],
   "common_variations": [
-    "Classic Greek Salad",
-    "Herb-forward Greek Salad",
-    "Seasonal Greek Salad"
+    "Horiatiki village salad",
+    "Greek salad with lettuce",
+    "Greek salad with capers"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl or side plate",
     "best_served_with": [
-      "Bread",
-      "Soup",
-      "Light mains"
+      "Grilled meats",
+      "Seafood",
+      "Pita",
+      "Soup"
     ]
   },
   "popular_regions": [
-    "Europe",
-    "North America",
-    "Worldwide"
+    "Greece",
+    "Mediterranean restaurants worldwide"
   ]
 }

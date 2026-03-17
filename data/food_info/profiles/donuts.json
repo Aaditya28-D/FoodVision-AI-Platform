@@ -1,66 +1,71 @@
 {
   "food_name": "Donuts",
-  "category": "Dessert",
-  "cuisine": "International",
-  "description": "Fried or baked ring-shaped or filled sweet pastries commonly glazed, sugared, or frosted.",
+  "category": "Dessert / Sweet snack",
+  "cuisine": "American / Global",
+  "description": "A fried or baked sweet dough pastry, often ring-shaped or filled, and commonly finished with sugar, glaze, or icing. Styles vary widely by country and bakery tradition.",
   "core_ingredients": [
     "Flour",
     "Sugar",
-    "Leavening",
+    "Leavening or yeast",
     "Milk or water",
-    "Oil or butter"
+    "Fat such as butter or oil"
   ],
   "optional_ingredients": [
-    "Chocolate glaze",
-    "Cream filling",
-    "Jam filling",
-    "Sprinkles",
-    "Cinnamon sugar"
+    "Glaze",
+    "Chocolate",
+    "Jam or custard filling",
+    "Cinnamon sugar",
+    "Sprinkles"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare a dough or batter, depending on the style.",
+    "Shape the donuts or portion the batter.",
+    "Fry until golden or bake, depending on the recipe.",
+    "Cool slightly, then coat with sugar, glaze, or other toppings.",
+    "Serve fresh for best texture."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "Usually high",
     "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
+    "carbohydrates": "High",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Can be enjoyable as an occasional treat and provides quick energy from carbohydrates.",
+    "risks": "Often high in refined flour, sugar, and fat, especially when fried and heavily topped.",
+    "healthy_tip": "Treat as an occasional dessert rather than an everyday breakfast item."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
-    "non_vegetarian_possible": false,
+    "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": false,
-    "note": "Ingredients vary, but many common versions contain dairy or egg"
+    "note": "Vegetarian versions are common; vegan and gluten-free versions require recipe changes."
   },
   "allergens": [
-    "Gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Wheat / gluten",
+    "Milk in many recipes",
+    "Eggs in many recipes",
+    "Possible soy depending on glaze or frying ingredients"
   ],
   "common_variations": [
-    "Glazed",
-    "Chocolate",
-    "Filled",
-    "Cake donut",
-    "Yeast donut"
+    "Yeast donuts",
+    "Cake donuts",
+    "Filled donuts",
+    "Cinnamon sugar donuts"
   ],
   "serving_info": {
     "typical_serving": "1 donut",
     "best_served_with": [
       "Coffee",
-      "Milk",
-      "Tea"
+      "tea",
+      "or milk"
     ]
   },
   "popular_regions": [
+    "United States",
+    "Canada",
+    "Europe",
     "Worldwide"
   ]
 }

@@ -1,61 +1,68 @@
 {
   "food_name": "Hummus",
-  "category": "Side / Appetizer",
+  "category": "Dip or spread",
   "cuisine": "Middle Eastern",
-  "description": "A recognizable hummus dish with its own characteristic ingredients, texture, and serving style.",
+  "description": "A smooth or slightly textured spread made primarily from chickpeas, tahini, lemon juice, garlic, and olive oil. It is widely served as a dip, spread, or mezze item.",
   "core_ingredients": [
-    "Primary ingredient",
-    "Seasoning",
-    "Supporting elements"
+    "Chickpeas",
+    "Tahini",
+    "Lemon juice",
+    "Garlic",
+    "Olive oil"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Cumin",
+    "Paprika",
+    "Parsley",
+    "Roasted red pepper",
+    "Extra olive oil"
   ],
   "preparation_steps": [
-    "Prepare the key ingredients",
-    "Cook or assemble with seasoning",
-    "Plate and serve"
+    "Blend chickpeas with tahini, lemon juice, garlic, and salt.",
+    "Adjust texture with water or additional olive oil if needed.",
+    "Taste and balance acidity and seasoning.",
+    "Serve with garnish if desired."
   ],
   "nutrition": {
     "calories": "Moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate"
+    "protein": "Moderate",
+    "carbohydrates": "Moderate",
+    "fat": "Moderate, largely unsaturated"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides plant protein, fiber, and unsaturated fats.",
+    "risks": "Portion size and added oil can increase calories, especially when paired with fried chips or large amounts of bread.",
+    "healthy_tip": "Use it as a spread or dip with vegetables and whole-grain pita rather than relying only on processed snack foods."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Preparation style determines the final dietary profile"
+    "note": "The dip itself is usually vegan and gluten-free; bread or crackers served with it may not be."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Sesame from tahini"
   ],
   "common_variations": [
-    "Classic Hummus",
-    "House-style Hummus",
-    "Modern Hummus"
+    "Classic hummus",
+    "Roasted red pepper hummus",
+    "Spicy hummus",
+    "Beet hummus"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "A few spoonfuls to a small bowl",
     "best_served_with": [
-      "Fresh garnish",
-      "Light sides",
-      "Beverage of choice"
+      "Pita bread",
+      "Vegetable sticks",
+      "Falafel",
+      "Grilled meats",
+      "Wraps"
     ]
   },
   "popular_regions": [
-    "Levant",
     "Middle East",
+    "Mediterranean region",
     "Worldwide"
   ]
 }

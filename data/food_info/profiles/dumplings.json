@@ -1,61 +1,75 @@
 {
   "food_name": "Dumplings",
-  "category": "Main Dish",
+  "category": "Main dish / Appetizer",
   "cuisine": "Asian / Global",
-  "description": "A hearty dumplings centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "description": "A broad category of dough-based parcels or pieces that may be filled or unfilled and are commonly boiled, steamed, pan-fried, or fried. In many cuisines, dumplings contain meat, seafood, or vegetables wrapped in dough.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
+    "Dough wrappers or dumpling dough",
     "Seasoning"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Pork",
+    "Chicken",
+    "Beef",
+    "Shrimp",
+    "Cabbage",
+    "Chives",
+    "Mushrooms",
+    "Tofu",
+    "Dipping sauce"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Prepare the filling if making filled dumplings.",
+    "Fill and seal the wrappers or shape the dough.",
+    "Cook by boiling, steaming, pan-frying, or frying depending on the style.",
+    "Serve hot with sauce, broth, or side dishes.",
+    "Eat immediately for best texture."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Low to moderate; higher with meat or tofu",
+    "carbohydrates": "Moderate to high",
+    "fat": "Low to moderate; higher if fried"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can provide a balanced combination of starch, vegetables, and protein depending on the filling and cooking method.",
+    "risks": "Fried dumplings and salty dipping sauces can increase fat and sodium.",
+    "healthy_tip": "Choose steamed or boiled styles more often and include vegetable-heavy fillings."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "note": "Dietary suitability depends heavily on the wrapper ingredients and the filling."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Wheat / gluten in most wrappers",
+    "Soy in many fillings or sauces",
+    "Egg in some doughs",
+    "Shellfish if seafood-filled"
   ],
   "common_variations": [
-    "Classic Dumplings",
-    "Protein-rich Dumplings",
-    "Vegetable-forward Dumplings"
+    "Jiaozi",
+    "Gyoza",
+    "Pierogi",
+    "Momo",
+    "Soup dumplings"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "6 to 10 dumplings",
     "best_served_with": [
-      "Salad",
-      "Tea",
-      "Light sides"
+      "Dipping sauce",
+      "soup",
+      "or stir-fried vegetables"
     ]
   },
   "popular_regions": [
+    "China",
+    "Japan",
+    "Korea",
+    "Central Asia",
+    "Eastern Europe",
     "Worldwide"
   ]
 }

@@ -1,60 +1,67 @@
 {
   "food_name": "Miso Soup",
-  "category": "Soup / Broth Dish",
+  "category": "Soup",
   "cuisine": "Japanese",
-  "description": "A miso soup served as a broth-based dish, often designed to deliver warmth, aroma, and layered flavor.",
+  "description": "A traditional Japanese soup made with miso dissolved in dashi, often served with tofu, seaweed, and scallions. It is light in texture but savory and deeply seasoned.",
   "core_ingredients": [
-    "Broth or stock",
-    "Aromatics",
-    "Main ingredients"
+    "Miso paste",
+    "Dashi",
+    "Tofu",
+    "Seaweed",
+    "Scallions"
   ],
   "optional_ingredients": [
-    "Herbs",
-    "Cream or finishing oil",
-    "Protein or garnish"
+    "Mushrooms",
+    "Daikon",
+    "Clams",
+    "Wakame",
+    "Aburaage"
   ],
   "preparation_steps": [
-    "Build flavor with aromatics and liquid",
-    "Cook the main ingredients until balanced",
-    "Adjust seasoning and serve hot"
+    "Heat the dashi without boiling aggressively.",
+    "Add tofu and other quick-cooking ingredients.",
+    "Dissolve miso paste in a small amount of warm broth.",
+    "Stir the miso back into the pot near the end of cooking.",
+    "Serve hot, often with scallions on top."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
+    "calories": "Usually low",
     "protein": "Low to moderate",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "carbohydrates": "Low",
+    "fat": "Low"
   },
   "health_advice": {
-    "benefits": "Can be comforting, hydrating, and nutrient-dense depending on broth and ingredients.",
-    "risks": "Some soups can become high in sodium, cream, or refined starch depending on the recipe.",
-    "healthy_tip": "Choose broth-forward versions and pair them with vegetables or lean protein when possible."
+    "benefits": "Can be light, warming, and a simple way to include tofu and fermented ingredients.",
+    "risks": "Sodium can be high depending on the amount of miso and type of dashi used.",
+    "healthy_tip": "Keep portions moderate if you are watching salt intake and avoid oversalting the broth."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Broth type and garnishes determine the final dietary profile"
+    "note": "Traditional dashi often contains fish, so vegetarian or vegan versions require kombu- or mushroom-based stock. Some miso varieties may contain barley or other gluten-containing grains."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Soy",
+    "Possible fish in traditional dashi",
+    "Possible gluten in some miso varieties"
   ],
   "common_variations": [
-    "Classic Miso Soup",
-    "Protein-rich Miso Soup",
-    "Vegetable-forward Miso Soup"
+    "Tofu miso soup",
+    "Miso soup with mushrooms",
+    "Clam miso soup"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 small bowl",
     "best_served_with": [
-      "Bread",
-      "Crackers",
-      "Light sides"
+      "Rice",
+      "Grilled fish",
+      "Japanese set meals"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Japan",
+    "Japanese restaurants worldwide"
   ]
 }

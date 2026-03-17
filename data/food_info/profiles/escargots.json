@@ -1,59 +1,64 @@
 {
   "food_name": "Escargots",
-  "category": "Main Dish",
+  "category": "Appetizer",
   "cuisine": "French",
-  "description": "A recognizable escargots dish with its own characteristic ingredients, texture, and serving style.",
+  "description": "A French dish of edible snails, often baked in shells or special dishes with garlic-herb butter. The flavor is usually shaped more by the butter, garlic, and parsley than by the snail itself.",
   "core_ingredients": [
-    "Primary ingredient",
-    "Seasoning",
-    "Supporting elements"
+    "Edible snails",
+    "Butter",
+    "Garlic",
+    "Parsley"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Shallots",
+    "White wine",
+    "Breadcrumbs",
+    "Herbs"
   ],
   "preparation_steps": [
-    "Prepare the key ingredients",
-    "Cook or assemble with seasoning",
-    "Plate and serve"
+    "Clean and prepare the snails if not already prepared.",
+    "Make a garlic-herb butter mixture.",
+    "Place the snails in shells or an escargot dish and add the butter.",
+    "Bake until hot and fragrant.",
+    "Serve immediately, usually with bread for the sauce."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate"
+    "calories": "Usually moderate",
+    "protein": "Moderate",
+    "carbohydrates": "Low",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Snails provide protein and minerals, while portion sizes are usually small.",
+    "risks": "The dish can be high in butter and sodium depending on preparation.",
+    "healthy_tip": "Enjoy in moderate portions and balance it with lighter items in the meal."
   },
   "dietary_notes": {
-    "vegetarian_possible": true,
+    "vegetarian_possible": false,
     "non_vegetarian_possible": true,
-    "vegan_possible": true,
+    "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Preparation style determines the final dietary profile"
+    "note": "Naturally low in carbohydrates, but bread often served alongside contains gluten."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Milk if butter is used",
+    "Possible gluten if breadcrumbs are added"
   ],
   "common_variations": [
-    "Classic Escargots",
-    "House-style Escargots",
-    "Modern Escargots"
+    "Burgundy-style escargots",
+    "Escargots with herb butter",
+    "Escargots with wine sauce"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "6 to 12 snails",
     "best_served_with": [
-      "Fresh garnish",
-      "Light sides",
-      "Beverage of choice"
+      "Crusty bread",
+      "salad",
+      "or white wine"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "France",
+    "French restaurants worldwide"
   ]
 }

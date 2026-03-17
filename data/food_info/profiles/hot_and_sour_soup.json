@@ -1,60 +1,69 @@
 {
   "food_name": "Hot and Sour Soup",
-  "category": "Soup / Broth Dish",
+  "category": "Soup",
   "cuisine": "Chinese",
-  "description": "A hot and sour soup served as a broth-based dish, often designed to deliver warmth, aroma, and layered flavor.",
+  "description": "A savory soup known for balancing tangy and spicy flavors, typically using ingredients such as mushrooms, tofu, egg, vinegar, white pepper, and a thickened broth. Restaurant versions vary by region and style.",
   "core_ingredients": [
-    "Broth or stock",
-    "Aromatics",
-    "Main ingredients"
+    "Broth",
+    "Vinegar",
+    "White pepper",
+    "Mushrooms",
+    "Tofu"
   ],
   "optional_ingredients": [
-    "Herbs",
-    "Cream or finishing oil",
-    "Protein or garnish"
+    "Egg",
+    "Bamboo shoots",
+    "Wood ear mushrooms",
+    "Pork",
+    "Chicken",
+    "Chili oil",
+    "Cornstarch"
   ],
   "preparation_steps": [
-    "Build flavor with aromatics and liquid",
-    "Cook the main ingredients until balanced",
-    "Adjust seasoning and serve hot"
+    "Prepare a seasoned broth.",
+    "Add vegetables, tofu, and any meat if using.",
+    "Adjust the hot and sour balance with pepper and vinegar.",
+    "Thicken lightly if desired.",
+    "Add beaten egg in a thin stream if using and serve hot."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
+    "calories": "Usually low to moderate",
     "protein": "Low to moderate",
     "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "fat": "Usually low"
   },
   "health_advice": {
-    "benefits": "Can be comforting, hydrating, and nutrient-dense depending on broth and ingredients.",
-    "risks": "Some soups can become high in sodium, cream, or refined starch depending on the recipe.",
-    "healthy_tip": "Choose broth-forward versions and pair them with vegetables or lean protein when possible."
+    "benefits": "Can be relatively light while still flavorful, especially when it includes tofu and vegetables.",
+    "risks": "Restaurant versions can be high in sodium. Some recipes rely heavily on starch for thickness.",
+    "healthy_tip": "Use moderate sodium broth and keep the thickener light."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Broth type and garnishes determine the final dietary profile"
+    "note": "Vegetarian and vegan versions are possible with vegetable broth and without egg. Gluten-free suitability depends on soy sauce or other seasonings used."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Soy",
+    "Egg if added",
+    "Possible gluten in soy sauce"
   ],
   "common_variations": [
-    "Classic Hot and Sour Soup",
-    "Protein-rich Hot and Sour Soup",
-    "Vegetable-forward Hot and Sour Soup"
+    "Restaurant-style hot and sour soup",
+    "Vegetarian hot and sour soup",
+    "Sichuan-style versions"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl",
     "best_served_with": [
-      "Bread",
-      "Crackers",
-      "Light sides"
+      "Rice",
+      "Dumplings",
+      "Stir-fried dishes"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "China",
+    "Chinese restaurants worldwide"
   ]
 }

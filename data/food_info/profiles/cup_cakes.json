@@ -1,58 +1,69 @@
 {
-  "food_name": "Cup Cakes",
+  "food_name": "Cupcakes",
   "category": "Dessert",
-  "cuisine": "American / International",
-  "description": "A cup cakes dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "cuisine": "International",
+  "description": "Cupcakes are small individual cakes baked in liners or molds and commonly topped with frosting. They are popular for parties, celebrations, and portion-controlled desserts.",
   "core_ingredients": [
-    "Sweet base ingredients",
+    "Flour",
     "Sugar",
-    "Flavoring"
+    "Eggs",
+    "Butter or oil",
+    "Leavening",
+    "Milk or another liquid"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Vanilla",
+    "Cocoa powder",
+    "Fruit purée",
+    "Sprinkles",
+    "Frosting",
+    "Cream cheese icing",
+    "Chocolate chips"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare a cake batter.",
+    "Portion the batter into lined cupcake tins.",
+    "Bake until set and lightly springy.",
+    "Cool completely.",
+    "Top with frosting or other decorations."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "calories": "Usually moderate to high per piece",
+    "protein": "Low",
+    "carbohydrates": "High",
+    "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Single-serving size can help with portion control compared with a large cake.",
+    "risks": "Often high in sugar, especially when heavily frosted.",
+    "healthy_tip": "Choose simpler frostings or smaller portions when eating them regularly is a concern."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional cupcakes are usually vegetarian. Vegan and gluten-free versions are easy to make with substitutions."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten",
+    "Eggs",
+    "Milk",
+    "Possible soy or nuts depending on recipe and toppings"
   ],
   "common_variations": [
-    "Classic Cup Cakes",
-    "Chocolate or fruit-topped Cup Cakes",
-    "Mini Cup Cakes"
+    "Vanilla cupcakes",
+    "Chocolate cupcakes",
+    "Red velvet cupcakes",
+    "Carrot cupcakes",
+    "Filled cupcakes"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 cupcake",
     "best_served_with": [
       "Coffee",
       "Tea",
-      "Fruit garnish"
+      "Milk"
     ]
   },
   "popular_regions": [

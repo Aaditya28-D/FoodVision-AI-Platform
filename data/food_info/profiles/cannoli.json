@@ -2,60 +2,66 @@
   "food_name": "Cannoli",
   "category": "Dessert",
   "cuisine": "Italian / Sicilian",
-  "description": "A cannoli dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "description": "A Sicilian pastry made of crisp fried shells filled with a sweet creamy filling, traditionally based on ricotta. Cannoli are often finished with chocolate chips, candied fruit, chopped pistachios, or a dusting of sugar.",
   "core_ingredients": [
-    "Sweetened base",
-    "Flavoring",
-    "Finishing element"
+    "Cannoli shells",
+    "Ricotta filling",
+    "Sugar"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Chocolate chips",
+    "Candied orange peel",
+    "Pistachios",
+    "Cinnamon",
+    "Vanilla"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare and fry the pastry shells until crisp.",
+    "Drain and sweeten the ricotta filling, often with vanilla or citrus notes.",
+    "Pipe the filling into the shells shortly before serving.",
+    "Garnish with chocolate, nuts, or candied fruit."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "Usually moderate to high per piece",
     "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
+    "carbohydrates": "Moderate",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Offers some protein and calcium from ricotta.",
+    "risks": "High sugar and fried pastry make it an indulgent dessert.",
+    "healthy_tip": "Best enjoyed occasionally and filled just before serving to keep the shell crisp without becoming overly heavy."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
-    "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "vegan_possible": false,
+    "gluten_free_possible": true,
+    "note": "Traditional cannoli contain dairy and wheat. Gluten-free versions are possible only with specialty shells."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Milk",
+    "Gluten",
+    "Egg in many shell recipes",
+    "Tree nuts if pistachios are used"
   ],
   "common_variations": [
-    "Classic Cannoli",
-    "Chocolate or fruit-topped Cannoli",
-    "Mini Cannoli"
+    "Chocolate chip cannoli",
+    "Pistachio cannoli",
+    "Mini cannoli",
+    "Chocolate-dipped cannoli"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 to 2 cannoli",
     "best_served_with": [
+      "Espresso",
       "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Dessert wine"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Sicily",
+    "Italy",
+    "Italian bakeries worldwide"
   ]
 }

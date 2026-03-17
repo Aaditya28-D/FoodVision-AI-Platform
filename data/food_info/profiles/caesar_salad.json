@@ -1,61 +1,68 @@
 {
   "food_name": "Caesar Salad",
   "category": "Salad",
-  "cuisine": "Mediterranean / North American",
-  "description": "A caesar salad built around fresh produce, dressing, and contrasting textures for a light but flavorful plate.",
+  "cuisine": "North American / Italian-American",
+  "description": "A salad centered on crisp romaine lettuce, croutons, Parmesan cheese, and Caesar dressing. The classic dressing is savory and tangy and traditionally includes anchovy, garlic, egg, lemon juice, oil, and Worcestershire sauce.",
   "core_ingredients": [
-    "Fresh vegetables or greens",
-    "Seasoning",
-    "Dressing"
+    "Romaine lettuce",
+    "Caesar dressing",
+    "Croutons",
+    "Parmesan cheese"
   ],
   "optional_ingredients": [
-    "Cheese or seeds",
-    "Herbs",
-    "Extra vegetables"
+    "Grilled chicken",
+    "Bacon",
+    "Soft-boiled egg",
+    "Extra anchovy",
+    "Black pepper"
   ],
   "preparation_steps": [
-    "Prepare and season the main produce",
-    "Add garnish or supporting ingredients",
-    "Dress lightly and serve fresh"
+    "Wash and dry the romaine lettuce thoroughly.",
+    "Prepare or add the Caesar dressing.",
+    "Toss the lettuce with dressing, croutons, and Parmesan.",
+    "Top with optional protein such as grilled chicken if desired."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
-    "protein": "Low to moderate",
+    "calories": "Usually moderate; can be high with extra dressing or protein",
+    "protein": "Low to moderate; higher with chicken or egg",
     "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "fat": "Moderate to high depending on dressing and cheese"
   },
   "health_advice": {
-    "benefits": "Can provide freshness, fiber, and a lighter eating option with good flavor contrast.",
-    "risks": "Heavy dressings, cheese, or fried add-ons can raise sodium, fat, and calories quickly.",
-    "healthy_tip": "Lean toward fresh produce, lighter dressings, and balanced add-ons when possible."
+    "benefits": "Provides leafy greens and can be made more filling with added protein.",
+    "risks": "The dressing can be high in fat, sodium, and calories, and some versions use raw egg.",
+    "healthy_tip": "Use dressing moderately and add lean protein if you want a more balanced meal."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
-    "non_vegetarian_possible": false,
-    "vegan_possible": true,
+    "non_vegetarian_possible": true,
+    "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Dressings, cheese, or protein add-ons can change the final profile"
+    "note": "Classic Caesar dressing is not vegetarian because of anchovy. Gluten-free versions require gluten-free croutons and dressing ingredients checked carefully."
   },
   "allergens": [
-    "Possible dairy",
-    "Possible nuts or seeds"
+    "Milk from Parmesan",
+    "Egg in many dressings",
+    "Fish from anchovy in classic dressing",
+    "Gluten from croutons unless gluten-free"
   ],
   "common_variations": [
-    "Classic Caesar Salad",
-    "Herb-forward Caesar Salad",
-    "Seasonal Caesar Salad"
+    "Chicken Caesar salad",
+    "Kale Caesar salad",
+    "Salmon Caesar salad",
+    "Vegetarian Caesar with anchovy-free dressing"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 salad bowl or side plate",
     "best_served_with": [
-      "Bread",
+      "Grilled chicken",
       "Soup",
-      "Light mains"
+      "Bread"
     ]
   },
   "popular_regions": [
-    "Europe",
-    "North America",
-    "Worldwide"
+    "United States",
+    "Canada",
+    "Worldwide restaurant menus"
   ]
 }

@@ -1,62 +1,67 @@
 {
   "food_name": "Grilled Salmon",
-  "category": "Seafood Dish",
+  "category": "Seafood dish",
   "cuisine": "International",
-  "description": "A seafood-focused grilled salmon prepared to highlight delicate texture, freshness, and seasoning balance.",
+  "description": "A salmon fillet or steak cooked over direct heat until lightly charred outside and tender inside. It is commonly seasoned simply with salt, pepper, lemon, herbs, and oil so the flavor of the fish remains central.",
   "core_ingredients": [
-    "Grilled Salmon",
-    "Seasoning",
-    "Oil, butter, or dressing"
+    "Salmon",
+    "Salt",
+    "Black pepper",
+    "Oil or butter"
   ],
   "optional_ingredients": [
-    "Citrus",
-    "Herbs",
-    "Sauce",
-    "Fresh garnish"
+    "Lemon",
+    "Garlic",
+    "Fresh herbs",
+    "Paprika",
+    "Honey glaze",
+    "Mustard glaze"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Pat the salmon dry and season it.",
+    "Lightly oil the fish or grill surface.",
+    "Grill until the flesh is cooked through but still moist.",
+    "Finish with lemon, butter, herbs, or sauce if desired.",
+    "Serve immediately with sides."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Moderate to high",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "calories": "Usually moderate to high",
+    "protein": "High",
+    "carbohydrates": "Low unless served with a sweet glaze",
+    "fat": "Moderate to high, largely from the fish itself"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "Salmon is rich in protein and commonly valued for omega-3 fats.",
+    "risks": "Overcooking can dry the fish, and heavy sugary glazes or large amounts of butter can increase calories.",
+    "healthy_tip": "Use simple seasoning and pair with vegetables or a whole-grain side."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sauces, batters, or sides can alter the gluten and dairy profile"
+    "note": "Usually gluten-free when prepared without soy sauce, flour-based seasonings, or breaded coatings."
   },
   "allergens": [
-    "Fish or shellfish",
-    "Possible gluten",
-    "Possible dairy"
+    "Fish",
+    "Possible dairy if butter sauce is used",
+    "Possible soy or gluten in some marinades"
   ],
   "common_variations": [
-    "Classic Grilled Salmon",
-    "Spiced Grilled Salmon",
-    "Citrus-finished Grilled Salmon"
+    "Lemon herb grilled salmon",
+    "Honey garlic grilled salmon",
+    "Blackened grilled salmon"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 fillet or steak",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Grilled vegetables",
+      "Rice or potatoes",
+      "Salad",
+      "Lemon wedges"
     ]
   },
   "popular_regions": [
-    "Coastal cuisines",
     "Worldwide"
   ]
 }

@@ -1,60 +1,67 @@
 {
   "food_name": "Filet Mignon",
-  "category": "Main Dish",
-  "cuisine": "French-inspired / Steakhouse",
-  "description": "A protein-forward filet mignon typically served as a satisfying main dish with sides or sauces.",
+  "category": "Main dish",
+  "cuisine": "French-inspired / Western",
+  "description": "A tender steak cut from the smaller end of the beef tenderloin. It is known for its soft texture and mild beef flavor and is commonly pan-seared or grilled and served as a premium steak dish.",
   "core_ingredients": [
-    "Primary protein",
-    "Seasoning",
-    "Oil or butter"
+    "Beef tenderloin steak",
+    "Salt",
+    "Pepper"
   ],
   "optional_ingredients": [
-    "Sauce",
+    "Butter",
+    "Garlic",
     "Herbs",
-    "Vegetables"
+    "Wine sauce",
+    "Mushrooms"
   ],
   "preparation_steps": [
-    "Season the protein",
-    "Cook to the desired doneness or tenderness",
-    "Rest or plate with sides and serve"
+    "Season the steak simply.",
+    "Sear in a hot pan or grill until browned.",
+    "Finish to the desired doneness, often with butter or herbs.",
+    "Rest briefly before serving.",
+    "Serve with sauce or sides if desired."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate to high",
     "protein": "High",
-    "carbohydrates": "Low to moderate",
-    "fat": "Moderate to high"
+    "carbohydrates": "Low",
+    "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
-    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
-    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+    "benefits": "A concentrated source of protein and iron with relatively low carbohydrates.",
+    "risks": "Rich sauces and large portions can increase saturated fat and calories.",
+    "healthy_tip": "Keep portions moderate and pair with vegetables instead of only heavy sides."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sides, sauces, and breading can change the final dietary profile"
+    "note": "Naturally gluten-free when not served with flour-thickened sauces."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Usually none in plain steak",
+    "Possible milk in butter sauces",
+    "Possible gluten in some sauces"
   ],
   "common_variations": [
-    "Classic Filet Mignon",
-    "Sauced Filet Mignon",
-    "Grilled or roasted Filet Mignon"
+    "Bacon-wrapped filet mignon",
+    "Filet mignon with red wine sauce",
+    "Grilled filet mignon"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 steak",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Potatoes",
+      "vegetables",
+      "mushrooms",
+      "or red wine sauce"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "France-inspired steakhouse cuisine",
+    "United States",
+    "Worldwide steakhouses"
   ]
 }

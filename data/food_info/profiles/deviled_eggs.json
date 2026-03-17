@@ -1,59 +1,69 @@
 {
   "food_name": "Deviled Eggs",
-  "category": "Main Dish",
-  "cuisine": "European / American",
-  "description": "A recognizable deviled eggs dish with its own characteristic ingredients, texture, and serving style.",
+  "category": "Appetizer / Side dish",
+  "cuisine": "American / European",
+  "description": "A classic appetizer made by halving hard-boiled eggs and filling the yolks with a seasoned mixture, commonly mayonnaise and mustard. They are typically served chilled at parties, picnics, and holiday meals.",
   "core_ingredients": [
-    "Primary ingredient",
-    "Seasoning",
-    "Supporting elements"
+    "Eggs",
+    "Mayonnaise",
+    "Mustard",
+    "Salt",
+    "Pepper"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Paprika",
+    "Chives",
+    "Pickles or relish",
+    "Hot sauce",
+    "Vinegar"
   ],
   "preparation_steps": [
-    "Prepare the key ingredients",
-    "Cook or assemble with seasoning",
-    "Plate and serve"
+    "Hard-boil the eggs and cool them before peeling.",
+    "Halve the eggs and remove the yolks.",
+    "Mash the yolks with mayonnaise, mustard, and seasonings until smooth.",
+    "Pipe or spoon the filling back into the egg whites.",
+    "Garnish and chill before serving."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate"
+    "calories": "Usually moderate",
+    "protein": "Moderate",
+    "carbohydrates": "Low",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides protein and can be satisfying in small portions.",
+    "risks": "May be high in fat or sodium depending on the amount of mayonnaise, salt, and toppings used.",
+    "healthy_tip": "Use a lighter amount of mayonnaise or mix in Greek yogurt for a slightly lighter filling."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
-    "vegan_possible": true,
+    "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Preparation style determines the final dietary profile"
+    "note": "Typically vegetarian and gluten-free, but recipes vary by add-ins and condiments."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Eggs",
+    "Mustard",
+    "Possible soy or egg in mayonnaise"
   ],
   "common_variations": [
-    "Classic Deviled Eggs",
-    "House-style Deviled Eggs",
-    "Modern Deviled Eggs"
+    "Classic deviled eggs",
+    "Southern-style deviled eggs with relish",
+    "Spicy deviled eggs",
+    "Bacon-topped deviled eggs"
   ],
   "serving_info": {
     "typical_serving": "2 to 4 halves",
     "best_served_with": [
-      "Fresh garnish",
-      "Light sides",
-      "Beverage of choice"
+      "Salads",
+      "picnic foods",
+      "or holiday appetizers"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "United Kingdom",
+    "Europe"
   ]
 }

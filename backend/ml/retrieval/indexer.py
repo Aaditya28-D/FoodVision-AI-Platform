@@ -6,13 +6,40 @@ from ml.retrieval.embedder import ImageEmbedder
 
 
 class RetrievalIndexer:
-    def __init__(self, dataset_root: str | Path, output_path: str | Path, device: str = "auto") -> None:
+    def __init__(
+        self,
+        dataset_root: str | Path,
+        output_path: str | Path,
+        device: str = "auto",
+        keep_manifest_path: str | Path | None = None,
+    ) -> None:
         self.dataset_root = Path(dataset_root)
         self.output_path = Path(output_path)
+        self.keep_manifest_path = Path(keep_manifest_path) if keep_manifest_path else None
         self.embedder = ImageEmbedder(device=device)
 
+    def _load_image_paths(self) -> list[Path]:
+        if self.keep_manifest_path is not None:
+            if not self.keep_manifest_path.exists():
+                raise FileNotFoundError(f"Keep manifest not found: {self.keep_manifest_path}")
+
+            image_paths = []
+            with self.keep_manifest_path.open("r", encoding="utf-8") as f:
+                for line in f:
+                    rel_path = line.strip()
+                    if not rel_path:
+                        continue
+
+                    full_path = self.dataset_root / rel_path
+                    if full_path.exists():
+                        image_paths.append(full_path)
+
+            return sorted(image_paths)
+
+        return sorted(self.dataset_root.glob("*/*.jpg"))
+
     def build(self) -> None:
-        image_paths = sorted(self.dataset_root.glob("*/*.jpg"))
+        image_paths = self._load_image_paths()
 
         if not image_paths:
             raise FileNotFoundError(f"No dataset images found under: {self.dataset_root}")

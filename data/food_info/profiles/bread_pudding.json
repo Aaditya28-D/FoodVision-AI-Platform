@@ -1,61 +1,76 @@
 {
   "food_name": "Bread Pudding",
   "category": "Dessert",
-  "cuisine": "British / American",
-  "description": "A bread pudding dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "cuisine": "British / International",
+  "description": "A baked dessert made by soaking stale or day-old bread in a sweet custard, then baking it until the center is soft and the top is lightly browned. It is a classic way to use leftover bread.",
   "core_ingredients": [
-    "Sweet base ingredients",
+    "Stale bread",
+    "Milk or cream",
+    "Eggs",
     "Sugar",
-    "Flavoring"
+    "Butter",
+    "Vanilla"
   ],
   "optional_ingredients": [
-    "Fruit",
+    "Cinnamon",
+    "Nutmeg",
+    "Raisins or sultanas",
     "Chocolate",
-    "Cream",
-    "Spices"
+    "Bourbon or rum sauce",
+    "Caramel sauce",
+    "Citrus zest"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Cube or tear the bread and place it in a baking dish.",
+    "Whisk together the custard ingredients.",
+    "Pour the custard over the bread and let it soak.",
+    "Add any fruit, spice, or sauce elements if using.",
+    "Bake until set but still soft in the center."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "Usually moderate to high",
     "protein": "Low to moderate",
     "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "A practical way to use leftover bread and reduce food waste.",
+    "risks": "Dessert-style versions can be high in sugar and saturated fat.",
+    "healthy_tip": "Reduce sugar, use moderate portions, and add fruit instead of heavier sauces when possible."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional versions are vegetarian. Vegan and gluten-free versions are possible with appropriate substitutions."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten",
+    "Dairy",
+    "Egg"
   ],
   "common_variations": [
-    "Classic Bread Pudding",
-    "Chocolate or fruit-topped Bread Pudding",
-    "Mini Bread Pudding"
+    "Bread and butter pudding",
+    "Raisin bread pudding",
+    "Chocolate bread pudding",
+    "Bourbon bread pudding"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 square or scoop",
     "best_served_with": [
+      "Custard sauce",
+      "Vanilla ice cream",
+      "Whipped cream",
       "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Tea"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United Kingdom",
+    "United States",
+    "Europe",
+    "Australia",
+    "Many former British-influenced cuisines"
   ]
 }

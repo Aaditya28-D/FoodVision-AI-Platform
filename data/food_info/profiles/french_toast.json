@@ -1,61 +1,72 @@
 {
   "food_name": "French Toast",
-  "category": "Dessert",
-  "cuisine": "European / American",
-  "description": "A french toast dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "category": "Breakfast / Brunch",
+  "cuisine": "European-origin / Popular in North America",
+  "description": "Slices of bread soaked in a beaten egg and milk mixture, then pan-cooked until golden. It is commonly served sweet, though savory versions also exist.",
   "core_ingredients": [
-    "Sweetened base",
-    "Flavoring",
-    "Finishing element"
+    "Bread",
+    "Eggs",
+    "Milk or cream",
+    "Butter or oil for cooking"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Cinnamon",
+    "Vanilla",
+    "Sugar",
+    "Maple syrup",
+    "Fresh fruit",
+    "Powdered sugar",
+    "Brioche",
+    "Challah"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Whisk eggs with milk and optional flavorings.",
+    "Dip bread briefly so it absorbs the custard without falling apart.",
+    "Cook on a buttered pan or griddle until golden on both sides.",
+    "Serve warm with desired toppings."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
-    "protein": "Low to moderate",
+    "calories": "Usually moderate to high",
+    "protein": "Moderate",
     "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Provides protein from eggs and can be made more balanced with fruit and moderate toppings.",
+    "risks": "Sugar, syrup, cream, and thick enriched breads can raise calories quickly.",
+    "healthy_tip": "Use whole-grain bread and top with fruit rather than excessive syrup."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
-    "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "vegan_possible": false,
+    "gluten_free_possible": true,
+    "note": "Usually vegetarian. Vegan versions need egg and dairy substitutes, and gluten-free versions need gluten-free bread."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Egg",
+    "Milk",
+    "Gluten"
   ],
   "common_variations": [
-    "Classic French Toast",
-    "Chocolate or fruit-topped French Toast",
-    "Mini French Toast"
+    "Stuffed French toast",
+    "Brioche French toast",
+    "Cinnamon French toast",
+    "Savory French toast"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "2 to 4 slices",
     "best_served_with": [
-      "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Maple syrup",
+      "Fresh berries",
+      "Bananas",
+      "Bacon or sausage for non-vegetarian breakfasts"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "France in older forms such as pain perdu",
+    "United States",
+    "Canada",
+    "Worldwide brunch menus"
   ]
 }

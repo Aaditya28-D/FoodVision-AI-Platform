@@ -1,60 +1,65 @@
 {
   "food_name": "Garlic Bread",
-  "category": "Street Food / Fast Casual",
+  "category": "Side dish / Appetizer",
   "cuisine": "Italian-American",
-  "description": "A casual garlic bread with bold flavor, quick service appeal, and room for ingredient variation.",
+  "description": "Bread spread with garlic butter or garlic-infused oil and toasted until crisp on the edges. It is commonly served alongside pasta, soup, or salad.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "Bread",
+    "Garlic",
+    "Butter or olive oil"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Cheese",
-    "Vegetables",
-    "Herbs"
+    "Parsley",
+    "Parmesan",
+    "Mozzarella",
+    "Black pepper",
+    "Chili flakes"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Mix garlic with softened butter or oil.",
+    "Spread over sliced bread or a halved loaf.",
+    "Add herbs or cheese if desired.",
+    "Bake or toast until hot and lightly crisp."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
+    "calories": "Usually moderate",
+    "protein": "Low",
     "carbohydrates": "Moderate",
     "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can be satisfying in small portions and pairs well with vegetable-rich meals.",
+    "risks": "Butter, cheese, and refined bread can raise saturated fat, sodium, and calories.",
+    "healthy_tip": "Use a moderate amount of spread and try whole-grain bread when suitable."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
-    "non_vegetarian_possible": true,
+    "non_vegetarian_possible": false,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "note": "Often vegetarian. Vegan versions are easy with olive oil or plant-based butter. Gluten-free versions require gluten-free bread."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Gluten",
+    "Milk if butter or cheese is used"
   ],
   "common_variations": [
-    "Classic Garlic Bread",
-    "Loaded Garlic Bread",
-    "Vegetarian-style Garlic Bread"
+    "Cheesy garlic bread",
+    "Garlic knots",
+    "Herb garlic bread",
+    "Olive-oil garlic toast"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 to 3 slices",
     "best_served_with": [
-      "Dips or sauces",
+      "Pasta",
+      "Soup",
       "Salad",
-      "Soft drinks"
+      "Pizza"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "Italy-inspired restaurants worldwide"
   ]
 }

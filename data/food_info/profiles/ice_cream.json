@@ -2,57 +2,65 @@
   "food_name": "Ice Cream",
   "category": "Dessert",
   "cuisine": "International",
-  "description": "A ice cream dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "description": "A frozen dessert typically made from cream, milk, sugar, and flavorings such as vanilla, chocolate, fruit, or nuts. Texture ranges from dense and rich to lighter churned styles.",
   "core_ingredients": [
-    "Sweetened base",
-    "Flavoring",
-    "Finishing element"
+    "Milk or cream",
+    "Sugar",
+    "Flavoring"
   ],
   "optional_ingredients": [
-    "Fruit",
+    "Egg yolks",
+    "Vanilla",
     "Chocolate",
-    "Cream",
-    "Spices"
+    "Fruit",
+    "Nuts",
+    "Cookie pieces",
+    "Caramel"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare or combine the base ingredients.",
+    "Chill the mixture if needed.",
+    "Churn and freeze until thick and smooth.",
+    "Add mix-ins if desired and freeze until ready to serve."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "Usually moderate to high",
     "protein": "Low to moderate",
     "carbohydrates": "Moderate to high",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Mainly enjoyed for taste and pleasure rather than as a nutritionally balanced food.",
+    "risks": "Often high in sugar and saturated fat, especially in premium or heavily mixed versions.",
+    "healthy_tip": "Keep portions moderate and treat it as an occasional dessert."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
-    "non_vegetarian_possible": false,
+    "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional ice cream is vegetarian but not vegan because it contains dairy and sometimes eggs. Vegan and gluten-free varieties are available, but mix-ins can change this."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Dairy",
+    "Egg in custard-style versions",
+    "Nuts in some flavors",
+    "Gluten in cookie or cake mix-ins"
   ],
   "common_variations": [
-    "Classic Ice Cream",
-    "Chocolate or fruit-topped Ice Cream",
-    "Mini Ice Cream"
+    "Vanilla ice cream",
+    "Chocolate ice cream",
+    "Gelato-style ice cream",
+    "Soft serve"
   ],
   "serving_info": {
-    "typical_serving": "Scoops or a cup",
+    "typical_serving": "1 scoop to 2 scoops",
     "best_served_with": [
-      "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Cone",
+      "Waffle",
+      "Brownies",
+      "Pie",
+      "Fruit"
     ]
   },
   "popular_regions": [

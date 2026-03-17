@@ -1,12 +1,11 @@
 {
   "food_name": "Hamburger",
-  "category": "Main Dish",
+  "category": "Sandwich or main dish",
   "cuisine": "American",
-  "description": "A sandwich built with a bun and a central patty, often served with sauces, vegetables, and cheese.",
+  "description": "A sandwich built around a cooked ground-beef patty served in a bun, often with lettuce, tomato, onion, pickles, cheese, and condiments. The term can also cover broader burger styles with different toppings or proteins.",
   "core_ingredients": [
-    "Bun",
-    "Patty",
-    "Sauce"
+    "Burger bun",
+    "Ground beef patty"
   ],
   "optional_ingredients": [
     "Cheese",
@@ -14,51 +13,59 @@
     "Tomato",
     "Onion",
     "Pickles",
+    "Ketchup",
+    "Mustard",
+    "Mayonnaise",
     "Bacon"
   ],
   "preparation_steps": [
-    "Prepare the bread or base",
-    "Cook or assemble the filling",
-    "Layer, finish, and serve"
+    "Form and season the patty.",
+    "Cook the patty on a grill or pan until done to the desired level.",
+    "Toast the bun if desired.",
+    "Assemble with toppings and condiments.",
+    "Serve hot."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate to high",
     "protein": "High",
-    "carbohydrates": "Low to moderate",
+    "carbohydrates": "Moderate",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
-    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
-    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+    "benefits": "Provides substantial protein and can be made more balanced with vegetables and leaner meat.",
+    "risks": "Calories, saturated fat, and sodium can rise quickly with large patties, cheese, bacon, and rich sauces.",
+    "healthy_tip": "Choose a moderate portion, include vegetables, and avoid excessive sauces and fried sides."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Dietary profile depends on the patty type, bun, cheese, and sauces"
+    "note": "The classic version is non-vegetarian, but vegetarian and vegan burgers are common. Gluten-free buns are needed for a gluten-free version."
   },
   "allergens": [
-    "Gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten from bun",
+    "Sesame from some buns",
+    "Dairy if cheese is added",
+    "Egg in some sauces"
   ],
   "common_variations": [
     "Cheeseburger",
-    "Chicken burger",
-    "Veggie burger",
-    "Double burger"
+    "Bacon burger",
+    "Smash burger",
+    "Veggie burger"
   ],
   "serving_info": {
     "typical_serving": "1 burger",
     "best_served_with": [
       "Fries",
       "Salad",
-      "Soft drinks"
+      "Pickles",
+      "Soft drink"
     ]
   },
   "popular_regions": [
+    "United States",
     "Worldwide"
   ]
 }

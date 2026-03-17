@@ -1,61 +1,74 @@
 {
   "food_name": "Spaghetti Bolognese",
-  "category": "Main Dish",
+  "category": "Main dish",
   "cuisine": "Italian-inspired",
-  "description": "A hearty spaghetti bolognese centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "description": "A pasta dish of spaghetti served with a meat-based tomato sauce. Outside Italy it is widely known as spaghetti Bolognese, though traditional ragù alla bolognese is usually served with broader pasta rather than spaghetti.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Spaghetti",
+    "Ground beef",
+    "Onion",
+    "Carrot",
+    "Celery",
+    "Tomatoes or tomato passata",
+    "Olive oil"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Ground pork",
+    "Garlic",
+    "Red wine",
+    "Milk",
+    "Parmesan cheese",
+    "Basil",
+    "Oregano",
+    "Black pepper"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Cook the spaghetti until just tender and drain.",
+    "Sweat onion, carrot, and celery in oil until softened.",
+    "Brown the meat and cook off excess moisture.",
+    "Add tomatoes and any optional wine or seasonings, then simmer until the sauce thickens and develops flavor.",
+    "Serve the sauce over the pasta and finish with cheese if desired."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
+    "calories": "Usually moderate to high",
+    "protein": "Moderate to high",
+    "carbohydrates": "High",
     "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides carbohydrates for energy and protein from the meat sauce.",
+    "risks": "Can be high in sodium and saturated fat depending on the meat, cheese, and portion size.",
+    "healthy_tip": "Use lean meat, add extra vegetables, and keep cheese and salt moderate."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "gluten_free_possible": true,
+    "note": "Traditional versions are meat-based. Vegetarian or vegan versions can use lentils, mushrooms, or plant mince. Gluten-free suitability depends on the pasta used."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Gluten in standard pasta",
+    "Milk if cheese or milk is used"
   ],
   "common_variations": [
-    "Classic Spaghetti Bolognese",
-    "Protein-rich Spaghetti Bolognese",
-    "Vegetable-forward Spaghetti Bolognese"
+    "Traditional ragù-style versions",
+    "Beef and pork mixture",
+    "Vegetarian lentil bolognese",
+    "Spaghetti with extra herbs or chili"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 plate or bowl",
     "best_served_with": [
-      "Salad",
-      "Tea",
-      "Light sides"
+      "Parmesan cheese",
+      "Garlic bread",
+      "Green salad"
     ]
   },
   "popular_regions": [
+    "Italy",
+    "United Kingdom",
+    "Australia",
     "Worldwide"
   ]
 }

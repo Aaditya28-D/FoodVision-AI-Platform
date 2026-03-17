@@ -1,61 +1,72 @@
 {
   "food_name": "Pancakes",
-  "category": "Dessert",
-  "cuisine": "International",
-  "description": "A pancakes dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "category": "Breakfast or dessert",
+  "cuisine": "Widely international",
+  "description": "Soft, flat cakes made from a batter and cooked on a griddle or pan. In many Western styles they are served stacked with butter, syrup, fruit, or other toppings.",
   "core_ingredients": [
-    "Sweet base ingredients",
-    "Sugar",
-    "Flavoring"
+    "Flour",
+    "Eggs",
+    "Milk",
+    "Baking powder or another leavening agent",
+    "Butter or oil"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Sugar",
+    "Vanilla",
+    "Buttermilk",
+    "Blueberries",
+    "Banana",
+    "Chocolate chips",
+    "Maple syrup"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Mix the dry ingredients and wet ingredients separately, then combine into a batter.",
+    "Heat a lightly greased pan or griddle.",
+    "Pour portions of batter and cook until bubbles form and the underside is golden.",
+    "Flip and cook the other side.",
+    "Serve warm with chosen toppings."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "Usually moderate; higher with syrup and rich toppings",
     "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "carbohydrates": "High",
+    "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Can be satisfying and easy to pair with fruit, yogurt, or nuts for a more balanced meal.",
+    "risks": "Refined flour, syrup, and sweet toppings can make them high in sugar and low in fiber.",
+    "healthy_tip": "Use whole-grain flour where possible and add fruit or a protein-rich side."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
-    "non_vegetarian_possible": false,
+    "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Vegan and gluten-free versions are common when suitable substitutes are used."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten",
+    "Egg",
+    "Milk"
   ],
   "common_variations": [
-    "Classic Pancakes",
-    "Chocolate or fruit-topped Pancakes",
-    "Mini Pancakes"
+    "Buttermilk pancakes",
+    "Blueberry pancakes",
+    "Banana pancakes",
+    "Protein pancakes"
   ],
   "serving_info": {
-    "typical_serving": "2 to 3 pancakes",
+    "typical_serving": "2 to 4 pancakes",
     "best_served_with": [
-      "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Maple syrup",
+      "Butter",
+      "Fruit",
+      "Yogurt"
     ]
   },
   "popular_regions": [
+    "North America",
+    "Europe",
     "Worldwide"
   ]
 }

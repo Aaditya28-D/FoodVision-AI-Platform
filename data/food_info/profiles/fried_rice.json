@@ -1,61 +1,75 @@
 {
   "food_name": "Fried Rice",
-  "category": "Main Dish",
-  "cuisine": "Chinese / Asian",
-  "description": "A hearty fried rice centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "category": "Main dish / Side dish",
+  "cuisine": "Chinese / East and Southeast Asian styles",
+  "description": "A rice dish made by stir-frying cooked rice with aromatics, vegetables, seasonings, and often egg or protein. It is commonly prepared with day-old rice for better texture.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Cooked rice",
+    "Oil",
+    "Aromatics such as garlic or onion",
+    "Soy sauce or seasoning"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Egg",
+    "Chicken",
+    "Shrimp",
+    "Pork",
+    "Tofu",
+    "Peas",
+    "Carrots",
+    "Spring onion",
+    "Sesame oil"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Use cooked rice that is cooled and separated.",
+    "Cook aromatics and any protein first.",
+    "Add vegetables and stir-fry briefly.",
+    "Add rice and toss over high heat until heated through and slightly dry.",
+    "Season and finish with egg, spring onion, or other garnishes if using."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
+    "calories": "Usually moderate to high",
+    "protein": "Low to moderate; higher with egg or added protein",
+    "carbohydrates": "High",
     "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can be a practical one-pan meal that includes vegetables and protein.",
+    "risks": "Restaurant versions can be high in oil and sodium. Food-safety issues can occur if cooked rice is stored improperly before reheating.",
+    "healthy_tip": "Use moderate oil, add plenty of vegetables, and cool and refrigerate cooked rice safely before reuse."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "gluten_free_possible": true,
+    "note": "Vegetarian and vegan versions are common. Gluten-free versions require gluten-free soy sauce or tamari and attention to sauces."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Soy",
+    "Egg if added",
+    "Sesame if used",
+    "Possible shellfish if made with shrimp"
   ],
   "common_variations": [
-    "Classic Fried Rice",
-    "Protein-rich Fried Rice",
-    "Vegetable-forward Fried Rice"
+    "Egg fried rice",
+    "Chicken fried rice",
+    "Shrimp fried rice",
+    "Yangzhou fried rice",
+    "Kimchi fried rice"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl or plate",
     "best_served_with": [
-      "Salad",
-      "Tea",
-      "Light sides"
+      "Stir-fried dishes",
+      "Dumplings",
+      "Soup",
+      "Chili sauce"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "China",
+    "Southeast Asia",
+    "Worldwide Chinese and Asian restaurants"
   ]
 }

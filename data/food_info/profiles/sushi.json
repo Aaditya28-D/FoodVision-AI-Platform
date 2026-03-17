@@ -1,62 +1,70 @@
 {
   "food_name": "Sushi",
-  "category": "Seafood Dish",
+  "category": "Main dish or appetizer",
   "cuisine": "Japanese",
-  "description": "A Japanese dish typically built around vinegared rice and ingredients such as seafood, vegetables, or egg.",
+  "description": "A Japanese dish based on vinegared rice combined with ingredients such as seafood, vegetables, egg, or seaweed. Sushi refers to the seasoned rice; it may be served as rolls, pressed pieces, or hand-formed portions.",
   "core_ingredients": [
-    "Vinegared rice",
-    "Seaweed or wrappers",
-    "Seafood or vegetables"
+    "Sushi rice",
+    "Rice vinegar",
+    "Seaweed or toppings",
+    "Salt and sugar for seasoning"
   ],
   "optional_ingredients": [
-    "Salmon",
-    "Tuna",
-    "Avocado",
+    "Raw fish",
+    "Cooked seafood",
     "Cucumber",
+    "Avocado",
     "Egg",
-    "Sauces"
+    "Pickled radish",
+    "Tofu skin",
+    "Sesame"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Cook and season the rice with vinegar mixture.",
+    "Prepare fillings or toppings.",
+    "Shape the sushi by rolling, pressing, or hand-forming it.",
+    "Serve with condiments such as soy sauce, wasabi, and pickled ginger."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Moderate to high",
-    "carbohydrates": "Low to moderate",
+    "calories": "Varies widely by type",
+    "protein": "Low to high depending on fillings",
+    "carbohydrates": "Moderate",
     "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "Can be relatively light and may provide lean protein and seafood-based nutrients.",
+    "risks": "Sodium can be high from soy sauce; raw fish requires strict freshness and food safety.",
+    "healthy_tip": "Balance rice-heavy rolls with simpler sushi and use sauces in moderation."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "The exact profile depends on fillings, sauces, and preparation style"
+    "note": "Dietary suitability depends on fillings and condiments. Gluten-free versions require gluten-free soy sauce and careful ingredient selection."
   },
   "allergens": [
     "Fish",
-    "Possible soy",
-    "Possible sesame",
-    "Possible shellfish"
+    "Shellfish in some varieties",
+    "Soy",
+    "Sesame",
+    "Egg in some fillings",
+    "Possible gluten in soy sauce or imitation seafood"
   ],
   "common_variations": [
     "Nigiri",
-    "Maki",
-    "Uramaki",
-    "Vegetarian sushi"
+    "Maki rolls",
+    "Temaki",
+    "Vegetable sushi",
+    "Chirashi"
   ],
   "serving_info": {
-    "typical_serving": "Several pieces",
+    "typical_serving": "6 to 12 pieces or 1 bowl",
     "best_served_with": [
       "Soy sauce",
+      "Wasabi",
       "Pickled ginger",
-      "Wasabi"
+      "Miso soup"
     ]
   },
   "popular_regions": [

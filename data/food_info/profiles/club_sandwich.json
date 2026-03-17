@@ -1,60 +1,70 @@
 {
   "food_name": "Club Sandwich",
-  "category": "Sandwich / Handheld",
+  "category": "Sandwich",
   "cuisine": "American",
-  "description": "A handheld club sandwich that combines bread or a bun with layered fillings, texture, and sauce.",
+  "description": "A club sandwich is a stacked sandwich traditionally made with toasted bread, cooked poultry, bacon, lettuce, tomato, and mayonnaise. It is often cut into quarters and secured with picks.",
   "core_ingredients": [
-    "Bread, bun, or roll",
-    "Main filling",
-    "Condiments or garnish"
+    "Toasted bread",
+    "Cooked chicken or turkey",
+    "Bacon",
+    "Lettuce",
+    "Tomato",
+    "Mayonnaise"
   ],
   "optional_ingredients": [
     "Cheese",
-    "Pickles or vegetables",
-    "Sauce"
+    "Egg",
+    "Avocado",
+    "Mustard",
+    "Different breads"
   ],
   "preparation_steps": [
-    "Prepare the bread or base",
-    "Cook or assemble the filling",
-    "Layer, finish, and serve"
+    "Toast the bread slices.",
+    "Cook or prepare the poultry and bacon.",
+    "Layer the bread with mayonnaise, meat, bacon, lettuce, and tomato.",
+    "Stack into multiple layers, cut into quarters, and secure with picks.",
+    "Serve immediately."
   ],
   "nutrition": {
     "calories": "Moderate to high",
-    "protein": "Moderate",
+    "protein": "Moderate to high",
     "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides substantial protein and can be filling enough for a meal.",
+    "risks": "Can be high in sodium and fat because of bacon, mayonnaise, and processed bread.",
+    "healthy_tip": "Use lean poultry, less mayonnaise, and add extra salad vegetables."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Bread, fillings, and condiments determine the final dietary profile"
+    "note": "Traditional versions are non-vegetarian. Vegetarian, vegan, and gluten-free versions are possible with substitutions."
   },
   "allergens": [
     "Gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Eggs in mayonnaise",
+    "Possible milk if cheese is added"
   ],
   "common_variations": [
-    "Classic Club Sandwich",
-    "Loaded Club Sandwich",
-    "Vegetarian-style Club Sandwich"
+    "Turkey club",
+    "Chicken club",
+    "Ham club",
+    "Avocado club"
   ],
   "serving_info": {
-    "typical_serving": "1 sandwich, often cut into quarters",
+    "typical_serving": "1 sandwich, often cut into 2 or 4 pieces",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Fries",
+      "Chips",
+      "Pickles",
+      "Salad"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "Hotel and diner menus worldwide"
   ]
 }

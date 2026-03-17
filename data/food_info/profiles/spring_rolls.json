@@ -1,60 +1,72 @@
 {
   "food_name": "Spring Rolls",
-  "category": "Street Food / Fast Casual",
-  "cuisine": "East / Southeast Asian",
-  "description": "A casual spring rolls with bold flavor, quick service appeal, and room for ingredient variation.",
+  "category": "Appetizer",
+  "cuisine": "East and Southeast Asian",
+  "description": "A broad category of filled rolls wrapped in thin pastry or rice paper. Depending on the style, they may be fried until crisp or served fresh with herbs and dipping sauce.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "Wrappers or rice paper",
+    "Vegetables",
+    "Seasonings"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Cheese",
-    "Vegetables",
+    "Cabbage",
+    "Carrot",
+    "Glass noodles",
+    "Pork",
+    "Chicken",
+    "Shrimp",
+    "Tofu",
+    "Mushrooms",
     "Herbs"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Prepare the filling by cooking or seasoning the vegetables and any protein.",
+    "Wrap the filling in pastry or rice paper.",
+    "Either fry until crisp or serve fresh depending on the style.",
+    "Serve with an appropriate dipping sauce."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
+    "calories": "Varies from low to moderate for fresh rolls and moderate to high for fried rolls",
+    "protein": "Low to moderate",
     "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "fat": "Low for fresh versions; higher for fried versions"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can include vegetables and lean protein, especially in fresh versions.",
+    "risks": "Fried versions may be high in oil and sodium depending on the filling and sauces.",
+    "healthy_tip": "Choose fresh or lightly cooked versions and include plenty of vegetables."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "note": "Suitability depends on wrapper type and filling. Rice paper rolls are often gluten-free, while wheat wrappers are not."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Gluten in wheat wrappers",
+    "Soy in dipping sauces",
+    "Shellfish if shrimp is used",
+    "Egg in some pastry wrappers"
   ],
   "common_variations": [
-    "Classic Spring Rolls",
-    "Loaded Spring Rolls",
-    "Vegetarian-style Spring Rolls"
+    "Fried Chinese-style spring rolls",
+    "Vietnamese fresh rolls",
+    "Vegetable spring rolls",
+    "Shrimp spring rolls"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "2 to 4 rolls",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Sweet chili sauce",
+      "Peanut sauce",
+      "Nuoc cham"
     ]
   },
   "popular_regions": [
+    "China",
+    "Vietnam",
+    "Thailand",
     "Worldwide"
   ]
 }

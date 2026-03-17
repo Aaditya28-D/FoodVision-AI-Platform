@@ -1,63 +1,71 @@
 {
   "food_name": "Tuna Tartare",
-  "category": "Seafood Dish",
-  "cuisine": "Modern / Fusion",
-  "description": "A finely chopped or diced raw tuna dish typically seasoned and served as an appetizer.",
+  "category": "Appetizer",
+  "cuisine": "Contemporary international",
+  "description": "A dish of finely diced raw tuna seasoned with ingredients such as citrus, soy sauce, herbs, or sesame and served chilled. It is valued for freshness, texture, and clean flavor.",
   "core_ingredients": [
     "Raw tuna",
     "Seasoning",
-    "Oil or dressing"
+    "Acid such as citrus or vinegar"
   ],
   "optional_ingredients": [
+    "Soy sauce",
+    "Sesame oil",
     "Avocado",
-    "Sesame",
-    "Soy-based dressing",
-    "Citrus",
-    "Herbs"
+    "Cucumber",
+    "Shallot",
+    "Chili",
+    "Capers",
+    "Microgreens"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Use very fresh, properly handled tuna suitable for raw preparation.",
+    "Dice the tuna evenly and keep it chilled.",
+    "Gently season just before serving so the texture stays delicate.",
+    "Plate with garnishes or crisp accompaniments."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Moderate to high",
-    "carbohydrates": "Low to moderate",
+    "calories": "Usually low to moderate",
+    "protein": "High",
+    "carbohydrates": "Low",
     "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "High in protein and usually lighter than fried or creamy appetizers.",
+    "risks": "Because it is served raw, strict freshness, cold-chain handling, and food safety are essential.",
+    "healthy_tip": "Only use raw fish from trusted sources and avoid leaving it unrefrigerated."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Dressings can change the gluten profile if soy-based sauces are used"
+    "note": "Plain tuna tartare can be gluten-free, but soy sauce and some garnishes may contain gluten."
   },
   "allergens": [
     "Fish",
-    "Possible sesame",
-    "Possible soy"
+    "Soy in many seasonings",
+    "Sesame if used",
+    "Possible gluten in soy sauce"
   ],
   "common_variations": [
+    "Asian-style tuna tartare",
     "Avocado tuna tartare",
-    "Sesame tuna tartare",
-    "Citrus tuna tartare"
+    "Spicy tuna tartare",
+    "Tuna tartare with wonton crisps"
   ],
   "serving_info": {
-    "typical_serving": "Starter portion",
+    "typical_serving": "1 appetizer portion",
     "best_served_with": [
-      "Crisps",
-      "Salad",
-      "Light sides"
+      "Avocado",
+      "Crisp crackers",
+      "Cucumber",
+      "Microgreens"
     ]
   },
   "popular_regions": [
-    "Coastal cuisines",
-    "Worldwide"
+    "Fine-dining restaurants worldwide",
+    "Coastal restaurants",
+    "Contemporary fusion cuisine"
   ]
 }

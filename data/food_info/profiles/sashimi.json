@@ -1,62 +1,65 @@
 {
   "food_name": "Sashimi",
-  "category": "Seafood Dish",
+  "category": "Appetizer or main dish",
   "cuisine": "Japanese",
-  "description": "A seafood-focused sashimi prepared to highlight delicate texture, freshness, and seasoning balance.",
+  "description": "A Japanese dish of very fresh, carefully sliced raw seafood or, less commonly, other raw meats. It is served without rice and is valued for texture, freshness, and clean presentation.",
   "core_ingredients": [
-    "Sashimi",
-    "Seasoning",
-    "Oil, butter, or dressing"
+    "Raw fish or seafood"
   ],
   "optional_ingredients": [
-    "Citrus",
-    "Herbs",
-    "Sauce",
-    "Fresh garnish"
+    "Soy sauce",
+    "Wasabi",
+    "Daikon radish",
+    "Shiso",
+    "Ginger"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Select seafood that is appropriate and handled for raw consumption.",
+    "Chill and trim the seafood carefully.",
+    "Slice into clean, even pieces.",
+    "Arrange neatly on a plate with garnishes.",
+    "Serve immediately with condiments on the side."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Moderate to high",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "calories": "Usually low to moderate",
+    "protein": "High",
+    "carbohydrates": "Low",
+    "fat": "Varies by fish type"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "Often high in protein and, depending on the fish, can provide omega-3 fats.",
+    "risks": "Raw seafood carries food safety risks if sourcing, storage, or handling is poor. Some fish may also be high in mercury.",
+    "healthy_tip": "Choose reputable establishments or trusted suppliers and eat raw seafood promptly and cold."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sauces, batters, or sides can alter the gluten and dairy profile"
+    "note": "Naturally non-vegetarian. It can be gluten-free if served without standard soy sauce or with gluten-free tamari."
   },
   "allergens": [
-    "Fish or shellfish",
-    "Possible gluten",
-    "Possible dairy"
+    "Fish",
+    "Shellfish in some assortments",
+    "Soy if served with soy sauce"
   ],
   "common_variations": [
-    "Classic Sashimi",
-    "Spiced Sashimi",
-    "Citrus-finished Sashimi"
+    "Salmon sashimi",
+    "Tuna sashimi",
+    "Yellowtail sashimi",
+    "Mixed sashimi platter"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "Several slices",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Soy sauce",
+      "Wasabi",
+      "Pickled ginger",
+      "Daikon garnish"
     ]
   },
   "popular_regions": [
-    "Coastal cuisines",
-    "Worldwide"
+    "Japan",
+    "Worldwide Japanese restaurants"
   ]
 }

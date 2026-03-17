@@ -1,62 +1,74 @@
 {
   "food_name": "Bibimbap",
-  "category": "Main Dish",
+  "category": "Main dish",
   "cuisine": "Korean",
-  "description": "A hearty bibimbap centered on noodles, rice, or pasta and shaped by sauce, broth, or seasoning.",
+  "description": "A Korean rice dish topped with assorted seasoned vegetables, gochujang, and commonly beef and egg. The name literally refers to mixed rice, and the components are mixed together before eating.",
   "core_ingredients": [
-    "Main starch base",
-    "Sauce or broth",
-    "Seasoning"
+    "Cooked rice",
+    "Assorted seasoned vegetables",
+    "Gochujang",
+    "Sesame oil"
   ],
   "optional_ingredients": [
-    "Protein",
-    "Vegetables",
-    "Herbs",
-    "Cheese or finishing sauce"
+    "Beef",
+    "Egg",
+    "Mushrooms",
+    "Kimchi",
+    "Seaweed",
+    "Tofu",
+    "Cucumber",
+    "Bean sprouts",
+    "Spinach",
+    "Carrot",
+    "Zucchini"
   ],
   "preparation_steps": [
-    "Cook the main starch component",
-    "Prepare broth or sauce",
-    "Combine with toppings and serve"
+    "Cook the rice.",
+    "Prepare individual toppings such as sautéed or blanched vegetables and any protein.",
+    "Arrange the toppings separately over the rice.",
+    "Add gochujang and sesame oil, with egg if using.",
+    "Mix thoroughly before eating."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Moderate; higher with meat, egg, or tofu",
+    "carbohydrates": "Moderate to high",
+    "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Can be well-balanced because it combines grains, vegetables, and protein in one bowl.",
+    "risks": "Sodium may be high if large amounts of gochujang, soy sauce, or pickled sides are used.",
+    "healthy_tip": "Use a variety of vegetables, lean protein, and a moderate amount of sauce."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "Broth, sauce, and protein choices determine the final dietary profile"
+    "gluten_free_possible": true,
+    "note": "Vegetarian and vegan versions are common. Gluten-free suitability depends on the gochujang and soy-based condiments used."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Sesame",
+    "Egg if added",
+    "Soy in many seasonings",
+    "Possible gluten in some gochujang or soy sauce formulations"
   ],
   "common_variations": [
-    "Classic Bibimbap",
-    "Protein-rich Bibimbap",
-    "Vegetable-forward Bibimbap"
+    "Dolsot bibimbap in a hot stone bowl",
+    "Jeonju bibimbap",
+    "Vegetarian bibimbap",
+    "Yukhoe bibimbap with raw beef"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 bowl",
     "best_served_with": [
-      "Salad",
-      "Tea",
-      "Light sides"
+      "Kimchi",
+      "Soup",
+      "Banchan side dishes"
     ]
   },
   "popular_regions": [
-    "Korea",
-    "Worldwide"
+    "South Korea",
+    "Worldwide Korean restaurants"
   ]
 }

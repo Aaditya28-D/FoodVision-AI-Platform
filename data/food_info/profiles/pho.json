@@ -1,61 +1,70 @@
 {
   "food_name": "Pho",
-  "category": "Soup / Broth Dish",
+  "category": "Main dish or soup",
   "cuisine": "Vietnamese",
-  "description": "A pho served as a broth-based dish, often designed to deliver warmth, aroma, and layered flavor.",
+  "description": "A Vietnamese noodle soup built around a fragrant broth, rice noodles, herbs, and usually beef or chicken. It is commonly served with fresh garnishes and condiments on the side.",
   "core_ingredients": [
-    "Broth or stock",
-    "Aromatics",
-    "Main ingredients"
+    "Broth",
+    "Rice noodles",
+    "Herbs",
+    "Aromatics such as onion and ginger"
   ],
   "optional_ingredients": [
-    "Herbs",
-    "Cream or finishing oil",
-    "Protein or garnish"
+    "Beef",
+    "Chicken",
+    "Bean sprouts",
+    "Thai basil",
+    "Lime",
+    "Chili",
+    "Hoisin sauce",
+    "Sriracha"
   ],
   "preparation_steps": [
-    "Build flavor with aromatics and liquid",
-    "Cook the main ingredients until balanced",
-    "Adjust seasoning and serve hot"
+    "Prepare or simmer the broth with aromatics and spices until flavorful.",
+    "Cook or soak the rice noodles as needed.",
+    "Place noodles in a bowl and add sliced meat or other protein if using.",
+    "Ladle over hot broth.",
+    "Serve with herbs, sprouts, lime, and condiments on the side."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Low to moderate",
+    "calories": "Usually moderate",
+    "protein": "Moderate; higher with meat",
+    "carbohydrates": "Moderate",
     "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Can be comforting, hydrating, and nutrient-dense depending on broth and ingredients.",
-    "risks": "Some soups can become high in sodium, cream, or refined starch depending on the recipe.",
-    "healthy_tip": "Choose broth-forward versions and pair them with vegetables or lean protein when possible."
+    "benefits": "Can be lighter than many noodle dishes and often includes herbs and a broth-based base.",
+    "risks": "Sodium may be high, especially in restaurant broths and when extra sauces are added.",
+    "healthy_tip": "Use plenty of herbs and vegetables, and go easy on high-sodium condiments."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Broth type and garnishes determine the final dietary profile"
+    "note": "Rice noodles are usually gluten-free, but sauces and broth ingredients should still be checked."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Soy if soy-based condiments are used",
+    "Possible fish in fish sauce",
+    "Possible gluten in some added sauces"
   ],
   "common_variations": [
-    "Classic Pho",
-    "Protein-rich Pho",
-    "Vegetable-forward Pho"
+    "Pho bo with beef",
+    "Pho ga with chicken",
+    "Vegetarian pho"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 large bowl",
     "best_served_with": [
-      "Bread",
-      "Crackers",
-      "Light sides"
+      "Bean sprouts",
+      "Thai basil",
+      "Lime wedges",
+      "Chili"
     ]
   },
   "popular_regions": [
     "Vietnam",
-    "Worldwide"
+    "Worldwide Vietnamese restaurants"
   ]
 }

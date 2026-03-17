@@ -1,62 +1,72 @@
 {
   "food_name": "Fried Calamari",
-  "category": "Seafood Dish",
-  "cuisine": "Mediterranean / Coastal",
-  "description": "A seafood-focused fried calamari prepared to highlight delicate texture, freshness, and seasoning balance.",
+  "category": "Appetizer / Seafood",
+  "cuisine": "Mediterranean / Italian-style",
+  "description": "Rings or pieces of squid lightly coated and fried until crisp. It is commonly served as an appetizer with lemon and dipping sauce.",
   "core_ingredients": [
-    "Fried Calamari",
-    "Seasoning",
-    "Oil, butter, or dressing"
+    "Squid",
+    "Flour or light coating",
+    "Oil for frying",
+    "Salt"
   ],
   "optional_ingredients": [
-    "Citrus",
-    "Herbs",
-    "Sauce",
-    "Fresh garnish"
+    "Cornstarch",
+    "Semolina",
+    "Black pepper",
+    "Paprika",
+    "Lemon wedges",
+    "Marinara sauce",
+    "Aioli"
   ],
   "preparation_steps": [
-    "Prepare the seafood carefully",
-    "Cook or dress it with controlled seasoning",
-    "Plate with garnish and serve promptly"
+    "Clean and slice the squid into rings or pieces.",
+    "Coat lightly with seasoned flour or another dry coating.",
+    "Fry quickly in hot oil until just crisp and lightly golden.",
+    "Drain, season, and serve immediately with lemon and sauce."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Moderate to high",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Moderate",
+    "carbohydrates": "Moderate",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can provide quality protein and useful nutrients while still feeling relatively light.",
-    "risks": "Frying, heavy sauces, or freshness issues can affect both healthfulness and food safety.",
-    "healthy_tip": "Prioritize fresh seafood, moderate sauces, and balanced side dishes when possible."
+    "benefits": "Provides seafood protein and is often served in small appetizer portions.",
+    "risks": "Deep-frying raises fat and calorie content, and overcooked squid can become tough. Sodium may also be high.",
+    "healthy_tip": "Keep portions moderate and pair with lemon or a lighter sauce instead of heavy creamy dips."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sauces, batters, or sides can alter the gluten and dairy profile"
+    "note": "This is a seafood dish. Gluten-free versions are possible if the coating and fryer are gluten-free."
   },
   "allergens": [
-    "Fish or shellfish",
-    "Possible gluten",
-    "Possible dairy"
+    "Mollusks or seafood",
+    "Gluten in common coatings",
+    "Egg or milk in some batters"
   ],
   "common_variations": [
-    "Classic Fried Calamari",
-    "Spiced Fried Calamari",
-    "Citrus-finished Fried Calamari"
+    "Italian-style calamari",
+    "Salt-and-pepper calamari",
+    "Tempura-style squid",
+    "Calamari with marinara"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 appetizer plate",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Lemon wedges",
+      "Marinara sauce",
+      "Aioli",
+      "Salad"
     ]
   },
   "popular_regions": [
-    "Coastal cuisines",
-    "Worldwide"
+    "Italy",
+    "Spain",
+    "Greece",
+    "United States",
+    "Worldwide coastal and seafood restaurants"
   ]
 }

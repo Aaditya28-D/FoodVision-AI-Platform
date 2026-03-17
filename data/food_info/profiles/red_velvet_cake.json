@@ -2,60 +2,70 @@
   "food_name": "Red Velvet Cake",
   "category": "Dessert",
   "cuisine": "American",
-  "description": "A red velvet cake dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "description": "A soft, cocoa-flavored layer cake known for its red color and its common pairing with cream cheese frosting. The color may come from food coloring, cocoa reactions, or both depending on the recipe.",
   "core_ingredients": [
-    "Sweet base ingredients",
+    "Flour",
     "Sugar",
-    "Flavoring"
+    "Cocoa powder",
+    "Eggs",
+    "Butter or oil",
+    "Buttermilk",
+    "Red coloring",
+    "Cream cheese frosting"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Vanilla",
+    "Vinegar",
+    "Baking soda",
+    "Buttercream variation",
+    "Cake crumbs for decoration"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare the cake batter with the dry and wet ingredients.",
+    "Add cocoa and red coloring and mix until smooth.",
+    "Bake in cake pans until set.",
+    "Cool the layers completely.",
+    "Fill and frost with cream cheese frosting."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "High",
     "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
+    "carbohydrates": "High",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Best treated as an occasional celebratory dessert.",
+    "risks": "Often high in sugar, refined flour, and fat, especially with generous frosting.",
+    "healthy_tip": "Keep portions moderate and balance it with an otherwise nutritious meal pattern."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional versions are usually vegetarian but not vegan or gluten-free. Vegan and gluten-free adaptations are possible."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten",
+    "Egg",
+    "Dairy"
   ],
   "common_variations": [
-    "Classic Red Velvet Cake",
-    "Chocolate or fruit-topped Red Velvet Cake",
-    "Mini Red Velvet Cake"
+    "Classic red velvet cake",
+    "Red velvet cupcakes",
+    "Red velvet cake with buttercream",
+    "Layered red velvet cake with cream cheese frosting"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 slice",
     "best_served_with": [
       "Coffee",
       "Tea",
-      "Fruit garnish"
+      "Milk"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "Worldwide bakeries"
   ]
 }

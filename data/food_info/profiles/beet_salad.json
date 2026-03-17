@@ -1,61 +1,74 @@
 {
   "food_name": "Beet Salad",
-  "category": "Salad",
-  "cuisine": "European / Modern",
-  "description": "A beet salad built around fresh produce, dressing, and contrasting textures for a light but flavorful plate.",
+  "category": "Salad / Side dish",
+  "cuisine": "International",
+  "description": "A salad built around cooked or roasted beets, often balanced with acidic dressing and creamy, crunchy, or peppery components such as feta, goat cheese, nuts, citrus, or greens.",
   "core_ingredients": [
-    "Fresh vegetables or greens",
-    "Seasoning",
-    "Dressing"
+    "Beets",
+    "Salt",
+    "Pepper",
+    "Olive oil",
+    "Acid such as vinegar or lemon juice"
   ],
   "optional_ingredients": [
-    "Cheese or seeds",
-    "Herbs",
-    "Extra vegetables"
+    "Goat cheese",
+    "Feta",
+    "Arugula",
+    "Orange segments",
+    "Apples",
+    "Walnuts or pistachios",
+    "Fresh herbs"
   ],
   "preparation_steps": [
-    "Prepare and season the main produce",
-    "Add garnish or supporting ingredients",
-    "Dress lightly and serve fresh"
+    "Cook or roast the beets until tender, then cool and peel them.",
+    "Slice, dice, or wedge the beets.",
+    "Prepare a vinaigrette or other light dressing.",
+    "Combine with greens, cheese, fruit, or nuts if using.",
+    "Dress just before serving."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "calories": "Usually low to moderate",
+    "protein": "Low, unless cheese or legumes are added",
+    "carbohydrates": "Moderate",
+    "fat": "Low to moderate, depending on dressing and toppings"
   },
   "health_advice": {
-    "benefits": "Can provide freshness, fiber, and a lighter eating option with good flavor contrast.",
-    "risks": "Heavy dressings, cheese, or fried add-ons can raise sodium, fat, and calories quickly.",
-    "healthy_tip": "Lean toward fresh produce, lighter dressings, and balanced add-ons when possible."
+    "benefits": "Beets provide fiber and beneficial plant compounds, and the salad can be nutrient-dense when paired with vegetables and modest dressing.",
+    "risks": "Calories rise quickly if large amounts of cheese, candied nuts, or sweet dressings are used.",
+    "healthy_tip": "Keep the dressing balanced and use cheese or nuts in moderate amounts."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "Dressings, cheese, or protein add-ons can change the final profile"
+    "note": "Often naturally vegetarian and gluten-free. Vegan versions omit cheese and honey."
   },
   "allergens": [
-    "Possible dairy",
-    "Possible nuts or seeds"
+    "Tree nuts if added",
+    "Dairy if cheese is used",
+    "Mustard if present in dressing"
   ],
   "common_variations": [
-    "Classic Beet Salad",
-    "Herb-forward Beet Salad",
-    "Seasonal Beet Salad"
+    "Roasted beet and goat cheese salad",
+    "Beet and feta salad",
+    "Beet citrus salad",
+    "Warm beet salad",
+    "Pickled beet salad"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 small bowl or side plate",
     "best_served_with": [
-      "Bread",
-      "Soup",
-      "Light mains"
+      "Leafy greens",
+      "Crusty bread",
+      "Grilled proteins",
+      "Citrus"
     ]
   },
   "popular_regions": [
     "Europe",
     "North America",
-    "Worldwide"
+    "Mediterranean-inspired kitchens",
+    "Australia"
   ]
 }

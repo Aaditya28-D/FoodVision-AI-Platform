@@ -1,61 +1,63 @@
 {
   "food_name": "Caprese Salad",
-  "category": "Salad",
+  "category": "Salad / Appetizer",
   "cuisine": "Italian",
-  "description": "A caprese salad built around fresh produce, dressing, and contrasting textures for a light but flavorful plate.",
+  "description": "A simple Italian salad built from sliced fresh mozzarella, ripe tomatoes, and basil, usually finished with olive oil and salt. Some versions also use balsamic glaze, although the classic form is very minimal.",
   "core_ingredients": [
-    "Fresh vegetables or greens",
-    "Seasoning",
-    "Dressing"
+    "Tomatoes",
+    "Fresh mozzarella",
+    "Basil",
+    "Olive oil"
   ],
   "optional_ingredients": [
-    "Cheese or seeds",
-    "Herbs",
-    "Extra vegetables"
+    "Balsamic glaze",
+    "Black pepper",
+    "Sea salt",
+    "Heirloom tomatoes"
   ],
   "preparation_steps": [
-    "Prepare and season the main produce",
-    "Add garnish or supporting ingredients",
-    "Dress lightly and serve fresh"
+    "Slice the tomatoes and mozzarella.",
+    "Arrange them in alternating layers or overlapping slices.",
+    "Add fresh basil leaves.",
+    "Drizzle with olive oil and season lightly before serving."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "calories": "Usually low to moderate",
+    "protein": "Moderate from mozzarella",
+    "carbohydrates": "Low",
+    "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can provide freshness, fiber, and a lighter eating option with good flavor contrast.",
-    "risks": "Heavy dressings, cheese, or fried add-ons can raise sodium, fat, and calories quickly.",
-    "healthy_tip": "Lean toward fresh produce, lighter dressings, and balanced add-ons when possible."
+    "benefits": "Provides fresh produce, calcium, and protein in a simple dish with minimal processing.",
+    "risks": "Calories and saturated fat can rise with large amounts of cheese or oil.",
+    "healthy_tip": "Use ripe tomatoes and moderate olive oil so the dish stays light and balanced."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
-    "vegan_possible": true,
+    "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Dressings, cheese, or protein add-ons can change the final profile"
+    "note": "Traditional caprese is naturally gluten-free but not vegan because of mozzarella."
   },
   "allergens": [
-    "Possible dairy",
-    "Possible nuts or seeds"
+    "Milk"
   ],
   "common_variations": [
-    "Classic Caprese Salad",
-    "Herb-forward Caprese Salad",
-    "Seasonal Caprese Salad"
+    "Caprese skewers",
+    "Peach caprese",
+    "Burrata caprese",
+    "Caprese sandwich"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 plate",
     "best_served_with": [
-      "Bread",
-      "Soup",
-      "Light mains"
+      "Crusty bread",
+      "Grilled vegetables",
+      "Light pasta dishes"
     ]
   },
   "popular_regions": [
-    "Europe",
-    "North America",
-    "Worldwide"
+    "Italy",
+    "Worldwide Italian restaurants"
   ]
 }

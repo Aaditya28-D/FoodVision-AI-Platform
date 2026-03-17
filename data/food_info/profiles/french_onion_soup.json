@@ -1,60 +1,70 @@
 {
   "food_name": "French Onion Soup",
-  "category": "Soup / Broth Dish",
+  "category": "Soup",
   "cuisine": "French",
-  "description": "A french onion soup served as a broth-based dish, often designed to deliver warmth, aroma, and layered flavor.",
+  "description": "A soup made from slowly caramelized onions and stock, traditionally finished with toasted bread and melted cheese on top. It is known for a deep savory-sweet flavor.",
   "core_ingredients": [
-    "Broth or stock",
-    "Aromatics",
-    "Main ingredients"
+    "Onions",
+    "Stock or broth",
+    "Butter or oil",
+    "Bread",
+    "Cheese"
   ],
   "optional_ingredients": [
-    "Herbs",
-    "Cream or finishing oil",
-    "Protein or garnish"
+    "White wine",
+    "Brandy or sherry",
+    "Thyme",
+    "Bay leaf",
+    "Black pepper",
+    "Beef stock or vegetable stock"
   ],
   "preparation_steps": [
-    "Build flavor with aromatics and liquid",
-    "Cook the main ingredients until balanced",
-    "Adjust seasoning and serve hot"
+    "Slice onions and cook slowly until deeply caramelized.",
+    "Deglaze the pot with wine or another liquid if using.",
+    "Add stock and seasonings, then simmer to develop flavor.",
+    "Ladle into oven-safe bowls and top with toasted bread and cheese.",
+    "Broil until the cheese melts and browns lightly."
   ],
   "nutrition": {
-    "calories": "Low to moderate",
+    "calories": "Usually moderate",
     "protein": "Low to moderate",
-    "carbohydrates": "Low to moderate",
-    "fat": "Low to moderate"
+    "carbohydrates": "Moderate",
+    "fat": "Moderate"
   },
   "health_advice": {
-    "benefits": "Can be comforting, hydrating, and nutrient-dense depending on broth and ingredients.",
-    "risks": "Some soups can become high in sodium, cream, or refined starch depending on the recipe.",
-    "healthy_tip": "Choose broth-forward versions and pair them with vegetables or lean protein when possible."
+    "benefits": "Onions provide flavor and some beneficial plant compounds, and the soup can be filling without being overly heavy.",
+    "risks": "Sodium can be high, especially in restaurant or packaged stock-based versions. Cheese and butter increase saturated fat.",
+    "healthy_tip": "Use a flavorful lower-sodium stock and keep the cheese portion moderate."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
-    "vegan_possible": true,
-    "gluten_free_possible": true,
-    "note": "Broth type and garnishes determine the final dietary profile"
+    "vegan_possible": false,
+    "gluten_free_possible": false,
+    "note": "Traditional versions often use beef stock and bread. Vegetarian versions are common, while vegan and gluten-free versions require substitutions."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible soy"
+    "Milk",
+    "Gluten from bread",
+    "Possible soy or celery in commercial stock"
   ],
   "common_variations": [
-    "Classic French Onion Soup",
-    "Protein-rich French Onion Soup",
-    "Vegetable-forward French Onion Soup"
+    "Beef-stock version",
+    "Vegetarian onion soup",
+    "Gruyere-topped version",
+    "Soupe a l’oignon gratinee"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 soup bowl or crock",
     "best_served_with": [
-      "Bread",
-      "Crackers",
-      "Light sides"
+      "Green salad",
+      "Crusty bread",
+      "Roast meats"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "France",
+    "North America",
+    "Worldwide French bistros"
   ]
 }

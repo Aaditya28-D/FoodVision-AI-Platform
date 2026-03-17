@@ -1,61 +1,65 @@
 {
-  "food_name": "Creme Brulee",
+  "food_name": "Crème Brûlée",
   "category": "Dessert",
   "cuisine": "French",
-  "description": "A creme brulee dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "description": "Crème brûlée is a rich custard dessert topped with a thin layer of hardened caramelized sugar. It is known for the contrast between the cool creamy custard and the crisp sugar crust.",
   "core_ingredients": [
-    "Sweet base ingredients",
+    "Cream",
+    "Egg yolks",
     "Sugar",
-    "Flavoring"
+    "Vanilla"
   ],
   "optional_ingredients": [
-    "Fruit",
+    "Citrus zest",
+    "Coffee",
     "Chocolate",
-    "Cream",
-    "Spices"
+    "Liqueur",
+    "Berries"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Prepare a custard mixture from cream, egg yolks, sugar, and flavoring.",
+    "Bake gently in ramekins, often in a water bath, until just set.",
+    "Chill thoroughly.",
+    "Sprinkle sugar on top and caramelize it with a torch or broiler just before serving."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "High per serving",
     "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "carbohydrates": "Moderate",
+    "fat": "High"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "A small serving is often enough because of its richness.",
+    "risks": "High in sugar and saturated fat.",
+    "healthy_tip": "Keep portions small and treat it as an occasional dessert."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional crème brûlée is usually vegetarian and naturally gluten-free. Vegan versions are possible with plant-based custard ingredients."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Milk",
+    "Eggs"
   ],
   "common_variations": [
-    "Classic Creme Brulee",
-    "Chocolate or fruit-topped Creme Brulee",
-    "Mini Creme Brulee"
+    "Vanilla crème brûlée",
+    "Coffee crème brûlée",
+    "Chocolate crème brûlée",
+    "Citrus-infused crème brûlée"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 ramekin",
     "best_served_with": [
+      "Fresh berries",
       "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Dessert wine"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "France",
+    "Fine-dining menus worldwide"
   ]
 }

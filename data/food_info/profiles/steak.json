@@ -1,62 +1,70 @@
 {
   "food_name": "Steak",
-  "category": "Main Dish",
-  "cuisine": "International / Steakhouse",
-  "description": "A cut of meat, usually beef, cooked by grilling, pan-searing, or roasting and served as a main dish.",
+  "category": "Main dish",
+  "cuisine": "Widely international",
+  "description": "A cut of beef cooked by grilling, pan-searing, broiling, or similar high-heat methods. Different cuts and degrees of doneness produce noticeably different texture and flavor.",
   "core_ingredients": [
     "Beef steak",
-    "Seasoning",
-    "Oil or butter"
+    "Salt",
+    "Black pepper"
   ],
   "optional_ingredients": [
-    "Pepper",
+    "Butter",
     "Garlic",
-    "Herb butter",
-    "Sauces",
-    "Mushrooms"
+    "Herbs",
+    "Oil",
+    "Mushrooms",
+    "Sauces"
   ],
   "preparation_steps": [
-    "Season the protein",
-    "Cook to the desired doneness or tenderness",
-    "Rest or plate with sides and serve"
+    "Bring the steak closer to room temperature and season it.",
+    "Sear over high heat or grill to the desired doneness.",
+    "Rest the steak briefly before slicing or serving.",
+    "Serve with simple sides or sauce if desired."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate to high",
     "protein": "High",
-    "carbohydrates": "Low to moderate",
-    "fat": "Moderate to high"
+    "carbohydrates": "Very low",
+    "fat": "Varies by cut"
   },
   "health_advice": {
-    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
-    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
-    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+    "benefits": "Rich in protein and provides iron and vitamin B12.",
+    "risks": "Fat and calorie levels vary greatly by cut; charring and frequent large portions may be less desirable for routine intake.",
+    "healthy_tip": "Choose leaner cuts more often and pair with vegetables rather than heavy sides."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sauces and sides can change the final dietary profile"
+    "note": "Plain steak is naturally gluten-free, but sauces or marinades may introduce gluten."
   },
   "allergens": [
-    "Possible dairy",
-    "Possible gluten in sauces"
+    "Possible milk if butter is used",
+    "Possible gluten or soy in marinades or sauces"
   ],
   "common_variations": [
-    "Grilled steak",
-    "Pan-seared steak",
-    "Steak with sauce",
-    "Filet-style steak"
+    "Ribeye",
+    "Sirloin",
+    "Filet",
+    "T-bone",
+    "Pepper steak",
+    "Steak with herb butter"
   ],
   "serving_info": {
     "typical_serving": "1 steak portion",
     "best_served_with": [
-      "Vegetables",
+      "Roasted vegetables",
       "Potatoes",
-      "Salad"
+      "Salad",
+      "Pepper sauce"
     ]
   },
   "popular_regions": [
+    "United States",
+    "Argentina",
+    "Australia",
     "Worldwide"
   ]
 }

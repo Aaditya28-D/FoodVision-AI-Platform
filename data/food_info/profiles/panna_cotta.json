@@ -2,57 +2,60 @@
   "food_name": "Panna Cotta",
   "category": "Dessert",
   "cuisine": "Italian",
-  "description": "A panna cotta dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "description": "An Italian dessert made from sweetened cream set with gelatin, usually served chilled and often paired with fruit sauce, caramel, or berries.",
   "core_ingredients": [
-    "Sweet base ingredients",
+    "Cream",
     "Sugar",
-    "Flavoring"
+    "Gelatin"
   ],
   "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
-    "Spices"
+    "Vanilla",
+    "Milk",
+    "Berry sauce",
+    "Caramel",
+    "Citrus zest",
+    "Coffee flavoring"
   ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Warm the cream with sugar and flavorings until the sugar dissolves.",
+    "Dissolve softened gelatin into the warm mixture.",
+    "Pour into molds or serving glasses.",
+    "Chill until set.",
+    "Serve plain or with a sauce or fruit topping."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate to high"
+    "calories": "Usually moderate to high",
+    "protein": "Low",
+    "carbohydrates": "Low to moderate",
+    "fat": "High"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Portion-controlled servings can make it a manageable dessert for occasional enjoyment.",
+    "risks": "Often high in saturated fat and sugar because of the cream and sweetening.",
+    "healthy_tip": "Serve in small portions and pair with fresh fruit rather than very sweet sauces."
   },
   "dietary_notes": {
-    "vegetarian_possible": true,
-    "non_vegetarian_possible": false,
-    "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "vegetarian_possible": false,
+    "non_vegetarian_possible": true,
+    "vegan_possible": false,
+    "gluten_free_possible": true,
+    "note": "Traditional panna cotta uses gelatin, so it is usually not vegetarian. Vegetarian or vegan alternatives require different setting agents."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Milk"
   ],
   "common_variations": [
-    "Classic Panna Cotta",
-    "Chocolate or fruit-topped Panna Cotta",
-    "Mini Panna Cotta"
+    "Vanilla panna cotta",
+    "Berry panna cotta",
+    "Coffee panna cotta",
+    "Coconut-based panna cotta"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 small molded or glass dessert",
     "best_served_with": [
-      "Coffee",
-      "Tea",
-      "Fruit garnish"
+      "Berry compote",
+      "Fresh fruit",
+      "Caramel sauce"
     ]
   },
   "popular_regions": [

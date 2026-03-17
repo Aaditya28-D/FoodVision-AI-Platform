@@ -1,59 +1,69 @@
 {
   "food_name": "Cheese Plate",
-  "category": "Main Dish",
-  "cuisine": "European / International",
-  "description": "A recognizable cheese plate dish with its own characteristic ingredients, texture, and serving style.",
+  "category": "Appetizer / Shared platter",
+  "cuisine": "International",
+  "description": "A platter of cheeses served with complementary items such as crackers, bread, fruit, nuts, olives, or preserves. The selection often balances soft, semi-hard, hard, and blue cheeses with sweet and savory accompaniments.",
   "core_ingredients": [
-    "Primary ingredient",
-    "Seasoning",
-    "Supporting elements"
+    "Assorted cheeses"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Crackers",
+    "Bread",
+    "Fresh fruit",
+    "Dried fruit",
+    "Nuts",
+    "Olives",
+    "Honey",
+    "Jam",
+    "Charcuterie"
   ],
   "preparation_steps": [
-    "Prepare the key ingredients",
-    "Cook or assemble with seasoning",
-    "Plate and serve"
+    "Select a range of cheeses with different textures and flavor strengths.",
+    "Bring the cheeses slightly toward room temperature before serving.",
+    "Arrange the cheeses with suitable accompaniments on a board or plate.",
+    "Provide knives or spreaders for serving."
   ],
   "nutrition": {
-    "calories": "Moderate",
-    "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
-    "fat": "Moderate"
+    "calories": "Usually moderate to high",
+    "protein": "Moderate",
+    "carbohydrates": "Low from cheese alone; higher with crackers or fruit",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "Provides protein and calcium and can be portioned flexibly for sharing.",
+    "risks": "Can become high in saturated fat, sodium, and calories if portions are large.",
+    "healthy_tip": "Balance rich cheeses with fruit and reasonable cracker portions rather than relying heavily on processed extras."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": true,
-    "vegan_possible": true,
+    "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Preparation style determines the final dietary profile"
+    "note": "A cheese-only plate is vegetarian for many people, though some cheeses use animal rennet. Gluten-free versions require gluten-free crackers or bread."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Milk",
+    "Gluten if served with crackers or bread",
+    "Tree nuts if added"
   ],
   "common_variations": [
-    "Classic Cheese Plate",
-    "House-style Cheese Plate",
-    "Modern Cheese Plate"
+    "French-style cheese board",
+    "Wine and cheese plate",
+    "Cheese and charcuterie board",
+    "Dessert cheese plate"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "Shared platter",
     "best_served_with": [
-      "Fresh garnish",
-      "Light sides",
-      "Beverage of choice"
+      "Wine",
+      "Crackers",
+      "Fruit",
+      "Bread"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "Europe",
+    "North America",
+    "Restaurants and entertaining worldwide"
   ]
 }

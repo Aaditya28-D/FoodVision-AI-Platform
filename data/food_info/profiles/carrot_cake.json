@@ -1,61 +1,71 @@
 {
   "food_name": "Carrot Cake",
   "category": "Dessert",
-  "cuisine": "European / American",
-  "description": "A carrot cake dessert known for sweetness, texture, and a presentation that can range from rustic to elegant.",
+  "cuisine": "Western / International",
+  "description": "A moist cake made with grated carrots and warm spices, often layered or topped with cream cheese frosting. Many versions also include nuts, raisins, pineapple, or coconut.",
   "core_ingredients": [
-    "Sweet base ingredients",
+    "Grated carrots",
+    "Flour",
     "Sugar",
-    "Flavoring"
-  ],
-  "optional_ingredients": [
-    "Fruit",
-    "Chocolate",
-    "Cream",
+    "Eggs",
+    "Oil",
     "Spices"
   ],
+  "optional_ingredients": [
+    "Walnuts",
+    "Pecans",
+    "Raisins",
+    "Pineapple",
+    "Cream cheese frosting",
+    "Coconut"
+  ],
   "preparation_steps": [
-    "Prepare the base or mixture",
-    "Bake, chill, or fry depending on style",
-    "Finish with toppings and serve"
+    "Mix the batter using grated carrots, dry ingredients, and wet ingredients.",
+    "Fold in optional nuts or fruit if using.",
+    "Bake until the cake is set and a skewer comes out clean.",
+    "Cool fully and frost, commonly with cream cheese frosting."
   ],
   "nutrition": {
-    "calories": "Moderate to high per serving",
+    "calories": "Usually high",
     "protein": "Low to moderate",
-    "carbohydrates": "Moderate to high",
+    "carbohydrates": "High",
     "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Enjoyable as an occasional treat and can contribute comfort, variety, and some energy.",
-    "risks": "Portion size, sugar, and rich ingredients can make it calorie-dense when eaten often.",
-    "healthy_tip": "Enjoy moderate portions and balance richer desserts with lighter meals through the day."
+    "benefits": "Contains carrots and sometimes nuts, but it is still mainly a dessert.",
+    "risks": "Often high in sugar and calories, especially with frosting.",
+    "healthy_tip": "Treat it as a dessert rather than a health food, and keep portions moderate."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
     "non_vegetarian_possible": false,
     "vegan_possible": true,
-    "gluten_free_possible": false,
-    "note": "The final dietary profile depends on dairy, egg, and flour choices"
+    "gluten_free_possible": true,
+    "note": "Traditional recipes contain eggs, dairy, and wheat. Vegan and gluten-free versions are possible with substitutions."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Gluten unless gluten-free flour is used",
+    "Egg",
+    "Milk in many frostings",
+    "Tree nuts if added"
   ],
   "common_variations": [
-    "Classic Carrot Cake",
-    "Chocolate or fruit-topped Carrot Cake",
-    "Mini Carrot Cake"
+    "Layered carrot cake",
+    "Carrot loaf cake",
+    "Carrot cupcakes",
+    "Pineapple carrot cake"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 slice",
     "best_served_with": [
-      "Coffee",
       "Tea",
-      "Fruit garnish"
+      "Coffee"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "United Kingdom",
+    "Australia",
+    "Worldwide bakeries"
   ]
 }

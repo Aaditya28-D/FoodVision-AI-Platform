@@ -1,60 +1,74 @@
 {
   "food_name": "Beef Tartare",
-  "category": "Main Dish",
+  "category": "Appetizer / Main dish",
   "cuisine": "French / European",
-  "description": "A protein-forward beef tartare typically served as a satisfying main dish with sides or sauces.",
+  "description": "A dish of finely chopped or minced raw beef seasoned with ingredients such as shallots, capers, mustard, pepper, and Worcestershire sauce. It is often served with or topped by a raw egg yolk.",
   "core_ingredients": [
-    "Primary protein",
-    "Seasoning",
-    "Oil or butter"
+    "High-quality raw lean beef",
+    "Shallots or onion",
+    "Capers",
+    "Mustard",
+    "Salt",
+    "Black pepper"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Herbs",
-    "Vegetables"
+    "Raw egg yolk",
+    "Cornichons",
+    "Parsley or chives",
+    "Worcestershire sauce",
+    "Hot sauce",
+    "Olive oil"
   ],
   "preparation_steps": [
-    "Season the protein",
-    "Cook to the desired doneness or tenderness",
-    "Rest or plate with sides and serve"
+    "Select very fresh beef suitable for raw preparation and keep it cold.",
+    "Trim and hand-chop or finely mince the beef.",
+    "Mix or serve with finely chopped seasonings such as shallot, capers, and condiments.",
+    "Shape the tartare neatly and add egg yolk if using.",
+    "Serve immediately, chilled."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
+    "calories": "Usually moderate",
     "protein": "High",
-    "carbohydrates": "Low to moderate",
-    "fat": "Moderate to high"
+    "carbohydrates": "Low",
+    "fat": "Low to moderate"
   },
   "health_advice": {
-    "benefits": "Can provide strong satiety, protein, and a satisfying main-meal centerpiece.",
-    "risks": "Rich cuts, salty sauces, or larger portions can drive up calories and saturated fat.",
-    "healthy_tip": "Pair with vegetables, smart sides, and appropriate portions for a more balanced meal."
+    "benefits": "High in protein and often low in carbohydrates.",
+    "risks": "The major concern is foodborne illness from raw beef and raw egg if used.",
+    "healthy_tip": "Only prepare it with trusted ingredients under strict hygiene and cold-chain control; many people should avoid raw-meat dishes altogether."
   },
   "dietary_notes": {
     "vegetarian_possible": false,
     "non_vegetarian_possible": true,
     "vegan_possible": false,
     "gluten_free_possible": true,
-    "note": "Sides, sauces, and breading can change the final dietary profile"
+    "note": "Naturally meat-based. It can be gluten-free if sauces used are gluten-free."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy",
-    "Possible egg"
+    "Egg if egg yolk is used",
+    "Possible gluten in Worcestershire or other sauces",
+    "Possible fish in Worcestershire sauce"
   ],
   "common_variations": [
-    "Classic Beef Tartare",
-    "Sauced Beef Tartare",
-    "Grilled or roasted Beef Tartare"
+    "Classic steak tartare",
+    "Table-side seasoned tartare",
+    "Tartare with quail egg",
+    "Spicy tartare"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "A small molded portion as an appetizer or a larger portion as a light main",
     "best_served_with": [
-      "Vegetables",
-      "Potatoes or grains",
-      "Sauce"
+      "Toasted bread",
+      "Fries",
+      "Salad",
+      "Cornichons"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "France",
+    "Belgium",
+    "Germany",
+    "Switzerland",
+    "International bistros"
   ]
 }

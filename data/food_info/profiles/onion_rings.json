@@ -1,60 +1,65 @@
 {
   "food_name": "Onion Rings",
-  "category": "Street Food / Fast Casual",
+  "category": "Snack / side dish",
   "cuisine": "American",
-  "description": "A casual onion rings with bold flavor, quick service appeal, and room for ingredient variation.",
+  "description": "Slices or rings of onion coated in batter or crumbs and deep-fried until crisp and golden.",
   "core_ingredients": [
-    "Main base",
-    "Seasoning",
-    "Primary topping or filling"
+    "Onion",
+    "Batter or breadcrumb coating",
+    "Oil for frying"
   ],
   "optional_ingredients": [
-    "Sauce",
-    "Cheese",
-    "Vegetables",
-    "Herbs"
+    "Flour",
+    "Egg",
+    "Milk or buttermilk",
+    "Cornmeal",
+    "Seasonings"
   ],
   "preparation_steps": [
-    "Prepare the base or filling",
-    "Cook or assemble with seasoning",
-    "Finish with toppings and serve warm"
+    "Slice onions into rings and separate them.",
+    "Prepare a batter or breading mixture.",
+    "Coat the onion rings thoroughly.",
+    "Fry until golden and crisp.",
+    "Drain excess oil and serve hot."
   ],
   "nutrition": {
-    "calories": "Moderate to high",
-    "protein": "Moderate",
-    "carbohydrates": "Moderate",
-    "fat": "Moderate"
+    "calories": "Usually high",
+    "protein": "Low",
+    "carbohydrates": "Moderate to high",
+    "fat": "Moderate to high"
   },
   "health_advice": {
-    "benefits": "Can be satisfying and enjoyable while offering energy and meal variety.",
-    "risks": "Rich toppings, frying, or oversized portions can make the dish heavier than expected.",
-    "healthy_tip": "Aim for balanced portions, lighter add-ons, and more vegetables where possible."
+    "benefits": "They can be enjoyable as an occasional side dish and provide some flavor and texture variety.",
+    "risks": "Deep-frying makes them energy-dense and often high in sodium.",
+    "healthy_tip": "Keep portions small or bake or air-fry them for a lighter version."
   },
   "dietary_notes": {
     "vegetarian_possible": true,
-    "non_vegetarian_possible": true,
+    "non_vegetarian_possible": false,
     "vegan_possible": true,
     "gluten_free_possible": true,
-    "note": "The exact dietary profile depends on fillings, toppings, and preparation method"
+    "note": "Traditional onion rings are usually vegetarian. Vegan and gluten-free versions are possible depending on the batter ingredients."
   },
   "allergens": [
-    "Possible gluten",
-    "Possible dairy"
+    "Gluten unless gluten-free coating is used",
+    "Egg if batter contains egg",
+    "Dairy if batter contains milk"
   ],
   "common_variations": [
-    "Classic Onion Rings",
-    "Loaded Onion Rings",
-    "Vegetarian-style Onion Rings"
+    "Beer-battered onion rings",
+    "Breadcrumb-coated onion rings",
+    "Spicy onion rings"
   ],
   "serving_info": {
-    "typical_serving": "1 portion",
+    "typical_serving": "1 side portion",
     "best_served_with": [
-      "Dips or sauces",
-      "Salad",
-      "Soft drinks"
+      "Burger",
+      "Dipping sauce",
+      "Sandwiches"
     ]
   },
   "popular_regions": [
-    "Worldwide"
+    "United States",
+    "Fast food and casual dining restaurants worldwide"
   ]
 }
