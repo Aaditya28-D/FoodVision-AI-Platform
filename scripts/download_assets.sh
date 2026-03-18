@@ -7,12 +7,15 @@ cd "$ROOT_DIR"
 MAX_RETRIES=5
 RETRY_DELAY=5
 
-if [ ! -f "asset_links.env" ]; then
-  echo "Missing asset_links.env in project root."
-  exit 1
-fi
-
-source asset_links.env
+# =========================
+# Hardcoded Google Drive IDs
+# =========================
+DATA_PART_00_FILE_ID="1un7DLYEXcM0_FP3F3sa5pC6_yCLYkAsK"
+DATA_PART_01_FILE_ID="1Cgy8WCJ3Sftrv-Hu1YvXVS4LD9ihlCnV"
+DATA_PART_02_FILE_ID="1QyPJrzubfLHrXcfB31VK7DBAl_QlSb9X"
+DATA_PART_03_FILE_ID="1Ckd8-jZv-eUmLOEfzIV4Gr4I4BVZs3fh"
+DATA_PART_04_FILE_ID="1gFpaoirgmRvUKzv3cs91C7RFjXy_sqxt"
+MODELS_FILE_ID="1X7_yQn5A9KxGHeyFfTfD0wgfuQ2k8LWf"
 
 if ! command -v python3 >/dev/null 2>&1; then
   echo "python3 is required but not found."
@@ -50,7 +53,7 @@ download_with_retries() {
   local label="$3"
 
   if [ -z "${file_id:-}" ]; then
-    echo "Missing Google Drive file ID for $label in asset_links.env"
+    echo "Missing Google Drive file ID for $label."
     exit 1
   fi
 
@@ -94,11 +97,11 @@ download_with_retries() {
 }
 
 download_data_parts() {
-  download_with_retries "${DATA_PART_00_FILE_ID:-}" "downloads/data_parts/data_assets.part_00" "DATA part 00"
-  download_with_retries "${DATA_PART_01_FILE_ID:-}" "downloads/data_parts/data_assets.part_01" "DATA part 01"
-  download_with_retries "${DATA_PART_02_FILE_ID:-}" "downloads/data_parts/data_assets.part_02" "DATA part 02"
-  download_with_retries "${DATA_PART_03_FILE_ID:-}" "downloads/data_parts/data_assets.part_03" "DATA part 03"
-  download_with_retries "${DATA_PART_04_FILE_ID:-}" "downloads/data_parts/data_assets.part_04" "DATA part 04"
+  download_with_retries "${DATA_PART_00_FILE_ID}" "downloads/data_parts/data_assets.part_00" "DATA part 00"
+  download_with_retries "${DATA_PART_01_FILE_ID}" "downloads/data_parts/data_assets.part_01" "DATA part 01"
+  download_with_retries "${DATA_PART_02_FILE_ID}" "downloads/data_parts/data_assets.part_02" "DATA part 02"
+  download_with_retries "${DATA_PART_03_FILE_ID}" "downloads/data_parts/data_assets.part_03" "DATA part 03"
+  download_with_retries "${DATA_PART_04_FILE_ID}" "downloads/data_parts/data_assets.part_04" "DATA part 04"
 }
 
 join_data_parts() {
@@ -141,7 +144,7 @@ download_models_archive() {
     rm -f "$models_archive"
   fi
 
-  download_with_retries "${MODELS_FILE_ID:-}" "$models_archive" "MODELS archive"
+  download_with_retries "${MODELS_FILE_ID}" "$models_archive" "MODELS archive"
 
   if ! validate_archive "$models_archive"; then
     echo "MODELS archive failed validation after download."
