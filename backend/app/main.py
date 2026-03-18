@@ -9,7 +9,7 @@ from app.api.router import api_router
 app = FastAPI(
     title="FoodVision AI Platform",
     version="0.1.0",
-    description="Backend API for food classification, explainability, retrieval, and nutrition intelligence.",
+    description="Backend API for food classification, explainability, retrieval, and nutrition intelligence. Created by Aaditya Deshmukh.",
 )
 
 app.add_middleware(
@@ -35,4 +35,4 @@ app.mount(
 
 @app.get("/")
 def root():
-    return {"message": "FoodVision AI Platform backend is running"}
+    return {"message": "FoodVision AI Platform backend is running", "meta": "Created by Aaditya Deshmukh"}

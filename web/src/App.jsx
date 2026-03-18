@@ -46,6 +46,13 @@ function PageCard({ children, className = "" }) {
   return (
     <div className={`rounded-2xl border border-slate-200 bg-white shadow-sm ${className}`}>
       {children}
+          <div
+        className="pointer-events-none fixed bottom-1.5 right-2 z-[9999] text-[10px] text-slate-400/70 select-none"
+        aria-hidden="true"
+      >
+        FoodVision AI Platform · Created by Aaditya Deshmukh
+      </div>
+
     </div>
   );
 }
