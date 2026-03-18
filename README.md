@@ -7,7 +7,6 @@ Created by **Aaditya Deshmukh**.
 
 FoodVision AI Platform is an end-to-end food image intelligence system built for **food classification**, **multi-model inference**, **similar-dish retrieval**, **Grad-CAM explainability**, and **bulk image classification**.
 
-The project is designed so that even a **lazy or low-skill user** can set it up with minimal effort.
 
 ## Final user setup flow
 
