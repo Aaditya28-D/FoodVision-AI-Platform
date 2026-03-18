@@ -16,7 +16,7 @@ class RetrievalService:
 
     def _to_item(self, raw: dict) -> RetrievalItem:
         return RetrievalItem(
-            rank=raw["rank"],
+            rank=raw.get("rank"),
             class_name=raw["class_name"],
             image_path=raw["image_path"],
             similarity=round(raw["similarity"], 6),
@@ -51,6 +51,7 @@ class RetrievalService:
             top_k=top_k,
             predicted_class=results["predicted_class"],
             exact_match_found=results["exact_match_found"],
+            exact_match_item=self._to_item(results["exact_match_item"]) if results.get("exact_match_item") else None,
             same_class_results=[self._to_item(item) for item in results["same_class_results"]],
             other_results=[self._to_item(item) for item in results["other_results"]],
         )
